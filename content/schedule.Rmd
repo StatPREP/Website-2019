@@ -34,29 +34,35 @@ title: "Workshop schedule: Howard Community College"
 - 8:00 am - 8:30 am: Breakfast 
 - 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/)
 - 9:00 am - 9:45 am: Using StatPREP Little Apps in the Classroom Activity #2: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/)
-- 9:45 am - 10:20 am: Searching for Data:  Finding [good sources of data](/blog/presentation-data-sources/)
+- 9:45 am - 10:20 am: Searching for Data:  Finding [good sources of data](/blog/presentation-data-sources/) (Danny Kaplan)
 
 - 10:20 am - 10:30 am: Break
 
 - 10:30 am - 11:30 am: Parallel sessions -- your choice!
-    * *Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/
-    
-    
-    Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) with Ambika Silva
-- 11:15 am: Bootstrapping with the Little App, with Danny and Nick
-) with Danny and Nick
-- 12:30 pm: Lunchtime Discussion: continuation of yesterday's discussion  on curriculum and state standards 
+    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) 
+    * New to R? Learn the basics.
+- 11:30 am - 12:00 pm: Bootstrapping Little App
+
+- 12:00 pm - 12:45 pm: Lunchtime Discussion: continuation of yesterday's discussion  on curriculum and state standards 
+
+
+- 12:45 pm - 1:30 pm: Parallel sessions -- your choice!
+    * Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/)
+    * Mosaic R package for teaching statistics
+    * Bringing data from the wild into R
+- 1:30 pm - 1:45 pm: [It's all about Regression!](/blog/presentation-its-all-regression/) 
+
+- 1:45 pm - 2:00 pm:  Break  
+
+- 2:00 pm - 2:45 pm: Tips for creating an Active Classroom and assessment ideas (Randy Pruim)
 - 1:15 pm: Choose one of the following to attend:
     - Workout with a personal trainer: your choice Little Apps/Tutorials/basics of R/...
         - The [OSHA.Rmd](/realdata/OSHA.Rmd) file we created during the session.
     - Mosaic R package for teaching stats
-- 2:00 pm: Tips for creating an Active Classroom (Randy Pruim)
-- 2:30 pm: [It's all about Regression!](/blog/presentation-its-all-regression/) 
-- 2:45pm:  Break
-- 3:00 pm: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) with Danny and Nick
-- 3:45 pm: Overview of [*Stats for Data Science*](http://dtkaplan.github.io/SDS-book) book (for instructor self study)
-- 4:00 pm: Small Group Discussions: Takeaways
-- 4:30 pm: Q & A panel discussion
+- 2:45 pm - 3:45 pm: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (with Danny and Randy)
+- 3:45 pm - 4:00 pm: Overview of [*Stats for Data Science*](http://dtkaplan.github.io/SDS-book) book (for instructor self study)
+- 4:00 pm - 4:30 pm: Small Group Discussions: Takeaways
+- 4:30 pm - 5:00 pm: Q & A panel discussion
 - 5:00 pm: Staying in touch & Adjourn
 
 
