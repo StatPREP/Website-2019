@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regression on StatPREP Workshops 2019</title>
+    <link>/tags/regression/</link>
+    <description>Recent content in regression on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing linear regression</title>
+      <link>/blog/activity-introducing-linear-regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-introducing-linear-regression/</guid>
+      <description>Get formatted versions: Word : PDF
+Showing various sorts of relationships for discussion Open up the linear regression Little App. (See footnote1). In this activity we’ll explore three different data sets available through the app. For each data set, the variable indicated below plays the role of the response variable. Some explanatory variables are listed as sub-points.
+Data set: NHANES. Response variable: BMI. It’s important for students to know what BMI is.</description>
+    </item>
+    
+    <item>
+      <title>Describing relationship patterns in words and numbers</title>
+      <link>/blog/activity-relationship-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-relationship-patterns/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation It’s natural to display a linear regression as a graph modeling the response variable as a function of the explanatory variables. In the LA_linear_regression Little App, that function is shown as a line laid on top of the data.
+Graphics are important, but it’s also a good practice to summarize the relationship using words and numbers.
+This lesson introduces the conventions for such a summary.</description>
+    </item>
+    
+    <item>
+      <title>How much is explained?</title>
+      <link>/blog/activity-how-much-is-explained/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-how-much-is-explained/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The statistical work we do is built around models. If the word “model” reminds you of a toy plane, you’re on the right track. A model is something we build in order to represent something in the real world. Usually the model is much simpler than the real-world object.
+Models are useful when they serve a purpose. For instance, a toy plane can serve the purpose of teaching a child what are the main components of a plane and how they are related.</description>
+    </item>
+    
+    <item>
+      <title>Flexibility</title>
+      <link>/blog/activity-flexibility/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-flexibility/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation  Activity Systolic versus diastolic in NHANES. A stiff line is too strongly influenced by the people with very low diastolic blood pressure. Adding some flexibility allows the relationship for those with normal pressure to be more evident. I’m guessing very low diastolic pressure is OK, but you can’t lower systolic pressure accordingly and stay alive.
+Version 0.2, 2019-06-04, Daniel Kaplan, Word version</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Linear Regression</title>
+      <link>/blog/instructions-linear-regression/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-linear-regression/</guid>
+      <description>Activities  Introducing linear regression Describing relationship patterns How much is explained by regression?   Learning objectives connected to linear regression  Create scatterplots for bivariate data using graphing technology where appropriate. Lesson: point plots Sensibly choose which variable should be the response and which the explanatory variable, and know when it does and doesn’t matter. (Other nomenclature for explanatory/response: predictor/response or independent/dependent.) Lesson: response and explanatory variables  External evidence of which direction causation goes, e.</description>
+    </item>
+    
+  </channel>
+</rss>

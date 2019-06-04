@@ -1,0 +1,68 @@
+---
+title: "Experiment and causality"
+date: "2019-05-25"
+description: "Causality  as a reason to identify one variable as the response and another as the explanatory."
+weight: 6
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+tags: 
+  - causality
+  - DAG
+categories: 
+  - "Activities"
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-experiment-and-causality.docx">Word</a> : <a href="/pdf-versions/activity-experiment-and-causality.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Consider a situation where you have three variables: X, Y, and C. Your understanding of how the world works is telling you that X causes Y. And, indeed, when you collect data, you see an association between X and Y. But all an association does is to tell you that X and Y are connected somehow, not what that connection is.</p>
+<p>If you’re trying to convince a skeptic that X causes Y, you have some work to do.</p>
+<p>The most powerful and compelling way to show whether or not X causes Y is to do an experiment. In an experiment, you set the values for X and observed the corresponding values for Y. For example, in a clinical trial, you would give a drug or placebo to each of the trial subjects and observe the outcome Y.</p>
+<p>Let’s see how this works in terms of the possible causal relationships among variables X, Y, and C. Many of these are drawn out in the figure below, with each network labelled (a), (b), (c), and so on.</p>
+<p><img src="/img/many-dags.png" /></p>
+<p>When you do an experiment by setting X, you change the world. That is, before you did the experiment, X was influenced by whatever variables are causally connected to it, that is, with an arrow leading <strong>into</strong> X. When you do an experiment, you take over completely (at least, in an ideal experiment). In terms of the diagrams, this means that you <strong>erase all arrows leading into X</strong>. The outbound arrows, if any, remain.</p>
+<p>More precisely, since <em>you</em> are determining X, the causal diagram will is transformed from something like this</p>
+<p><img src="/img/experiment0.png" /></p>
+<p>into something like this</p>
+<p><img src="/img/experiment1.png" /></p>
+<div id="activity" class="section level2">
+<h2>Activity</h2>
+<ol style="list-style-type: decimal">
+<li><p>For each of the causal networks labelled (a) through (p), examine the network to see which would produce an association between X and Y. (Take the network as is, without erasing any arrows.)</p>
+<ol style="list-style-type: lower-alpha">
+<li><em>Circle the networks will lead to an association between X and Y.</em>   .  .  .  </li>
+</ol>
+<p> </p>
+<p><em>a   b   c   d   e   f   g   h   j   k   m   n   o   p</em></p>
+<p>The ones you circled are the possibilities consistent with the observation of an association between X and Y.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><em>Are there any networks among the ones you circled for which Y causes X, either directly or indirectly through C? Underline them</em>   .  .  .  </li>
+</ol>
+<p> </p></li>
+<li><p>If the answer to question (b) above is “yes,” then your observation of an association between X and Y does not rule out the possibility that Y causes X.</p>
+<p>Now let’s see what might happen when you do the experiment. Go through each of the causal networks and erase any arrows leading in to X. Your experiment changes the world (at least for those possible networks that have an arrow leading into X).</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><em>Circle all the networks for which your performing the experiment leads to at least one arrow being erased.</em></li>
+</ol>
+<p><em>a    b    c    d    e    f    g    h    j    k    m    n    o    p</em></p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li><em>Among all the networks a through p, when any arrows leading in to X have been erased, are there any networks in which Y directly or indirectly causes X?</em>   .  .  .  </li>
+</ol>
+<p> </p>
+<p> </p>
+<p>Let’s put it more simply …. If you erase all arrows leading into X, is there any possible way that Y or C can cause X? (Hint: There are no causal arrows leading into X!)</p></li>
+<li><p>It might happen that in setting X in the experiment, you glance at the values of Y or C and they might influence the way you set X. If this happens, you effectively have not erased <em>all</em> the arrows into X from Y and C. That corresponds to a network diagram like this:</p>
+<p><img src="/img/experiment2.png" /></p>
+<ol start="5" style="list-style-type: lower-alpha">
+<li><em>Think of a way that you can determine what values to set X to that demonstrates compellingly, even to the most skeptical opponent, that C and Y could not have played any role at all in determining X. Explain.</em>   .  .  .  </li>
+</ol>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Danny Kaplan, <a href="/word-versions/activity-experiment-and-causality.docx">Word version</a></p>
+</div>
+</div>

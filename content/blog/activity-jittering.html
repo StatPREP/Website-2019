@@ -1,0 +1,87 @@
+---
+title: "Jittering"
+date: "2019-04-12"
+weight: -10
+description: "Jittering is a graphical technique that extends point plots to make them more informative about categorical variables."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  pdf_document: tint::tintPdf
+  html_document:
+    rmdformats::material
+categories:
+  - activities
+tags:
+  - graphics
+  - jittering
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-jittering.docx">Word</a> : <a href="/pdf-versions/activity-jittering.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Graphical displays are effective when they connect well with human visual and cognitive faculties. Humans are extremely good at some visual tasks and surprisingly poor at others. To illustrate, consider the task of identifying how many 3’s there are in the following list:</p>
+<p><img src="/img/numbers-without-color.png" width="80%" /></p>
+<p>The task is difficult because recognizing shapes is a tough cognitive task.</p>
+<p>The task becomes much simpler if we take advantage of color, which our visual systems can process very quickly. Try finding the 3’s again:</p>
+<p><img src="/img/numbers-with-color.png" width="80%" /></p>
+<p>One visual task that people are good at might be called “seeing the forest despite the trees.” When dots are scatter across a display, people can easily perceive differences in density from place to place. This despite the dots being all identical to one another.</p>
+<p><img src="/blog/activity-jittering_files/figure-html/unnamed-chunk-4-1.png" width="80%" /></p>
+<p>This human capacity to see density is one of the factors that makes point plots an effective way to present data.</p>
+<p>Regrettably, when one or both of the variables in a point plot are categorical, all of the dots at each level of the variable line up; multiple dots can be exactly in the same place in the graph. This is called <em>overplotting</em>. We perceive this multiplicity as a single dot and cannot see changes in density for different values of the variables.</p>
+<p><em>Jittering</em> and <em>transparency</em> are techniques to modify point plots so that we can see the relative density for different values of the variable.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_jitter/">jittering Little App`</a>. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>).</p>
+<ol style="list-style-type: decimal">
+<li><p>Select <code>NHANES</code> as the data frame, with <code>sex</code> as the response variable and <code>education</code> as the explanatory variable. Leave the sample size a n = 50.</p>
+<p>Count the points in the image.</p>
+<p><em>Are there n = 50 dots visible?</em>   .  .  .  </p></li>
+<li><p>Turn down the sample size to n = 5. There are now some places where there were dots for n = 50 but not for n = 5.</p>
+<p><em>What’s going on at the places where there are not dots?</em>   .  .  .  </p>
+<p> </p>
+<p>Look at the “statistics” tab. This contains a table of the points being displayed. Is the number of rows in the table consistent with n = 5? According to the table, are there any combinations of variables for which there is more than one row? Press “New Sample” if necessary so that there will be at least one repeated combination.</p>
+<p><em>Looking at the corresponding place in the graphic, is there any sign that the combination is repeated multiple times.</em>   .  .  .  </p>
+<p> </p></li>
+<li><p>Turn up the sample size to, say, n = 1000.</p>
+<p><em>With n = 1000, can you tell which values of the variables are most common? Why not?</em>   .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Leaving n = 1000, move the horizontal slider that controls jittering width from zero to a value of about 0.1. Notice what’s changed in the plot.</p></li>
+<li><p>Move the vertical slider to move from zero vertical jittering to about 0.1.</p>
+<p><em>Is it possible to tell which combinations of the variables are most common? If so, explain how.</em>   .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Select n to include the entire sampling frame: all the data. This will put about 7000 points in the graphic.</p>
+<p><em>Is it still possible to distinguish the relative frequency of the different combinations of the response and explanatory variables?</em>   .  .  .  </p>
+<p> </p>
+<p>Try changing the jittering sliders to make the differences in relative frequency more evident, while still keeping the square clouds of points separate.</p>
+<p><em>Is your choice of jittering settings larger or smaller than it was when n = 1000 points were being displayed.</em>   .  .  .  </p>
+<p> </p></li>
+<li><p>Even with jittering, with large n there will be some overplotting. This is where transparency comes into the picture. Using transparency reveals such overplotting in terms of the perceived darkness of the display.</p>
+<p>Turn down the transparency slider from 1 to a small value that makes it easy to see where there is overplotting. (Hint: Depending on the jittering settings you selected in (4), you might need to make the value of the transparency slider very small.</p>
+<p><em>What are the values of the horizontal and vertical jittering controls and of the transparency control that make it easiest to distinguish the different density of data across the ten different variable combinations?</em>   .  .  .  </p>
+<p> </p></li>
+<li><p>Set the response variable to <code>income_poverty</code>, which is quantitative. (Leave the explanatory variable as <code>education</code>.) And turn the vertical jittering to zero.</p>
+<p>Can you tell which values of <code>income_poverty</code> are more common at the different education levels? Adjust the horizontal jittering and transparency to create a plot you think is effective at showing how the distributions of <code>income_poverty</code> change from one education level to another.</p>
+<p><em>Write down the horizontal jittering and transparency you think make the most effective graph.</em>   .  .  .  </p>
+<p> </p>
+<p><em>Tell the story shown by the graph using everyday English terms.</em>   .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Check the “show violin plot” box underneath the jittering controls.</p>
+<p><em>Explain what is the relationship between the violin-like shapes and the density displayed by the jittered point plot.</em>   .  .  .  </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Danny Kaplan, <a href="/word-versions/activity-jittering.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_jitter/" class="uri">https://dtkaplan.shinyapps.io/LA_jitter/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

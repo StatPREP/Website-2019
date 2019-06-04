@@ -1,0 +1,123 @@
+---
+title: "Jittering"
+date: "2019-04-12"
+weight: -10
+description: "Jittering is a graphical technique that extends point plots to make them more informative about categorical variables."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  pdf_document: tint::tintPdf
+  html_document:
+    rmdformats::material
+categories:
+  - activities
+tags:
+  - graphics
+  - jittering
+---
+
+
+```{r include = FALSE}
+SDSdata::sds_setup()
+library(ggformula)
+library(SDSdata)
+library(LittleApp)
+library(DT)
+jitter_app <- get_app_info("jitter")
+```
+
+`r SDSdata::word_pdf_links()`
+
+# Orientation
+
+Graphical displays are effective when they connect well with human visual and cognitive  faculties. Humans are extremely good at some visual tasks and surprisingly poor at others. To illustrate,  consider the task of identifying how many 3's there are in the following list:
+
+```{r echo = FALSE, width = "60%"}
+knitr::include_graphics("/img/numbers-without-color.png") 
+```
+
+The task is difficult because recognizing shapes is a tough cognitive task.
+
+The task becomes much simpler if we take advantage of color, which our visual systems can process very quickly. Try finding the 3's again:
+
+```{r echo = FALSE, width = "60%"}
+knitr::include_graphics("/img/numbers-with-color.png") 
+```
+
+One visual task that people are good at might be called "seeing the forest despite the trees." When dots are scatter across a display, people can easily perceive differences in density from  place to place. This despite the dots being all identical to one another.
+
+```{r echo = FALSE}
+n = 1000
+Dat <- tibble(x = rnorm(n, 10, 3), y = rnorm(n, 1, 4))
+gf_point(y ~ x,  data = Dat) %>%
+  gf_theme(
+    theme(line = element_blank(),
+        text = element_blank(),
+        title = element_blank()))
+```
+
+
+This human capacity to see density is one of the factors that makes point plots an effective way to present  data.
+
+Regrettably, when one or both of the variables in a point plot are categorical, all of the dots at each level of the variable line up; multiple dots can be exactly in the same place in  the graph. This is called *overplotting*. We perceive this multiplicity as a single dot and cannot see changes in density for different values of the variables.
+
+*Jittering* and *transparency* are techniques to modify point plots so that we can see the relative density for different values of the variable.
+
+# Activity
+
+Open up the [jittering Little App`](`r jitter_app$url`). (See footnote^[<`r jitter_app$url`>]). 
+
+1. Select `NHANES` as the data frame,  with `sex` as the response variable and `education` as the explanatory variable.  Leave the sample size a n = 50.
+
+    Count the points in the image. 
+    
+    `r question_blank("*Are there n = 50 dots visible?*", breaks = 1)` 
+
+2. Turn down the sample size to n = 5. There are now some places where there were dots for n = 50 but not for n = 5. 
+    
+    `r  question_blank("*What's going on at the places where there are not dots?*", breaks = 2, length = 3)`
+    
+    Look at the "statistics" tab. This contains a table of the points being displayed. Is the number of rows in the table consistent with n = 5? According to the table, are there any combinations of variables for which there is more than one row? Press "New Sample" if necessary so that there will be at least one repeated combination. 
+    
+    `r question_blank("*Looking at the corresponding  place in the graphic, is there any sign that the combination is repeated multiple times.*")`
+    
+2. Turn up the sample size to, say, n = 1000. 
+
+    `r question_blank("*With n = 1000,  can you tell which values of the variables are most common? Why not?*", breaks = 3,  length  = 2)`
+    
+2. Leaving n = 1000, move the horizontal slider that controls jittering width from zero to a value of about 0.1. Notice what's changed in the plot.
+
+3. Move the vertical slider to move from zero vertical jittering to about 0.1.
+
+    `r question_blank("*Is it possible to tell which combinations of the variables are most common? If so, explain how.*",  breaks = 3, length = 2)`
+    
+4. Select n to include the entire sampling frame: all the data. This will put about 7000 points in the graphic. 
+
+    `r question_blank("*Is it still possible to distinguish the relative frequency of the different combinations of the response and explanatory variables?*")`
+
+    Try changing the jittering sliders to make the differences in relative frequency more evident, while still keeping the square clouds of points separate. 
+    
+    `r question_blank("*Is your choice of jittering settings larger or smaller  than it was when n = 1000 points were being displayed.*")`
+    
+5.  Even with jittering, with large n there will be some overplotting. This is where transparency comes into  the picture. Using transparency reveals such overplotting in  terms of the perceived darkness of the display.
+
+     Turn down  the transparency slider from 1 to a small value that makes it easy to see where there is overplotting. (Hint: Depending on the jittering settings you selected in (4), you might need to make the value of the transparency slider very small.
+     
+     `r  question_blank("*What are the values of the horizontal and vertical jittering controls and of the transparency control that make it easiest to distinguish the different density of data across the ten different variable combinations?*")`
+     
+6.  Set the response variable to `income_poverty`, which is quantitative. (Leave the explanatory variable as `education`.) And turn  the vertical jittering to zero. 
+
+    Can you tell which values of `income_poverty` are more common at the different education levels? Adjust the horizontal jittering and transparency to create a plot you think is effective at showing how the distributions  of `income_poverty` change from one education level to another. 
+    
+    
+    `r question_blank("*Write down the horizontal jittering and transparency you think make the most effective graph.*")`
+    
+    `r question_blank("*Tell the story shown by the graph using everyday English terms.*", breaks = 3, length = 3)`
+    
+7. Check the "show violin plot" box underneath the jittering controls.
+
+    `r question_blank("*Explain what is the relationship between the violin-like shapes and the density displayed by the jittered point plot.*", breaks = 3,  length = 3)`
+
+----------------------
+
+Version 0.3, `r Sys.Date()`, Danny Kaplan, [Word version](`r paste0("/word-versions/",tools::file_path_sans_ext(knitr::current_input()), ".docx")`) 

@@ -1,0 +1,100 @@
+---
+title: "FAIL!"
+description: "Examples of textbook failures."
+date: "2019-05-26"
+categories:
+  - real_data
+---
+
+These are textbook examples of the presentation of data in ways that encourage bad habits.
+
+
+## No columns {#no-columns}
+
+
+![](/img/data-images/no-columns-2.png)
+
+This might look like a data frame, but the individual columns have no meaning and  the rows are not a *unit of observation*. 
+
+Should be:
+
+person id | times | sex
+----------|-------|-----
+id792     | 4.3   | F
+id796     | 4.3   | F
+id797     | 4.5   | M
+
+... and so on. Make it a habit to show a unique identifier which facilities tracking back mistakes and joining with other data.
+
+## No spreadsheet {#no-spreadsheet}
+
+![](/img/data-images/no-columns.png)
+
+A data frame with a single variable should still be represented as a table. Among other things, this makes it easier to read in the data with software.
+
+
+## Confusing names {#variable-names}
+
+There are two header rows and so the time columns can't be referenced in the usual way. 
+
+![](/img/data-images/missing-data.png)
+
+Also, it's hard to read in these data.
+
+
+## No column names {#no-column-names}
+
+These data are actual organized by columns, but notice how the column names are shown inline, e.g. with $\sigma = 5$.
+
+![](/img/data-images/no-column-names.png)
+
+We all know what the authors are trying to do here, but they have formatted the presentation the same way as data. That's the basic mistake. But taking that mistake as an intention to display data, a proper presentation should be
+
+Should be:
+
+background | n | xbar | s
+|-----------|---|------|------|
+red  | 35 | 3.39 | 0.97
+blue | 36 | 3.97 | 0.63
+
+CODEBOOK:
+
+- n: sample size
+- xbar: sample mean
+- s: sample standard deviation
+- background: the color of ....
+
+Where the data came from, perhaps even where the original data are stored.
+
+## No codebook {#no-codebook}
+
+Omitting the codebook is practically universal in  intro textbooks. Sometimes, there is a narration  explaining the data, but this is not identified as a separate file as it should be to form good habits.
+
+There should be a reference to the meta-data for a table. Some possibilities:
+
+- A link to a text/PDF/etc file
+- A package::dataset name in R. 
+- A print-out of a file, making it clear that it's a presentation  of a separate file, not part of the data file.
+- If you're using spreadsheets to hold data tables and you want there to be only one link, put the metadata in a **separate tab** from the data. (But remember, "tabs" are not a database concept.)
+
+
+## Missing data {#missing-data}
+
+Use a consistent format for missing data. `NA` is standard and works well with graphics and statistics software.
+
+![](/img/data-images/missing-data.png)
+
+## Many problems!
+
+![](/img/data-images/many-problems.png)
+
+List the many ways in which this "table" violates the conventions for effective data organization.
+
+1. <span class="answer">The rows should be turned into columns.</span>
+2. <span class="answer">There are no variable names</span>
+3. <span class="answer">If we stipulate that "temperature" is a variable name, the units  (deg F) should be included in the metadata, not the variable name.</span>
+4. <span class="answer">Time should be a variable and it should be stored in a machine-readable format. The very simplest uses numbers (e.g. 8.00) but others are available depending on the software.</span>
+
+
+
+

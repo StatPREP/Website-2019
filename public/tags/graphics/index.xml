@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graphics on StatPREP Workshops 2019</title>
+    <link>/tags/graphics/</link>
+    <description>Recent content in graphics on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jittering</title>
+      <link>/blog/activity-jittering/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-jittering/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Graphical displays are effective when they connect well with human visual and cognitive faculties. Humans are extremely good at some visual tasks and surprisingly poor at others. To illustrate, consider the task of identifying how many 3’s there are in the following list:
+The task is difficult because recognizing shapes is a tough cognitive task.
+The task becomes much simpler if we take advantage of color, which our visual systems can process very quickly.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Graphing Data</title>
+      <link>/blog/instructions-graphing/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-graphing/</guid>
+      <description>Activities  Point plots Jittering and violins Summary intervals Response and explanatory variables   Learning objectives  Additional resources  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Assessment Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors Showing the basic kinds of plots: data/density/interval
+Role in statistical practice  Conceptual pitfalls  Learning objectives  Student background  Background data knowledge  (If we had) the population  Student tasks and activities  Creating an active classroom See the document on general tips for creating an active classroom.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to data graphics</title>
+      <link>/blog/la-point-plot/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-point-plot/</guid>
+      <description>Point plot Little App: Baby weight versus gestation in Births_2014. Click here to launch.   
+The point-plot Little App provides a quick path to making data graphics. Select the data set, the response and explanatory variables, and you’re there.
+ You can map color to a covariate and can facet the graph (as shown above) by another covariate. Works with both quantitative and categorical variables on either or both axes, for color, and for faceting.</description>
+    </item>
+    
+    <item>
+      <title>Jittering</title>
+      <link>/blog/la-jittering/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-jittering/</guid>
+      <description>   Jittering Little App: Self-described level of health versus frequency of feeling depressed in the National Health and Nutrition Evaluation Survey. Click here to launch.   
+The Jittering Little App shows how the general point-plot can be effective even when variables are categorical.
+ Students can adjust the amount of jittering and transparency. Can stratify sampling by the explanatory variable.  Suggested StatPREP 101 activities  Jittering activity   </description>
+    </item>
+    
+    <item>
+      <title>Proportions</title>
+      <link>/blog/la-proportions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-proportions/</guid>
+      <description>Proportions Little App: Among births in the US, does the probability of an induced delivery vary with the length of gestation? Click here to launch.   
+The Proportions Little App allows you to explore how the probability of a categorical outcome varies with either categorical or quantitative variables.
+ Choose the level of the response variable for which you want to know the proportion. Display confidence intervals/bands.</description>
+    </item>
+    
+    <item>
+      <title>Two-sample t-test</title>
+      <link>/blog/activity-two-sample-t/</link>
+      <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-two-sample-t/</guid>
+      <description>T-test Little App: Weight versus self-described level of activity in the National Health and Nutrition Evaluation Survey. Click here to launch.   
+The t-test Little App connects the t-interval to the .
+ Length of confidence intervals as a function of n. Examine variation in the means and intervals by taking new samples from the population. Use the measuring stick to look at differences in means, lengths of confidence intervals, overlaps between confidence intervals, etc.</description>
+    </item>
+    
+    <item>
+      <title>Grammatical graphics</title>
+      <link>/blog/presentation-grammatical-graphics/</link>
+      <pubDate>Sat, 03 Jun 2017 13:07:31 +0200</pubDate>
+      
+      <guid>/blog/presentation-grammatical-graphics/</guid>
+      <description>The Grammar of Graphics The title comes from Leland Wilkinson’s book, The Grammar of Graphics
+The first chapter is quite mathematical – give it a look by following the link above.
+One purpose was to give a way of describing graphics in the face of a combinatorial explosion of designs.
+ How to describe graphics to the computer for drawing.  But it also provides a way for teaching graphics.</description>
+    </item>
+    
+    <item>
+      <title>Data and Point Plots</title>
+      <link>/blog/activity-point-plot/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-point-plot/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Data can be many things, but one of the most common formats is a data frame, a kind of spreadsheet of rows and columns. We’ll work with the data frame Births_2014, which is based on data published by the US Centers for Disease Control. Births_2014 has 100,000 rows. Each row reports a live birth in the US in 2014. There are dozens of variables, a few of which are shown below.</description>
+    </item>
+    
+  </channel>
+</rss>

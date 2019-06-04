@@ -1,0 +1,464 @@
+\documentclass[nofonts,]{tufte-handout}
+
+% ams
+\usepackage{amssymb,amsmath}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \makeatletter
+  \@ifpackageloaded{fontspec}{}{\usepackage{fontspec}}
+  \makeatother
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \makeatletter
+  \@ifpackageloaded{soul}{
+     \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+     \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+   }{}
+  \makeatother
+\fi
+
+% graphix
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+
+% booktabs
+\usepackage{booktabs}
+
+% url
+\usepackage{url}
+
+% hyperref
+\usepackage{hyperref}
+
+% units.
+\usepackage{units}
+
+
+\setcounter{secnumdepth}{-1}
+
+% citations
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+
+%% tint override
+\setcitestyle{round} 
+
+% pandoc syntax highlighting
+
+% longtable
+\usepackage{longtable,booktabs}
+
+% multiplecol
+\usepackage{multicol}
+
+% strikeout
+\usepackage[normalem]{ulem}
+
+% morefloats
+\usepackage{morefloats}
+
+
+% tightlist macro required by pandoc >= 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% title / author / date
+\title{Response and explanatory variables}
+\date{StatPREP Class Lesson}
+
+%% -- tint overrides
+%% fonts, using roboto (condensed) as default
+\usepackage[sfdefault,condensed]{roboto}
+%% also nice: \usepackage[default]{lato}
+
+%% colored links, setting 'borrowed' from RJournal.sty with 'Thanks, Achim!'
+\RequirePackage{color}
+\definecolor{link}{rgb}{0.1,0.1,0.8} %% blue with some grey
+\hypersetup{
+  colorlinks,%
+  citecolor=link,%
+  filecolor=link,%
+  linkcolor=link,%
+  urlcolor=link
+}
+
+%% macros
+\makeatletter
+
+%% -- tint does not use italics or allcaps in title
+\renewcommand{\maketitle}{%     
+  \newpage
+  \global\@topnum\z@% prevent floats from being placed at the top of the page
+  \begingroup
+    \setlength{\parindent}{0pt}%
+    \setlength{\parskip}{4pt}%
+    \let\@@title\@empty
+    \let\@@author\@empty
+    \let\@@date\@empty
+    \ifthenelse{\boolean{@tufte@sfsidenotes}}{%
+      %\gdef\@@title{\sffamily\LARGE\allcaps{\@title}\par}%
+      %\gdef\@@author{\sffamily\Large\allcaps{\@author}\par}%
+      %\gdef\@@date{\sffamily\Large\allcaps{\@date}\par}%
+      \gdef\@@title{\begingroup\fontseries{b}\selectfont\LARGE{\@title}\par}%
+      \gdef\@@author{\begingroup\fontseries{l}\selectfont\Large{\@author}\par}%
+      \gdef\@@date{\begingroup\fontseries{l}\selectfont\Large{\@date}\par}%
+    }{%
+      %\gdef\@@title{\LARGE\itshape\@title\par}%
+      %\gdef\@@author{\Large\itshape\@author\par}%
+      %\gdef\@@date{\Large\itshape\@date\par}%
+      \gdef\@@title{\begingroup\fontseries{b}\selectfont\LARGE\@title\par\endgroup}%
+      \gdef\@@author{\begingroup\fontseries{l}\selectfont\Large\@author\par\endgroup}%
+      \gdef\@@date{\begingroup\fontseries{l}\selectfont\Large\@date\par\endgroup}%
+    }%
+    \@@title
+    \@@author
+    \@@date
+  \endgroup
+  \thispagestyle{plain}% suppress the running head
+  \tuftebreak% add some space before the text begins
+  \@afterindentfalse\@afterheading% suppress indentation of the next paragraph
+}
+
+%% -- tint does not use italics or allcaps in section/subsection/paragraph
+\titleformat{\section}%
+  [hang]% shape
+  %{\normalfont\Large\itshape}% format applied to label+text
+  {\fontseries{b}\selectfont\Large}% format applied to label+text
+  {\thesection}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleformat{\subsection}%
+  [hang]% shape
+  %{\normalfont\large\itshape}% format applied to label+text
+  {\fontseries{m}\selectfont\large}% format applied to label+text
+  {\thesubsection}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleformat{\paragraph}%
+  [runin]% shape
+  %{\normalfont\itshape}% format applied to label+text
+  {\fontseries{l}\selectfont}% format applied to label+text
+  {\theparagraph}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+%% -- tint does not use italics here either
+% Formatting for main TOC (printed in front matter)
+% {section} [left] {above} {before w/label} {before w/o label} {filler + page} [after]
+\ifthenelse{\boolean{@tufte@toc}}{%
+  \titlecontents{part}% FIXME
+    [0em] % distance from left margin
+    %{\vspace{1.5\baselineskip}\begin{fullwidth}\LARGE\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{1.5\baselineskip}\begin{fullwidth}\fontseries{m}\selectfont\LARGE} % above (global formatting of entry)
+    {\contentslabel{2em}} % before w/label (label = ``II'')
+    {} % before w/o label
+    {\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+  \titlecontents{chapter}%
+    [0em] % distance from left margin
+    %{\vspace{1.5\baselineskip}\begin{fullwidth}\LARGE\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{1.5\baselineskip}\begin{fullwidth}\fontseries{m}\selectfont\LARGE} % above (global formatting of entry)
+    {\hspace*{0em}\contentslabel{2em}} % before w/label (label = ``2'')
+    {\hspace*{0em}} % before w/o label
+    %{\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    {\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+  \titlecontents{section}% FIXME
+    [0em] % distance from left margin
+    %{\vspace{0\baselineskip}\begin{fullwidth}\Large\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{0\baselineskip}\begin{fullwidth}\fontseries{m}\selectfont\Large} % above (global formatting of entry)
+    {\hspace*{2em}\contentslabel{2em}} % before w/label (label = ``2.6'')
+    {\hspace*{2em}} % before w/o label
+    %{\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    {\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+  \titlecontents{subsection}% FIXME
+    [0em] % distance from left margin
+    %{\vspace{0\baselineskip}\begin{fullwidth}\large\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{0\baselineskip}\begin{fullwidth}\fontseries{m}\selectfont\large} % above (global formatting of entry)
+    {\hspace*{4em}\contentslabel{4em}} % before w/label (label = ``2.6.1'')
+    {\hspace*{4em}} % before w/o label
+    %{\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    {\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+  \titlecontents{paragraph}% FIXME
+    [0em] % distance from left margin
+    %{\vspace{0\baselineskip}\begin{fullwidth}\normalsize\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{0\baselineskip}\begin{fullwidth}\fontseries{m}\selectfont\normalsize\rmfamily} % above (global formatting of entry)
+    {\hspace*{6em}\contentslabel{2em}} % before w/label (label = ``2.6.0.0.1'')
+    {\hspace*{6em}} % before w/o label
+    %{\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    {\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+}{}
+
+  
+\makeatother
+
+
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\hypertarget{orientation}{%
+\section{Orientation}\label{orientation}}
+
+A variable is a quantity or characteristic that varies from one person
+to another, or more generally, from one \emph{unit of observation} to
+another. There are two distinct \emph{types} of variables: quantitative
+(numeric) and categorical (labels/words/etc.).
+
+There's another distinction to be made about variables, which is not
+about the type of the variable itself but the \emph{role} the variable
+will play in the statistical methods we use to describe a situation of
+interest and the relationships among the variables involved. This
+distinction is between the \emph{response variable} and the
+\emph{explanatory variables}.
+
+Think about how we describe human relationships. For example, consider
+two women: Eliana and Rabia. One possible relationship: Eliana is
+Rabia's aunt. Another possible relationship: Rabia is Eliana's niece. As
+you know, these two relationships are exactly the same thing, just
+expressed differently. Each of the expressions involves a reference
+person, that is, a person with respect to whom the relationship word
+(``aunt'', ``niece'') is used.
+
+Similarly, when we describe a relationship between two variables, it's
+helpful to consider one variable to be the reference. We describe the
+pattern of the other variable \emph{with respect to} the first variable.
+Now phrases like ``one variable,'' ``other variable,'' and ``first
+variable'' are ambiguous. It's hard to keep track of which variable is
+which. So, to simplify things, we identify one of the variables as the
+\emph{response variable} and the other as the \emph{explanatory
+variable}. Just as the two women can be related by either ``aunt'' or
+``niece'', the roles of the two variables can be described as ``Response
+is a \emph{function} of Explanatory'' or ``Explanatory \emph{determines}
+Response.''
+
+How to decide which variable should play the role of the response and
+which the explanatory? There's no absolute rule; generally you can
+describe relationships either way, keeping in mind that the statement of
+the relationship (``aunt'', ``niece'') will depend on which is which.
+Here are some rules of thumb.
+
+\begin{itemize}
+\tightlist
+\item
+  If you are trying to \emph{predict} the value of one variable by
+  another, call the variable to be predicted the \emph{response}
+  variable. Example: Price of a rental apartment as a function of the
+  city in which it's located.
+\item
+  If you believe that one variable \emph{causes} the other variable,
+  call the variable being caused the \emph{response} variable. Example:
+  Risk of cervical cancer as explained by whether or not the person got
+  a human papilloma virus (HPV) vaccine.
+\item
+  If there's an \emph{outcome} you're interested in, make that the
+  \emph{response} variable. Example: Test scores as explained by
+  socio-economic status.
+\end{itemize}
+
+Most statistics books have traditionally been written without making
+much use of the concepts of response and explanatory variables.
+Mathematicians, in particular, seem to like to talk about ``bivariate
+relationships'' and to use statistics like the correlation coefficient
+that are the same whichever order you put the variables in. But most
+two-variable statistics -- for instance the slope of a regression line,
+or the difference between two proportions -- depend on the order of the
+variables. As such, it's helpful to explicit in naming the particular
+variable you want to predict or that's being caused, or that you have a
+particular interest in.
+
+And, when there are more than two variables, it's particularly helpful
+to distinguish between the single response variable and the multiple
+explanatory variables (which are sometimes called \emph{covariates} or
+\emph{confounders}.)
+
+\hypertarget{activity}{%
+\section{Activity}\label{activity}}
+
+There are two main types of variables: quantitative and categorical.
+Strictly as a matter of logic, there are four possible ways that these
+two types can be arranged as the response and explanatory variables.
+It's important to know this, since the choice of an appropriate
+statistical technique should be shaped by the types of the response and
+explanatory variables.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Response & Explanatory & Statistical technique & Little
+App\tabularnewline
+\midrule
+\endhead
+Quantitative & Quantitative & linear regression &
+\href{https://dtkaplan.shinyapps.io/LA_linear_regression/}{linear
+regression}\footnote{\url{https://dtkaplan.shinyapps.io/LA_linear_regression/}}.\tabularnewline
+Quantitative & Categorical & group-wise means &
+\href{https://dtkaplan.shinyapps.io/LA_t_test/}{t-test}\footnote{\url{https://dtkaplan.shinyapps.io/LA_t_test/}}.\tabularnewline
+Categorical & Quantitative & proportion regression &
+\href{https://dtkaplan.shinyapps.io/LA_proportions/}{proportions}\footnote{\url{https://dtkaplan.shinyapps.io/LA_proportions/}}.\tabularnewline
+Categorical & Categorical & group-wise proportions &
+\href{https://dtkaplan.shinyapps.io/LA_proportions/}{proportions}\footnote{\url{https://dtkaplan.shinyapps.io/LA_proportions/}}.\tabularnewline
+\bottomrule
+\end{longtable}
+
+Depending on where you are in you statistics course, you might have not
+yet encountered one of these techniques or the other.
+
+Here are a few pairs of variables:
+
+\hypertarget{some-pairs-of-variables}{%
+\subsection{Some pairs of variables}\label{some-pairs-of-variables}}
+
+These variables are found in the data available through the Little App.
+For simplicity, we're using only those categorical variables that have
+just two levels.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{Births\_2014}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Whether the mother is covered by the WIC program and the age of
+    mother.
+  \item
+    The age of the mother and of the father.
+  \item
+    The length of gestation and the baby's weight at birth.
+  \end{enumerate}
+\item
+  \texttt{NHANES}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    Systolic blood pressure and sex.
+  \item
+    Diabetes and age
+  \item
+    Weight and body mass index (BMI)
+  \item
+    Income and \texttt{home\_type}
+  \end{enumerate}
+\item
+  \texttt{diamonds}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{7}
+  \tightlist
+  \item
+    The price of a diamond and its weight in carats.
+  \item
+    The weight of a diamond and its clarity.
+  \end{enumerate}
+\end{itemize}
+
+Answer the following questions for each of the 9 pairs of variables
+listed.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  View the data with a point plot, using the
+  \href{https://dtkaplan.shinyapps.io/LA_point_plot/}{point-plot Little
+  App}. This will let you readily see which type each variable is. (The
+  choice of one variable as response and one as explanatory isn't
+  critical here, since the reverse choice would generate the same plot
+  but turned around the diagonal to reverse the axes.)
+
+  Use the point-plot Little App to visualize the relationship.
+  Characterize it as ``strong'', ``moderate'', ``weak'' or ``none''. You
+  don't need to give a more detailed description. We just want you to
+  decide whether you can see a clear relationship or not.
+
+  \emph{For each of the nine variable pairs, characterize the
+  relationship as `strong', `moderate', and so on.} ~~.~~.~~. ~
+
+  ~
+
+  ~
+
+  ~
+
+  ~
+\item
+  In order to give a detailed description of the relationship, or
+  sometimes in order to detect any relationship at all, you need to
+  calculate appropriate statistics on the data. For this, you have to
+  pick the appropriate Little App, which often means that you need to
+  designate one variable as the response and the other one as the
+  explanatory variable. (You can refer to the table above.)
+
+  For each of the nine pairs of variables, make an appropriate choice of
+  response and explanatory variables using the rules of thumb above.
+  Since some of these depend on the shape of your particular interest in
+  the variables, your choice might be different from a classmate's.
+
+  \emph{For each of the nine pairs of variables, write down your choices
+  for response and explanatory variables here, along with the
+  appropriate LittleApp from the table above.} ~~.~~.~~. ~
+
+  ~
+
+  ~
+
+  ~
+
+  ~
+\item
+  Now you are going to try to describe the relationships using
+  statistics. Just like a forest can be obscured by the trees, so a
+  relationship can be obscured by the scatter of data. Often, the
+  appropriate statistic makes clearer the relationship.
+
+  Open up the appropriate Little App from step (3) and turn on whatever
+  statistics you can use to describe the relationship. (You can choose
+  the sample size to be whatever you want, but generally a larger sample
+  size makes it easier to see a relationship. You may also choose to
+  \emph{stratify} the sample.)
+
+  Give an appropriate English-language description of the relationship.
+  Some of the terms you might use are ``upward sloping function,''
+  ``downward sloping function'', ``difference of means,'' ``difference
+  of proportions,'' ``no relationship.''
+
+  \emph{For each of the nine pairs of variables, write down your
+  English-language description of the relationship.} ~~.~~.~~. ~
+
+  ~
+
+  ~
+
+  ~
+
+  ~
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Version 0.3, 2019-05-28, Danny Kaplan,
+
+
+
+\end{document}

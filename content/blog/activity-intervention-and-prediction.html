@@ -1,0 +1,81 @@
+---
+title: "Intervention and prediction"
+date: "StatPREP Class Activity"
+description: "Causality  as a reason to identify one variable as the response and another as the explanatory."
+weight: 6
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+tags: 
+  - response-vs-explanatory
+categories: 
+  - "Activities"
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-intervention-and-prediction.docx">Word</a> : <a href="/pdf-versions/activity-intervention-and-prediction.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>The appropriate choice of one variable as the response and other variables as the explanatory depends on the purpose for which you want to describe the relationship.</p>
+<p>Consider these two distinct purposes:</p>
+<ol style="list-style-type: decimal">
+<li>“I plan to intervene to change the value of variable B, and I want to know how A <strong>will change</strong> in response.” (Example: “I’m going to turn down the thermostat setting, and I want to know whether water will condense on my windows.”)</li>
+<li>“I know the value of variable B, but not yet the value of variable A. I want to make a <em>prediction</em> of A from what I know about B.” (Example: “I just noticed condensation on my windows and I want to figure out from that whether someone turned down the thermostat.”)</li>
+</ol>
+<p>In the case of (1), there’s good reason to think that turning down the thermostat <em>causes</em> changes in the window condensation situation. The cause (thermostat) should be among the explanatory variables, the effect (condensation) should be the response variable.</p>
+<p>In (2), it is still the case that thermostat causes condensation. But I know something about condensation and I want to figure out about the thermostat. So condensation should be the explanatory variable and thermostat the response.</p>
+<p>Only when variable B <em>causes</em> A can we reasonably expect to anticipate the result on A of an <em>intervention</em> to change B. On the other hand, all we need is an <em>association</em> between A and B (regardless of the direction of causation) in order to be able to use knowledge of one variable to predict the other.</p>
+<p>Statistical methods can be very powerful in detecting an <em>association</em> between two variables and exploiting that association to make a prediction of the value of one variable given the other. But in order to anticipate the result on A of a change in B, we need to bring into play our knowledge of how the world works.</p>
+<p>Sometimes causation is a matter of common sense (the rising sun causes the rooster to crow), and sometimes it can be subtle or is a matter of your beliefs about how things work in the world. No matter, if there is an association between two variables, the causal possibilities are always one of a small set. The simplest to understand are these three:</p>
+<pre><code>a. response causes explanatory.
+b. explanatory causes response.
+c. response &amp; explanatory are both caused in common by another factor, C. (This is called a &quot;common cause&quot; relationship.)
+ 
+More subtle, and harder to understand even for professionals, is this  one:
+
+d. response &amp; explanatory both cause another factor C, and the data include only some of the possible range of values of C. (This is called a &quot;collider&quot; relationship.)</code></pre>
+<p>Here are nine pairs of variables from data sets appearing in the Little Apps:</p>
+<ul>
+<li><code>Births_2014</code>
+<ol style="list-style-type: decimal">
+<li>Whether the mother is covered by the WIC program and the age of mother.</li>
+<li>The age of the mother and of the father.</li>
+<li>The length of gestation and the baby’s weight at birth.</li>
+</ol></li>
+<li><code>NHANES</code>
+<ol start="4" style="list-style-type: decimal">
+<li>Systolic blood pressure and sex.</li>
+<li>Diabetes and age</li>
+<li>Weight and body mass index (BMI)</li>
+<li>Income and <code>home_type</code></li>
+</ol></li>
+<li><code>diamonds</code>
+<ol start="8" style="list-style-type: decimal">
+<li>The price of a diamond and its weight in carats.</li>
+<li>The weight of a diamond and its clarity.</li>
+</ol></li>
+</ul>
+<p>For each of these pairs, consider A to be the first variable mentioned and B to be the second. For instance, in (7), A will be income and B will be <code>home_type</code>.</p>
+<div id="activity" class="section level2">
+<h2>Activity</h2>
+<ol style="list-style-type: decimal">
+<li><p>For each of the nine pairs of variables listed above choose an appropriate Little App to display variables A and B with A being the explanatory variable and B being the response variable.</p>
+<p><em>Viewing the data in the Little App, decide if there is any evidence for an <strong>association</strong> between the two variables. Write down your conclusions for the nine pairs of variables here:</em>   .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+<li><p>Go back through the nine pairs of variable and decide which of the four causal arrangements common sense dictates as the relationship between A and B. For example, in looking at income and home type, it’s fair to say that simply changing the type of home someone lives in does not change their income, but changing someone’s income may eventually change the type of home they live in.</p>
+<p><em>For each of the nine pairs, select the causal mechanism (a), (b), (c), (d), or “none”, that best accords with your understanding of how the world works. For each one, give a short explanation of your reasons for your decision.</em>   .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Danny Kaplan, <a href="/word-versions/activity-intervention-and-prediction.docx">Word version</a></p>
+</div>
+</div>

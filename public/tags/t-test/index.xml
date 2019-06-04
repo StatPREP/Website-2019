@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>t-test on StatPREP Workshops 2019</title>
+    <link>/tags/t-test/</link>
+    <description>Recent content in t-test on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/t-test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparing two groups</title>
+      <link>/blog/activity-comparing-two-groups/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-comparing-two-groups/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation A friend and I were discussing ways to measure poverty. Of course, there’s the so-called “poverty level” of income defined by the US government. But we were interested in whether it might be worthwhile to do a detailed interview with, say, 100 families, quantifying how much trouble they have paying for different things: food, housing, healthcare, transportation, emergencies, etc. Then we’d look at easy things to measure so that we could have an index for these different things, food stress, housing stress, and so on.</description>
+    </item>
+    
+    <item>
+      <title>The two-sample t test</title>
+      <link>/blog/activity-two-sample-t-test/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-two-sample-t-test/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Suppose you have an explanatory variable that defines two, distinct groups, like the home_type variable in the NHANES2 data. You notice that the two groups have different mean values for the explanatory variable.
+A possible explanation for the observed difference in the two means is that it is just a pattern that reflects the play of chance rather than any systematic difference in the population of the two groups,</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Confidence intervals</title>
+      <link>/blog/instructions-confidence-intervals/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-confidence-intervals/</guid>
+      <description>Activities  What is a confidence interval? Sampling bias and confidence intervals Comparing two groups Comparing two confidence intervals Two-sample t test   Learning objectives connected to confidence intervals  Master the relevant vocabulary … population, sample, sample statistic, point estimate, margin of error, confidence interval, confidence level. Recognize the estimation process that leads to a confidence interval: a sample is selected randomly from a population a statistic is calculated from that sample the margin of error and, correspondingly, the confidence interval are calculated from that sample.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Two-sample t-test</title>
+      <link>/blog/instructions-two-sample-t-test/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-two-sample-t-test/</guid>
+      <description>Activities  Comparing two groups Comparing confidence intervals Two sample t-test Instructor customizations:  Ambika Silva: Comparing two samples with confidence intervals activity &amp;amp; assessment    Learning objectives Typical course objectives relating to the t-based test and confidence interval are:
+ Confidence interval:  Compute from data the confidence interval on the difference of means. Interpret the confidence interval in the context of the question intended to be addressed with the data.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>real_data on StatPREP Workshops 2019</title>
+    <link>/categories/real_data/</link>
+    <description>Recent content in real_data on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/real_data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tidy data</title>
+      <link>/blog/presentation-tidy-data/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-tidy-data/</guid>
+      <description>GAISE 2016 Teach statistical thinking.  Teach statistics as an investigative process of problem-solving and decision- making. Give students experience with multivariable thinking.  Focus on conceptual understanding.
+ Integrate real data with a context and purpose.
+ Foster active learning.
+ Use technology to explore concepts and analyze data.
+ Use assessments to improve and evaluate student learning.
+   Real data The StatPREP definition:
+ 1000-ish rows, 4+-ish variables captured in the wild: not collected for teaching statistics  For the moment, put aside the important matters of context and purpose.</description>
+    </item>
+    
+    <item>
+      <title>Sources of curated data  for teaching stats</title>
+      <link>/blog/data-curated-data-sources/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-curated-data-sources/</guid>
+      <description>Statistical Science Web Journal of Statistical Education data archive. These data sets were collected for the purpose of teaching statistics. One advantage of them is that there is often a JSE article associated with the data which gives context and a statistically informed discussion. Here are a very few …  Body shape measurements African conflict data Gardacil vaccine study NASCAR Profiles from OK Cupid. This is the GitHub repo which contains the PDF of the article, as well as the codebook and dataset.</description>
+    </item>
+    
+    <item>
+      <title>DATA SOURCE:  Locke5 Datasets</title>
+      <link>/blog/data-lock5data/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-lock5data/</guid>
+      <description>The textbook Statistics: Unlocking the Power of Data (2/e 2017) by Lock, Lock, Lock, Lock, and Lock has publicly available datasets and interactive applets.
+A list of the more than 100 datasets in the collection is available at this site. There is also an R package, Lock5Data, that contains documentation for the data.
+Example: Restaurant tips The data frame RestaurantTips contains, … well let’s look directly at the documentation.</description>
+    </item>
+    
+    <item>
+      <title>DATA SOURCE: FiveThirtyEight Blog</title>
+      <link>/blog/data-fivethirtyeight/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-fivethirtyeight/</guid>
+      <description>The FiveThirtyEight news organization publishes on a daily basis investigations based on data. The organization is perhaps best known for it’s consolidation of political polling results, but there are many, many other investigation topics as well.
+One way to scan relatively quickly through the available data is via their GitHub site. Don’t be put off by the techie-sounding name. Direct your browser to this address.
+The page looks like this:</description>
+    </item>
+    
+    <item>
+      <title>From Github to Sesame Street</title>
+      <link>/blog/data-sesame/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-sesame/</guid>
+      <description>NOTE: This information is taken from Prof. Jerry Reiter’s website for his Stat 210 course at Duke University.
+The television series Sesame Street is concerned mainly with teaching preschool skills to children age 3-5, with special emphasis on reaching economically disadvantaged children. The show is designed to hold young childrens’ attention through action oriented, short duration presentations teaching specific preschool cognitive skills and some social skills. Each show is one hour and involves much repetition of concepts within and across shows.</description>
+    </item>
+    
+    <item>
+      <title>DATA SOURCE: Hospital infections</title>
+      <link>/blog/data-infections/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-infections/</guid>
+      <description>Medicare data &amp;lt;data.medicare.gov/Hospital-Compare&amp;gt;: A web site suggested by Kim Druschel at Saint Louis University
+One dataset there is about infections associated with hospitalization. https://data.medicare.gov/Hospital-Compare/Healthcare-Associated-Infections-Hospital/77hc-ibv8
+Download as CSV In RStudio, go to Environment/ImportDataset   Wrangling data: library(dplyr, quietly = TRUE, verbose = FALSE) library(readr, quietly = TRUE, verbose = FALSE) Infections &amp;lt;- readr::read_csv(&amp;quot;~/Downloads/Healthcare_Associated_Infections_-_Hospital.csv&amp;quot;) ## Parsed with column specification: ## cols( ## `Provider ID` = col_character(), ## `Hospital Name` = col_character(), ## Address = col_character(), ## City = col_character(), ## State = col_character(), ## `ZIP Code` = col_double(), ## `County Name` = col_character(), ## `Phone Number` = col_double(), ## `Measure Name` = col_character(), ## `Measure ID` = col_character(), ## `Compared to National` = col_character(), ## Score = col_character(), ## Footnote = col_character(), ## `Measure Start Date` = col_character(), ## `Measure End Date` = col_character(), ## Location = col_character() ## ) unique(Infections$`Measure Name`) ## [1] &amp;quot;MRSA Bacteremia&amp;quot; ## [2] &amp;quot;Clostridium Difficile (C.</description>
+    </item>
+    
+    <item>
+      <title>DATA SOURCE: Big data from machine-learning sites</title>
+      <link>/blog/data-machine-learning/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-machine-learning/</guid>
+      <description>One source of fairly large datasets is machine-learning repositories or contests such as Kaggle.
+This example concerns a dataset available at a repository from the University of California at Irvine.
+The data set, available here, is about YouTube viewer’s preferences among comedy videos. Attractive features of the dataset are:
+It has a simple structure: just three variables. The videos are (often?) still available on YouTube, providing some motivation for working with the data.</description>
+    </item>
+    
+    <item>
+      <title>DATA SOURCE: Case study on Soil Moisture</title>
+      <link>/blog/data-awesome-soil/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/data-awesome-soil/</guid>
+      <description>The website Awesome public datasets contains links to several hundred datasets. This example deals with a randomly selected one, Hyperspectral benchmark dataset on soil moisture
+That dataset is described as being a sequence of measurements of a soil sample, recording temperature, soil moisture, and the intensity at each of 125 light frequency bands (in nm) of an image of the sample.
+Process Download the ZIP file. Uncompress the ZIP file  This results in a directory with a CSV file, a README.</description>
+    </item>
+    
+    <item>
+      <title>Data sources</title>
+      <link>/blog/presentation-data-sources/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-data-sources/</guid>
+      <description>More documents at the data-sources directory
+Real data At the October 2018 StatPREP meeting at the Mathematical Association of America’s DC headquarters the new MAA deputy executive director, Rachel Levy asked a simple question: What’s real data?
+A core recommendation of the American Statistical Association’s GAISE report is to “use real data” when teaching statistics. Prof. Levy wasn’t looking to prompt a philosophical discussion of the nature of reality, but to define a benchmark.</description>
+    </item>
+    
+    <item>
+      <title>FAIL!</title>
+      <link>/blog/fail/</link>
+      <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/fail/</guid>
+      <description>These are textbook examples of the presentation of data in ways that encourage bad habits.
+No columns This might look like a data frame, but the individual columns have no meaning and the rows are not a unit of observation.
+Should be:
+  person id times sex    id792 4.3 F  id796 4.3 F  id797 4.5 M    … and so on. Make it a habit to show a unique identifier which facilities tracking back mistakes and joining with other data.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Github to Sesame Street</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="devows, hugo, go">	
+  
+
+  
+  <meta name="description" content="Does Sesame Street help economically disadvantaged children?">
+  
+
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="StatPREP Workshops 2019">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="From Github to Sesame Street">
+  <meta name="twitter:image" content="/img/banners/banner-5.jpg">
+  <meta name="twitter:description" content="Does Sesame Street help economically disadvantaged children?">
+
+  
+  <meta property="og:title" content="From Github to Sesame Street" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/presentations/sesame//" />
+  <meta property="og:image" content="img/statprep-logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/statprep-logo.png" alt="From Github to Sesame Street logo" class="hidden-xs hidden-sm">
+                    <img src="/img/statprep-logo.png" alt="From Github to Sesame Street logo" class="visible-xs visible-sm">
+                    <span class="sr-only">From Github to Sesame Street - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/little-app">Little Apps</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/real_data">Real data</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/schedule/">Schedule</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/blog/">&#43;</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/activities/">Activities</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://docs.google.com/document/d/1F76ypB785RyA_CAedEITXrs__hQj2pvbtSaLwD3b31k/edit?usp=sharing">Suggest!</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>From Github to Sesame Street</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Danny Kaplan</a> | May 29, 2019</p>
+
+                        <div id="post-content">
+                          
+
+
+<p>NOTE: This information is taken from Prof. Jerry Reiter’s website for his <a href="http://www2.stat.duke.edu/~jerry/sta210/sesamelab.html">Stat 210 course</a> at Duke University.</p>
+<p>The television series Sesame Street is concerned mainly with teaching preschool skills to children age 3-5, with special emphasis on reaching economically disadvantaged children. The show is designed to hold young childrens’ attention through action oriented, short duration presentations teaching specific preschool cognitive skills and some social skills. Each show is one hour and involves much repetition of concepts within and across shows.</p>
+<p>Does Sesame Street help economically disadvantaged children ‘catch-up’ with economically advantaged children? In the early 1970s, researchers at Educational Testing Service (the company that runs the SAT) ran a study to evaluate Sesame Street. The researchers sampled children representative of economically advantaged and disadvantaged populations from five different sites in the United States. To ensure the study contained a group of children that watched Sesame Street regularly, they randomly assigned children either to receive encouragement to watch Sesame Street or not to receive encouragement. Those assigned to encouragement were given promotional materials, and received weekly visits and phone calls from ETS staff. Those assigned not to receive encouragement did not get this attention. The children were tested on a variety of cognitive variables, including knowledge of body parts, knowledge about letters, knowledge about numbers, etc., both before and after viewing the series.</p>
+<p>These data, available <a href="https://raw.githubusercontent.com/matackett/intro-regression/master/data/sesame.csv">here as a CSV file</a>, are part of a larger data set used to evaluate the impact of Sesame Street. The names of variables are shown in the code book below.</p>
+<ol>
+<li>id : subject identification number</li>
+<li>site :<br />
+1 =Three to five year old disadvantaged children from inner city areas in various parts of the country.
+2 = Four year old advantaged suburban children.
+3 = Advantaged rural children.
+4 = Disadvantaged rural children.
+5 = Disadvantaged Spanish speaking children.</li>
+<li>sex male=1, female=2</li>
+<li>age age in months</li>
+<li>viewcat frequency of viewing
+1=rarely watched the show
+2=once or twice a week
+3=three to five times a week
+4=watched the show on average more than 5 times a week</li>
+<li>setting: setting in which Sesame Street was viewed, 1=home 2=school</li>
+<li>viewenc : treatment condition 1=child encouraged to watch, 2=child not encouraged to watch</li>
+<li>prebody : pretest on knowledge of body parts (scores range from 0-32)</li>
+<li>prelet : pretest on letters (scores range from 0-58)</li>
+<li>preform : pretest on forms (scores range from 0-20)</li>
+<li>prenumb : pretest on numbers (scores range from 0-54)</li>
+<li>prerelat : pretest on relational terms (scores range from 0-17)</li>
+<li>preclasf : pretest on classification skills</li>
+<li>postbody : posttest on knowledge of body parts (0-32)</li>
+<li>postlet : posttest on letters (0-58)</li>
+<li>postform : posttest on forms (0-20)</li>
+<li>postnumb : posttest on numbers (0-54)</li>
+<li>postrelat : posttest on relational terms (0-17)</li>
+<li>postclasf: posttest on classification skills</li>
+<li>peabody: mental age score obtained from administration of the Peabody Picture Vocabulary test as a pretest measure of vocabulary maturity. Taken before the experimental intervention.</li>
+<li>numbers: postnumb - prenumb. Variable constructed by Prof. Reiter.</li>
+<li>letters: postlet - prelet. Variable constructed by Prof. Reiter.</li>
+<li>num.let: numbers - letters. Variable constructed by Prof. Reiter.</li>
+</ol>
+<hr />
+<p>[The following is not from Prof. Reiter]</p>
+<div id="example-of-access" class="section level2">
+<h2>Example of access</h2>
+<pre class="r"><code>file_url  &lt;- &quot;https://raw.githubusercontent.com/matackett/intro-regression/master/data/sesame.csv&quot;
+Sesame &lt;- readr::read_csv(file_url)</code></pre>
+<p>Suppose we want to look at the increase in test scores on letters as a function of how much the child watched Sesame street. <code>prelet</code> and <code>postlet</code> are the before-and-after test scores, <code>viewcat</code> is how often the child watched the show.</p>
+<pre class="r"><code>library(dplyr)
+library(mosaic)
+Tmp &lt;-
+  Sesame  %&gt;%
+  mutate(let_change = postlet - prelet) 
+Stats &lt;- df_stats(let_change ~ viewcat + site, data = Tmp, ci.mean(.95))
+
+Stats</code></pre>
+<pre><code>##    viewcat site      lower     upper
+## 1        1    1 -0.3294109  4.996078
+## 2        2    1  2.4029558  9.714691
+## 3        3    1  9.4611400 22.938860
+## 4        4    1  4.6561841 19.629530
+## 5        1    2 -7.3237393 29.823739
+## 6        2    2  7.3552542 22.844746
+## 7        3    2 14.7919881 25.325659
+## 8        4    2 18.5623775 26.437622
+## 9        1    3 -5.4681691  3.468169
+## 10       2    3  1.4219269  7.048661
+## 11       3    3  7.2607019 15.439298
+## 12       4    3  6.2726063 12.660727
+## 13       1    4 -0.1528044  4.935413
+## 14       2    4  3.5466237 19.453376
+## 15       3    4  2.3267986 14.006535
+## 16       4    4  1.1858796 36.814120
+## 17       1    5 -1.2015497  9.534883
+## 18       2    5 -0.1746560 20.174656
+## 19       3    5        NaN       NaN
+## 20       4    5  2.1552804 25.844720</code></pre>
+<pre class="r"><code>Tmp %&gt;%
+  gf_jitter(let_change ~  viewcat  | site, width = 0.2, height = 0, alpha = .50) %&gt;%
+  gf_errorbar(lower + upper ~ viewcat  | site, data  = Stats)</code></pre>
+<p><img src="/presentations/sesame_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/activities">activities (3)</a>
+            </li>
+            
+            <li><a href="/categories/graphics-workshop_session">graphics-workshop_session (1)</a>
+            </li>
+            
+            <li><a href="/categories/inference">inference (1)</a>
+            </li>
+            
+            <li><a href="/categories/little-app">little-app (7)</a>
+            </li>
+            
+            <li><a href="/categories/presentation">presentation (1)</a>
+            </li>
+            
+            <li><a href="/categories/programming">programming (1)</a>
+            </li>
+            
+            <li><a href="/categories/real_data">real_data (8)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/data_sources"><i class="fa fa-tags"></i> data_sources</a>
+            </li>
+            
+            <li><a href="/tags/f-test"><i class="fa fa-tags"></i> f-test</a>
+            </li>
+            
+            <li><a href="/tags/golang"><i class="fa fa-tags"></i> golang</a>
+            </li>
+            
+            <li><a href="/tags/graphics"><i class="fa fa-tags"></i> graphics</a>
+            </li>
+            
+            <li><a href="/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
+            </li>
+            
+            <li><a href="/tags/mean"><i class="fa fa-tags"></i> mean</a>
+            </li>
+            
+            <li><a href="/tags/median"><i class="fa fa-tags"></i> median</a>
+            </li>
+            
+            <li><a href="/tags/normal"><i class="fa fa-tags"></i> normal</a>
+            </li>
+            
+            <li><a href="/tags/plot"><i class="fa fa-tags"></i> plot</a>
+            </li>
+            
+            <li><a href="/tags/programming"><i class="fa fa-tags"></i> programming</a>
+            </li>
+            
+            <li><a href="/tags/proportions"><i class="fa fa-tags"></i> proportions</a>
+            </li>
+            
+            <li><a href="/tags/r-markdown"><i class="fa fa-tags"></i> r-markdown</a>
+            </li>
+            
+            <li><a href="/tags/rare"><i class="fa fa-tags"></i> rare</a>
+            </li>
+            
+            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
+            </li>
+            
+            <li><a href="/tags/risk"><i class="fa fa-tags"></i> risk</a>
+            </li>
+            
+            <li><a href="/tags/summary-interval"><i class="fa fa-tags"></i> summary-interval</a>
+            </li>
+            
+            <li><a href="/tags/theme"><i class="fa fa-tags"></i> theme</a>
+            </li>
+            
+            <li><a href="/tags/tidy-graphics"><i class="fa fa-tags"></i> tidy-graphics</a>
+            </li>
+            
+            <li><a href="/tags/z-score"><i class="fa fa-tags"></i> z-score</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>Universal Ltd.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2015 - 2016, YourCompany; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

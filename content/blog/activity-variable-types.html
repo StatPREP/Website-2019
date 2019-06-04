@@ -1,0 +1,88 @@
+---
+title: "Types of variables"
+date: "2019-05-20"
+description: "Introduces the distinction between quantitative and categorical variables, the *range* of a quantitative variable and the *levels* of a categorical variable."
+weight: 2
+author: "Danny Kaplan"
+banner: img/banners/banner-5.jpg
+categories:
+  - activities
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  pdf_document: tint::tintPdf
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-variable-types.docx">Word</a> : <a href="/pdf-versions/activity-variable-types.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>There are two major types of variables:</p>
+<ul>
+<li><strong>Quantitative</strong>, where the <em>value</em> of the variable is a number.</li>
+<li><strong>Categorical</strong>, where the value of the variable is one of a set of labels. That is, the value tells which <em>category</em> or <em>group</em> the row falls into.</li>
+</ul>
+<p>Quantitative variables cover an <em>interval</em> of the number line. That interval is described by two numbers: the minimum value and the maximum value of the variable.</p>
+<p>Quantitative variables also have a <em>spread</em>. There are different ways to measure the spread. In this lesson, we’ll use the <em>difference</em> between the maximum and minimum value. Note that the <em>interval</em> is two numbers while the <em>spread</em> is a single number.</p>
+<p>The <em>spread</em> is said to measure the <em>variability</em> in the variable. Other ways to quantify the spread, which we won’t use in this lesson, are the <em>standard deviation</em> and the <em>variance</em>.</p>
+<p>For categorical variables, we don’t use the concepts <em>interval</em> or <em>spread</em>. The possible or allowed values of a categorical variable are called the <em>levels</em> of that variable. For example, the levels of a categorical variable describing “commute type” might be: walk, bike, bus, drive, etc. The levels of a categorical variable like “language spoken” might be English, Spanish, Chinese, and so on.</p>
+<p>The levels of many categorical variables are <em>unordered</em>. This means that the concept of <em>between</em> doesn’t naturally apply. For instance, there is no natural way that Spanish is between English and Chinese.</p>
+<p>Some categorical variables are <em>ordinal</em>, which is just to say that there is a natural order to the levels. An example is a variable recording “opinion,” which might have levels Disagree, Neutral, Agree.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open the <a href="https://dtkaplan.shinyapps.io/LA_point_plot/">Point Plot Little App</a>. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Set the data frame to <code>NHANES</code> and the sample size to be several hundred.</p>
+<ol style="list-style-type: decimal">
+<li><p>Pick a <em>quantitative response</em> variable and a <em>categorical explanatory</em> variable. You might have to use trial and error to find such variables but once you do, it will be evident in the graph. Please don’t use <code>ID</code> or <code>SurveyYr</code> – stick to the variables that are about the individual being surveyed.</p>
+<p><em>Write down the names of the variables you selected. For the categorical variable, write down each of the levels.</em>  </p>
+<p> </p>
+<p> </p>
+<ul>
+<li>Measure the <em>interval</em> spanned by the quantitative variable for each group defined by the categorical variable. You can use the measuring stick built into the app. (That is, click at a point in the graphics frame and drag the mouse to select a vertical interval.)</li>
+</ul>
+<p><em>Write down the interval spaned by the values of the response variable for each categorical level of the explanatory variable.</em>  </p>
+<p> </p>
+<table>
+<thead>
+<tr class="header">
+<th>Level of explanatory variable</th>
+<th>Interval spanned by response variable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td> </td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td> </td>
+<td> </td>
+</tr>
+<tr class="even">
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Also, measure and record the <em>spread</em> of the quantitative variable for each categorical level.</li>
+</ul></li>
+<li><p>Using the selector for the explanatory variable, find five more categorical variables in the <code>NHANES</code> data. At least two of your five should be <em>ordinal</em> variables.</p>
+<p><em>For each, write down the levels, and whether the variable is unordered or ordinal.</em>   .  .  .  </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Daniel Kaplan</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_point_plot/" class="uri">https://dtkaplan.shinyapps.io/LA_point_plot/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

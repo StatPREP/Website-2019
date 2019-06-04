@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response and explanatory variables</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="devows, hugo, go">	
+  
+
+  
+  <meta name="description" content="Reasons to identify one variable as the response and another as the explanatory.">
+  
+
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="StatPREP Workshops 2019">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Response and explanatory variables">
+  <meta name="twitter:image" content="/img/twitter-default.png">
+  <meta name="twitter:description" content="Reasons to identify one variable as the response and another as the explanatory.">
+
+  
+  <meta property="og:title" content="Response and explanatory variables" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/activities/response-and-explanatory//" />
+  <meta property="og:image" content="img/statprep-logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/statprep-logo.png" alt="Response and explanatory variables logo" class="hidden-xs hidden-sm">
+                    <img src="/img/statprep-logo.png" alt="Response and explanatory variables logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Response and explanatory variables - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/little-app">Little Apps</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/real_data">Real data</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/schedule/">Schedule</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/blog/">&#43;</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/activities/">Activities</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://docs.google.com/document/d/1F76ypB785RyA_CAedEITXrs__hQj2pvbtSaLwD3b31k/edit?usp=sharing">Suggest!</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Response and explanatory variables</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">January 1, 0001</p>
+
+                        <div id="post-content">
+                          
+
+
+<p>Get formatted versions: <a href="/word-versions/response-and-explanatory.docx">Word</a> : <a href="/pdf-versions/response-and-explanatory.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>A variable is a quantity or characteristic that varies from one person to another, or more generally, from one <em>unit of observation</em> to another. There are two distinct <em>types</em> of variables: quantitative (numeric) and categorical (labels/words/etc.).</p>
+<p>There’s another distinction to be made about variables, which is not about the type of the variable itself but the <em>role</em> the variable will play in the statistical methods we use to describe a situation of interest and the relationships among the variables involved. This distinction is between the <em>response variable</em> and the <em>explanatory variables</em>.</p>
+<p>Think about how we describe human relationships. For example, consider two women: Eliana and Rabia. One possible relationship: Eliana is Rabia’s aunt. Another possible relationship: Rabia is Eliana’s niece. As you know, these two relationships are exactly the same thing, just expressed differently. Each of the expressions involves a reference person, that is, a person with respect to whom the relationship word (“aunt”, “niece”) is used.</p>
+<p>Similarly, when we describe a relationship between two variables, it’s helpful to consider one variable to be the reference. We describe the pattern of the other variable <em>with respect to</em> the first variable. Now phrases like “one variable,” “other variable,” and “first variable” are ambiguous. It’s hard to keep track of which variable is which. So, to simplify things, we identify one of the variables as the <em>response variable</em> and the other as the <em>explanatory variable</em>. Just as the two women can be related by either “aunt” or “niece”, the roles of the two variables can be described as “Response is a <em>function</em> of Explanatory” or “Explanatory <em>determines</em> Response.”</p>
+<p>How to decide which variable should play the role of the response and which the explanatory? There’s no absolute rule; generally you can describe relationships either way, keeping in mind that the statement of the relationship (“aunt”, “niece”) will depend on which is which. Here are some rules of thumb.</p>
+<ul>
+<li>If you are trying to <em>predict</em> the value of one variable by another, call the variable to be predicted the <em>response</em> variable. Example: Price of a rental apartment as a function of the city in which it’s located.</li>
+<li>If you believe that one variable <em>causes</em> the other variable, call the variable being caused the <em>response</em> variable. Example: Risk of cervical cancer as explained by whether or not the person got a human papilloma virus (HPV) vaccine.</li>
+<li>If there’s an <em>outcome</em> you’re interested in, make that the <em>response</em> variable. Example: Test scores as explained by socio-economic status.</li>
+</ul>
+<p>Most statistics books have traditionally been written without making much use of the concepts of response and explanatory variables. Mathematicians, in particular, seem to like to talk about “bivariate relationships” and to use statistics like the correlation coefficient that are the same whichever order you put the variables in. But most two-variable statistics – for instance the slope of a regression line, or the difference between two proportions – depend on the order of the variables. As such, it’s helpful to explicit in naming the particular variable you want to predict or that’s being caused, or that you have a particular interest in.</p>
+<p>And, when there are more than two variables, it’s particularly helpful to distinguish between the single response variable and the multiple explanatory variables (which are sometimes called <em>covariates</em> or <em>confounders</em>.)</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>There are two main types of variables: quantitative and categorical. Strictly as a matter of logic, there are four possible ways that these two types can be arranged as the response and explanatory variables. It’s important to know this, since the choice of an appropriate statistical technique should be shaped by the types of the response and explanatory variables.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Response</th>
+<th>Explanatory</th>
+<th>Statistical technique</th>
+<th>Little App</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Quantitative</td>
+<td>Quantitative</td>
+<td>linear regression</td>
+<td><a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">linear regression</a><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</td>
+</tr>
+<tr class="even">
+<td>Quantitative</td>
+<td>Categorical</td>
+<td>group-wise means</td>
+<td><a href="https://dtkaplan.shinyapps.io/LA_t_test/">t-test</a><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</td>
+</tr>
+<tr class="odd">
+<td>Categorical</td>
+<td>Quantitative</td>
+<td>proportion regression</td>
+<td><a href="https://dtkaplan.shinyapps.io/LA_proportions/">proportions</a><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</td>
+</tr>
+<tr class="even">
+<td>Categorical</td>
+<td>Categorical</td>
+<td>group-wise proportions</td>
+<td><a href="https://dtkaplan.shinyapps.io/LA_proportions/">proportions</a><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Depending on where you are in you statistics course, you might have not yet encountered one of these techniques or the other.</p>
+<p>Here are a few pairs of variables:</p>
+<div id="some-pairs-of-variables" class="section level2">
+<h2>Some pairs of variables</h2>
+<p>These variables are found in the data available through the Little App. For simplicity, we’re using only those categorical variables that have just two levels.</p>
+<ul>
+<li><code>Births_2014</code>
+<ol style="list-style-type: decimal">
+<li>Whether the mother is covered by the WIC program and the age of mother.</li>
+<li>The age of the mother and of the father.</li>
+<li>The length of gestation and the baby’s weight at birth.</li>
+</ol></li>
+<li><code>NHANES</code>
+<ol start="4" style="list-style-type: decimal">
+<li>Systolic blood pressure and sex.</li>
+<li>Diabetes and age</li>
+<li>Weight and body mass index (BMI)</li>
+<li>Income and <code>home_type</code></li>
+</ol></li>
+<li><code>diamonds</code>
+<ol start="8" style="list-style-type: decimal">
+<li>The price of a diamond and its weight in carats.</li>
+<li>The weight of a diamond and its clarity.</li>
+</ol></li>
+</ul>
+<p>Answer the following questions for each of the 9 pairs of variables listed.</p>
+<ol style="list-style-type: decimal">
+<li><p>View the data with a point plot, using the <a href="https://dtkaplan.shinyapps.io/LA_point_plot/">point-plot Little App</a>. This will let you readily see which type each variable is. (The choice of one variable as response and one as explanatory isn’t critical here, since the reverse choice would generate the same plot but turned around the diagonal to reverse the axes.)</p>
+<p>Use the point-plot Little App to visualize the relationship. Characterize it as “strong”, “moderate”, “weak” or “none”. You don’t need to give a more detailed description. We just want you to decide whether you can see a clear relationship or not.</p>
+<p><em>For each of the nine variable pairs, characterize the relationship as ‘strong’, ‘moderate’, and so on.</em>   .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+<li><p>In order to give a detailed description of the relationship, or sometimes in order to detect any relationship at all, you need to calculate appropriate statistics on the data. For this, you have to pick the appropriate Little App, which often means that you need to designate one variable as the response and the other one as the explanatory variable. (You can refer to the table above.)</p>
+<p>For each of the nine pairs of variables, make an appropriate choice of response and explanatory variables using the rules of thumb above. Since some of these depend on the shape of your particular interest in the variables, your choice might be different from a classmate’s.</p>
+<p><em>For each of the nine pairs of variables, write down your choices for response and explanatory variables here, along with the appropriate LittleApp from the table above.</em>   .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+<li><p>Now you are going to try to describe the relationships using statistics. Just like a forest can be obscured by the trees, so a relationship can be obscured by the scatter of data. Often, the appropriate statistic makes clearer the relationship.</p>
+<p>Open up the appropriate Little App from step (3) and turn on whatever statistics you can use to describe the relationship. (You can choose the sample size to be whatever you want, but generally a larger sample size makes it easier to see a relationship. You may also choose to <em>stratify</em> the sample.)</p>
+<p>Give an appropriate English-language description of the relationship. Some of the terms you might use are “upward sloping function,” “downward sloping function”, “difference of means,” “difference of proportions,” “no relationship.”</p>
+<p><em>For each of the nine pairs of variables, write down your English-language description of the relationship.</em>   .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-05-28, Danny Kaplan,</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_linear_regression/" class="uri">https://dtkaplan.shinyapps.io/LA_linear_regression/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><a href="https://dtkaplan.shinyapps.io/LA_t_test/" class="uri">https://dtkaplan.shinyapps.io/LA_t_test/</a><a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p><a href="https://dtkaplan.shinyapps.io/LA_proportions/" class="uri">https://dtkaplan.shinyapps.io/LA_proportions/</a><a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p><a href="https://dtkaplan.shinyapps.io/LA_proportions/" class="uri">https://dtkaplan.shinyapps.io/LA_proportions/</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/activities">activities (23)</a>
+            </li>
+            
+            <li><a href="/categories/little-app">little-app (8)</a>
+            </li>
+            
+            <li><a href="/categories/presentations">presentations (6)</a>
+            </li>
+            
+            <li><a href="/categories/real_data">real_data (9)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/causality"><i class="fa fa-tags"></i> causality</a>
+            </li>
+            
+            <li><a href="/tags/confidence-interval"><i class="fa fa-tags"></i> confidence-interval</a>
+            </li>
+            
+            <li><a href="/tags/confidence-intervals"><i class="fa fa-tags"></i> confidence-intervals</a>
+            </li>
+            
+            <li><a href="/tags/dag"><i class="fa fa-tags"></i> dag</a>
+            </li>
+            
+            <li><a href="/tags/data_sources"><i class="fa fa-tags"></i> data_sources</a>
+            </li>
+            
+            <li><a href="/tags/distribution-shapes"><i class="fa fa-tags"></i> distribution-shapes</a>
+            </li>
+            
+            <li><a href="/tags/f-test"><i class="fa fa-tags"></i> f-test</a>
+            </li>
+            
+            <li><a href="/tags/flexibility"><i class="fa fa-tags"></i> flexibility</a>
+            </li>
+            
+            <li><a href="/tags/graphics"><i class="fa fa-tags"></i> graphics</a>
+            </li>
+            
+            <li><a href="/tags/inference"><i class="fa fa-tags"></i> inference</a>
+            </li>
+            
+            <li><a href="/tags/mean"><i class="fa fa-tags"></i> mean</a>
+            </li>
+            
+            <li><a href="/tags/median"><i class="fa fa-tags"></i> median</a>
+            </li>
+            
+            <li><a href="/tags/normal"><i class="fa fa-tags"></i> normal</a>
+            </li>
+            
+            <li><a href="/tags/pdf-format"><i class="fa fa-tags"></i> pdf-format</a>
+            </li>
+            
+            <li><a href="/tags/proportions"><i class="fa fa-tags"></i> proportions</a>
+            </li>
+            
+            <li><a href="/tags/r-squared"><i class="fa fa-tags"></i> r-squared</a>
+            </li>
+            
+            <li><a href="/tags/rare"><i class="fa fa-tags"></i> rare</a>
+            </li>
+            
+            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
+            </li>
+            
+            <li><a href="/tags/response-vs-explanatory"><i class="fa fa-tags"></i> response-vs-explanatory</a>
+            </li>
+            
+            <li><a href="/tags/risk"><i class="fa fa-tags"></i> risk</a>
+            </li>
+            
+            <li><a href="/tags/skew"><i class="fa fa-tags"></i> skew</a>
+            </li>
+            
+            <li><a href="/tags/standard-deviation"><i class="fa fa-tags"></i> standard-deviation</a>
+            </li>
+            
+            <li><a href="/tags/summary-interval"><i class="fa fa-tags"></i> summary-interval</a>
+            </li>
+            
+            <li><a href="/tags/t-test"><i class="fa fa-tags"></i> t-test</a>
+            </li>
+            
+            <li><a href="/tags/unit-of-observarion"><i class="fa fa-tags"></i> unit-of-observarion</a>
+            </li>
+            
+            <li><a href="/tags/variables"><i class="fa fa-tags"></i> variables</a>
+            </li>
+            
+            <li><a href="/tags/word-format"><i class="fa fa-tags"></i> word-format</a>
+            </li>
+            
+            <li><a href="/tags/z-score"><i class="fa fa-tags"></i> z-score</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>Universal Ltd.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2015 - 2016, YourCompany; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

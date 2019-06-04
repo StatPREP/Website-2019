@@ -1,0 +1,72 @@
+---
+title: "Variables and the unit of observation"
+date: "2019-05-23"
+description:  "Gets students to think about what is the unit of observation in each data set and how to look up the meaning of each variable."
+weight: 3
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  html_document:
+    rmdformats::material
+  pdf_document: tint::tintPdf
+categories:
+  - activities
+tags:
+  - unit-of-observarion
+  - variables
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-variables-and-units.docx">Word</a> : <a href="/pdf-versions/activity-variables-and-units.pdf">PDF</a></p>
+<div id="orientation" class="section level2">
+<h2>Orientation</h2>
+<p>There’s an expression about how to accomplish a complex, confusing, and difficult task: <em>One step at a time.</em> The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents. Some steps require application of a particular technical procedure.</p>
+<p>Here are steps for getting started with a data frame that’s already available to you.</p>
+<ol style="list-style-type: decimal">
+<li>Find out what is the <em>unit of observation</em>, that is, what each row stands for.</li>
+<li>Find out what are the <em>variables</em>, the name of each, and what each one stands for.</li>
+<li>Choose a <em>response variable</em>.</li>
+<li>Select one or more <em>explanatory variables</em> which you suspect might account for the response variable.</li>
+<li>Examine <em>how much</em> of the variation in the response variable is accounted for by the explanatory variables.</li>
+<li>Describe in words and numbers the <em>pattern of the relationship</em> between the explanatory variables and the response variable.</li>
+</ol>
+<p>In this lesson, you’re going to work on steps (1) and (2).</p>
+</div>
+<div id="activity" class="section level2">
+<h2>Activity</h2>
+<p>You’ll use the <a href="https://dtkaplan.shinyapps.io/LA_point_plot/">variables-and-units Little App</a> for this lesson. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Open the little app and select the <code>NHANES</code> data.</p>
+<p>Steps (1) and (2) are to find out about the data frame: What is the unit of analysis and what are the variables. A standard place to get information about a data frame is the <em>codebook</em> for the data frame, which is the descriptive documentation about the data.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to the <strong><em>Codebook</em></strong> tab in the app. The documentation will appear.
+The <em>unit of observation</em> is the kind of “thing” each row of the data is about.</p>
+<ul>
+<li>Read the description section of the codebook. This often contains clues about the unit of observation. Note the words “survey,” “individuals,” “interviewed.”</li>
+</ul>
+<p><em>What do you think is the unit of observation?</em>   .  .  </p>
+<p> </p></li>
+</ol>
+<p><!-- an individual person --></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>The variables are described further on in the codebook.</p>
+<ul>
+<li>Some variables have simple names like <code>Age</code>. Find a few other variables whose meaning is obvious to you even without looking at the description in the codebook.</li>
+</ul>
+<p><em>Write down the names of a few obvious variables.</em>   .  .  </p>
+<p> </p>
+<ul>
+<li>Some variables have names that are more like a codeword, like <code>BPSysAve</code>. Find a few variables with such names and see if the description of the variable’s meaning helps you understand what the variable is about.</li>
+</ul>
+<p><em>Are there any variables for which even the description in the codebook doesn’t help you understand? Write down one and speculate what it might be about.</em>   .  .  </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.2, 2019-06-04, Danny Kaplan,</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_point_plot/" class="uri">https://dtkaplan.shinyapps.io/LA_point_plot/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

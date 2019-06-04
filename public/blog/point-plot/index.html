@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data and Point Plots</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="statprep">	
+  
+
+  
+  <meta name="description" content="Introduces the distinction between quantitative and categorical variables through their very different appearances in a point plot.">
+  
+
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="StatPREP Workshops 2019">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Data and Point Plots">
+  <meta name="twitter:image" content="/img/twitter-default.png">
+  <meta name="twitter:description" content="Introduces the distinction between quantitative and categorical variables through their very different appearances in a point plot.">
+
+  
+  <meta property="og:title" content="Data and Point Plots" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/point-plot//" />
+  <meta property="og:image" content="img/statprep-logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/statprep-logo.png" alt="Data and Point Plots logo" class="hidden-xs hidden-sm">
+                    <img src="/img/statprep-logo.png" alt="Data and Point Plots logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Data and Point Plots - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/schedule/">Schedule</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://docs.google.com/document/d/1F76ypB785RyA_CAedEITXrs__hQj2pvbtSaLwD3b31k/edit?usp=sharing">Suggest!</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/little-app">Little Apps</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/activities/">Class Activities</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/real_data">Real data</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Data and Point Plots</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">January 1, 0001</p>
+
+                        <div id="post-content">
+                          
+
+
+<p>Get formatted versions: <a href="/word-versions/point-plot.docx">Word</a> : <a href="/pdf-versions/point-plot.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Data can be many things, but one of the most common formats is a data frame, a kind of spreadsheet of rows and columns. We’ll work with the data frame <code>Births_2014</code>, which is based on data published by the US Centers for Disease Control. <code>Births_2014</code> has 100,000 rows. Each row reports a live birth in the US in 2014. There are dozens of variables, a few of which are shown below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">sex</th>
+<th align="center">baby_wt</th>
+<th align="center">gestation</th>
+<th align="center">delivery</th>
+<th align="center">age_mother</th>
+<th align="center">wic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">3430</td>
+<td align="center">38</td>
+<td align="center">spontaneous</td>
+<td align="center">36</td>
+<td align="center">n</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">3203</td>
+<td align="center">39</td>
+<td align="center">spontaneous</td>
+<td align="center">32</td>
+<td align="center">y</td>
+</tr>
+<tr class="odd">
+<td align="center">M</td>
+<td align="center">3644</td>
+<td align="center">39</td>
+<td align="center">vacuum</td>
+<td align="center">20</td>
+<td align="center">n</td>
+</tr>
+<tr class="even">
+<td align="center">M</td>
+<td align="center">3756</td>
+<td align="center">40</td>
+<td align="center">cesarean</td>
+<td align="center">33</td>
+<td align="center">n</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">4026</td>
+<td align="center">40</td>
+<td align="center">spontaneous</td>
+<td align="center">26</td>
+<td align="center">y</td>
+</tr>
+<tr class="even">
+<td align="center">M</td>
+<td align="center">3285</td>
+<td align="center">40</td>
+<td align="center">vacuum</td>
+<td align="center">21</td>
+<td align="center">y</td>
+</tr>
+</tbody>
+</table>
+<p>It’s hard to draw much of a conclusion by looking directly at a large data frame. But a graphical display of data can help.</p>
+<p>A <em>point plot</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> is a basic statistical graphic that displays two variables from a data frame. One variable is represented on the vertical axis, another variable on the horizontal axis. Like the following point plot of the baby’s weight (in grams) and the length (in weeks) of the pregnancy (<code>gestation</code>).</p>
+<p><img src="/blog/point-plot_files/figure-html/unnamed-chunk-3-1.png" width="80%" /></p>
+</div>
+<div id="exercise" class="section level1">
+<h1>Exercise</h1>
+<p>Referring to the graph in the previous section …</p>
+<ol style="list-style-type: decimal">
+<li>Find in the graph the dot corresponding to the first row in the data table above, the one for a male baby delivered spontaneously to a 28 year-old mother.</li>
+<li>Describe the overall pattern shown in the graph as a whole. Use whatever form of description you think is appropriate.</li>
+<li>Of course, weight differs from one baby to another. In other words, weight <em>varies</em>. Describe how much <em>variation</em> there is in babies’ weight, according to the graph.</li>
+<li>Describe how much <em>variation</em> there is in gestation length.</li>
+<li>At which length of gestation are the heaviest babies born?</li>
+</ol>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open the <a href="https://dtkaplan.shinyapps.io/LA_point_plot/">Point Plot Little App</a>. (See footnote<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>).</p>
+<ol style="list-style-type: decimal">
+<li><p>Set the data source to <code>Births_2014</code>. Choose <code>baby_wt</code> as the response variable and <code>gestation</code> as the explanatory variable. The resulting plot should look much like the graph seen in the introduction to this lesson. Change the sample size to <span class="math inline">\(n = 5\)</span>.</p></li>
+<li><p>Open the “Statistics” tab under the main graph. This tab displays the same data as in the plot, but in data-frame format.</p>
+<ul>
+<li>For each of the <span class="math inline">\(n=5\)</span> rows of the data frame, find the corresponding point in the graphic.*</li>
+</ul></li>
+<li><p>Change the <em>explanatory</em> variable to <code>sex</code>.</p>
+<ul>
+<li><p>For each of the <span class="math inline">\(n=5\)</span> rows of the data frame displayed in the Statistics tab, find the corresponding point in the graphic.</p></li>
+<li><p>Change <span class="math inline">\(n\)</span> to 500. In the <code>baby_wt</code> versus <code>sex</code> graph, all the points are lined up in two columns.</p></li>
+</ul>
+<p><em>Explain why.</em>   .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Change the <em>response</em> variable to <code>delivery</code>, keeping the explanatory variable as <code>sex</code>.</p>
+<ul>
+<li><p>For a few of the rows of the data frame shown in the Statistics tab, find the corresponding point in the graphic.</p></li>
+<li><p>Make sure that <span class="math inline">\(n\)</span> is something large, say <span class="math inline">\(n = 500\)</span>. There aren’t 500 points in the <code>delivery</code> versus <code>sex</code> graph.</p></li>
+</ul>
+<p><em>Explain why?</em>   .  .  .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Check the “jitter categorical variables” box in the controls. The display changes and now there are many more points in the plot.</p>
+<ul>
+<li>For a few of the rows in the data frame shown in the Statistics tab, find the corresponding point in the graphic.</li>
+</ul>
+<p><em>Are you able to uniquely identify in the graph the specific point corresponding to each row? Explain how you can do this or why it’s not possible.</em>   .  .  .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Daniel Kaplan, <a href="/word-versions/point-plot.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The word “scatterplot” is also used.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><a href="https://dtkaplan.shinyapps.io/LA_point_plot/" class="uri">https://dtkaplan.shinyapps.io/LA_point_plot/</a><a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/activities">activities (27)</a>
+            </li>
+            
+            <li><a href="/categories/activity-guide">activity-guide (8)</a>
+            </li>
+            
+            <li><a href="/categories/computing">computing (2)</a>
+            </li>
+            
+            <li><a href="/categories/little-app">little-app (7)</a>
+            </li>
+            
+            <li><a href="/categories/presentations">presentations (6)</a>
+            </li>
+            
+            <li><a href="/categories/real_data">real_data (10)</a>
+            </li>
+            
+            <li><a href="/categories/tutorials">tutorials (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/bias"><i class="fa fa-tags"></i> bias</a>
+            </li>
+            
+            <li><a href="/tags/causality"><i class="fa fa-tags"></i> causality</a>
+            </li>
+            
+            <li><a href="/tags/cloud"><i class="fa fa-tags"></i> cloud</a>
+            </li>
+            
+            <li><a href="/tags/confidence-interval"><i class="fa fa-tags"></i> confidence-interval</a>
+            </li>
+            
+            <li><a href="/tags/dag"><i class="fa fa-tags"></i> dag</a>
+            </li>
+            
+            <li><a href="/tags/data_sources"><i class="fa fa-tags"></i> data_sources</a>
+            </li>
+            
+            <li><a href="/tags/distribution-shapes"><i class="fa fa-tags"></i> distribution-shapes</a>
+            </li>
+            
+            <li><a href="/tags/experiment"><i class="fa fa-tags"></i> experiment</a>
+            </li>
+            
+            <li><a href="/tags/f-test"><i class="fa fa-tags"></i> f-test</a>
+            </li>
+            
+            <li><a href="/tags/flexibility"><i class="fa fa-tags"></i> flexibility</a>
+            </li>
+            
+            <li><a href="/tags/graphics"><i class="fa fa-tags"></i> graphics</a>
+            </li>
+            
+            <li><a href="/tags/inference"><i class="fa fa-tags"></i> inference</a>
+            </li>
+            
+            <li><a href="/tags/mean"><i class="fa fa-tags"></i> mean</a>
+            </li>
+            
+            <li><a href="/tags/median"><i class="fa fa-tags"></i> median</a>
+            </li>
+            
+            <li><a href="/tags/normal"><i class="fa fa-tags"></i> normal</a>
+            </li>
+            
+            <li><a href="/tags/normal-distribution"><i class="fa fa-tags"></i> normal-distribution</a>
+            </li>
+            
+            <li><a href="/tags/pdf-format"><i class="fa fa-tags"></i> pdf-format</a>
+            </li>
+            
+            <li><a href="/tags/proportions"><i class="fa fa-tags"></i> proportions</a>
+            </li>
+            
+            <li><a href="/tags/r-square"><i class="fa fa-tags"></i> r-square</a>
+            </li>
+            
+            <li><a href="/tags/r-squared"><i class="fa fa-tags"></i> r-squared</a>
+            </li>
+            
+            <li><a href="/tags/rare"><i class="fa fa-tags"></i> rare</a>
+            </li>
+            
+            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
+            </li>
+            
+            <li><a href="/tags/response-vs-explanatory"><i class="fa fa-tags"></i> response-vs-explanatory</a>
+            </li>
+            
+            <li><a href="/tags/risk"><i class="fa fa-tags"></i> risk</a>
+            </li>
+            
+            <li><a href="/tags/rstudio"><i class="fa fa-tags"></i> rstudio</a>
+            </li>
+            
+            <li><a href="/tags/skew"><i class="fa fa-tags"></i> skew</a>
+            </li>
+            
+            <li><a href="/tags/standard-deviation"><i class="fa fa-tags"></i> standard-deviation</a>
+            </li>
+            
+            <li><a href="/tags/summary-interval"><i class="fa fa-tags"></i> summary-interval</a>
+            </li>
+            
+            <li><a href="/tags/t-test"><i class="fa fa-tags"></i> t-test</a>
+            </li>
+            
+            <li><a href="/tags/tidy-data"><i class="fa fa-tags"></i> tidy-data</a>
+            </li>
+            
+            <li><a href="/tags/unit-of-observarion"><i class="fa fa-tags"></i> unit-of-observarion</a>
+            </li>
+            
+            <li><a href="/tags/variables"><i class="fa fa-tags"></i> variables</a>
+            </li>
+            
+            <li><a href="/tags/word-format"><i class="fa fa-tags"></i> word-format</a>
+            </li>
+            
+            <li><a href="/tags/z-score"><i class="fa fa-tags"></i> z-score</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            A collaborative project by the MAA, the ASA, and AMATYC
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong><a href='http://statprep.org'>StatPREP.org</a></strong>
+
+            
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Support provided by the National Science Foundation (grant DUE-1626337).</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="/js/math-code.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+  
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

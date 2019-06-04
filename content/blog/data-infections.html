@@ -1,0 +1,236 @@
+---
+title: "DATA SOURCE: Hospital infections"
+weight: 36
+description: "Medicare hospital-level data on infection."
+categories:
+- real_data
+date: "2019-05-30"
+---
+
+
+
+<div id="medicare-data" class="section level2">
+<h2>Medicare data</h2>
+<p>&lt;data.medicare.gov/Hospital-Compare&gt;: A web site suggested by Kim Druschel at Saint Louis University</p>
+<p>One dataset there is about infections associated with hospitalization.
+<a href="https://data.medicare.gov/Hospital-Compare/Healthcare-Associated-Infections-Hospital/77hc-ibv8" class="uri">https://data.medicare.gov/Hospital-Compare/Healthcare-Associated-Infections-Hospital/77hc-ibv8</a></p>
+<ol style="list-style-type: decimal">
+<li>Download as CSV</li>
+<li>In RStudio, go to Environment/ImportDataset</li>
+</ol>
+</div>
+<div id="wrangling-data" class="section level2">
+<h2>Wrangling data:</h2>
+<pre class="r"><code>library(dplyr, quietly = TRUE, verbose = FALSE)
+library(readr, quietly = TRUE, verbose = FALSE)
+Infections &lt;- readr::read_csv(&quot;~/Downloads/Healthcare_Associated_Infections_-_Hospital.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   `Provider ID` = col_character(),
+##   `Hospital Name` = col_character(),
+##   Address = col_character(),
+##   City = col_character(),
+##   State = col_character(),
+##   `ZIP Code` = col_double(),
+##   `County Name` = col_character(),
+##   `Phone Number` = col_double(),
+##   `Measure Name` = col_character(),
+##   `Measure ID` = col_character(),
+##   `Compared to National` = col_character(),
+##   Score = col_character(),
+##   Footnote = col_character(),
+##   `Measure Start Date` = col_character(),
+##   `Measure End Date` = col_character(),
+##   Location = col_character()
+## )</code></pre>
+<pre class="r"><code>unique(Infections$`Measure Name`)</code></pre>
+<pre><code>##  [1] &quot;MRSA Bacteremia&quot;                                                                                   
+##  [2] &quot;Clostridium Difficile (C.Diff): Patient Days&quot;                                                      
+##  [3] &quot;Central Line Associated Bloodstream Infection: Number of Device Days&quot;                              
+##  [4] &quot;SSI - Abdominal Hysterectomy&quot;                                                                      
+##  [5] &quot;Catheter Associated Urinary Tract Infections (ICU + select Wards): Predicted Cases&quot;                
+##  [6] &quot;Central Line Associated Bloodstream Infection (ICU + select Wards): Lower Confidence Limit&quot;        
+##  [7] &quot;Catheter Associated Urinary Tract Infections (ICU + select Wards): Lower Confidence Limit&quot;         
+##  [8] &quot;SSI - Colon Surgery&quot;                                                                               
+##  [9] &quot;SSI - Colon Surgery: Upper Confidence Limit&quot;                                                       
+## [10] &quot;Central Line Associated Bloodstream Infection (ICU + select Wards): Predicted Cases&quot;               
+## [11] &quot;Catheter Associated Urinary Tract Infections (ICU + select Wards)&quot;                                 
+## [12] &quot;MRSA Bacteremia: Predicted Cases&quot;                                                                  
+## [13] &quot;SSI - Abdominal Hysterectomy: Upper Confidence Limit&quot;                                              
+## [14] &quot;Clostridium Difficile (C.Diff): Upper Confidence Limit&quot;                                            
+## [15] &quot;MRSA Bacteremia: Observed Cases&quot;                                                                   
+## [16] &quot;MRSA Bacteremia: Patient Days&quot;                                                                     
+## [17] &quot;SSI - Abdominal Hysterectomy: Predicted Cases&quot;                                                     
+## [18] &quot;Central Line Associated Bloodstream Infection (ICU + select Wards): Observed Cases&quot;                
+## [19] &quot;SSI - Abdominal Hysterectomy: Lower Confidence Limit&quot;                                              
+## [20] &quot;Clostridium Difficile (C.Diff)&quot;                                                                    
+## [21] &quot;Central Line Associated Bloodstream Infection (ICU + select Wards): Upper Confidence Limit&quot;        
+## [22] &quot;Central Line Associated Bloodstream Infection (ICU + select Wards)&quot;                                
+## [23] &quot;Catheter Associated Urinary Tract Infections (ICU + select Wards): Upper Confidence Limit&quot;         
+## [24] &quot;Catheter Associated Urinary Tract Infections (ICU + select Wards): Number of Urinary Catheter Days&quot;
+## [25] &quot;Catheter Associated Urinary Tract Infections (ICU + select Wards): Observed Cases&quot;                 
+## [26] &quot;SSI - Colon Surgery: Lower Confidence Limit&quot;                                                       
+## [27] &quot;SSI - Colon Surgery: Number of Procedures&quot;                                                         
+## [28] &quot;SSI - Colon Surgery: Predicted Cases&quot;                                                              
+## [29] &quot;SSI - Colon Surgery: Observed Cases&quot;                                                               
+## [30] &quot;SSI - Abdominal Hysterectomy: Number of Procedures&quot;                                                
+## [31] &quot;SSI - Abdominal Hysterectomy: Observed Cases&quot;                                                      
+## [32] &quot;MRSA Bacteremia: Lower Confidence Limit&quot;                                                           
+## [33] &quot;MRSA Bacteremia: Upper Confidence Limit&quot;                                                           
+## [34] &quot;Clostridium Difficile (C.Diff): Lower Confidence Limit&quot;                                            
+## [35] &quot;Clostridium Difficile (C.Diff): Predicted Cases&quot;                                                   
+## [36] &quot;Clostridium Difficile (C.Diff): Observed Cases&quot;</code></pre>
+<pre class="r"><code># separate institution data from measurements
+measurements &lt;- names(Infections)[9:15]
+Institutions &lt;-
+  Infections %&gt;%
+  select( - one_of(measurements)) %&gt;%
+  group_by(`Provider ID`) %&gt;%
+  filter(row_number() == 1)
+Measures &lt;- 
+  Infections %&gt;%
+  select(`Provider ID`, one_of(measurements))</code></pre>
+<p>Let’s look at central line associated bloodstream infections.</p>
+<pre class="r"><code>Central_Line &lt;- 
+  Measures %&gt;%
+  filter(grepl(&quot;Central Line Associated&quot;, `Measure Name`)) %&gt;%
+  mutate(Score = ifelse(Score %in% c(&quot;--&quot;, &quot;Not Available&quot;), NA, parse_number(Score))) %&gt;%
+  mutate(condition = gsub(&quot;HAI_._&quot;, &quot;&quot;, `Measure ID`)) %&gt;%
+  select(-`Measure Start Date`, -`Measure End Date`,  -`Footnote`, 
+         -`Compared to National`, -`Measure Name`, -`Measure ID`) %&gt;%
+  tidyr::spread(key = condition, value = Score)</code></pre>
+<pre><code>## Warning: 11908 parsing failures.
+## row col expected        actual
+##   1  -- a number Not Available
+##   2  -- a number Not Available
+##   3  -- a number Not Available
+##   4  -- a number Not Available
+##   5  -- a number Not Available
+## ... ... ........ .............
+## See problems(...) for more details.</code></pre>
+<pre class="r"><code>Abdominal &lt;- 
+  Measures %&gt;%
+  filter(grepl(&quot;SSI - Abdom&quot;, `Measure Name`)) %&gt;%
+  mutate(Score = ifelse(Score %in% c(&quot;--&quot;, &quot;Not Available&quot;), NA, parse_number(Score))) %&gt;%
+  mutate(condition = gsub(&quot;HAI_._&quot;, &quot;&quot;, `Measure ID`)) %&gt;%
+  select(-`Measure Start Date`, -`Measure End Date`,  -`Footnote`, 
+         -`Compared to National`, -`Measure Name`, -`Measure ID`) %&gt;%
+  tidyr::spread(key = condition, value = Score)</code></pre>
+<pre><code>## Warning: 17871 parsing failures.
+## row col expected        actual
+##   1  -- a number Not Available
+##   2  -- a number Not Available
+##   3  -- a number Not Available
+##   4  -- a number Not Available
+##   5  -- a number Not Available
+## ... ... ........ .............
+## See problems(...) for more details.</code></pre>
+<pre class="r"><code>Colon &lt;- 
+  Measures %&gt;%
+  filter(grepl(&quot;SSI - Colon&quot;, `Measure Name`)) %&gt;%
+  mutate(Score = ifelse(Score %in% c(&quot;--&quot;, &quot;Not Available&quot;), NA, parse_number(Score))) %&gt;%
+  mutate(condition = gsub(&quot;HAI_._&quot;, &quot;&quot;, `Measure ID`)) %&gt;%
+  select(-`Measure Start Date`, -`Measure End Date`,  -`Footnote`, 
+         -`Compared to National`, -`Measure Name`, -`Measure ID`) %&gt;%
+  tidyr::spread(key = condition, value = Score)</code></pre>
+<pre><code>## Warning: 13957 parsing failures.
+## row col expected        actual
+##   1  -- a number Not Available
+##   2  -- a number Not Available
+##   3  -- a number Not Available
+##   4  -- a number Not Available
+##  11  -- a number Not Available
+## ... ... ........ .............
+## See problems(...) for more details.</code></pre>
+<pre class="r"><code>MRSA &lt;- 
+  Measures %&gt;%
+  filter(grepl(&quot;MRSA&quot;, `Measure Name`)) %&gt;%
+  mutate(Score = ifelse(Score %in% c(&quot;--&quot;, &quot;Not Available&quot;), NA, parse_number(Score))) %&gt;%
+  mutate(condition = gsub(&quot;HAI_._&quot;, &quot;&quot;, `Measure ID`)) %&gt;%
+  select(-`Measure Start Date`, -`Measure End Date`,  -`Footnote`, 
+         -`Compared to National`, -`Measure Name`, -`Measure ID`) %&gt;%
+  tidyr::spread(key = condition, value = Score)</code></pre>
+<pre><code>## Warning: 12046 parsing failures.
+## row col expected        actual
+##   1  -- a number Not Available
+##   2  -- a number Not Available
+##   4  -- a number Not Available
+##   7  -- a number Not Available
+##  14  -- a number Not Available
+## ... ... ........ .............
+## See problems(...) for more details.</code></pre>
+<pre class="r"><code>Catheter &lt;- 
+  Measures %&gt;%
+  filter(grepl(&quot;Catheter&quot;, `Measure Name`)) %&gt;%
+  mutate(Score = ifelse(Score %in% c(&quot;--&quot;, &quot;Not Available&quot;), NA, parse_number(Score))) %&gt;%
+  mutate(condition = gsub(&quot;HAI_._&quot;, &quot;&quot;, `Measure ID`)) %&gt;%
+  select(-`Measure Start Date`, -`Measure End Date`,  -`Footnote`, 
+         -`Compared to National`, -`Measure Name`, -`Measure ID`) %&gt;%
+  tidyr::spread(key = condition, value = Score)</code></pre>
+<pre><code>## Warning: 10445 parsing failures.
+## row col expected        actual
+##   2  -- a number Not Available
+##   3  -- a number Not Available
+##   4  -- a number Not Available
+##   6  -- a number Not Available
+##   7  -- a number Not Available
+## ... ... ........ .............
+## See problems(...) for more details.</code></pre>
+<pre class="r"><code>C_DIFF &lt;- 
+  Measures %&gt;%
+  filter(grepl(&quot;Clostridium&quot;, `Measure Name`)) %&gt;%
+  mutate(Score = ifelse(Score %in% c(&quot;--&quot;, &quot;Not Available&quot;), NA, parse_number(Score))) %&gt;%
+  mutate(condition = gsub(&quot;HAI_._&quot;, &quot;&quot;, `Measure ID`)) %&gt;%
+  select(-`Measure Start Date`, -`Measure End Date`,  -`Footnote`, 
+         -`Compared to National`, -`Measure Name`, -`Measure ID`) %&gt;%
+  tidyr::spread(key = condition, value = Score)</code></pre>
+<pre><code>## Warning: 7595 parsing failures.
+## row col expected        actual
+##   2  -- a number Not Available
+##   3  -- a number Not Available
+##  10  -- a number Not Available
+##  11  -- a number Not Available
+##  12  -- a number Not Available
+## ... ... ........ .............
+## See problems(...) for more details.</code></pre>
+<p>Can we make sense of the variables? Hypotheses …</p>
+<ul>
+<li><code>ELIGCASES</code> refers to a model output based on the number of patient days <code>DOPC</code></li>
+</ul>
+<pre class="r"><code>library(ggformula, quietly = TRUE, verbose = FALSE)
+gf_point(ELIGCASES ~ DOPC, data = Central_Line)</code></pre>
+<pre><code>## Warning: Removed 1089 rows containing missing values (geom_point).</code></pre>
+<p><img src="/blog/data-infections_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>gf_point(NUMERATOR ~ ELIGCASES, data = Central_Line) %&gt;%
+  gf_abline(intercept = 0, slope = 1,  color = &quot;red&quot;)</code></pre>
+<pre><code>## Warning: Removed 1089 rows containing missing values (geom_point).</code></pre>
+<p><img src="/blog/data-infections_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
+<pre class="r"><code>gf_errorbar(CILOWER + CIUPPER ~ sqrt(ELIGCASES), data = Central_Line) </code></pre>
+<pre><code>## Warning: Removed 3087 rows containing missing values (geom_errorbar).</code></pre>
+<p><img src="/blog/data-infections_files/figure-html/unnamed-chunk-5-3.png" width="672" /></p>
+<p>CASE STUDY: Which providers to check out …</p>
+<ul>
+<li>Is <code>ELIGCASES</code> too permissive?</li>
+<li>Which providers have too high an infection rate?</li>
+<li>Which providers have an admirably low infection rate?</li>
+</ul>
+<pre class="r"><code>Too_high &lt;- 
+  Central_Line %&gt;%
+  filter(CILOWER &gt; 1) %&gt;%
+  select(CILOWER, `Provider ID`) %&gt;%
+  arrange(desc(CILOWER)) 
+Baddies &lt;- 
+  Institutions %&gt;%
+  inner_join(Too_high)</code></pre>
+<pre><code>## Joining, by = &quot;Provider ID&quot;</code></pre>
+<pre class="r"><code>Nice &lt;- 
+  Central_Line %&gt;%
+  filter(CIUPPER &lt; 1) %&gt;%
+  select(CIUPPER, `Provider ID`) %&gt;%
+  arrange(desc(CIUPPER)) 
+Goodies &lt;-
+  Institutions %&gt;%
+  inner_join(Nice)</code></pre>
+<pre><code>## Joining, by = &quot;Provider ID&quot;</code></pre>
+<p>Activity about confidence intervals: Which under-performing hospitals should we prioritize for inspection? Use the confidence intervals being above 1 to identify them.</p>
+</div>

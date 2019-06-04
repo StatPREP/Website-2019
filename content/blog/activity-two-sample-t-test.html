@@ -1,0 +1,62 @@
+---
+title: "The two-sample t test"
+date: "2019-04-27"
+weight: 32
+description: "Having already looked at the overlap of confidence intervals on  the means of two groups, formalizing the process as a t-test."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  html_document:
+    rmdformats::material
+  pdf_document: tint::tintPdf
+categories:
+  - activities
+tags:
+  - t-test
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-two-sample-t-test.docx">Word</a> : <a href="/pdf-versions/activity-two-sample-t-test.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Suppose you have an explanatory variable that defines two, distinct groups, like the <code>home_type</code> variable in the <code>NHANES2</code> data. You notice that the two groups have different mean values for the explanatory variable.</p>
+<p>A possible explanation for the observed difference in the two means is that it is just a pattern that reflects the play of chance rather than any systematic difference in the population of the two groups,</p>
+<p>One way to test this explanation is to look at the <em>confidence intervals</em> on the means. If they overlap, the just-chance explanation is plausible. If they don’t overlap, the <em>just-chance</em> explanation isn’t plausible.</p>
+<p>The <em>just-chance</em> explanation is called the <em>Null Hypothesis</em>.</p>
+<p>Testing the Null Hypothesis by looking at the overlap, or lack of overlap, between the two confidence intervals works very well. But in the early 1900s, mathematicians and, believe if or not, a brewer at Guinness, discovered a method that is slightly more reliable, especially when the number of data points in each group is small, say &lt; 10. The more reliable method is called a <em>t test</em>.</p>
+<p>This lesson introduces the t test.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_t_test/">t-test</a> Little App. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Set the response variable to <code>income_poverty</code> and the explanatory variable to <code>home_type</code>. Set the sample size to n = 100. Check the box in the controls to show the mean values of the two groups.</p>
+<ol style="list-style-type: decimal">
+<li><p>Check the box in the controls to show the <em>confidence interval</em> on the mean and the <em>t-interval</em>. The t-interval is displayed as a black, sideways-H shape. The t-interval is always <em>centered</em> on one of the two means. The t-test is based on whether the other mean falls inside the t-interval or outside.</p>
+<ul>
+<li>Is the other mean inside or outside the t-interval?</li>
+</ul></li>
+<li><p>The t-statistic is simply telling how far apart the two means are with respect to the t-interval. Go to the “Statistics” tab to see the report from the t-test and read off the t-statistic. When the other mean is right at the boundary of the T-interval, the t statistic is 2. If the mean is farther outside the T interval, the t statistic is proportionately greater than 2.</p>
+<ul>
+<li>Look at where the second mean is with respect to the T interval, and compare that to the value of t shown in the report in the Statistics tab. Do they correspond? Look at several new samples to see whether the correspondence continues to hold.</li>
+</ul></li>
+<li><p>The t-statistic is usually translated into a p-value, which is a probability. The p-value will be less than 0.05 when the other mean is outside the t-interval.</p>
+<ul>
+<li>Does the p-value go up or down with the t-statistic? Look at several new samples to figure out which.</li>
+</ul></li>
+<li><p>Check the “Shuffle groups” box. This simulates a situation where there is no systematic relationship between the response and explanatory variables.</p>
+<ul>
+<li><p>Note whether the t-interval includes both means or, much the same thing, whether the confidence intervals do not overlap. Press New Sample several times to see whether the confidence-interval overlap (or lack of overlap) is consistent from one sample to another.</p></li>
+<li><p>Look at the p-value across several new samples with shuffling on.</p></li>
+</ul>
+<p><em>Write down the largest p-value you see? What’s the smallest? What’s a typical p-value?</em>   .  .  .  </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.2, 2019-06-04, Carol Howald,</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_t_test/" class="uri">https://dtkaplan.shinyapps.io/LA_t_test/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

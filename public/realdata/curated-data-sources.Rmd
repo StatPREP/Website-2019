@@ -1,0 +1,59 @@
+---
+title: "Sources of curated data  for teaching stats"
+description: "Data files are available from many sources"
+weight: 30
+categories:
+- real_data
+date: "2019-05-30"
+---
+
+
+
+* [Statistical Science Web](http://www.statsci.org/datasets.html) 
+* [Journal of Statistical Education](http://jse.amstat.org/jse_data_archive.htm) data archive. These data sets were collected for the purpose of teaching statistics. One advantage of them is that there is often a JSE article associated with the data  which gives context and a statistically informed discussion. Here are a very few ...
+    * [Body shape measurements](http://jse.amstat.org/v11n2/datasets.heinz.html)
+    * [African conflict data](http://jse.amstat.org/v20n3/delzell.pdf)
+    * [Gardacil vaccine study](http://jse.amstat.org/v19n1/barat.pdf)
+    * [NASCAR](http://jse.amstat.org/v14n3/datasets.winner.html)
+    * [Profiles from OK Cupid](https://github.com/rudeboybert/JSE_OkCupid). This  is the GitHub repo which contains the PDF of the article, as well  as the codebook and dataset. 32 variables (some of which are text) and about 60,000 cases.
+* [Data and story library](https://dasl.datadescription.com/)  There is a very large number of data sets, many of which are derived from public sources and cleaned for some purpose.
+    * [Framingham Heart Study](https://dasl.datadescription.com/datafile/framingham/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num&sf_paged=3) cholesterol, smoking, mortality, ...
+    * [Data used by William Gossett](https://dasl.datadescription.com/datafile/fingers-and-heights/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num&sf_paged=2) in his study of what came to be called the t distribution
+    * [New York Bridge inspection data](https://dasl.datadescription.com/datafile/new-york-bridges-2016)
+    * [Heart attack charges](https://dasl.datadescription.com/datafile/heart-attack-charges/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num)
+* [Data sets from the Department of Biostatistics](http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets) at Vanderbilt University. (Many of the other links on  this page  come from this site.)
+* [Data Sources on the Web](http://mran.revolutionanalytics.com/documents/data) 
+* [Australasian Data and Story Library](http://www.statsci.org/data/), containing a large number of interesting datasets, many pertaining to Australia
+* [CRASH datasets](https://ctu-app.lshtm.ac.uk/freebird) 
+* [DryadLab](http://datadryad.org) 
+* [StatLib Repository](http://lib.stat.cmu.edu/datasets) at Carnegie Mellon University. 
+* [GapMinder](http://www.gapminder.org/data)
+
+### Medical research 
+
+* [Centers for Disease Control](http://www.cdc.gov/scientific.htm) 
+* [NIH](https://biolincc.nhlbi.nih.gov/home/) You have to request the data, but the site is immediately valuable as a source of data collection forms used in clinical (especially cardiovascular) studies.
+* [NHLBI](https://biolincc.nhlbi.nih.gov/studies) 
+* [International Stroke Trial dataset](http://datashare.is.ed.ac.uk/handle/10283/128) 
+* [Physionet ICU data](http://mimic.physionet.org/about/mimic) 
+* [Pooled Resource Open-Access ALS Clinical Trials Database](https://nctu.partners.org/ProACT)  - contains high-quality data with time to event and ordinal scale outcomes.  The data may be useful for assessing differential treatment effect (often called HTE - hetogeneous treatment effect) for Riluzole.  The database was created by a non-profit organization, Prize4Life
+* [Clinical Study Data Request](https://clinicalstudydatarequest.com)  - a wealth of data from clinical trails done by the pharmaceutical industry
+* Datasets for research use from the [National Heart, Lung, and Blood Institute](https://biolincc.nhlbi.nih.gov/home/)  of the U.S. National Institutes of Health
+
+
+### Other research
+
+* [Geospatial and Statistical Data Center](http://fisher.lib.virginia.edu)  of the University of Virginia. See especially the [City and County Data Books](http://fisher.lib.virginia.edu/ccdb). 
+* [U.S. Joint Global Ocean Flux Study](http://usjgofs.whoi.edu) 
+* [Consortium for International Earth Science](http://www.ciesin.org/datasets/dataset-home.html)  Information Network Dataset Guide
+* [UCI Machine Learning Repository](http://www.ics.uci.edu/~mlearn/MLSummary.html) 
+
+
+
+
+
+
+
+
+
+

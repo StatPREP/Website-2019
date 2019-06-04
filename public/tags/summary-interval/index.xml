@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>summary interval on StatPREP Workshops 2019</title>
+    <link>/tags/summary-interval/</link>
+    <description>Recent content in summary interval on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/summary-interval/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The standard deviation and the 95% summary interval</title>
+      <link>/blog/activity-sd-and-summary-interval/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-sd-and-summary-interval/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The length of the 95% summary interval is a pretty good way to describe the amount of variation in a variable. Yet statisticians tend to prefer using the standard deviation. This makes sense, since statisticians are interested in confusing the poor student by using obscure names (“Deviation?”. Really?) and formulas that can be hard to understand. … Not really!! Even though the standard deviation has an odd name and seems complicated, the actual reason it’s used so much by statisticians is that it has some nice mathematical properties.</description>
+    </item>
+    
+    <item>
+      <title>Linear regression</title>
+      <link>/blog/la-linear-regression/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-linear-regression/</guid>
+      <description>Regression Little App: Systolic versus diastolic blood pressure from the National Health and Nutrition Evaluation Survey. Click here to launch.   
+The linear regression Little App displays a jittered point plot of two quantitative variables. Upon this is layered two annotations:
+A regression model. By default this is simple linear regression, but you can also incorporate a covariate and add curvature to the model. Two sets of short horizontal bars to the right of the graph, together with an interval showing the standard deviation.</description>
+    </item>
+    
+    <item>
+      <title>Instructor guide: Center &amp; spread</title>
+      <link>/blog/instructions-center-spread/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-center-spread/</guid>
+      <description>Activities  Variables and their summary intervals The standard deviation and the summary interval Shapes of distributions The normal distribution   Learning objectives Summarize the likely range of a variable using an interval. Choose the summary interval endpoints to include the “vast majority” of the values. Master the convention that “vast majority” is the central 95% of the values. Be able to work with two formats for describing an interval: “A to B” and “C ± D”.</description>
+    </item>
+    
+  </channel>
+</rss>

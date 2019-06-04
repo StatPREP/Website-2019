@@ -1,0 +1,72 @@
+---
+title: "Instructor Guide: Data basics"
+author: "Daniel Kaplan"
+weight: -10
+date: "2019-04-22"
+categories:
+    - activity-guide
+    - activities
+tags:
+    - tidy-data
+    - variables
+description: "NOT YET AVAILABLE"
+---
+
+```{r setup, include=FALSE}
+
+```
+
+## Activities 
+
+* [Variable types](/blog/activity-variable-types/)
+* [Variables and units](/blog/activity-variables-and-units/)
+* [Response and explanatory variables](/blog/activity-response-and-explanatory/)
+
+## Learning objectives 
+
+
+
+
+## Additional resources
+
+- `r SDSdata::word_pdf_links()`
+- [Instructor orientation](#orientation)
+- [Role in statistical practice](#role)
+- [Classroom discussion](#discussion)
+- [Assessment](#assessment)
+- [Tips for an active classroom](#active)
+- [Student pre-requisites](#prereqs)
+- [Pitfalls](#pitfalls)
+
+# Orientation for instructors {#orientation}
+
+Explaining what is data and what are the forms of data.
+
+## Role in statistical practice {#role}
+
+
+## Conceptual pitfalls {#pitfalls}
+
+
+
+
+
+
+## Student pre-requisites {#prereqs}
+
+
+## Student tasks and activities
+
+
+## Creating an active classroom {#active}
+
+See the document on [general tips for creating an active classroom](/etc/tips-for-active-classroom.html). 
+
+
+## Assessment items {#assessment}
+
+## Pushing the envelope/advancing the field
+
+
+## Author info
+

@@ -1,0 +1,161 @@
+---
+title: "Introducing linear regression"
+date: "StatPREP Class Activity"
+description: "Discussion topics to introduce linear regression to your class."
+weight: 8
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+tags: 
+  - regression
+categories: 
+  - "Activities"
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-introducing-linear-regression.docx">Word</a> : <a href="/pdf-versions/activity-introducing-linear-regression.pdf">PDF</a></p>
+<div id="showing-various-sorts-of-relationships-for-discussion" class="section level2">
+<h2>Showing various sorts of relationships for discussion</h2>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">linear regression Little App</a>. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). In this activity we’ll explore three different data sets available through the app. For each data set, the variable indicated below plays the role of the response variable. Some explanatory variables are listed as sub-points.</p>
+<ol style="list-style-type: decimal">
+<li>Data set: <code>NHANES</code>. Response variable: BMI. It’s important for students to know what BMI is. <a href="https://www.cdc.gov/healthyweight/assessing/bmi/">Explanation from the CDC</a> &amp; <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm">BMI calculator for students</a>.
+<ul>
+<li>age (r = 0.5 reasonable scatterplot to assume linearity)</li>
+<li>income (r = -0.07) shows a very diffuse scatter plot but also helps demo the app to students.</li>
+<li>pulse: weak relationship</li>
+<li>systolic: weak-to-moderate relationship</li>
+<li>diastolic: has outliers</li>
+<li>sleep_hour: weak-to-moderate. But has a negative relationship</li>
+</ul></li>
+<li>Data set: <code>CPS85</code>. Response variable: wage
+<ul>
+<li>age</li>
+<li>education</li>
+</ul></li>
+<li>Data set: <code>Births_2014</code> Response variable: mother’s age
+<ul>
+<li>father’s age. Moderate size correlation. Ask what it means</li>
+</ul></li>
+</ol>
+</div>
+<div id="open-ended-exploring" class="section level2">
+<h2>Open-ended exploring</h2>
+</div>
+<div id="consider-systolic-blood-pressure-from-the-nhanes-data." class="section level2">
+<h2>Consider systolic blood pressure from the <code>NHANES</code> data.</h2>
+<p><strong>Background</strong>: Explain to students what is the difference between the systolic and diastolic blood pressure. Each time the heart beats, the blood pressure in the arteries goes up. It quickly rises to a maximum and then decays until the next beat. Systolic is the maximum blood pressure each beat, diastolic the minimum. The “pulse pressure” is the difference between the two. See this site on <a href="https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/pulse-pressure/faq-20058189">blood pressure</a>.</p>
+<p><strong>Tasks</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Determinine three explanatory variables that are predictive of systolic blood pressure.</p>
+<p><em>Write down the names of the explanatory variables here</em>   .  .  .  </p>
+<p> </p></li>
+<li><p>For each of the three variables , list the strength of the relationship both as a fraction of the variation explained and as the change in systolic blood pressure per unit change of the explanatory variable.</p>
+<p><em>Fill in the table with your answers.</em>   .  .  .  </p>
+<p> </p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>variable name</th>
+<th>fraction of variation</th>
+<th>change of response per unit change in explanatory</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="even">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="odd">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="even">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="odd">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Then check whether those three explanatory variables explain diastolic blood pressure as well.</p>
+<p><em>Which of systolic or diastolic blood pressure is better explained by the explanatory variables?</em>   .  .  .  </p>
+<p> </p></li>
+</ol>
+</div>
+<div id="diamonds-data-frame" class="section level2">
+<h2><code>Diamonds</code> data frame</h2>
+<ol style="list-style-type: decimal">
+<li><p>Determinine three explanatory variables that are predictive of diamond price.</p>
+<p><em>Write down the names of the explanatory variables here</em>   .  .  .  </p>
+<p> </p></li>
+<li><p>For each of the three variables , list the strength of the relationship both as a fraction of the variation explained and as the change in systolic blood pressure per unit change of the explanatory variable.</p>
+<p><em>Fill in the table with your answers.</em>   .  .  .  </p>
+<p> </p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>variable name</th>
+<th>fraction of variation</th>
+<th>change of response per unit change in explanatory</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="even">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="odd">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="even">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+<tr class="odd">
+<td>    </td>
+<td>    </td>
+<td>    </td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+<hr />
+<p>Version 0.2, 2019-06-04, Helen Burn, <a href="/word-versions/activity-introducing-linear-regression.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_linear_regression/" class="uri">https://dtkaplan.shinyapps.io/LA_linear_regression/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

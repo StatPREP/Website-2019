@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorials on StatPREP Workshops 2019</title>
+    <link>/categories/tutorials/</link>
+    <description>Recent content in tutorials on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Tutorials for instructors</title>
+      <link>/blog/tutorials/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tutorials/</guid>
+      <description>StatPREP tutorials A StatPREP tutorial is an interactive document mainly intended to help instructors develop statistical, graphical, and general computing skills using R statements.
+This page provides links to instructor tutorials. Each link takes you to a web service that displays the document in your web browser. You don’t need to install any other software on your computer to use the lessons and tutorials.
+If you’re looking for materials for use in class or other student-oriented settings, follow these links to StatPREP activites or Little Apps</description>
+    </item>
+    
+  </channel>
+</rss>

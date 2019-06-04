@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jittering on StatPREP Workshops 2019</title>
+    <link>/tags/jittering/</link>
+    <description>Recent content in jittering on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/jittering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jittering</title>
+      <link>/blog/activity-jittering/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-jittering/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Graphical displays are effective when they connect well with human visual and cognitive faculties. Humans are extremely good at some visual tasks and surprisingly poor at others. To illustrate, consider the task of identifying how many 3’s there are in the following list:
+The task is difficult because recognizing shapes is a tough cognitive task.
+The task becomes much simpler if we take advantage of color, which our visual systems can process very quickly.</description>
+    </item>
+    
+  </channel>
+</rss>

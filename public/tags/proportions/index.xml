@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proportions on StatPREP Workshops 2019</title>
+    <link>/tags/proportions/</link>
+    <description>Recent content in proportions on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/proportions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Proportions</title>
+      <link>/blog/la-proportions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-proportions/</guid>
+      <description>Proportions Little App: Among births in the US, does the probability of an induced delivery vary with the length of gestation? Click here to launch.   
+The Proportions Little App allows you to explore how the probability of a categorical outcome varies with either categorical or quantitative variables.
+ Choose the level of the response variable for which you want to know the proportion. Display confidence intervals/bands.</description>
+    </item>
+    
+  </channel>
+</rss>

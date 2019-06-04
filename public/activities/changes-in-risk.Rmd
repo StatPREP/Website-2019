@@ -1,0 +1,38 @@
+---
+title: "Changes in risk"
+date: "2019-05-29"
+description: "NOT YET AVAILABLE. Risk is not a yes/no proposition."
+output:
+  html_document:
+    df_print: paged
+  word_document:
+    reference_docx: lesson-style.docx
+tags: risk
+categories: 
+  - "Activities"
+weight: 500
+---
+
+
+
+```{r include = FALSE}
+SDSdata::sds_setup() 
+library(LittleApp) 
+library(DT)
+```
+
+`r SDSdata::word_pdf_links()`
+
+# Orientation
+
+
+ 
+# Activity
+
+proportions little app
+
+
+
+----------------------
+
+Version 0.2, `r Sys.Date()`, Daniel Kaplan, [Word version](`r paste0("/word-versions/",tools::file_path_sans_ext(knitr::current_input()), ".docx")`) 

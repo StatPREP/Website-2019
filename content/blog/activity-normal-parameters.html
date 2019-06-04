@@ -1,0 +1,75 @@
+---
+title: "Parameters of the normal distribution"
+date: "2019-04-25"
+weight: 10
+description: "Normal distributions are a *family*. The specific members  of the family are identified by two parameters: the mean and the standard deviation."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  pdf_document: tint::tintPdf
+  html_document:
+    rmdformats::material
+tags: 
+  - normal
+  - mean
+  - "standard deviation"
+categories: 
+  - "Activities"
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-normal-parameters.docx">Word</a> : <a href="/pdf-versions/activity-normal-parameters.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>The bell-shaped distribution is often a good description of the distribution of a variable, so often that it’s called the “normal” distribution.</p>
+<p>Actually, there is not just one normal distribution but a whole family of them, all of which have the characteristic bell shape. To identify an individual member of this bell family, two numbers suffice:</p>
+<ul>
+<li>the mean: the location of the peak of the bell</li>
+<li>the standard deviation: the width of the bell</li>
+</ul>
+<p>What’s potentially confusing here is that you may know about the mean in terms of a calculation you do on a variable: add up the n values and divide by n. Similarly, the standard deviation is such a calculation. Amazingly enough, the numbers you get from these calculations identify the bell-shaped distribution that’s the best match to the distribution of the variable. And if the variable has a bell-like distibution itself, you’ll see that the distribution of the variable is often close to an exact match to the normal curve itself.</p>
+<p>One consequence of this is that people often can make a pretty good estimate of the mean and standard deviation of a variable just by looking at its distribution, say with a histogram or a violin plot.</p>
+<p>This lesson is about learning to eyeball the mean and standard deviation from a display of the distribution. Reasons to do this include having a better understanding of the mean and standard deviation and, importantly, being able to double-check calculations in order to avoid blunders. Even with a computer, it’s easy to make mistakes like reading the wrong number from a table of calculations.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_rare_and_common/">rare-and-common</a> Little App. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Set the response variable to <code>height_adults</code> and leave the explanatory variable at <code>.none.</code>.</p>
+<ol style="list-style-type: decimal">
+<li><p>The graphic shows a traditional blot of the distribution of the response variable, called a <em>density plot</em>. If you’re familiar with a histogram, you might like to think about a <em>density plot</em> as a kind of smoothed histogram without the jagged, abrupt changes from bar to var.</p>
+<ul>
+<li>There are sliders in the app to let you define numerically what range of values are common, uncommon, or rare. We won’t need these for this lesson, so arrange for the “common” slider to run the full span of the data.</li>
+</ul></li>
+<li><p>Check the control box to overlay a theoretical normal distribution. The distribution will be shown as a white, transluscent, bell-shaped region. The location and width of a normal distribution are described by the mean and standard deviation. In picking the particular normal distribution to overlay, the mean and standard deviation have been set to those of the response variable.</p>
+<ul>
+<li>Compare the theoretical distribution to the actual distribution. You’ll see that the actual values of height occur less frequently near the center than they would be for a theoretical normal distribution. The tails, both right and left, line up pretty well with the theoretical normal distribution.</li>
+<li>What ranges of height occur more frequently in the actual heights than in the theoretical distribution?</li>
+</ul></li>
+<li><p>Set the explanatory variable to <code>sex</code>.</p>
+<ul>
+<li>Compare the theoretical normal distribution for women to the actual distribution. Are they matched better than in step (2) when there was no explanatory variable? How about for men?</li>
+</ul></li>
+<li>Several variables are listed below along with a description of the shape of the distribution.
+<ul>
+<li>diastolic blood pressure is slightly left skew</li>
+<li>system blood pressure is slightly right skew</li>
+<li>age is flat and truncated to the left</li>
+<li>testosterone is bi-modal.</li>
+<li><p>bmi_adults is right skew, truncated to the left.</p></li>
+<li>Look at each of these variables and figure out what differences between the theoretical normal distribution and the actual data correspond to the various labels.</li>
+<li><p>Use <code>sex</code> as an explanatory variable for each of the variables. Are there any variables where the distribution for the individual sexes has a different description than the distribution without an explanatory variable.</p></li>
+</ul></li>
+<li><p>Look through the various data sets to find variables that are a good match to the normal distribution.</p>
+<ul>
+<li>Comment on whether most variables have a “normal” shape.</li>
+</ul></li>
+</ol>
+<hr />
+<p>Version 0.1, 2019-06-04, Thomas Kinzeler and Danny Kaplan, <a href="/word-versions/activity-normal-parameters.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_rare_and_common/" class="uri">https://dtkaplan.shinyapps.io/LA_rare_and_common/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

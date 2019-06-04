@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Variation and the 95% summary interval</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="statprep">	
+  
+
+  
+  <meta name="description" content="We typically describe variation  or uncertainty using an *interval*. The 95% summary interval is a way to describe the spread of a variable.">
+  
+
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="StatPREP Workshops 2019">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Variation and the 95% summary interval">
+  <meta name="twitter:image" content="/img/twitter-default.png">
+  <meta name="twitter:description" content="We typically describe variation  or uncertainty using an *interval*. The 95% summary interval is a way to describe the spread of a variable.">
+
+  
+  <meta property="og:title" content="Variation and the 95% summary interval" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/activity-summary-interval//" />
+  <meta property="og:image" content="img/statprep-logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/statprep-logo.png" alt="Variation and the 95% summary interval logo" class="hidden-xs hidden-sm">
+                    <img src="/img/statprep-logo.png" alt="Variation and the 95% summary interval logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Variation and the 95% summary interval - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/schedule/">Schedule</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://docs.google.com/document/d/1F76ypB785RyA_CAedEITXrs__hQj2pvbtSaLwD3b31k/edit?usp=sharing">Suggest!</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/little-app">Little Apps</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/activities/">Class Activities</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/real_data">Real data</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Variation and the 95% summary interval</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">January 1, 0001</p>
+
+                        <div id="post-content">
+                          
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-summary-interval.docx">Word</a> : <a href="/pdf-versions/activity-summary-interval.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Why is the word <em>variable</em> used to describe a column of a data frame? In mathematics, a variable is an <em>unknown</em> quantity. In math class, when they say “solve for x,” they mean figure out what the value of unknown x is.</p>
+<p>In statistics, a <em>variable</em> is different. It’s a known quantity – known because you measured it, known because there it is, right in the data frame. This known quantity is called a variable because it takes on various different values in one row or another of the data frame.</p>
+<p>An important technical task in statistics is to <em>measure</em> how much variation there is in a variable. The reason this is important is that we are often interested in <em>explaining</em> a response variable using one or more explanatory variables. In deciding whether a potential explanation is a good one or not, it’s helpful to know how much of the variation in the response can be attributed to the explanatory variables.</p>
+<p>There are several ways to measure variation of a quantitative variable. The most commonly used in statistics is the <em>standard deviation</em>. Another measure is the <em>95% summary interval</em>, which is perhaps easier to understand than the standard deviation.</p>
+<p>The purpose of this lesson is to help you understand the 95% summary interval and why it is used by statisticians.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_center_spread/,%20https://dtkaplan.shinyapps.io/LA_center_spread2/">Center and spread</a> Little App (see footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>)., and select the <code>Births_2014</code> data frame. Set the sample size to n = 200.</p>
+<ol style="list-style-type: decimal">
+<li><p>Set the response variable to be <code>age_mother</code>, the age of the mother at the time of birth. You’ll see that there is variability, that is, not every mother is exactly the same age.</p></li>
+<li><p>Perhaps the most natural way to measure the amount of variation is the length of the interval between the smallest value and the largest value.</p>
+<ul>
+<li>Use the measuring stick built in to the app to find the length of the interval from smallest to largest age.</li>
+</ul></li>
+</ol>
+<p><em>How long is it?</em>   .  .  .  </p>
+<p><em>What are the units?</em>   .  .  .  </p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Leaving the measuring stick from (2) on the display, press the New Sample button. For the new sample, are the maximum and minimum values the same as in the original sample?</p>
+<ul>
+<li>Press New Sample several times to get an idea of how much the maximum and minimum value vary from sample to sample.</li>
+<li>Do that again 10 times, but each time you do so use the measuring stick to find the length of the max-to-min interval for that sample. Write it down. In the end, you’ll have 10 values for the length of the interval. You can get an idea for how much they vary.</li>
+</ul>
+<p><em>List your 10 values here:</em>  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Sometimes variables are such that the values of the maximum and minimum depend strongly on the sample. Sometimes not. One at a time, set each of these variables to be the response variable: mother’s weight, baby’s weight, APGAR score.</p>
+<ul>
+<li>For each of the variables, press New Sample several times. The max-to-min interval will change from sample to sample. Use the measuring stick to find the length of each interval.</li>
+</ul>
+<p><em>Write down your interval lengths here.</em>  </p>
+<p> </p>
+<p><em>What’s the range of the interval lengths you measured?</em>  </p>
+<p> </p></li>
+<li><p>You might have noticed that only two of the points in each sample determine the max-to-min interval. For this reason, there is a lot of variation in the interval length from sample to sample. To avoid this, statisticians have invented another kind of interval to describe variation called the “95% summary interval.” The idea is to avoid making the interval depend on just two points and instead let several points contribute. The 95% interval is designed to cover <em>almost all</em> of the data points, where “almost all” means 95%.</p>
+<ul>
+<li>Turn on the “summary interval” display and make sure the “interval level” is set to 95%. Keep the sample size at n = 200.</li>
+</ul>
+<p><em>How many of the data points are <strong>outside</strong> the summary interval?</em> (The summary interval is drawn as a thick, grey I-shaped bar. Include in your count the points covered by the horizontal bars of the I.   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p><em>Explain why this number makes sense.</em> (Hint: Think how the 95% interval is defined.)   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p> </p>
+<p> </p>
+<ul>
+<li>Press New Sample many times to get a sense for whether the 95% interval or the max-to-min interval varies more from sample to sample.</li>
+</ul>
+<p><em>Which interval varies more?</em>   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li>In statistics, you’re almost always working with a sample but your real interest is not that particular sample, but the broader population from which the sample was taken. Statisticians like to work with summaries that are informative but which also behave “nicely” with respect to sampling. In particular,
+<ul>
+<li>The summary shouldn’t vary excessively from sample to sample.</li>
+<li>The summary shouldn’t change systematically as the sample size gets larger.
+You’ve already looked at how the max-to-min interval and the 95% summary interval vary from one sample to another, holding the sample size constant. (We used n = 200.) Now you’re going to see what happens as the sample size get’s bigger and bigger.</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>Set the sample size to n = 400 and turn on the display of the 95% summary interval. Quickly press New Sample several times to get an idea of a typical value for the maximum and minimum value of the variable in the sample. Then, use the measuring stick to mark out roughly the range from the typical maximum to the typical minimum.</p>
+<p><em>What’s a typical range of the max-to-min interval?</em>   .  .  .  .  .  </p></li>
+<li><p>Similarly, find the typical length of the 95% summary interval over many samples. We only have one measuring stick in the app, so use your finger widths to record that typical length. (E.g. the interval is 3 fingers wide, or whatever.)</p>
+<p><em>What’s a typical range of the 95% interval?</em>   .  .  .  .  .  </p></li>
+<li><p>Now increase the sample size to n = 1000. Press New Sample several times and keep track of how often the max-to-min interval is shorter than the one shown by the measuring stick for n = 200, and how often it is longer.</p>
+<p>What’s a typical range of the max-to-min interval?   .  .  .  .  .  </p></li>
+<li><p>Similarly compare the length of the 95% summary interval when n = 1000 to the length of the interval you recorded with your fingers in step (b).</p>
+<p><em>Circle the correct choice.</em>   .  .  .</p>
+<p><em>Compared to the n = 200 interval, the n = 1000 interval is about … the same length … twice as long … half as long.</em></p></li>
+<li><p>Do the same with a sample size of n = 5000.</p>
+<p><em>Which is more consistent across sample sizes, the 95% interval or the max-to-min interval?</em>   .  .  .  .  .  .  .  .  .  .  </p></li>
+</ol>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Daniel Kaplan,</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>&lt;<a href="https://dtkaplan.shinyapps.io/LA_center_spread/" class="uri">https://dtkaplan.shinyapps.io/LA_center_spread/</a>, <a href="https://dtkaplan.shinyapps.io/LA_center_spread2/" class="uri">https://dtkaplan.shinyapps.io/LA_center_spread2/</a>&gt;<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/activities">activities (30)</a>
+            </li>
+            
+            <li><a href="/categories/activity-guide">activity-guide (8)</a>
+            </li>
+            
+            <li><a href="/categories/computing">computing (2)</a>
+            </li>
+            
+            <li><a href="/categories/little-app">little-app (7)</a>
+            </li>
+            
+            <li><a href="/categories/presentations">presentations (6)</a>
+            </li>
+            
+            <li><a href="/categories/real_data">real_data (10)</a>
+            </li>
+            
+            <li><a href="/categories/tutorials">tutorials (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/bias"><i class="fa fa-tags"></i> bias</a>
+            </li>
+            
+            <li><a href="/tags/causality"><i class="fa fa-tags"></i> causality</a>
+            </li>
+            
+            <li><a href="/tags/cloud"><i class="fa fa-tags"></i> cloud</a>
+            </li>
+            
+            <li><a href="/tags/confidence-interval"><i class="fa fa-tags"></i> confidence-interval</a>
+            </li>
+            
+            <li><a href="/tags/dag"><i class="fa fa-tags"></i> dag</a>
+            </li>
+            
+            <li><a href="/tags/data_sources"><i class="fa fa-tags"></i> data_sources</a>
+            </li>
+            
+            <li><a href="/tags/distribution-shapes"><i class="fa fa-tags"></i> distribution-shapes</a>
+            </li>
+            
+            <li><a href="/tags/experiment"><i class="fa fa-tags"></i> experiment</a>
+            </li>
+            
+            <li><a href="/tags/f-test"><i class="fa fa-tags"></i> f-test</a>
+            </li>
+            
+            <li><a href="/tags/flexibility"><i class="fa fa-tags"></i> flexibility</a>
+            </li>
+            
+            <li><a href="/tags/graphics"><i class="fa fa-tags"></i> graphics</a>
+            </li>
+            
+            <li><a href="/tags/inference"><i class="fa fa-tags"></i> inference</a>
+            </li>
+            
+            <li><a href="/tags/jittering"><i class="fa fa-tags"></i> jittering</a>
+            </li>
+            
+            <li><a href="/tags/mean"><i class="fa fa-tags"></i> mean</a>
+            </li>
+            
+            <li><a href="/tags/median"><i class="fa fa-tags"></i> median</a>
+            </li>
+            
+            <li><a href="/tags/normal"><i class="fa fa-tags"></i> normal</a>
+            </li>
+            
+            <li><a href="/tags/normal-distribution"><i class="fa fa-tags"></i> normal-distribution</a>
+            </li>
+            
+            <li><a href="/tags/pdf-format"><i class="fa fa-tags"></i> pdf-format</a>
+            </li>
+            
+            <li><a href="/tags/proportions"><i class="fa fa-tags"></i> proportions</a>
+            </li>
+            
+            <li><a href="/tags/r-square"><i class="fa fa-tags"></i> r-square</a>
+            </li>
+            
+            <li><a href="/tags/r-squared"><i class="fa fa-tags"></i> r-squared</a>
+            </li>
+            
+            <li><a href="/tags/rare"><i class="fa fa-tags"></i> rare</a>
+            </li>
+            
+            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
+            </li>
+            
+            <li><a href="/tags/response-vs-explanatory"><i class="fa fa-tags"></i> response-vs-explanatory</a>
+            </li>
+            
+            <li><a href="/tags/risk"><i class="fa fa-tags"></i> risk</a>
+            </li>
+            
+            <li><a href="/tags/rstudio"><i class="fa fa-tags"></i> rstudio</a>
+            </li>
+            
+            <li><a href="/tags/skew"><i class="fa fa-tags"></i> skew</a>
+            </li>
+            
+            <li><a href="/tags/standard-deviation"><i class="fa fa-tags"></i> standard-deviation</a>
+            </li>
+            
+            <li><a href="/tags/summary-interval"><i class="fa fa-tags"></i> summary-interval</a>
+            </li>
+            
+            <li><a href="/tags/t-test"><i class="fa fa-tags"></i> t-test</a>
+            </li>
+            
+            <li><a href="/tags/tidy-data"><i class="fa fa-tags"></i> tidy-data</a>
+            </li>
+            
+            <li><a href="/tags/unit-of-observarion"><i class="fa fa-tags"></i> unit-of-observarion</a>
+            </li>
+            
+            <li><a href="/tags/variables"><i class="fa fa-tags"></i> variables</a>
+            </li>
+            
+            <li><a href="/tags/word-format"><i class="fa fa-tags"></i> word-format</a>
+            </li>
+            
+            <li><a href="/tags/z-score"><i class="fa fa-tags"></i> z-score</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            A collaborative project by the MAA, the ASA, and AMATYC
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong><a href='http://statprep.org'>StatPREP.org</a></strong>
+
+            
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Support provided by the National Science Foundation (grant DUE-1626337).</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

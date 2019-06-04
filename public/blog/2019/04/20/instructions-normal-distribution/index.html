@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to the normal distribution</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="statprep">	
+  
+
+  
+  <meta name="description" content="Materials for the StatPREP 2019 workshops">	
+  
+
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="StatPREP Workshops 2019">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Introduction to the normal distribution">
+  <meta name="twitter:image" content="/img/twitter-default.png">
+  <meta name="twitter:description" content="Materials for the StatPREP 2019 workshops">
+
+  
+  <meta property="og:title" content="Introduction to the normal distribution" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/2019/04/20/instructions-normal-distribution//" />
+  <meta property="og:image" content="img/statprep-logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/statprep-logo.png" alt="Introduction to the normal distribution logo" class="hidden-xs hidden-sm">
+                    <img src="/img/statprep-logo.png" alt="Introduction to the normal distribution logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Introduction to the normal distribution - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/schedule/">Schedule</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://docs.google.com/document/d/1F76ypB785RyA_CAedEITXrs__hQj2pvbtSaLwD3b31k/edit?usp=sharing">Suggest!</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/little-app">Little Apps</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/activities/">Class Activities</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/real_data">Real data</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Introduction to the normal distribution</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Thomas Kinzeler</a> | April 20, 2019</p>
+
+                        <div id="post-content">
+                          
+
+
+<div id="activities" class="section level2">
+<h2>Activities</h2>
+<ul>
+<li><a href="/lessons/distribution-shapes/">Distribution shapes</a></li>
+<li><a href="/lessons/normal-parameters/">Normal parameters</a></li>
+<li><a href="/lessons/common-and-rare/">Common and rare</a></li>
+</ul>
+</div>
+<div id="learning-objectives" class="section level2">
+<h2>Learning objectives</h2>
+<ul>
+<li>Understand how a distribution summarizes the properties of a collection of individual values.</li>
+<li>Be able to translate between major forms of representing distributions graphically, e.g.
+<ul>
+<li>the density of points in a (jittered) point plot</li>
+<li>the presentation of such density as a height or width as in a violin or density plot</li>
+</ul></li>
+<li>Be able to eyeball the standard deviation of a close-to-normal distribution and, similarly, a 95% summary interval (that is, mean ± two standard deviations )</li>
+<li>Be able to identify common characteristics of skew or long-tailed distributions, by comparison to a normal distribution.</li>
+<li>Understand that there is a <em>family</em> of normal distributions, with each individual identified by its mean and standard deviation.</li>
+<li>Use technology to display the distribution of a variable from data.</li>
+<li>Relate an interval display (such as a 95% summary interval) to a display of the distribution.</li>
+<li>Understand that the <em>relative frequency</em> of two values is the ratio of the height of a density plot at those two values, or the relative width of a violin plot, or the density of ink at those two values in a jittered point plot.</li>
+</ul>
+</div>
+<div id="additional-resources" class="section level2">
+<h2>Additional resources</h2>
+<ul>
+<li>Get formatted versions: <a href="/word-versions/instructions-normal-distribution.docx">Word</a> : <a href="/pdf-versions/instructions-normal-distribution.pdf">PDF</a></li>
+<li><a href="#orientation">Instructor orientation</a></li>
+<li><a href="#role">Role in statistical practice</a></li>
+<li><a href="#discussion">Classroom discussion</a></li>
+<li><a href="#assessment">Assessment</a></li>
+<li><a href="#active">Tips for an active classroom</a></li>
+<li><a href="#prereqs">Student pre-requisites</a></li>
+<li><a href="#forward">Looking forward</a></li>
+<li><a href="#pitfalls">Pitfalls</a></li>
+</ul>
+</div>
+<div id="orientation" class="section level1">
+<h1>Orientation for instructors</h1>
+<p>It would be hard to overstate the centrality of the normal distribution to statistics and to the introductory statistics course. It’s even got a cult following; for instance, you can buy a <a href="https://www.etsy.com/listing/46573630/normal-distribution-fleece-pillow-made?ref=shop_home_active_3">normal pillow</a> or a <a href="https://www.redbubble.com/people/mbibtyb/works/31787965-normal?cat_context=u-tees&amp;grid_pos=17&amp;p=t-shirt&amp;rbs=50ea3cca-752f-41a5-b2e8-e36e9b31b7ba&amp;ref=shop_grid&amp;style=mens&amp;searchTerm=normal%20distribution%20t-shirts">t-shirt</a>.</p>
+<p><img src="/images/normal-pillow.jpg" style="width:30.0%" /> <img src="/images/t-shirt3.jpg" style="width:25.0%" /></p>
+</div>
+<div id="role" class="section level1">
+<h1>Role in statistical practice</h1>
+<p>Fundamentally, the normal distribution provides a standard for defining “extreme” and “middle.” We measure distance from the mean in terms of the standard deviation. A value two or more standard deviations from the mean is practically the definition of “exteme.” The conventions of inferential statistics – sampling distributions, sampling distributions under the null – are closely tied to the normal distribution. For instance, the choice of 95% for a confidence level or 0.01 for a p threshold are motivated by the normal distribution and standard deviation.</p>
+<p>Of course, in a world of big data we could equally well define “extreme” directly in terms of the 2.5% and 97.5% quantiles of the data itself. Calculations of such quantities is problematic when there are just a handful of values and unreliable even with a hundred. So, for small data, the normal distribution provides the go-to parametric estimate.</p>
+<p>The normal distribution is also important as a reference for the <em>shape</em> of distributions. Skew, long-tailed, etc. are best seen by contrasting them to a normal distribution (with the same mean and standard deviation).</p>
+<p>There are many other ways that the normal distribution is used in statistics. Or, more precisely, many way in which it is mis-used. Let’s consider them in the misconceptions section.</p>
+</div>
+<div id="pitfalls" class="section level1">
+<h1>Pitfalls</h1>
+<p>It’s almost impossible to untangle the mathematical object that is the normal/gaussian distribution from the social idea of “normal.” The terminology of statistics, established in the late 1800s and early 1900s with seminal contributions from avowed eugenicists (e.g., Galton, Fisher) was wrapped up in “normal” as it refers to “correct” or “usual.” Terms like “error” and “deviation” are close to their everyday pejorative sense.</p>
+<p>It’s easy for students to come away from a statistics course with the misconception that the the normal/gaussian distribution is what’s to be expected for a well-behaved variable, e.g. the message of the t-shirt shown below.</p>
+<p><img src="/images/t-shirt4.jpg" style="width:40.0%" /></p>
+<p>Of course variables are what they are. Some of them have a distribution close to normal, others have a distribution far from normal. It’s important to demonstrate to students that legitimate variables often have a non-normal distribution. (Many of the data sets in the Little Apps have variables with skew distributions.)</p>
+<p>The quantities in statistics that very often have a close-to-normal distribution are those often calculated from data, e.g. the sampling distributions of statistics such as the mean, median, …. That these sampling distributions are close to normal is what shapes confidence intervals and p-values. But keep in mind that a sampling distribution is not a variable found in data, it is a theoretical construct, the result of a thought experiment in which we disregard that we are usually working with a single sample and the corresponding value of a sample statistic (e.g. the mean), and instead imagine that we have a large collection of samples, each of which has it’s own value for the sample statistic and which, collectively, have a distribution.</p>
+<p>Keep in mind the large cognitive distance between the usual bell-shaped display of the normal distribution and actual data. It can help students to make the journey by starting with plots of actual data, such as jitter plots. In these plots, density is represented by the literal density of ink on the page (especially when transparency is used). Then introduce violin-type plots on top of the data to show how they represent using length the density that can be seen in the ink. Finally you may want to show the conventional density curve on its own, but think about whether you really need to do this.</p>
+<p>The density curve itself is a mathematical shorthand that makes it easy to sketch out what would otherwise require putting lots of dots on the page. It may be helpful to your students to remind them that the underlying reality is those dots, perhaps by annotating each density curve with some data dots, more near the high points of the curve and fewer at the low points.</p>
+<div id="prereqs" class="section level2">
+<h2>Student pre-requisites</h2>
+<ul>
+<li>Understand different format for graph: density versus value, as opposed to response versus explanatory or violin plot.</li>
+</ul>
+</div>
+<div id="assessment" class="section level2">
+<h2>Assessment items</h2>
+<p>Simple drill on distributions:</p>
+<ul>
+<li>Is the frequency at value A bigger or smaller relative to the frequency at value B?</li>
+<li>Pick a value such that about 10% of the distribution is above that value.</li>
+<li>Is the distribution symmetric?</li>
+<li>Is the proportion of the distribution between A and B bigger/smaller/about-the-same as the proportion between C and D?</li>
+</ul>
+<p>Show distributions of variables. For each:</p>
+<ul>
+<li>Ask whether the distribution is a close match to the normal distribution.</li>
+<li>If not, use an appropriate word description (e.g. left-skew) for the distribution.</li>
+<li>If so, estimate the mean and standard deviation from the graph.</li>
+</ul>
+<p>Students see so much of the normal distribution that they tend to overgeneralize it. Some antidotes to this:</p>
+<p><strong>I examined historical records</strong> over the past 500 years of river flood heights in China, Egypt, and Europe I recorded, for each river, the year in which every flood happened that reached the level that we would now call a “hundred-year” flood for that river. Then I measured the time interval between successive floods on each river. Sketch out what you think the distribution of intervals between hundred-year floods.</p>
+<p>Many students will draw a normal curve centered at 100 years. When they do so, some questions to ask them:
+- How did you decide what the value of the standard deviation should be?<br />
+- On one of the rivers I noticed that it’s been more than 200 years since the last “hundred-year” flood. Is this possible, or must it be a gap in the records? According to the distribution you drew, roughly when will the next hundred-year flood occur? (Since the mass of the distribution is near 100 years, there’s little probability, according to the normal distribution, that another 100-year flood will occur. Does that make sense?)</p>
+<p>One problem here is that the normal distribution is not appropriate. A better shape is an exponential distribution. Very short intervals between “hundred-year” floods are very common, balanced out by very long intervals.</p>
+<p>**Imagine observing a carnival spinner, recording the number, 0 to 100, that results from each spin. You observe 1000 spins. What will the distribution of your observations look like?</p>
+<p>Many students will draw a normal distribution, typically centered near 50. Ask them what this implies for a betting strategy and whether such a strategy is likely to make money. Then ask them for their common-sense evaluation of such a strategy.</p>
+<p>If you teach calculus as well as statistics, you might be tempted to point to the inflection points if the normal curve. If you do so, it should be because you want to teach a lesson about inflection points, not about statistics.</p>
+</div>
+</div>
+<div id="active" class="section level1">
+<h1>Creating an active classroom</h1>
+<p>See the document on <a href="/etc/tips-for-active-classroom.html">general tips for creating an active classroom</a>.</p>
+<ul>
+<li>Directly engage the matter of how the meaning of “normal” in statistics is different from the everyday meaning.
+<ul>
+<li>Ask students to think about the word “normal” means outside the statistics class.</li>
+</ul></li>
+<li>What’s a normal BMI?
+<ul>
+<li>WHO definitions</li>
+<li>Does the range 20-25 contain most people?</li>
+<li>How big a range to contain 95% of people?</li>
+</ul></li>
+<li><p>What’s a normal age to have a baby?</p></li>
+<li><p>What’s a normal systolic blood pressure?</p></li>
+<li><p>What’s a normal height?</p></li>
+<li><p>Sticky note. Right down the oldest age at which they’d call a mother “young” (etc) – get the students’ various opinions out there in a way that’s visible to the students.</p></li>
+</ul>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/activities">activities (27)</a>
+            </li>
+            
+            <li><a href="/categories/activity-guide">activity-guide (8)</a>
+            </li>
+            
+            <li><a href="/categories/computing">computing (2)</a>
+            </li>
+            
+            <li><a href="/categories/little-app">little-app (7)</a>
+            </li>
+            
+            <li><a href="/categories/presentations">presentations (6)</a>
+            </li>
+            
+            <li><a href="/categories/real_data">real_data (10)</a>
+            </li>
+            
+            <li><a href="/categories/tutorials">tutorials (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/bias"><i class="fa fa-tags"></i> bias</a>
+            </li>
+            
+            <li><a href="/tags/causality"><i class="fa fa-tags"></i> causality</a>
+            </li>
+            
+            <li><a href="/tags/cloud"><i class="fa fa-tags"></i> cloud</a>
+            </li>
+            
+            <li><a href="/tags/confidence-interval"><i class="fa fa-tags"></i> confidence-interval</a>
+            </li>
+            
+            <li><a href="/tags/dag"><i class="fa fa-tags"></i> dag</a>
+            </li>
+            
+            <li><a href="/tags/data_sources"><i class="fa fa-tags"></i> data_sources</a>
+            </li>
+            
+            <li><a href="/tags/distribution-shapes"><i class="fa fa-tags"></i> distribution-shapes</a>
+            </li>
+            
+            <li><a href="/tags/experiment"><i class="fa fa-tags"></i> experiment</a>
+            </li>
+            
+            <li><a href="/tags/f-test"><i class="fa fa-tags"></i> f-test</a>
+            </li>
+            
+            <li><a href="/tags/flexibility"><i class="fa fa-tags"></i> flexibility</a>
+            </li>
+            
+            <li><a href="/tags/graphics"><i class="fa fa-tags"></i> graphics</a>
+            </li>
+            
+            <li><a href="/tags/inference"><i class="fa fa-tags"></i> inference</a>
+            </li>
+            
+            <li><a href="/tags/mean"><i class="fa fa-tags"></i> mean</a>
+            </li>
+            
+            <li><a href="/tags/median"><i class="fa fa-tags"></i> median</a>
+            </li>
+            
+            <li><a href="/tags/normal"><i class="fa fa-tags"></i> normal</a>
+            </li>
+            
+            <li><a href="/tags/normal-distribution"><i class="fa fa-tags"></i> normal-distribution</a>
+            </li>
+            
+            <li><a href="/tags/pdf-format"><i class="fa fa-tags"></i> pdf-format</a>
+            </li>
+            
+            <li><a href="/tags/proportions"><i class="fa fa-tags"></i> proportions</a>
+            </li>
+            
+            <li><a href="/tags/r-square"><i class="fa fa-tags"></i> r-square</a>
+            </li>
+            
+            <li><a href="/tags/r-squared"><i class="fa fa-tags"></i> r-squared</a>
+            </li>
+            
+            <li><a href="/tags/rare"><i class="fa fa-tags"></i> rare</a>
+            </li>
+            
+            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
+            </li>
+            
+            <li><a href="/tags/response-vs-explanatory"><i class="fa fa-tags"></i> response-vs-explanatory</a>
+            </li>
+            
+            <li><a href="/tags/risk"><i class="fa fa-tags"></i> risk</a>
+            </li>
+            
+            <li><a href="/tags/rstudio"><i class="fa fa-tags"></i> rstudio</a>
+            </li>
+            
+            <li><a href="/tags/skew"><i class="fa fa-tags"></i> skew</a>
+            </li>
+            
+            <li><a href="/tags/standard-deviation"><i class="fa fa-tags"></i> standard-deviation</a>
+            </li>
+            
+            <li><a href="/tags/summary-interval"><i class="fa fa-tags"></i> summary-interval</a>
+            </li>
+            
+            <li><a href="/tags/t-test"><i class="fa fa-tags"></i> t-test</a>
+            </li>
+            
+            <li><a href="/tags/tidy-data"><i class="fa fa-tags"></i> tidy-data</a>
+            </li>
+            
+            <li><a href="/tags/unit-of-observarion"><i class="fa fa-tags"></i> unit-of-observarion</a>
+            </li>
+            
+            <li><a href="/tags/variables"><i class="fa fa-tags"></i> variables</a>
+            </li>
+            
+            <li><a href="/tags/word-format"><i class="fa fa-tags"></i> word-format</a>
+            </li>
+            
+            <li><a href="/tags/z-score"><i class="fa fa-tags"></i> z-score</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            A collaborative project by the MAA, the ASA, and AMATYC
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong><a href='http://statprep.org'>StatPREP.org</a></strong>
+
+            
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Support provided by the National Science Foundation (grant DUE-1626337).</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

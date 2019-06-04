@@ -1,0 +1,119 @@
+---
+title: "DATA SOURCE: Big data from machine-learning sites"
+description: "Records from a YouTube experiment to compare comedy videos"
+weight: 38
+author: "Danny Kaplan"
+categories:
+- real_data
+date: "2019-05-30"
+---
+
+
+
+<p>One source of fairly large datasets is machine-learning repositories or contests such as Kaggle.</p>
+<p>This example concerns a dataset available at a <a href="https://archive.ics.uci.edu/ml/datasets.php">repository from the University of California at Irvine</a>.</p>
+<p>The data set, <a href="https://archive.ics.uci.edu/ml/datasets/YouTube+Comedy+Slam+Preference+Data#">available here</a>, is about YouTube viewer’s preferences among comedy videos. Attractive features of the dataset are:</p>
+<ol style="list-style-type: decimal">
+<li>It has a simple structure: just three variables.</li>
+<li>The videos are (often?) still available on YouTube, providing some motivation for working with the data.</li>
+</ol>
+<div id="process" class="section level2">
+<h2>Process</h2>
+<ol style="list-style-type: decimal">
+<li>Download the ZIP file from the repository</li>
+<li>UNZIP</li>
+<li>Read in the data</li>
+</ol>
+<pre class="r"><code>file_name &lt;- &quot;/Users/kaplan/Downloads/comedy_comparisons/comedy_comparisons.train&quot;
+Clips &lt;- readr::read_csv(file_name, col_names = FALSE)
+names(Clips) &lt;- c(&quot;left&quot;, &quot;right&quot;, &quot;winner&quot;)</code></pre>
+</div>
+<div id="what-to-do" class="section level2">
+<h2>What to do</h2>
+<p>As usual, it isn’t clear what statistically informative concept can be illustrated with these data. It’s necessary to explore and see where the data takes you.</p>
+<p>In the end, I decided on a simple-sounding question: Which is the best clip? The answer, as you’ll see, involves balancing the win rate and the number of trials.</p>
+<p>Here’s the winner …</p>
+<iframe width="280" height="157" src="https://www.youtube.com/embed/HE7cxOa9pXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="exploring" class="section level2">
+<h2>Exploring</h2>
+<p>The data are organized as three variables:</p>
+<p><code>left</code> and <code>right</code> contain ID numbers for videos on YouTube. <code>winner</code> indicates whether the left video or the right video were preferred by the viewer.</p>
+<p>Some questions:</p>
+<ol style="list-style-type: decimal">
+<li><p>How many reviews are there? How many videos?</p>
+<pre class="r"><code>nrow(Clips)</code></pre>
+<pre><code>## [1] 912969</code></pre>
+<pre class="r"><code>length(unique(c(Clips$left, Clips$right)))</code></pre>
+<pre><code>## [1] 18474</code></pre></li>
+<li><p>Which is the most preferred video?</p>
+<pre class="r"><code>Wins &lt;- 
+  Clips %&gt;%
+  mutate(video = ifelse(winner == &quot;left&quot;, left, right)) %&gt;%
+  group_by(video) %&gt;%
+  summarize(wins  = n()) %&gt;%
+  arrange(desc(wins)) 
+head(Wins)</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   video        wins
+##   &lt;chr&gt;       &lt;int&gt;
+## 1 C8IJnUM0yQo 33653
+## 2 W9y6nwBwwyQ 27708
+## 3 LLaKkC5U9Po 26273
+## 4 7zCIRPQ8qWc 21130
+## 5 YowPM7yZv2U 19894
+## 6 bOcugYjrvLg 19812</code></pre>
+<pre class="r"><code>tail(Wins)</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   video        wins
+##   &lt;chr&gt;       &lt;int&gt;
+## 1 zyVaOgXWTk8     1
+## 2 Zz01eubLEZU     1
+## 3 zZ6VsVmRub0     1
+## 4 zzGf8A-s-yo     1
+## 5 ZZlKQ4m_X3g     1
+## 6 ZzTF7BQ2Mps     1</code></pre></li>
+</ol>
+<p>But see the section on win rate below.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>How many contests did each video appear in?</p>
+<pre class="r"><code>Lefts &lt;- Clips %&gt;% ungroup() %&gt;% group_by(left) %&gt;% summarize(nleft = n())
+Rights &lt;- Clips %&gt;% ungroup() %&gt;% group_by(right) %&gt;% summarize(nright = n()) 
+Contests &lt;-  Lefts %&gt;%
+  inner_join(Rights, by = c(left = &quot;right&quot;)) %&gt;%
+  mutate(total  =  nleft + nright) %&gt;%
+  select(left, total)</code></pre></li>
+<li><p>What’s the win rate? Perhaps insist that the p-value against the null of prob one-half be smaller than 0.001 or 0.0001. Or look at the lower bound of the 95% confidence interval on the number of wins.</p>
+<pre class="r"><code>Scores &lt;- Wins %&gt;% inner_join(Contests, by = c(video = &quot;left&quot;)) %&gt;%
+  mutate(win_rate = wins / total) %&gt;%
+  mutate(p_value = 1 - pbinom(wins-1, p = 0.5, size = total )) %&gt;%
+  mutate(lower = qbinom(.025,  total, win_rate)) %&gt;%
+  mutate(pessimist = lower / total)</code></pre></li>
+</ol>
+<p>Can you pick which is the best clip?</p>
+<pre class="r"><code>Plot &lt;- gf_point(win_rate ~ log10(total), data  = Scores, alpha  = 0.03)
+Plot</code></pre>
+<p><img src="/blog/data-machine-learning_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>The highest scoring clips are among those with the fewest views.</p>
+<p>According to the p-value, which is the best movie?</p>
+<pre class="r"><code>Scores %&gt;%  
+  filter(p_value &lt; 0.0001) %&gt;%
+  arrange(desc(pessimist))</code></pre>
+<pre><code>## # A tibble: 129 x 7
+##    video        wins total win_rate  p_value lower pessimist
+##    &lt;chr&gt;       &lt;int&gt; &lt;int&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;
+##  1 HE7cxOa9pXg    23    25    0.92  9.72e- 6    20     0.8  
+##  2 VCVuWMSd4Nk    62    72    0.861 1.34e-10    56     0.778
+##  3 0o-FA5hXaf4    38    44    0.864 4.72e- 7    33     0.75 
+##  4 oMgKyG_aAiE    28    32    0.875 9.65e- 6    24     0.75 
+##  5 DFMpoEsC-Tc    49    59    0.831 1.35e- 7    43     0.729
+##  6 cQzPNT780bs    62    76    0.816 1.16e- 8    55     0.724
+##  7 GVaPB-I0d30    49    60    0.817 3.78e- 7    43     0.717
+##  8 iaYgMbiR9Rg    24    28    0.857 9.00e- 5    20     0.714
+##  9 hED4Tz1JM50    75    94    0.798 2.41e- 9    67     0.713
+## 10 3hacWx_k2Oo    56    69    0.812 8.42e- 8    49     0.710
+## # … with 119 more rows</code></pre>
+<p>Links to be best videos …</p>
+<p>Win rates: <a href="https://www.youtube.com/watch?v=HE7cxOa9pXg">92%</a>, <a href="https://www.youtube.com/watch?v=hED4Tz1JM50">80%</a></p>
+</div>

@@ -1,0 +1,179 @@
+---
+title: "R Tutorials for instructors"
+description: "Running R in a  sandbox allows  you and your students to see what a command language can do, without letting it run away from you."
+weight: 11
+date: "2019-04-22"
+categories:
+  - tutorials
+  - computing
+---
+
+```{r include = FALSE}
+library(SDSdata)
+library(htmltools) 
+```
+
+<!--0 “default”, “cerulean”, “journal”, “flatly”, “readable”, “spacelab”, “united”, “cosmo”, “lumen”, “paper”, “sandstone”, “simplex”, “yeti” -->
+
+<!-- Make the /thumbnails with `make_thumbnail_image()` in SDSdata, e.g.
+make_thumbnail_image("https://dtkaplan.shinyapps.io/Starbucks/#section-visualizing-starbucks-locations", delay = 10)
+-->
+
+# StatPREP tutorials
+
+A StatPREP **tutorial** is an interactive document mainly intended to help **instructors** develop statistical, graphical, and general computing skills using R statements. 
+
+This page provides **links** to instructor tutorials. Each link takes you to a web service that displays the document in your web browser. You don't need to install any other software on your computer to use the lessons and tutorials.
+
+If you're looking for materials for use in class or other student-oriented settings, follow these links to StatPREP [**activites**](/categories/activities) or [**Little Apps**](/categories/little-app) 
+
+
+
+```{r echo = FALSE}
+app_display <- function(URL, img, caption=NULL) {
+  htmltools::span(
+    htmltools::a(class = "thumbnail", title = caption, href = URL,  htmltools::span(class = ifelse( !is.null(caption), "caption", ""),
+                                                                                    ifelse(!is.null(caption), caption, "")
+    )), br(),
+    htmltools::a(class = "thumbnail", title = caption, href = URL,htmltools::img(src = img, width = "50%")),
+    
+    br(), " ",
+    br()
+  )
+  
+}
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Functions/", delay = 10)
+functions_thumb <- app_display("https://dtkaplan.shinyapps.io/Functions/",
+                                 "/thumbnails/functions.png",
+                                 "Functions in R")
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Formulas/", delay = 10)
+formulas_thumb <- app_display("https://dtkaplan.shinyapps.io/Formulas/",
+                                 "/thumbnails/formulas.png",
+                                 "Formulas")
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Tutorial_Data_frames/", delay = 10)
+data_frames_thumb <- app_display("https://dtkaplan.shinyapps.io/Tutorial_data_frames/",
+                                 "/thumbnails/tutorial_data_frames.png",
+                                 "Data frames")
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Tutorial_Counting/", delay = 10)
+counting_thumb <- app_display("https://dtkaplan.shinyapps.io/Tutorial_Counting/",
+                                "/thumbnails/tutorial_counting.png", 
+                                "Counts and proportions")
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Tutorial_Calculating_statistics/")
+dfstats_thumb <- app_display("https://dtkaplan.shinyapps.io/Tutorial_Calculating_statistics/",
+                               "/thumbnails/tutorial_calculating_statistics.png",
+                               "Calculating statistics")
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Tutorial_Densities/")
+densities_thumb <- app_display("https://dtkaplan.shinyapps.io/Tutorial_Densities/",
+                               "/thumbnails/tutorial_densities.png",
+                               "Histograms and better")
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/tutorial_conventional_graphics/#section-histogram")
+conventional_graphics_thumb <- app_display("https://dtkaplan.shinyapps.io/tutorial_conventional_graphics/",
+                               "/thumbnails/tutorial_conventional.png",
+                               "Conventional graphics")
+
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/tutorial_data_science_graphics/#section-graphics-for-descriptive-statistics")
+data_graphics_thumb <- app_display(
+  "https://dtkaplan.shinyapps.io/tutorial_data_science_graphics/", 
+  "/thumbnails/tutorial_data_graphics.png",
+  "Data science graphics")
+
+# make_thumbnail_image("https://dtkaplan.shinyapps.io/Tutorial_data_and_Statistical_Graphics")
+data_graphics2_thumb <- app_display(
+  "https://dtkaplan.shinyapps.io/Tutorial_data_and_Statistical_Graphics",
+  "/thumbnails/tutorial_data_and_statistical_graphics.png",
+  "Streamlined data graphics")
+
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Five_data_verbs")
+data_verbs_thumb <- app_display("http://dtkaplan.shinyapps.io/Five_data_verbs", 
+                 "/thumbnails/five_data_verbs.png",
+                 "Five data verbs✐")
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Workshop_wrangling")
+workshop_wrangling_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Workshop_wrangling", 
+                "/thumbnails/workshop_wrangling.png",
+                "Data wrangling✐")
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Tutorial_regression")
+regression_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Tutorial_regression", 
+                "/thumbnails/Tutorial_regression.png",
+                "Regression")
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Tutorial_classical_inference")
+classical_inference_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Tutorial_classical_inference", 
+                "/thumbnails/Tutorial_classical_inference.png",
+                "Classical statistical inference")
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Tutorial_its_all_regression")
+its_all_regression_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Tutorial_its_all_regression", 
+                "/thumbnails/Tutorial_its_all_regression.png",
+                "Streamlining inference with regression")
+
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Tutorial_resampling")
+resampling_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Tutorial_resampling", 
+                "/thumbnails/Tutorial_resampling.png",
+                "Resampling")
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Tutorial_sampling")
+sampling_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Tutorial_sampling", 
+                "/thumbnails/Tutorial_sampling.png",
+                "Sampling")
+
+# make_thumbnail_image("http://dtkaplan.shinyapps.io/Tutorial_permutation_test")
+permutation_test_thumb <- 
+  app_display("http://dtkaplan.shinyapps.io/Tutorial_permutation_test", 
+                "/thumbnails/Tutorial_permutation_test.png",
+                "Permutation test")
+
+```
+
+## Tutorials
+
+### R and data fundamentals
+
+
+
+`r div(functions_thumb, formulas_thumb, data_frames_thumb)`
+
+    
+### Descriptive statistics & graphics
+
+
+`r div(counting_thumb, dfstats_thumb, densities_thumb, conventional_graphics_thumb, data_graphics_thumb, data_graphics2_thumb)`
+
+
+### Data wrangling
+
+```{r echo = FALSE}    
+div(class = "row", data_verbs_thumb, workshop_wrangling_thumb)
+```
+
+### Inference and regression
+
+```{r echo = FALSE}    
+div(class = "row", 
+    regression_thumb, classical_inference_thumb, its_all_regression_thumb,
+    sampling_thumb, resampling_thumb, permutation_test_thumb
+)
+```
+
+
+
+
+
+
+

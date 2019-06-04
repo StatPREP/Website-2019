@@ -1,0 +1,72 @@
+---
+title: "Shapes of distributions"
+date: "2019-05-19"
+weight: 9
+description: "Introduces terms such as skew, bi-modal, and flat, by reference to the difference of the actual variable from a theoretical normal distribution."
+output: 
+  word_document:
+    reference_docx: lesson-style.docx
+  pdf_document: tint::tintPdf
+  html_document:
+    rmdformats::material
+tags: 
+  - normal
+  - distribution-shapes
+categories: 
+  - "Activities"
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-distribution-shapes.docx">Word</a> : <a href="/pdf-versions/activity-distribution-shapes.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>As you’ve probably figured out already, the columns of data frames are called <em>variables</em> because the values in the column are not all the same, that is, they vary.</p>
+<p>In the early 1800s, it was discovered that many different variables have a pattern in common: the most common values are near the mean and values become less common the further they are from the mean. Not all variables have this pattern, but many do and so the pattern came to be called the <em>normal distribution</em>.</p>
+<p>In this lesson, you’re going to look at several different variables and compare them to the normal distribution. Based on this comparison, you’ll be able to make an appropriate description in words of the distribution.</p>
+<p>Here are three rules of thumb, each of which can be used to estimate the mean and standard deviation of a distribution:</p>
+<ol style="list-style-type: decimal">
+<li><p>Mark off the interval containing the center <em>two-thirds</em> of the data. That interval will run from one standard deviation below the mean to one standard deviation above the mean. So the mean is in the very center, and the standard deviation is <em>half the length of the interval</em>. It may take some practice to be able to judge where the center two-thirds of the data is, and some people are better at it than others, just as some cooks can measure ingredients effectively by eye.</p></li>
+<li><p>Mark off the “summary interval”, that is, the interval containing the center <em>95%</em> of the data. 2.5% of the data points should be above the interval and 2.5% below. So, if n = 200, there will be 5 points above an five points below.</p>
+<p>When the distribution is bell-shaped, the summary interval runs from two standard deviations below the mean to two standard deviations above the mean, so the standard deviation is <em>one quarter the length of the interval</em>. The mean is right in the center of the distribution.</p></li>
+<li><p>If you have a display of the distribution such as a violin plot or a density plot, there’s another way to find the interval from one standard deviation below the mean to one standard deviation above the mean. First, find the peak of the display of the distribution. Then come down half way from the peak and mark the two points where the display of the distribution touches the half-way line. Those points are pretty close to plus-and-minus one standard deviation from the mean.</p></li>
+</ol>
+<p>Explaining (3) is better done with a picture. The figure below shows values of a variable plotted along with a violin display. One line is drawn at the peak of the violin. The “half-way” line is drawn half of the way from the center of the violin to the peak. The two dots show the points whose vertical position is one standard deviation on either side of the mean.</p>
+<p><img src="/blog/activity-distribution-shapes_files/figure-html/unnamed-chunk-2-1.png" width="80%" /></p>
+<p>You might prefer one or the other of these three rules of thumb. Try them out and see which works best for you.</p>
+<div id="activity" class="section level2">
+<h2>Activity</h2>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_center_spread/,%20https://dtkaplan.shinyapps.io/LA_center_spread2/">center-and-spread</a> Little App. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Using the NHANES data, set the response variable to <code>pulse</code> and leave the explanatory variable at <code>.none.</code>. Set the sample size to n = 1000.</p>
+<ol style="list-style-type: decimal">
+<li><p>Check the “Density violin” box to turn on the violin plot.</p></li>
+<li><p>Pick one of the three rules of thumb to estimate the mean and standard deviation.</p>
+<p><em>Write down your estimates of the mean and the standard deviation.</em>   .  .  .  .  .  </p>
+<p> </p></li>
+<li><p>Check the “Std. deviation” box to turn on a ruler calibrated in units of the standard deviation.</p>
+<p><em>How close were your estimates in (2) to the actual values displayed by the ruler?</em>   .  .  .  .  .  </p>
+<p> </p></li>
+<li><p>Turn off the standard deviation ruler and repeat the above for several variables from the various data
+frames that come with the Little App. You might want to practice several times to get a hang for how to eyeball each of the intervals in the three rules of thumb.</p></li>
+<li><p>As you work through different variables, note which ones have a violin corresponding to the bell-shaped normal curve. The rules of thumb work best for variables that have a normal-like distribution.</p>
+<p><em>Write down two variables with a bell-shaped distribution.</em>   .  .  .  </p>
+<p> </p>
+<p><em>Write down at least one variable that <strong>does not have</strong> a bell-shaped distribution.</em>   .  .  .  </p>
+<p> </p></li>
+<li><p>Now you’re going to find some variables whose density has specific shapes.</p>
+<p>`* Find a variable with a density that has a long trailing tail <em>below</em> the mean, but not above it. (This is called “negatively skewed” or “left skewed.”)</p>
+<p><em>Write down the name of the left skewed variable you found.</em>   .  .  .  </p>
+<p>`* Find a variable with a density that has a long trailing tail <em>above</em> the mean, but not below it it. (This is called “positively skewed” or “right skewed.”)</p>
+<p><em>Write down the name of the right skewed variable you found.</em>   .  .  .  </p>
+<p>`* Find a variable for which the density has two peaks. (This is called “bimodal.”</p>
+<p><em>Write down the name of the bimodal variable you found.</em>   .  .  .  </p></li>
+</ol>
+<hr />
+<p>Version 0.2, 2019-06-04, Thomas Kinzeler and Danny Kaplan, <a href="/word-versions/activity-distribution-shapes.docx">Word version</a></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>&lt;<a href="https://dtkaplan.shinyapps.io/LA_center_spread/" class="uri">https://dtkaplan.shinyapps.io/LA_center_spread/</a>, <a href="https://dtkaplan.shinyapps.io/LA_center_spread2/" class="uri">https://dtkaplan.shinyapps.io/LA_center_spread2/</a>&gt;<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

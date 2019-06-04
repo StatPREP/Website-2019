@@ -1,0 +1,97 @@
+---
+title: "Variation and the 95% summary interval"
+date: "StatPREP Class Activity"
+weight: 5
+description: "We typically describe variation  or uncertainty using an *interval*. The 95% summary interval is a way to describe the spread of a variable."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  html_document:
+    rmdformats::material
+  pdf_document: tint::tintPdf 
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-summary-interval.docx">Word</a> : <a href="/pdf-versions/activity-summary-interval.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Why is the word <em>variable</em> used to describe a column of a data frame? In mathematics, a variable is an <em>unknown</em> quantity. In math class, when they say “solve for x,” they mean figure out what the value of unknown x is.</p>
+<p>In statistics, a <em>variable</em> is different. It’s a known quantity – known because you measured it, known because there it is, right in the data frame. This known quantity is called a variable because it takes on various different values in one row or another of the data frame.</p>
+<p>An important technical task in statistics is to <em>measure</em> how much variation there is in a variable. The reason this is important is that we are often interested in <em>explaining</em> a response variable using one or more explanatory variables. In deciding whether a potential explanation is a good one or not, it’s helpful to know how much of the variation in the response can be attributed to the explanatory variables.</p>
+<p>There are several ways to measure variation of a quantitative variable. The most commonly used in statistics is the <em>standard deviation</em>. Another measure is the <em>95% summary interval</em>, which is perhaps easier to understand than the standard deviation.</p>
+<p>The purpose of this lesson is to help you understand the 95% summary interval and why it is used by statisticians.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_center_spread/,%20https://dtkaplan.shinyapps.io/LA_center_spread2/">Center and spread</a> Little App (see footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>)., and select the <code>Births_2014</code> data frame. Set the sample size to n = 200.</p>
+<ol style="list-style-type: decimal">
+<li><p>Set the response variable to be <code>age_mother</code>, the age of the mother at the time of birth. You’ll see that there is variability, that is, not every mother is exactly the same age.</p></li>
+<li><p>Perhaps the most natural way to measure the amount of variation is the length of the interval between the smallest value and the largest value.</p>
+<ul>
+<li>Use the measuring stick built in to the app to find the length of the interval from smallest to largest age.</li>
+</ul></li>
+</ol>
+<p><em>How long is it?</em>   .  .  .  </p>
+<p><em>What are the units?</em>   .  .  .  </p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Leaving the measuring stick from (2) on the display, press the New Sample button. For the new sample, are the maximum and minimum values the same as in the original sample?</p>
+<ul>
+<li>Press New Sample several times to get an idea of how much the maximum and minimum value vary from sample to sample.</li>
+<li>Do that again 10 times, but each time you do so use the measuring stick to find the length of the max-to-min interval for that sample. Write it down. In the end, you’ll have 10 values for the length of the interval. You can get an idea for how much they vary.</li>
+</ul>
+<p><em>List your 10 values here:</em>  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Sometimes variables are such that the values of the maximum and minimum depend strongly on the sample. Sometimes not. One at a time, set each of these variables to be the response variable: mother’s weight, baby’s weight, APGAR score.</p>
+<ul>
+<li>For each of the variables, press New Sample several times. The max-to-min interval will change from sample to sample. Use the measuring stick to find the length of each interval.</li>
+</ul>
+<p><em>Write down your interval lengths here.</em>  </p>
+<p> </p>
+<p><em>What’s the range of the interval lengths you measured?</em>  </p>
+<p> </p></li>
+<li><p>You might have noticed that only two of the points in each sample determine the max-to-min interval. For this reason, there is a lot of variation in the interval length from sample to sample. To avoid this, statisticians have invented another kind of interval to describe variation called the “95% summary interval.” The idea is to avoid making the interval depend on just two points and instead let several points contribute. The 95% interval is designed to cover <em>almost all</em> of the data points, where “almost all” means 95%.</p>
+<ul>
+<li>Turn on the “summary interval” display and make sure the “interval level” is set to 95%. Keep the sample size at n = 200.</li>
+</ul>
+<p><em>How many of the data points are <strong>outside</strong> the summary interval?</em> (The summary interval is drawn as a thick, grey I-shaped bar. Include in your count the points covered by the horizontal bars of the I.   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p><em>Explain why this number makes sense.</em> (Hint: Think how the 95% interval is defined.)   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p> </p>
+<p> </p>
+<ul>
+<li>Press New Sample many times to get a sense for whether the 95% interval or the max-to-min interval varies more from sample to sample.</li>
+</ul>
+<p><em>Which interval varies more?</em>   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li>In statistics, you’re almost always working with a sample but your real interest is not that particular sample, but the broader population from which the sample was taken. Statisticians like to work with summaries that are informative but which also behave “nicely” with respect to sampling. In particular,
+<ul>
+<li>The summary shouldn’t vary excessively from sample to sample.</li>
+<li>The summary shouldn’t change systematically as the sample size gets larger.
+You’ve already looked at how the max-to-min interval and the 95% summary interval vary from one sample to another, holding the sample size constant. (We used n = 200.) Now you’re going to see what happens as the sample size get’s bigger and bigger.</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>Set the sample size to n = 400 and turn on the display of the 95% summary interval. Quickly press New Sample several times to get an idea of a typical value for the maximum and minimum value of the variable in the sample. Then, use the measuring stick to mark out roughly the range from the typical maximum to the typical minimum.</p>
+<p><em>What’s a typical range of the max-to-min interval?</em>   .  .  .  .  .  </p></li>
+<li><p>Similarly, find the typical length of the 95% summary interval over many samples. We only have one measuring stick in the app, so use your finger widths to record that typical length. (E.g. the interval is 3 fingers wide, or whatever.)</p>
+<p><em>What’s a typical range of the 95% interval?</em>   .  .  .  .  .  </p></li>
+<li><p>Now increase the sample size to n = 1000. Press New Sample several times and keep track of how often the max-to-min interval is shorter than the one shown by the measuring stick for n = 200, and how often it is longer.</p>
+<p>What’s a typical range of the max-to-min interval?   .  .  .  .  .  </p></li>
+<li><p>Similarly compare the length of the 95% summary interval when n = 1000 to the length of the interval you recorded with your fingers in step (b).</p>
+<p><em>Circle the correct choice.</em>   .  .  .</p>
+<p><em>Compared to the n = 200 interval, the n = 1000 interval is about … the same length … twice as long … half as long.</em></p></li>
+<li><p>Do the same with a sample size of n = 5000.</p>
+<p><em>Which is more consistent across sample sizes, the 95% interval or the max-to-min interval?</em>   .  .  .  .  .  .  .  .  .  .  </p></li>
+</ol>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Daniel Kaplan,</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>&lt;<a href="https://dtkaplan.shinyapps.io/LA_center_spread/" class="uri">https://dtkaplan.shinyapps.io/LA_center_spread/</a>, <a href="https://dtkaplan.shinyapps.io/LA_center_spread2/" class="uri">https://dtkaplan.shinyapps.io/LA_center_spread2/</a>&gt;<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

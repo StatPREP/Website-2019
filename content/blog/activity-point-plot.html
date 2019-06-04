@@ -1,0 +1,143 @@
+---
+title: "Data and Point Plots"
+date: "2019-04-15"
+description: "Introduces the distinction between quantitative and categorical variables through their very different appearances in a point plot."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+weight: 100
+categories:
+  - activities
+tags:
+  - graphics
+  - variables
+
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-point-plot.docx">Word</a> : <a href="/pdf-versions/activity-point-plot.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>Data can be many things, but one of the most common formats is a data frame, a kind of spreadsheet of rows and columns. We’ll work with the data frame <code>Births_2014</code>, which is based on data published by the US Centers for Disease Control. <code>Births_2014</code> has 100,000 rows. Each row reports a live birth in the US in 2014. There are dozens of variables, a few of which are shown below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">sex</th>
+<th align="center">baby_wt</th>
+<th align="center">gestation</th>
+<th align="center">delivery</th>
+<th align="center">age_mother</th>
+<th align="center">wic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">3430</td>
+<td align="center">38</td>
+<td align="center">spontaneous</td>
+<td align="center">36</td>
+<td align="center">n</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">3203</td>
+<td align="center">39</td>
+<td align="center">spontaneous</td>
+<td align="center">32</td>
+<td align="center">y</td>
+</tr>
+<tr class="odd">
+<td align="center">M</td>
+<td align="center">3644</td>
+<td align="center">39</td>
+<td align="center">vacuum</td>
+<td align="center">20</td>
+<td align="center">n</td>
+</tr>
+<tr class="even">
+<td align="center">M</td>
+<td align="center">3756</td>
+<td align="center">40</td>
+<td align="center">cesarean</td>
+<td align="center">33</td>
+<td align="center">n</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">4026</td>
+<td align="center">40</td>
+<td align="center">spontaneous</td>
+<td align="center">26</td>
+<td align="center">y</td>
+</tr>
+<tr class="even">
+<td align="center">M</td>
+<td align="center">3285</td>
+<td align="center">40</td>
+<td align="center">vacuum</td>
+<td align="center">21</td>
+<td align="center">y</td>
+</tr>
+</tbody>
+</table>
+<p>It’s hard to draw much of a conclusion by looking directly at a large data frame. But a graphical display of data can help.</p>
+<p>A <em>point plot</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> is a basic statistical graphic that displays two variables from a data frame. One variable is represented on the vertical axis, another variable on the horizontal axis. Like the following point plot of the baby’s weight (in grams) and the length (in weeks) of the pregnancy (<code>gestation</code>).</p>
+<p><img src="/blog/activity-point-plot_files/figure-html/unnamed-chunk-3-1.png" width="80%" /></p>
+</div>
+<div id="exercise" class="section level1">
+<h1>Exercise</h1>
+<p>Referring to the graph in the previous section …</p>
+<ol style="list-style-type: decimal">
+<li>Find in the graph the dot corresponding to the first row in the data table above, the one for a male baby delivered spontaneously to a 28 year-old mother.</li>
+<li>Describe the overall pattern shown in the graph as a whole. Use whatever form of description you think is appropriate.</li>
+<li>Of course, weight differs from one baby to another. In other words, weight <em>varies</em>. Describe how much <em>variation</em> there is in babies’ weight, according to the graph.</li>
+<li>Describe how much <em>variation</em> there is in gestation length.</li>
+<li>At which length of gestation are the heaviest babies born?</li>
+</ol>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open the <a href="https://dtkaplan.shinyapps.io/LA_point_plot/">Point Plot Little App</a>. (See footnote<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>).</p>
+<ol style="list-style-type: decimal">
+<li><p>Set the data source to <code>Births_2014</code>. Choose <code>baby_wt</code> as the response variable and <code>gestation</code> as the explanatory variable. The resulting plot should look much like the graph seen in the introduction to this lesson. Change the sample size to <span class="math inline">\(n = 5\)</span>.</p></li>
+<li><p>Open the “Statistics” tab under the main graph. This tab displays the same data as in the plot, but in data-frame format.</p>
+<ul>
+<li>For each of the <span class="math inline">\(n=5\)</span> rows of the data frame, find the corresponding point in the graphic.*</li>
+</ul></li>
+<li><p>Change the <em>explanatory</em> variable to <code>sex</code>.</p>
+<ul>
+<li><p>For each of the <span class="math inline">\(n=5\)</span> rows of the data frame displayed in the Statistics tab, find the corresponding point in the graphic.</p></li>
+<li><p>Change <span class="math inline">\(n\)</span> to 500. In the <code>baby_wt</code> versus <code>sex</code> graph, all the points are lined up in two columns.</p></li>
+</ul>
+<p><em>Explain why.</em>   .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Change the <em>response</em> variable to <code>delivery</code>, keeping the explanatory variable as <code>sex</code>.</p>
+<ul>
+<li><p>For a few of the rows of the data frame shown in the Statistics tab, find the corresponding point in the graphic.</p></li>
+<li><p>Make sure that <span class="math inline">\(n\)</span> is something large, say <span class="math inline">\(n = 500\)</span>. There aren’t 500 points in the <code>delivery</code> versus <code>sex</code> graph.</p></li>
+</ul>
+<p><em>Explain why?</em>   .  .  .  .  .  </p>
+<p> </p>
+<p> </p></li>
+<li><p>Check the “jitter categorical variables” box in the controls. The display changes and now there are many more points in the plot.</p>
+<ul>
+<li>For a few of the rows in the data frame shown in the Statistics tab, find the corresponding point in the graphic.</li>
+</ul>
+<p><em>Are you able to uniquely identify in the graph the specific point corresponding to each row? Explain how you can do this or why it’s not possible.</em>   .  .  .  .  .  </p>
+<p> </p>
+<p> </p>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.3, 2019-06-04, Daniel Kaplan, <a href="/word-versions/activity-point-plot.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The word “scatterplot” is also used.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><a href="https://dtkaplan.shinyapps.io/LA_point_plot/" class="uri">https://dtkaplan.shinyapps.io/LA_point_plot/</a><a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

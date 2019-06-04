@@ -1,0 +1,190 @@
+---
+title: "It's all regression"
+description: "t-tests, p-tests, linear regression: they're all the same thing"
+weight: 50
+categories: 
+  - presentations
+tags:
+  - F-test
+  - inference
+banner: "img/CI-from-F.png"
+---
+
+```{r include = FALSE}
+library(mosaic)
+library(NHANES)
+library(ggformula)
+library(mosaicModel)
+```
+
+
+We almost always work with variables that are either ...
+
+* quantitative
+* categorical with only two levels
+
+
+In relating two variables, there are four possible situations
+
+  | Quantitative | Categorical
+--|:---:|:---:
+  | ![](/images/50mm-h.png) | ![](/images/50mm-h.png)
+**Quant.** |  slope of regression line or correlation coefficient | difference in two means
+............. | .......................................... | ..............................................
+**Categ.** | ??????  | difference in two proportions
+
+
+
+## Presentation in terms of algebra
+
+  | Quantitative | Categorical
+--|:---:|:---:
+  | ![](/images/50mm-h.png) | ![](/images/50mm-h.png)
+**Quant.** |  $b_1 = \frac{n\sum xy - \sum x \cdot  \sum y}{n \sum x^2 - (\sum x)^2}$ | $t = \frac{\bar{x}_1 - \bar{x}_2 - (\mu_1 - \mu_2)}{\sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}}$
+............. | .......................................... | ..............................................
+**Categ.** | ??????  | $z = \frac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\frac{\bar{p}\bar{q}}{n_1} + \frac{\bar{p}\bar{q}}{n_2}}}$
+
+... and associated distributions: t and z
+
+
+```{r echo = FALSE}
+set.seed(101)
+
+D <- NHANES::NHANES %>% select(Height, Age) %>% na.omit() %>%
+  rename(height = Height, age = Age) %>%
+  sample_n(size = 200) %>%
+  mutate(group = ifelse(age > mean(age), "A", "B"),
+         stature = ifelse(height >  162, "tall", "short"),
+         groupq = as.numeric(group == "B") + 1,
+         statureq = as.numeric(stature == "tall") + 1)
+modQQ <- lm(height ~ age, data = D)
+valsQQ <- mod_eval(modQQ, data = D)
+sdQQmod <- df_stats(~ model_output, data = valsQQ, 
+                    mn = mean, sd  = sd) %>%
+  mutate(top = mn + sd)
+sdQQraw <- df_stats(~ height, data = D, 
+                    mn = mean, sd  = sd) %>%
+  mutate(top = mn + sd)
+modQC <- lm(height ~ groupq, data = D)
+valsQC <- mod_eval(modQC, data = D %>% select(groupq))
+
+modCQ <- lm(statureq  ~ age, data = D)
+valsCQ <- mod_eval(modCQ, data = D)
+modCC <- lm(statureq ~ groupq, data = D)
+valsCC <- mod_eval(modCC,  data = D)
+sdCCmod <- df_stats(~ model_output, data = valsCC, 
+                    sd  = sd) %>%
+  mutate(bottom = 1.5, top = bottom + sd)
+sdCCraw <- df_stats(~ statureq, data = D, 
+                    sd  = sd) %>%
+  mutate(bottom = 1.5, top = 1.5 + sd)
+```
+
+```{r echo = FALSE, eval = FALSE}
+# do this by hand and move the plots to the static/images/ directory
+PQQ <- gf_jitter(height ~ age, data = D) %>%
+  gf_line(model_output ~ age, data  = valsQQ) %>%
+  gf_errorbar(model_output + model_output ~ 85, data = valsQQ, color = "blue", alpha = 0.2) %>%
+  gf_point(model_output ~ age, data = valsQQ, color  = "blue")  %>%
+  gf_errorbar(height + height ~ 90, data = D, color  = "red", alpha = 0.3) %>%
+  gf_errorbar(mn + top ~ 88.5, data = sdQQraw, color = "red") %>%
+  gf_errorbar(mn + top ~ 86.5, data = sdQQmod, color = "blue")
+ggsave("PQQ.png", plot  = PQQ, device = "png", width = 150, height = 150, units = "mm")
+
+
+PQC <- gf_jitter(height ~ group, data = D, width = 0.1) %>%
+  gf_line(model_output ~ groupq, data  = valsQC) %>%
+  gf_errorbar(model_output + model_output ~ 2.3, data = valsQC, color = "blue", alpha = 0.2, width = 0.1) %>%
+  gf_jitter(model_output ~ groupq, data = valsQC, color  = "blue",
+            width = 0.15, height = 0.3)  %>%
+  gf_errorbar(height + height ~ 2.5, data = D, color  = "red", alpha = 0.3, width = 0.1)
+ggsave("PQC.png", plot  = PQC, device = "png", width = 150, height = 150, units = "mm")
+
+PCQ <- gf_jitter(stature ~ age, data = D, height = 0.1) %>%
+  gf_line(model_output ~ age, data  = valsCQ) %>%
+  gf_errorbar(model_output + model_output ~ 85, data = valsCQ, color = "blue", alpha = 0.2, width = 2) %>%
+  gf_point(model_output ~ age, data = valsCQ, color  = "blue",
+            width = 0.15, height = 0.3)  %>%
+  gf_errorbar(statureq + statureq ~ 90, data = D, color  = "red", alpha = 0.3, width = 2)
+ggsave("PCQ.png", plot  = PCQ, device = "png", width = 150, height = 150, units = "mm")
+
+PCC <- gf_jitter(stature ~ group, data = D, width = 0.1, height = 0.05, alpha = 0.5) %>%
+  gf_line(model_output ~ groupq, data  = valsCC) %>%
+  gf_errorbar(model_output + model_output ~ 2.3, data = valsCC, color = "blue", alpha = 0.2, width = 0.08) %>%
+  gf_jitter(model_output ~ groupq, data = valsCC, color  = "blue",
+            width = 0.15, height = 0.02, alpha = 0.5)  %>%
+  gf_errorbar(statureq + statureq ~ 2.5, data = D, color  = "red", alpha = 0.3, width = 0.08) %>%
+  gf_errorbar(bottom + top ~ 2.44, data = sdCCraw, color = "red", width  = 0.03) %>%
+  gf_errorbar(bottom + top ~ 2.38, data = sdCCmod, color = "blue", width  = 0.03)
+ggsave("PCC.png", plot  = PCC, device = "png", width = 150, height = 150, units = "mm")
+```
+
+
+## Data beats formulas
+
+  | Quantitative | Categorical
+--|:---:|:---:
+  | ![](/images/50mm-h.png) | ![](/images/50mm-h.png)
+**Quant.** |  ![](/images/PQQ-thumb.png) |  ![](/images/PQC-thumb.png)
+............. | .......................................... | ..............................................
+**Categ.** | ![](/images/PCQ-thumb.png) | ![](/images/PCC-thumb.png)
+
+
+## Raw and model values
+
+The error bars show the size of the standard deviation.
+
+```{r out.width = "80%"}
+knitr::include_graphics("/images/PQQ.png")
+```
+
+## The formal inference procedure
+
+1. Measure the effect size. Call it $\beta$:
+    - slope for Quant vs Quant or Cat vs Quant
+    - difference for Quant vs Cat or Cat vs Cat
+2. Take the ratio of the model-value standard deviation to the raw-value standard deviation. Call this ratio $R$.
+
+![](/images/compare-sd.png)
+
+3. Compute the ratio of "explained" to "unexplained": $$F  = (n-1) \frac{R^2}{1 - R^2}$$
+  
+-----
+
+Eyeballing from the four models (which had n = 200)...
+
+  | Quantitative | Categorical
+--:|:------------:|:------------:
+Quantitative | $\beta = \frac{1\ cm}{3\ years}$           $R \approx 0.5$ $F = 24.8$ | $\beta \approx 8\ cm$,        $R \approx 1/3$ $F \approx 66$
+  |    |   
+  |    |   
+Categorical | $\beta = 0.007$ per year,   $R \approx 0.12$         $F \approx 8.3$| $\beta \approx 0.2$,        $R \approx 0.25$       $F \approx 13.3$
+
+------
+
+4.  Confidence interval on $\beta$ is always $$CI_\beta = \beta (1 \pm 2 /  \sqrt{F})$$
+
+5. p-value ... Look up in this graph.
+
+
+```{r echo = FALSE}
+Fframe = list()
+for (n in c(5, 10, 20, 50, 100, 200)) {
+  Fframe[[n]] <- 
+    data.frame(F = seq(2, 12, by = .1)) %>%
+    mutate(p = 1 - pf(F,  1, n-1),
+           n = n)
+}
+Fframe <-  dplyr::bind_rows(Fframe) %>%
+  mutate(n = factor(n))
+gf_line(p ~ F, data = Fframe, color  = ~n) +
+  scale_y_log10(breaks = c(0.1, 0.05, .002, 0.01, .005,  0.001),
+                minor_breaks = NULL) +
+  scale_x_continuous(breaks  = 2:12)
+```
+
+
+Freebies: 
+
+- correlation coefficient $r = \sqrt{F}$, where the $\pm$ branch is based on the slope.
+- Prefer t?  It's $t = \sqrt{F}$. But F is more general than t.

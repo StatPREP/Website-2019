@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tidy-data on StatPREP Workshops 2019</title>
+    <link>/tags/tidy-data/</link>
+    <description>Recent content in tidy-data on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tidy-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instructor Guide: Data basics</title>
+      <link>/blog/instructions-data/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-data/</guid>
+      <description>Activities  Variable types Variables and units Response and explanatory variables   Learning objectives  Additional resources  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Assessment Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors Explaining what is data and what are the forms of data.
+Role in statistical practice  Conceptual pitfalls  Student pre-requisites  Student tasks and activities  Creating an active classroom See the document on general tips for creating an active classroom.</description>
+    </item>
+    
+  </channel>
+</rss>

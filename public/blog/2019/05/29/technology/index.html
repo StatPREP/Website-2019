@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instructor technology</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="statprep">	
+  
+
+  
+  <meta name="description" content="Setting  up your RStudio.cloud account and brief instructions on how to  use it.">
+  
+
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="StatPREP Workshops 2019">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Instructor technology">
+  <meta name="twitter:image" content="/img/twitter-default.png">
+  <meta name="twitter:description" content="Setting  up your RStudio.cloud account and brief instructions on how to  use it.">
+
+  
+  <meta property="og:title" content="Instructor technology" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/2019/05/29/technology//" />
+  <meta property="og:image" content="img/statprep-logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/statprep-logo.png" alt="Instructor technology logo" class="hidden-xs hidden-sm">
+                    <img src="/img/statprep-logo.png" alt="Instructor technology logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Instructor technology - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/schedule/">Schedule</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://docs.google.com/document/d/1F76ypB785RyA_CAedEITXrs__hQj2pvbtSaLwD3b31k/edit?usp=sharing">Suggest!</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/little-app">Little Apps</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/activities/">Class Activities</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/categories/real_data">Real data</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Instructor technology</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">May 29, 2019</p>
+
+                        <div id="post-content">
+                          
+
+<div id="TOC">
+<ul>
+<li><a href="#background">Background</a></li>
+<li><a href="#setup-your-account-on-rstudio-cloud">Setup your account on RStudio Cloud</a></li>
+<li><a href="#running-little-apps">Running Little Apps</a></li>
+</ul>
+</div>
+
+<div id="background" class="section level2">
+<h2>Background</h2>
+<p>The GAISE report’s Recommendation 5 is</p>
+<blockquote>
+<p><em>Use technology to explore concepts and analyze data.</em></p>
+</blockquote>
+<p>Elaborations on this recommendation are contained in Appendix D of the report, and include</p>
+<ul>
+<li>interactive applets, pp. 66-75 I think of these as a mouse-driven form of computation that requires absolutely no “coding”</li>
+<li>statistical software. GAISE speaks of “a package like SPSS, Minitab, JMP, R, StatCrunch, Stata, any of the many Excel add-ins, or on-line tools …”
+<ul>
+<li>“to teach concepts”</li>
+<li>“to create a wider variety of visualizations”, pp. 77-80</li>
+<li>“software for reproducibility and better, clearer student assignments”, pp. 80-83</li>
+</ul></li>
+</ul>
+<p>To support this, we’re going to use RStudio Cloud in this workshop. It will let us:</p>
+<ul>
+<li>run applets in a way that should avoid any problems with the server</li>
+<li>run tutorials to teach concepts (optional)</li>
+<li>and, if you like, create documents using the system described in GAISE: R Markdown</li>
+</ul>
+</div>
+<div id="setup-your-account-on-rstudio-cloud" class="section level2">
+<h2>Setup your account on RStudio Cloud</h2>
+<ol style="list-style-type: decimal">
+<li>You will need an account on Google. Most people already have such an account, others can easily set one up (it’s free!) at <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&amp;flowEntry=SignUp">this signup page</a>.</li>
+</ol>
+<p>One of the features of RStudio Cloud is the ability to join a “space” (which might equally well have been called a “course”). Then you can set up your own “projects” or – what we’ll do in the workshop – work with a pre-populated project called an “assignment.”
+- For those experienced with RStudio, an assignment is an ordinary project that has been created from an instructor-provided template and to which the instructor has read and write access.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Copy the assignment for this workshop. The space is <code>USCOTS-2019-SDS</code> and the assignment is <code>USCOTS-2019-common</code>, but all you need to do is …
+<ul>
+<li>Open a tab in your browser at <a href="https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6">this link</a></li>
+</ul></li>
+</ol>
+<ul>
+<li>Your browser will display the following page for you to log in. This is where you use your gmail account. (Or, if you prefer, you can create an account directly on RStudio Cloud, keeping track of the password, etc.)</li>
+</ul>
+<p><img src="/img/rstudio-cloud-1.png" /></p>
+<ul>
+<li>Once you have logged in, you will be reminded how you got here, that is, by your request to join a space. Join it!</li>
+</ul>
+<p><img src="/img/rstudio-cloud-2.png" /></p>
+<ul>
+<li>You’ll be welcomed to the space you’ve just joined. (If you already had an RStudio Cloud account from a previous workshop or such, you may see a start button instead of the picture below. Press that and you should be done.)</li>
+</ul>
+<p><img src="/img/rstudio-cloud-3.png" /></p>
+<ul>
+<li>Click on the menu icon in the welcome page. (Follow the red arrow, above.) A side menu will appear on the left.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-4.png" /></p>
+<ul>
+<li>Select the “projects” menu item. (Again, follow the red arrow.) Then you will see the list of projects contained in the space.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-5.png" /></p>
+<ul>
+<li>Press start. There will be a couple of quick messages and then several minutes spent “opening” the project. This is a one-time operation, but you’ll just have to wait while the project is opened.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-6.png" /></p>
+<ul>
+<li>Finally, you will see an RStudio session opened up to your copy of the <code>StatPREP-workshop</code> project.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-7.png" /></p>
+<ul>
+<li>It’s a good idea to bookmark the web page displaying your RStudio session. But, if you forget, you can get back to your project any time by setting your browser to <code>rstudio.cloud</code>, pressing the menu icon in the upper left, and selecting the space <code>StatPREP-workshop</code>.</li>
+</ul>
+</div>
+<div id="running-little-apps" class="section level2">
+<h2>Running Little Apps</h2>
+<p>For this workshop, we’ll run the Little Apps within the RStudio Cloud session. The command to run one looks like this:</p>
+<pre class="r"><code>LittleApp::LA_run(&quot;bootstrap&quot;)</code></pre>
+<p>The available Little Apps include:</p>
+<ul>
+<li><a href="https://dtkaplan.shinyapps.io/LA_center_spread/">center_spread</a>, <a href="https://dtkaplan.shinyapps.io/LA_center_spread2/">center_spread</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_point_plot/">point_plot</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_jitter/">jitter</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_t_test/">t_test</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_proportions/">proportions</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_rare_and_common/">rare_and_common</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_bootstrap/">bootstrap</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">linear_regression</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_sampling_bias/">sampling_bias</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_sum_of_square_errors/">sum_of_square_errors</a></li>
+</ul>
+<p>An alternative way to run the Little Apps is by following the links above to the web server where they are publicly deployed. But, since we may decide to modify the Little Apps (or add new ones), it’s more expedient to run them from within RStudio Cloud using the <code>LA_run()</code> command.</p>
+<p><a href="/sources/libraries.R">Libraries needed in R</a></p>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/activities">activities (27)</a>
+            </li>
+            
+            <li><a href="/categories/activity-guide">activity-guide (8)</a>
+            </li>
+            
+            <li><a href="/categories/computing">computing (2)</a>
+            </li>
+            
+            <li><a href="/categories/little-app">little-app (7)</a>
+            </li>
+            
+            <li><a href="/categories/presentations">presentations (6)</a>
+            </li>
+            
+            <li><a href="/categories/real_data">real_data (10)</a>
+            </li>
+            
+            <li><a href="/categories/tutorials">tutorials (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/bias"><i class="fa fa-tags"></i> bias</a>
+            </li>
+            
+            <li><a href="/tags/causality"><i class="fa fa-tags"></i> causality</a>
+            </li>
+            
+            <li><a href="/tags/cloud"><i class="fa fa-tags"></i> cloud</a>
+            </li>
+            
+            <li><a href="/tags/confidence-interval"><i class="fa fa-tags"></i> confidence-interval</a>
+            </li>
+            
+            <li><a href="/tags/dag"><i class="fa fa-tags"></i> dag</a>
+            </li>
+            
+            <li><a href="/tags/data_sources"><i class="fa fa-tags"></i> data_sources</a>
+            </li>
+            
+            <li><a href="/tags/distribution-shapes"><i class="fa fa-tags"></i> distribution-shapes</a>
+            </li>
+            
+            <li><a href="/tags/experiment"><i class="fa fa-tags"></i> experiment</a>
+            </li>
+            
+            <li><a href="/tags/f-test"><i class="fa fa-tags"></i> f-test</a>
+            </li>
+            
+            <li><a href="/tags/flexibility"><i class="fa fa-tags"></i> flexibility</a>
+            </li>
+            
+            <li><a href="/tags/graphics"><i class="fa fa-tags"></i> graphics</a>
+            </li>
+            
+            <li><a href="/tags/inference"><i class="fa fa-tags"></i> inference</a>
+            </li>
+            
+            <li><a href="/tags/mean"><i class="fa fa-tags"></i> mean</a>
+            </li>
+            
+            <li><a href="/tags/median"><i class="fa fa-tags"></i> median</a>
+            </li>
+            
+            <li><a href="/tags/normal"><i class="fa fa-tags"></i> normal</a>
+            </li>
+            
+            <li><a href="/tags/normal-distribution"><i class="fa fa-tags"></i> normal-distribution</a>
+            </li>
+            
+            <li><a href="/tags/pdf-format"><i class="fa fa-tags"></i> pdf-format</a>
+            </li>
+            
+            <li><a href="/tags/proportions"><i class="fa fa-tags"></i> proportions</a>
+            </li>
+            
+            <li><a href="/tags/r-square"><i class="fa fa-tags"></i> r-square</a>
+            </li>
+            
+            <li><a href="/tags/r-squared"><i class="fa fa-tags"></i> r-squared</a>
+            </li>
+            
+            <li><a href="/tags/rare"><i class="fa fa-tags"></i> rare</a>
+            </li>
+            
+            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
+            </li>
+            
+            <li><a href="/tags/response-vs-explanatory"><i class="fa fa-tags"></i> response-vs-explanatory</a>
+            </li>
+            
+            <li><a href="/tags/risk"><i class="fa fa-tags"></i> risk</a>
+            </li>
+            
+            <li><a href="/tags/rstudio"><i class="fa fa-tags"></i> rstudio</a>
+            </li>
+            
+            <li><a href="/tags/skew"><i class="fa fa-tags"></i> skew</a>
+            </li>
+            
+            <li><a href="/tags/standard-deviation"><i class="fa fa-tags"></i> standard-deviation</a>
+            </li>
+            
+            <li><a href="/tags/summary-interval"><i class="fa fa-tags"></i> summary-interval</a>
+            </li>
+            
+            <li><a href="/tags/t-test"><i class="fa fa-tags"></i> t-test</a>
+            </li>
+            
+            <li><a href="/tags/tidy-data"><i class="fa fa-tags"></i> tidy-data</a>
+            </li>
+            
+            <li><a href="/tags/unit-of-observarion"><i class="fa fa-tags"></i> unit-of-observarion</a>
+            </li>
+            
+            <li><a href="/tags/variables"><i class="fa fa-tags"></i> variables</a>
+            </li>
+            
+            <li><a href="/tags/word-format"><i class="fa fa-tags"></i> word-format</a>
+            </li>
+            
+            <li><a href="/tags/z-score"><i class="fa fa-tags"></i> z-score</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            A collaborative project by the MAA, the ASA, and AMATYC
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong><a href='http://statprep.org'>StatPREP.org</a></strong>
+
+            
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Support provided by the National Science Foundation (grant DUE-1626337).</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mean on StatPREP Workshops 2019</title>
+    <link>/tags/mean/</link>
+    <description>Recent content in mean on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linear regression</title>
+      <link>/blog/la-linear-regression/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-linear-regression/</guid>
+      <description>Regression Little App: Systolic versus diastolic blood pressure from the National Health and Nutrition Evaluation Survey. Click here to launch.   
+The linear regression Little App displays a jittered point plot of two quantitative variables. Upon this is layered two annotations:
+A regression model. By default this is simple linear regression, but you can also incorporate a covariate and add curvature to the model. Two sets of short horizontal bars to the right of the graph, together with an interval showing the standard deviation.</description>
+    </item>
+    
+    <item>
+      <title>Parameters of the normal distribution</title>
+      <link>/blog/activity-normal-parameters/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-normal-parameters/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The bell-shaped distribution is often a good description of the distribution of a variable, so often that it’s called the “normal” distribution.
+Actually, there is not just one normal distribution but a whole family of them, all of which have the characteristic bell shape. To identify an individual member of this bell family, two numbers suffice:
+ the mean: the location of the peak of the bell the standard deviation: the width of the bell  What’s potentially confusing here is that you may know about the mean in terms of a calculation you do on a variable: add up the n values and divide by n.</description>
+    </item>
+    
+  </channel>
+</rss>

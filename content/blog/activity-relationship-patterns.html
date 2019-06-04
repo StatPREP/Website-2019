@@ -1,0 +1,55 @@
+---
+title: "Describing relationship patterns in words and numbers"
+date: "StatPREP Class Activity"
+weight: 42
+description: "Translating a regression line into a description in everyday terms."
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+  pdf_document: tint::tintPdf
+  html_document:
+    rmdformats::material
+categories:
+  - activities
+tags:
+  - regression
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-relationship-patterns.docx">Word</a> : <a href="/pdf-versions/activity-relationship-patterns.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>It’s natural to display a linear regression as a graph modeling the response variable as a function of the explanatory variables. In the <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">LA_linear_regression</a> Little App, that function is shown as a line laid on top of the data.</p>
+<p>Graphics are important, but it’s also a good practice to summarize the relationship using words and numbers.</p>
+<p>This lesson introduces the conventions for such a summary. Some of them may already be familiar to you.</p>
+<p>The relationship shown in the <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">LA_linear_regression</a> Little App is (by default) a straight line. (If there is a covariate, there will be multiple lines, one for each level of the covariate.) There are two important ways you can describe such lines:</p>
+<ul>
+<li>Which way the line slopes? For instance, suppose the line slopes upward from left to right. The in-words description could be simply, “The regression line has a <em>positive slope</em>.” Other possibilities are a <em>negative slope</em> or <em>no slope</em>. Another way to express this is with phrases like “Y goes <em>up</em> with X” (positive slope) or “Y goes <em>down</em> with X” (negative slope) or “Y doesn’t depend on X” (no slope). Of course, use the variable names instead of “Y” and “X”. The response variable goes in to replace “Y” and the explanatory variable replaces “X”.</li>
+<li>A more detailed description of the pattern describes <em>how much</em> Y goes up (or down) with X.&quot; For example, “A difference in systolic pressure of 6 units corresponds to a difference in diastolic pressure of 10 units.”</li>
+</ul>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<ol style="list-style-type: decimal">
+<li><p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">LA_linear_regression</a> Little App. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Select <code>NHANES</code> as the data frame and systolic blood pressure as the response variable.</p>
+<p><em>Find an explanatory variable that produces a regression line that slopes up. What is it?</em>   .  .  .  </p>
+<p> </p>
+<p><em>Find another explanatory variable where the regression line slopes down. What is it?</em>   .  .  .  </p>
+<p> </p>
+<p><em>For each of those two variables, find the numerical value of the slope of the line. Then summarize the relationship in this way</em>:  </p>
+<p> </p>
+<blockquote>
+<p><em>As _______ (the explanatory variable) increases by ____, the response variable _____ will go <strong><em>up_or_down</em></strong> by _____.</em></p>
+</blockquote>
+<p>In filling in the two blanks following “by”, make sure to give the units of the variables. You can find the units by looking at the codebook.</p></li>
+</ol>
+<hr />
+<p>Version 0.1, 2019-06-04, Helen Burn &amp; Danny Kaplan, <a href="/word-versions/activity-relationship-patterns.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_linear_regression/" class="uri">https://dtkaplan.shinyapps.io/LA_linear_regression/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

@@ -1,0 +1,112 @@
+---
+title: "Introduction to RStudio.cloud"
+description: "Setting  up your RStudio.cloud account and brief instructions on how to  use it."
+weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+date: "2019-05-29"
+categories: 
+  - computing
+tags:
+  - RStudio
+  - cloud 
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#background">Background</a></li>
+<li><a href="#setup-your-account-on-rstudio-cloud">Setup your account on RStudio Cloud</a></li>
+<li><a href="#running-little-apps">Running Little Apps</a></li>
+</ul>
+</div>
+
+<div id="background" class="section level2">
+<h2>Background</h2>
+<p>The GAISE report’s Recommendation 5 is</p>
+<blockquote>
+<p><em>Use technology to explore concepts and analyze data.</em></p>
+</blockquote>
+<p>Elaborations on this recommendation are contained in Appendix D of the report, and include</p>
+<ul>
+<li>interactive applets, pp. 66-75 I think of these as a mouse-driven form of computation that requires absolutely no “coding”</li>
+<li>statistical software. GAISE speaks of “a package like SPSS, Minitab, JMP, R, StatCrunch, Stata, any of the many Excel add-ins, or on-line tools …”
+<ul>
+<li>“to teach concepts”</li>
+<li>“to create a wider variety of visualizations”, pp. 77-80</li>
+<li>“software for reproducibility and better, clearer student assignments”, pp. 80-83</li>
+</ul></li>
+</ul>
+<p>To support this, we’re going to use RStudio Cloud in this workshop. It will let us:</p>
+<ul>
+<li>run applets in a way that should avoid any problems with the server</li>
+<li>run tutorials to teach concepts (optional)</li>
+<li>and, if you like, create documents using the system described in GAISE: R Markdown</li>
+</ul>
+</div>
+<div id="setup-your-account-on-rstudio-cloud" class="section level2">
+<h2>Setup your account on RStudio Cloud</h2>
+<ol style="list-style-type: decimal">
+<li>You will need an account on Google. Most people already have such an account, others can easily set one up (it’s free!) at <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&amp;flowEntry=SignUp">this signup page</a>.</li>
+</ol>
+<p>One of the features of RStudio Cloud is the ability to join a “space” (which might equally well have been called a “course”). Then you can set up your own “projects” or – what we’ll do in the workshop – work with a pre-populated project called an “assignment.”
+- For those experienced with RStudio, an assignment is an ordinary project that has been created from an instructor-provided template and to which the instructor has read and write access.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Copy the assignment for this workshop. The space is <code>USCOTS-2019-SDS</code> and the assignment is <code>USCOTS-2019-common</code>, but all you need to do is …
+<ul>
+<li>Open a tab in your browser at <a href="https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6">this link</a></li>
+</ul></li>
+</ol>
+<ul>
+<li>Your browser will display the following page for you to log in. This is where you use your gmail account. (Or, if you prefer, you can create an account directly on RStudio Cloud, keeping track of the password, etc.)</li>
+</ul>
+<p><img src="/img/rstudio-cloud-1.png" /></p>
+<ul>
+<li>Once you have logged in, you will be reminded how you got here, that is, by your request to join a space. Join it!</li>
+</ul>
+<p><img src="/img/rstudio-cloud-2.png" /></p>
+<ul>
+<li>You’ll be welcomed to the space you’ve just joined. (If you already had an RStudio Cloud account from a previous workshop or such, you may see a start button instead of the picture below. Press that and you should be done.)</li>
+</ul>
+<p><img src="/img/rstudio-cloud-3.png" /></p>
+<ul>
+<li>Click on the menu icon in the welcome page. (Follow the red arrow, above.) A side menu will appear on the left.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-4.png" /></p>
+<ul>
+<li>Select the “projects” menu item. (Again, follow the red arrow.) Then you will see the list of projects contained in the space.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-5.png" /></p>
+<ul>
+<li>Press start. There will be a couple of quick messages and then several minutes spent “opening” the project. This is a one-time operation, but you’ll just have to wait while the project is opened.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-6.png" /></p>
+<ul>
+<li>Finally, you will see an RStudio session opened up to your copy of the <code>StatPREP-workshop</code> project.</li>
+</ul>
+<p><img src="/img/rstudio-cloud-7.png" /></p>
+<ul>
+<li>It’s a good idea to bookmark the web page displaying your RStudio session. But, if you forget, you can get back to your project any time by setting your browser to <code>rstudio.cloud</code>, pressing the menu icon in the upper left, and selecting the space <code>StatPREP-workshop</code>.</li>
+</ul>
+</div>
+<div id="running-little-apps" class="section level2">
+<h2>Running Little Apps</h2>
+<p>For this workshop, we’ll run the Little Apps within the RStudio Cloud session. The command to run one looks like this:</p>
+<pre class="r"><code>LittleApp::LA_run(&quot;bootstrap&quot;)</code></pre>
+<p>The available Little Apps include:</p>
+<ul>
+<li><a href="https://dtkaplan.shinyapps.io/LA_center_spread/">center_spread</a>, <a href="https://dtkaplan.shinyapps.io/LA_center_spread2/">center_spread</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_point_plot/">point_plot</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_jitter/">jitter</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_t_test/">t_test</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_proportions/">proportions</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_rare_and_common/">rare_and_common</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_bootstrap/">bootstrap</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">linear_regression</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_sampling_bias/">sampling_bias</a></li>
+<li><a href="https://dtkaplan.shinyapps.io/LA_sum_of_square_errors/">sum_of_square_errors</a></li>
+</ul>
+<p>An alternative way to run the Little Apps is by following the links above to the web server where they are publicly deployed. But, since we may decide to modify the Little Apps (or add new ones), it’s more expedient to run them from within RStudio Cloud using the <code>LA_run()</code> command.</p>
+<p><a href="/sources/libraries.R">Libraries needed in R</a></p>
+</div>

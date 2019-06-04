@@ -1,0 +1,76 @@
+---
+title: "Data sources"
+description: "Finding real data is easy. Getting data in  a form suitable for illustrating statistical concepts  is  not."
+author: "Danny Kaplan"
+banner: img/banners/banner-5.jpg
+categories:
+  - presentations
+  - real_data
+date: "2019-05-29"
+tags:
+  - data_sources
+---
+
+
+
+<p>More documents at <a href="/categories/real_data">the data-sources directory</a></p>
+<div id="real-data" class="section level2">
+<h2>Real data</h2>
+<p>At the October 2018 StatPREP meeting at the Mathematical Association of America’s DC headquarters the new <a href="https://www.maa.org/news/mathematical-association-of-america-welcomes-new-deputy-executive-director-rachel-levy">MAA deputy executive director, Rachel Levy</a> asked a simple question: <em>What’s real data?</em></p>
+<p>A core recommendation of the <a href="https://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf">American Statistical Association’s GAISE report</a> is to “use real data” when teaching statistics. Prof. Levy wasn’t looking to prompt a philosophical discussion of the nature of reality, but to define a benchmark. If a widely lauded, consensus report from the world’s leading organization of statisticians calls for every introductory course to use real data, we need a way for instructors to know, for sure, whether they are in compliance. And so we discussed what is “real” when it comes to teaching statistics using real data.</p>
+<p>Our conclusion:</p>
+<blockquote>
+<p>Data is real when it has at least 1000 rows, at least 5 variables, and was not initially collected with a primary purpose of teaching statistics.</p>
+</blockquote>
+<p>How did we come up with this definition? In part, we looked at the examples of “real data” in the GAISE report, for instance a dataset on housing with 2930 rows and 80 variables, or a dataset on 53,940 diamonds with 10 variables. But mainly, we looked at the reasons motivating the recommendation to teach with real data: which practices are encouraged and which discouraged. These are:</p>
+<ul>
+<li>teach statistics as an investigative process,</li>
+<li>foster active learning,</li>
+<li>give students experience with multivariate thinking,</li>
+<li>use technology but focus on concepts.</li>
+</ul>
+<p>Why 1000 rows? Working with data on this scale requires using appropriate technology, the sort used in the data workplace. Graphics with 1000 points can be rich enough to see relationships, even when there are multiple variables. And with 1000 rows, a central concept in statistical reasoning, sampling variation, can be shown directly using random selection.</p>
+<p>Why 5 variables? “Multivariate” is at least three. There are three basic roles played by variables in data analysis: response variable, explanatory variable(s), covariate(s). But we need more than 3 because both categorical and quantitative variables can star in any of these roles. And we need room for students to explore actively. This can be as simple as letting them choose which variables to relate to which.</p>
+<p>As appropriate for an operational definition, it is readily applied to any data set and provides a yes-or-no answer. There’s no call to be fanatical about the numbers 1000 and 5; anything close will do. But the common textbook practice of using on the order of 10 rows and only one or two variables is not close.</p>
+</div>
+<div id="using-real-data" class="section level2">
+<h2>Using real data</h2>
+<p>Now it’s time to talk about the meaning of the word “use” in the phrase “use real data.” Much of the data that appears in textbooks is intended to provide numbers for statistical calculations. Any other numbers could be used instead. But there are far richer ways to make data central to a lesson or exercise, ways that involve the actual handling of data, the search for patterns or anomalies, data display, and the interpretation of data in its actual context.</p>
+<ul>
+<li>The data should be “<strong>raw</strong>.” That is, students should work directly with the data themselves rather than with a statistical summary. Statistics like means and proportions are not data but summaries of data.</li>
+<li>The data should be in a <strong>professional form</strong>. It’s important for students to learn about the conventional ways in which data are organized, the most important of which is as a spreadsheet like table, with a columns for each variable and a row for each “unit of observation.” They should see examples of good practice, for instance putting meta-data such as measurement units and descriptions in a separate codebook file.</li>
+<li>The data should be rich enough to reward exploration and <strong>encourage hypothesis formation</strong>.</li>
+</ul>
+</div>
+<div id="data-collections" class="section level2">
+<h2>Data collections</h2>
+<ul>
+<li><a href="https://www.causeweb.org/cause/resources/library?field_material_type_tid=104">CAUSEWEB</a> The CAUSE website includes links to hundreds of locations for data. On the Home page in the upper right corner type “Datasets” in the Search field.</li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets#readme">Awesome public datasets</a>
+Consortium for the Advancement of Undergraduate Statistics Education (CAUSE) - <a href="https://www.causeweb.org/" class="uri">https://www.causeweb.org/</a></li>
+<li><a href="https://data.cityofnewyork.us/">New York City Open Data</a> More than 1000 datasets on various aspects of life in the Big Apple. You can search a specific term or click to view all available datasets.</li>
+<li><a href="http://www.stat.ufl.edu/~winner/datasets.html">Larry Winner data</a> Larry Winner from the Department of Statistics at the University of Florida has amassed hundreds of datasets. Each dataset includes a description.</li>
+<li><a href="http://www.statsci.org/data/multiple.html">OzDASL</a> Datasets categorized by statistical topic.</li>
+<li><a href="http://mran.revolutionanalytics.com/documents/data/">Revolution Analytics R Data</a> Links to various data sources.</li>
+<li><a href="https://www.kaggle.com/">Kaggle</a> Website that hosts data analysis competitions. Many datasets here are quite large and very messy. Establishing a free account is necessary for access to the data.</li>
+<li><a href="/etc/curated-data-sources/">Curated research data</a></li>
+<li>The <a href="/etc/fivethirtyeight/">FiveThirtyEight Blog</a></li>
+<li>State and local government “open data” repositories. Searching on “open data [your-city-name]” will often lead you to a site.</li>
+</ul>
+</div>
+<div id="searching-for-social-justice" class="section level2">
+<h2>Searching for social justice</h2>
+<p>Many instructors understandably seek to find data that is <strong>relevant</strong>, particularly that relates to issues in the news. For many instructors, data concerning matters of <strong>social justice</strong> is particularly valuable. There are good and bad sources for such data.</p>
+<p>Care is required. The passion for social justice is not always consistent with the available data. To illustrate, consider what ABC News (for instance) calls the <a href="https://abcnews.go.com/Health/years-flint-lead-public-health-crisis/story?id=58860151">lead public-health crisis in Flint, MI</a>. For data, you can go to the Centers for Disease Control <a href="https://www.cdc.gov/nceh/lead/publications/default.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fnceh%2Flead%2Fpublications%2Fbooks%2Fplpyc%2Ffigures.htm">lead publication site</a>. Here is a research paper, <a href="/articles/Pediatrics-flint-lead">Blood Lead Levels of Children in Flint, Michigan: 2006-2016</a> from the <em>Journal of Pediatrics</em>, that shows, contrary to conventional wisdom, that whatever problems are associated with water supply in Flint, lead poisoning is not one of them.</p>
+</div>
+<div id="wrangling-and-cleaning" class="section level2">
+<h2>Wrangling and Cleaning</h2>
+<p>Basics of how to wrangle and clean data</p>
+<p>Join trick</p>
+<p>Separating columns</p>
+<p>Dates and times</p>
+</div>
+<div id="real-stories" class="section level2">
+<h2>Real stories</h2>
+<p>The ASA and Miami Univ of Ohio host a series of videos where professionals talk about their work in applied statistics: <a href="https://statsandstories.net" class="uri">https://statsandstories.net</a>. As of May 2019, there are about 100 videos on work in many different areas of research, the economy, government, and society.</p>
+</div>

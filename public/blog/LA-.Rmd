@@ -1,0 +1,32 @@
+---
+title: "Jittering"
+description: "Effective point plots with categorical variables"
+author: "Danny Kaplan"
+date: "2019-05-02"
+weight: 2
+categories: ["Little App"]
+tags: ["graphics"]
+banner: "thumbnails/jitter.png"
+---
+
+```{r include = FALSE}
+library(LittleApp)
+this_app <- get_app_info("jitter")
+```
+
+<a href="`r this_app$url`"> 
+<figure>
+<img src="/thumbnails/jitter.png" class="thumbnail" width = "60%">
+<figcaption>Jittering Little App: Self-described level of health versus frequency of feeling depressed in the National Health and Nutrition Evaluation Survey. Click here to launch.</figcaption>
+</figure>
+<a>
+
+The [Jittering Little App](`r this_app$url`) shows how the general point-plot can  be effective even when variables are categorical.
+
+- Students can adjust the amount of jittering and transparency.
+- Can stratify sampling by the explanatory variable.
+
+### Suggested StatPREP 101 activities
+
+- [Jittering activity](https://statprep-activities.netlify.com/lessons/jittering/)
+

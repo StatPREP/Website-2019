@@ -1,0 +1,239 @@
+---
+title: "Linear regression"
+author: "Helen Burn"
+date: '2019-04-15'
+output: word_document
+weight: 80
+---
+
+
+
+<div id="activities" class="section level2">
+<h2>Activities</h2>
+<ul>
+<li><a href="/lessons/introducing-linear-regression/">Introducing linear regression</a></li>
+<li><a href="/lessons/relationship-patterns/">Describing relationship patterns</a></li>
+<li><a href="/lessons/how-much-is-explained/">How much is explained by regression?</a></li>
+</ul>
+<!-- * NEED TO ADD a lesson about fitting regression lines, using the [LA_sum_of_square_errors](https://dtkaplan.shinyapps.io/LA_sum_of_square_errors/) -->
+</div>
+<div id="learning-objectives-connected-to-linear-regression" class="section level2">
+<h2>Learning objectives connected to linear regression</h2>
+<ul>
+<li>Create scatterplots for bivariate data using graphing technology where appropriate. Lesson: <a href="/lessons/point-plot/">point plots</a></li>
+<li>Sensibly choose which variable should be the response and which the explanatory variable, and know when it does and doesn’t matter. (Other nomenclature for explanatory/response: predictor/response or independent/dependent.) Lesson: <a href="/lessons/response-and-explanatory/">response and explanatory variables</a>
+<ul>
+<li>External evidence of which direction causation goes, e.g. hours work explains total pay.</li>
+<li>Why are you making a prediction:
+<ul>
+<li>Deduce from something easy to measure, something that would be hard to measure. Often, it’s a future value that we’re interested in. Sometimes it can be a past or present value that we just don’t know yet.</li>
+<li>Hypothesis formation.</li>
+</ul></li>
+</ul></li>
+<li>Determine whether a straight-line model is appropriate for describing a given relationship. Lesson: <a href="/lessons/flexibility/">flexibility</a>
+<ul>
+<li>Students can distinguish between situations where the relationship is approximately linear and when it is not. Examples: Height versus age, BMI vs weight, BMI versus height (which has a crazy, upside-down whistle-shaped cloud)</li>
+<li>residual, e.g. heteroscedasticity</li>
+<li>covariate</li>
+</ul></li>
+<li>Interpret the correlation coefficient in terms of pos/neg/null and strength of correlation</li>
+<li>Use appropriately terms such as <strong>equation</strong>, <strong>function</strong>, <strong>model</strong>, <strong>formula</strong></li>
+<li>Interpret the slope of the regression in terms of the relationship between incremental change in <span class="math inline">\(x\)</span> and the corresponding incremental change in <span class="math inline">\(y\)</span>.<br />
+</li>
+<li>Translate a difference in the input to the corresponding difference in the output. (Rule of 4 from calculus reform.)
+<ul>
+<li>from the graph</li>
+<li>from the regression <span class="math inline">\(b\)</span> coefficient</li>
+<li>Effect size,</li>
+<li>What’s a big change in input? (A couple of SD of x), What’s a strong relationship: results in a big change in the output (e.g. SD of y). Correlation coefficient is directly in terms of translation of SD in input to SD in output.</li>
+</ul></li>
+<li>Identify the residual of a point given the location of the point and the regression function.</li>
+<li>Use the regression equation for prediction
+<ul>
+<li>plug in an input to get an output</li>
+<li>recognize extrapolation as unsafe</li>
+<li>proper prediction includes the residual variation around the model.</li>
+</ul></li>
+<li>Use technology to find linear regression models and correlation coefficients for a pair of variables Lesson: <a href="/lessons/relationship-patterns/">relationship-patterns</a></li>
+<li>Understand the pitfalls of extrapolation</li>
+<li>Be able to make a point plot using technology and to relate the location of each point to the corresponding row in a data table.</li>
+<li>Develop an intuition for how a mathematical function can describe the pattern in a point-plot cloud.</li>
+<li>Recognize settings and variables for which regression is an appropriate technique.</li>
+<li>Be able to use the slope as a concise description of a relationship.</li>
+<li>Recognize what residuals from a regression model have to say.</li>
+<li>Understand how a regression model can be used for prediction.</li>
+<li>Insofar as the correlation coefficient is topic in your course (and it need not be!) … establish the connections between regression slopes and correlation coefficients.</li>
+</ul>
+</div>
+<div id="additional-resources" class="section level2">
+<h2>Additional resources</h2>
+<ul>
+<li>Get formatted versions: <a href="/word-versions/instructions-linear-regression.docx">Word</a> : <a href="/pdf-versions/instructions-linear-regression.pdf">PDF</a></li>
+<li><a href="#orientation">Instructor orientation</a></li>
+<li><a href="#role">Role in statistical practice</a></li>
+<li><a href="#discussion">Classroom discussion</a></li>
+<li><a href="#assessment">Assessment</a></li>
+<li><a href="#active">Tips for an active classroom</a></li>
+<li><a href="#prereqs">Student pre-requisites</a></li>
+<li><a href="#forward">Looking forward</a></li>
+<li><a href="#pitfalls">Pitfalls</a></li>
+</ul>
+</div>
+<div id="orientation" class="section level2">
+<h2>Orientation for instructors</h2>
+<p>Linear regression is one of the oldest and most widely used statistical techniques. It is used to describe or <em>model</em> a connection or relationship between a quantitative <em>response variable</em> and one or more <em>explanatory variables</em>.</p>
+<p>Many, perhaps most, introductory statistics courses cover <em>simple regression</em>, which is a special case of linear regression in which the response variable, <span class="math inline">\(y\)</span> is modeled as a straight-line function of the explanatory variable <span class="math inline">\(x\)</span>, that is, <span class="math inline">\(y = f(x) = a x + b\)</span>. The slope <span class="math inline">\(m\)</span> and intercept <span class="math inline">\(b\)</span>, constitute a concise but very limited way of describing important features of the relationship between the response and explanatory variables.</p>
+</div>
+<div id="role" class="section level2">
+<h2>Role in statistical practice</h2>
+<p>It’s fair to say that simple regression is too simple to support contemporary research and has been for some decades. It is uncommon for there to be just a single explanatory variable. A more general technique, <em>multiple regression</em>, supports the use of multiple explanatory variables.</p>
+</div>
+<div id="pitfalls" class="section level2">
+<h2>Conceptual pitfalls</h2>
+<p>There are many potential pitfalls in teaching about simple regression. One has to do with nomenclature. Mathematicians describe <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> as “coefficients” or “parameters.” In statistics, the meaning of “parameter” is different (referring to a population) and the values of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> generated by regression are “statistics” (referring to a sample from the population). And a “coefficient” in a formula like <span class="math inline">\(a + b x\)</span> is not particularly similar to a “correlation coefficient.”</p>
+<p>Usually, the slope parameter <span class="math inline">\(b\)</span> is the quantity of interest. The slope parameter is not, in general a number. Instead, it is a quantity expressed in units. Modeling spending versus age? Then <span class="math inline">\(b\)</span> will have units like dollars-per-year.</p>
+<p>Many instructors are tempted to use Greek-like notation in teaching regression. If you’re going to use sophisticated mathematical notation to convey concepts, you are assuming your students know something about that notation. This might include:</p>
+<ul>
+<li>Greek letters and their Roman equivalents, e.g. distinguishing among <span class="math inline">\(\beta\)</span> and <span class="math inline">\(B\)</span> and <span class="math inline">\(b\)</span> or between <span class="math inline">\(\mu\)</span> and <span class="math inline">\(m\)</span> and remember that <span class="math inline">\(\mu\)</span> is not cognate to <span class="math inline">\(u\)</span>.</li>
+<li>The different meanings of subscripts and superscripts, e.g. the distinct meanings of <span class="math inline">\(\beta^2\)</span> (exponentiation) and <span class="math inline">\(\beta_2\)</span> (identifying one in a series).</li>
+<li>The various (inconsistent and sometimes contradictory) notations for distinguishing between estimates and population parameters:
+<ul>
+<li>Parameters: <span class="math inline">\(\beta\)</span>, <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\sigma\)</span>, and informally <span class="math inline">\(b\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(s\)</span></li>
+<li>Estimates: <span class="math inline">\(\hat{\beta}\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(\hat{b}\)</span>, <span class="math inline">\(\hat{\mu}\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(\bar{m}\)</span>, <span class="math inline">\(s\)</span>, <span class="math inline">\(\hat{\sigma}\)</span> It’s unlikely that you intend for your students to have to deal with such complexity, so try to keep the notation as simple as possible. We suggest:</li>
+</ul></li>
+<li><span class="math inline">\(b\)</span> the slope of the regression line as estimated by data.</li>
+<li><span class="math inline">\(R^2\)</span> the coefficient of determination</li>
+<li><span class="math inline">\(r\)</span> the correlation coefficient</li>
+<li><span class="math inline">\(s_x\)</span> and <span class="math inline">\(s_y\)</span> standard deviations of the x and y variables</li>
+</ul>
+<p>The <em>correlation coefficient</em> is a pure number that combines three pieces of information: <span class="math inline">\(b\)</span> and the standard deviations <span class="math inline">\(s_x\)</span> and <span class="math inline">\(s_y\)</span> of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> variables. The relationship is</p>
+<p><span class="math display">\[r = b \frac{s_y}{s_x}\]</span>
+Note that <span class="math inline">\(s_y\)</span> has the same units as <span class="math inline">\(y\)</span> and <span class="math inline">\(s_x\)</span> the same units as <span class="math inline">\(x\)</span>. Thus, the ratio <span class="math inline">\(s_y / s+x\)</span> cancels out the units of <span class="math inline">\(b\)</span>.</p>
+<p>In multiple regression, it makes sense to describe a model using the unit-ful coefficients like <span class="math inline">\(b\)</span>, but there is no equivalent to the relationship between <span class="math inline">\(r\)</span> and <span class="math inline">\(b\)</span> in simple regression. Given the importance of multiple regression, it seems sensible to teach simple regression in terms of the unit-ful coefficient <span class="math inline">\(b\)</span> rather than the unitless <span class="math inline">\(r\)</span>.</p>
+<p>Almost all statistics textbooks present <span class="math inline">\(r\)</span> as a means to quantify the “strength” of the relationship between two quantitative variables. It is that, but it is equally applicable to situations where one or both of the variables are binomial, for instance yes/no or win/lose or A/B.</p>
+<p>The analog to <span class="math inline">\(r\)</span> in multiple regression is <span class="math inline">\(\sqrt{R^2}\)</span>, where <span class="math inline">\(R^2\)</span>, the <em>coefficient of determination</em> presents the fraction of the variance in the response variable that is captured by the model. <span class="math inline">\(R^2\)</span> (“R-squared”) is an important summary description of a model. It makes sense, then to prepare students for <span class="math inline">\(R^2\)</span> by using it as a descriptive statistic even in simple regression. You might be tempted to refer to this as <span class="math inline">\(r^2\)</span>, but do recall that <span class="math inline">\(R^2\)</span> is a more generally applicable statistic that encompasses the special case of <span class="math inline">\(r^2\)</span> in simple regression.</p>
+<p>When we use coefficients like <span class="math inline">\(b\)</span> to quantify a relationship, we set up an interpretation of <span class="math inline">\(b\)</span> as as a kind of translation factor from <span class="math inline">\(x\)</span> units to <span class="math inline">\(y\)</span> units. That is, a one-unit increase in <span class="math inline">\(x\)</span> is associated with a <span class="math inline">\(b\)</span>-unit increase in <span class="math inline">\(y\)</span>.</p>
+<p><span class="math inline">\(R^2\)</span> (or, <span class="math inline">\(r^2\)</span> if you insist) has a central role in statistical inference. The ratio</p>
+<p><span class="math display">\[F = (n-1) \frac{R^2}{1-R^2}\]</span></p>
+<p>is an informative quantity with respect to p-values and confidence intervals. For the p-value, an F of 3.84 corresponds to p = 0.05, an F of around 7 corresponds to p = 0.01, and an F of 12 to p = 0.001. (You can read off the p-value by looking up the quantile of F in the F distribution with 1 and <span class="math inline">\(n-1\)</span> degrees of freedom.)</p>
+<p>The 95% confidence interval on <span class="math inline">\(b\)</span> is</p>
+<p><span class="math display">\[CI_{95} = b (1 \pm \sqrt{3.84/F})\]</span></p>
+<p>Note that the t-statistic on <span class="math inline">\(b\)</span> is simply <span class="math inline">\(t = \sqrt{F}\)</span>. A reason to use F instead of t is that F generalizes to multiple regression while t does not.</p>
+<p>The F statistic also generalizes to nonlinear formulas <span class="math inline">\(y = f(x)\)</span>. Roughly speaking, for a quadratic shaped model, the <span class="math inline">\(n-1\)</span> term in <span class="math inline">\(F\)</span> should be replaced by <span class="math inline">\(\frac{n-2}{2}\)</span>.</p>
+<p>Sometimes simple regression is presented as a way to <em>predict</em> a value of <span class="math inline">\(y\)</span> given the value of <span class="math inline">\(x\)</span>. This use is seriously misleading. Clearly you can plug a value of the explanatory variable <span class="math inline">\(x\)</span> into the <span class="math inline">\(a + b x\)</span> regression formula. The number you get out will be the <em>most likely</em> single value. This is not a proper statistical prediction. The prediction should not be in the form of a single number. Instead, the prediction should take the form of a probability assigned to each possible outcome. In the case of simple regression, a meaningful prediction is that the output <span class="math inline">\(y\)</span> for any given <span class="math inline">\(x\)</span> is predicted to have the form of a normal distribution with mean <span class="math inline">\(a + b x\)</span> and a standard deviation corresponding roughly to the standard deviation of the residuals of the y-values from the corresponding model value.</p>
+</div>
+<div id="prereqs" class="section level2">
+<h2>Student pre-requisites</h2>
+<p>Students will need some background knowledge in order to follow lessons on simple regression.</p>
+<ul>
+<li>Variable types: quantitative and categorical Lesson: <a href="/lessons/variable-types/">variable types</a></li>
+<li>Point plot: (The term “scatter plot” has traditionally been used.) Lesson: <a href="/lessons/point-plots">point plots</a>
+<ul>
+<li>each axis corresponds to a variable</li>
+<li>each row is one dot.</li>
+</ul></li>
+<li>Mathematical functions:
+<ul>
+<li>translate a given input to an output by plugging the input into an arithmetic formula</li>
+<li>in writing the formula, we often use symbols, like <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> to represent quantities.</li>
+<li>the straight-line function
+<ul>
+<li>slope (primary importance here)</li>
+<li>intercept</li>
+</ul></li>
+</ul></li>
+<li>Understand distinctions between various reasons for examining relationship. Lesson: <a href="/lessons/response-and-explanatory/">response and explanatory variables</a>
+<ul>
+<li>to make a prediction of the unknown value of a variable given the known values of other variables</li>
+<li>to anticipate the result of an intervention (This is a form of prediction that assumes a specific causal relationship)</li>
+<li>to demonstrate that two variables are connected in some way.</li>
+<li>to explore data in order to frame hypotheses about how the system works.</li>
+</ul></li>
+<li>Standard deviations if using <span class="math inline">\(r\)</span>. This is not central if focusing on slope and intercept.</li>
+</ul>
+</div>
+<div id="active" class="section level2">
+<h2>Creating an active classroom</h2>
+<p>See the document on <a href="/etc/tips-for-active-classroom.html">general tips for creating an active classroom</a>.</p>
+<p>Some specific discussion topics/themes for linear regression:</p>
+<ol style="list-style-type: decimal">
+<li>BMI (from NHANES2) as a response variable. It’s important for students to know what this is. <a href="https://www.cdc.gov/healthyweight/assessing/bmi/">Explanation from the CDC</a> &amp; <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm">BMI calculator for students</a>.
+<ul>
+<li>age (r = 0.5 reasonable scatterplot to assume linearity)</li>
+<li>income (r = -0.07) shows a very diffuse scatter plot but also helps demo the app to students.</li>
+<li>pulse: weak relationship</li>
+<li>systolic: weak-to-moderate relationship</li>
+<li>diastolic: has outliers</li>
+<li>sleep_hour: weak-to-moderate. But has a negative relationship</li>
+</ul></li>
+<li>wage (from CPS85)
+<ul>
+<li>age</li>
+<li>education</li>
+</ul></li>
+<li>mother’s age (from Births_2014)
+<ul>
+<li>father’s age. Moderate size correlation. Ask what it means</li>
+</ul></li>
+<li><strong>Open-ended exploring</strong></li>
+<li>Consider <strong>systolic blood pressure</strong> from the NHANES2 data.
+<ul>
+<li>Background: Explain to students what is the difference between the systolic and diastolic blood pressure. Each time the heart beats, the blood pressure in the arteries goes up. It quickly rises to a maximum and then decays until the next beat. Systolic is the maximum blood pressure each beat, diastolic the minimum. The “pulse pressure” is the difference between the two. See <a href="https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/pulse-pressure/faq-20058189">this site on blood pressure</a>.</li>
+<li>Tasks
+<ol style="list-style-type: decimal">
+<li>Determine three explanatory variables that are predictive of systolic blood pressure.</li>
+<li>For each of the three, list the strength of the relationship both as a fraction of the variation explained as as the change in systolic blood pressure per unit change of the explanatory variable.</li>
+<li>Then check whether those three explanatory variables explain diastolic blood pressure as well. Which of systolic or diastolic blood pressure is better explained by the explanatory variables?</li>
+</ol></li>
+</ul></li>
+<li><strong>Diamonds</strong> similar to the above, but predict the price of a diamond.</li>
+</ol>
+</div>
+<div id="assessment" class="section level2">
+<h2>Assessment items</h2>
+<ul>
+<li><p>Point plot and functions. In which we’ll ask students to sketch out some functions from prior knowledge (e.g. height versus age ) and then indicate the range of values around the function. Then turn this around so that you deduce the function and range of residuals from the point plot.</p></li>
+<li><p>Explanatory vs response variable: prediction versus intervention vs description vs hypothesis formation.</p></li>
+<li><p>From data to function.</p></li>
+<li>Slopes and differences.
+<ul>
+<li>Don’t use <span class="math inline">\(y = m x + b\)</span> except as a reminder of what a slope is. Instead …
+<ul>
+<li>read the slope off a graph. Don’t worry about the intercept.</li>
+<li>read the slope off a regression report.</li>
+<li>interpret the slope as the “effect size” of x on y.&quot;</li>
+</ul></li>
+<li>Differences: if the input changes, how much does the output change?</li>
+</ul></li>
+<li>With the app: Can we predict something hard to measure from something easy.
+<ul>
+<li>systolic blood pressure from height?</li>
+<li>income from BMI</li>
+</ul></li>
+<li><p>With the app: f(x) is not destiny. Predict BMI from education. The averages differ, but there is a big range around the line. Can’t predict for an individual, could say something about averages in a group.</p></li>
+<li><p>With the app: How much variation is explained?</p></li>
+</ul>
+</div>
+<div id="forward" class="section level2">
+<h2>Looking forward</h2>
+<p>Understand the different settings in which regression is used in practice. A good topic for discussion in the workshop. Use examples from the different settings.
+- causation
+- classification
+- exploration: what might explain body mass index?</p>
+<p>Defining big in terms of a the individual variables, e.g. a couple of standard deviations. This relates to the discussion of “interpreting slope.”</p>
+<p>A commonly used tricotomy for describing relationships between two variables is “negative” vs “zero”/“none” vs “positive”. In the context of simple regression, these correspond to the sign of the slope <span class="math inline">\(b\)</span>. This can be misleading, since a zero value of <span class="math inline">\(b\)</span> can occur even when there is a strong (nonlinear) relationship between <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span>.</p>
+<p>The slope <span class="math inline">\(b\)</span> is a physical quantity that has dimension and units. For instance if <span class="math inline">\(y\)</span> is a person’s height in cm, and <span class="math inline">\(x\)</span> is a person’s weight in kg, the units of <span class="math inline">\(b\)</span> will be cm/kg. (The “dimension” of this is L/M – length over mass.) Many mathematical educators prefer to de-emphasize physical units, preferring to regard <span class="math inline">\(b\)</span> as a pure number. This is a mistake from a statistical point of view. The size of physical quantities is important. Interpreting <span class="math inline">\(b\)</span> as large or small needs to be understood in the context of the problem.</p>
+<p>The correlation coefficient <span class="math inline">\(r\)</span> is a scaled version of <span class="math inline">\(b\)</span>. The scaling is by the ratio of the standard deviations of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> variables, that is, <span class="math inline">\(r = \frac{\sigma_x}{\sigma_y} b\)</span>. This scaling results in <span class="math inline">\(r\)</span> being a pure number since the units of <span class="math inline">\(\sigma_x / \sigma_y\)</span> cancel out the units of <span class="math inline">\(b\)</span>.</p>
+<p>The slope <span class="math inline">\(b\)</span> can be any numerical quantity. In contrast, the correlation coefficient must always be <span class="math inline">\(-1 \leq r \leq 1\)</span>. Many mathematics educators believe that this means that <span class="math inline">\(r\)</span> describes the “strength” of the relationship between <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span>. Whether or not this is true depends on what one means by “strength.” In scientific research, the intuition behind strength corresponds better to the slope <span class="math inline">\(b\)</span> and includes the physical units of <span class="math inline">\(b\)</span>. In statistics, when “strength” is taken to refer to how compelling the evidence is for a claim, an appropriate measure is the <em>confidence interval</em> on <span class="math inline">\(b\)</span>. Another statistical quantity, the <em>p-value</em> on the slope, refers to a quantifying the evidence for a particular but very weak sort of claim, that <span class="math inline">\(b\)</span> is anything but zero.</p>
+<p>Although students are often drilled in the fact that <span class="math inline">\(-1 \leq r \leq 1\)</span>, the reason why <span class="math inline">\(r\)</span> is bounded in this way is subtle. It’s misleading to conclude that the bounds on <span class="math inline">\(r\)</span> suggest that a “strong” relationship is one where <span class="math inline">\(|r| \approx 1\)</span>. The correlation coefficient <span class="math inline">\(r\)</span> predates the distinction between descriptive and inferential statistics and mixes together aspects of both. This leads to pedagogical challenges that could be avoided if relationships are described using <span class="math inline">\(b\)</span> and inferences made using the confidence interval on <span class="math inline">\(b\)</span>.</p>
+<ul>
+<li>Too much is made of the “optimality” of the estimates of the slope and intercept. See the <a href="https://dtkaplan.shinyapps.io/LA_sum_of_square_errors/">sum of squares Little App</a>.</li>
+<li>Categorical explanatory variables can also be used. ANOVA is a general procedure in linear regression. Almost every statistical method covered in intro stats – proportions, differences in proportions, means, differences in means, ANOVA – can be presented quite naturally as a linear regression problem.</li>
+<li>Robust statistical methods are available to deal automatically with outliers, without having to handle them as special cases.</li>
+<li><span class="math inline">\(r\)</span> is meaningless in multiple regression. <span class="math inline">\(R^2\)</span> is more general.</li>
+<li>Although <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span> are conventional names given to the variables involved when discussing statistical and mathematical theory, in statistical practice, both <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are variables with <em>names</em>, and those names should be used explicitly. This is one reason why a regression table is the conventional format for describing a linear regression, not a formula.</li>
+</ul>
+</div>
+<div id="author-info" class="section level2">
+<h2>Author info</h2>
+</div>

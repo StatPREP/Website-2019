@@ -1,0 +1,126 @@
+---
+title: "DATA SOURCE: Case study on Soil Moisture"
+description: "An example from the Awsome Public Datasets list"
+weight: 38
+categories:
+- real_data
+date: "2019-05-30"
+---
+
+
+
+<p>The website <a href="https://github.com/awesomedata/awesome-public-datasets#readme">Awesome public datasets</a> contains links to several hundred datasets. This example deals with a randomly selected one, <a href="https://zenodo.org/record/1227837#.XORqSlNKjOR">Hyperspectral benchmark dataset on soil moisture</a></p>
+<p>That dataset is described as being a sequence of measurements of a soil sample, recording temperature, soil moisture, and the intensity at each of 125 light frequency bands (in nm) of an image of the sample.</p>
+<div id="process" class="section level2">
+<h2>Process</h2>
+<ol style="list-style-type: decimal">
+<li>Download the ZIP file.</li>
+<li>Uncompress the ZIP file</li>
+</ol>
+<p>This results in a directory with a CSV file, a README.txt, and a license file.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Use the “Import Dataset” tool in the Environment tab to read in the data. The tool constructs a command, which is used in the following chunk.</li>
+</ol>
+<pre class="r"><code>library(readr)
+Soil &lt;- 
+   read_csv(&quot;~/Downloads/felixriese-hyperspectral-soilmoisture-dataset-657d5d0/soilmoisture_dataset.csv&quot;, 
+   col_types = cols(datetime = col_datetime(format = &quot;%Y-%m-%d  %H:%M:%S&quot;)))</code></pre>
+<p>Notice the datetime format string used in the command. If working with time data, it’s helpful to know about how datetimes can be converted to machine readable format.</p>
+<p>Looking at the <code>Soil</code> data frame …</p>
+<pre class="r"><code>nrow(Soil)</code></pre>
+<pre><code>## [1] 679</code></pre>
+<pre class="r"><code>head(names(Soil))</code></pre>
+<pre><code>## [1] &quot;index&quot;            &quot;datetime&quot;         &quot;soil_moisture&quot;   
+## [4] &quot;soil_temperature&quot; &quot;454&quot;              &quot;458&quot;</code></pre>
+<pre class="r"><code>range(Soil$datetime)</code></pre>
+<pre><code>## [1] &quot;2017-05-16 11:26:07 UTC&quot; &quot;2017-05-26 14:08:10 UTC&quot;</code></pre>
+<p>So we have slightly more than 10 days of measurements.</p>
+</div>
+<div id="what-to-use-the-data-for" class="section level2">
+<h2>What to use the data for</h2>
+<p>The data were not gathered specifically for the purpose of teaching statistics, so there is no documentation that we can draw on to decide how to fit this dataset into a course. Creativity is required. Some ideas:</p>
+<ol style="list-style-type: decimal">
+<li>Telling a story with simple graphics. Look at the time series of soil temperature and of soil_moisture.
+<ol style="list-style-type: lower-alpha">
+<li>How much of moisture is accounted for by temperature.</li>
+</ol>
+<pre class="r"><code>library(ggformula)
+library(dplyr)
+gf_point(soil_temperature ~ datetime,  data = Soil)</code></pre>
+<p><img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-4-1.png" width="672" height="2" /></p>
+<pre class="r"><code>gf_point(soil_moisture ~ datetime, data = Soil) </code></pre>
+<img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-4-2.png" width="672" height="2" />
+<ol start="2" style="list-style-type: lower-alpha">
+<li>What time of day were the measurements taken?</li>
+</ol>
+<pre class="r"><code>Soil %&gt;%
+  mutate(time = lubridate::hour(datetime) + lubridate::minute(datetime) / 60) %&gt;%
+  gf_jitter(time ~  1, data = Soil, width = 0.2) %&gt;%
+  gf_violin(fill  = &quot;blue&quot;, alpha = 0.4,  color = NA) %&gt;%
+  gf_lims(x  = c(0, 2))</code></pre>
+<img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Soil moisture as a function of time of day</li>
+</ol>
+<pre class="r"><code>Soil %&gt;% 
+  mutate(time = lubridate::hour(datetime) + lubridate::minute(datetime) / 60,
+         day = as.character(lubridate::mday(datetime))) %&gt;%
+  gf_point(soil_moisture ~  time, color = ~  day, data = Soil) </code></pre>
+<p><img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p></li>
+<li>Simple analysis. Is soil moisture a function of temperature?
+<ol style="list-style-type: lower-alpha">
+<li>Is there a correlation?</li>
+</ol>
+<pre class="r"><code>gf_point(soil_moisture ~ soil_temperature, data = Soil)</code></pre>
+<img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Illuminating the pattern.</li>
+</ol>
+<pre class="r"><code>Soil %&gt;%
+  mutate(time = lubridate::hour(datetime) + lubridate::minute(datetime) / 60,
+         day = as.character(lubridate::mday(datetime))) %&gt;%
+  gf_path(soil_moisture ~ soil_temperature, color = ~ day)</code></pre>
+<p><img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p></li>
+</ol>
+</div>
+<div id="more-advanced" class="section level2">
+<h2>More advanced?</h2>
+<p>Perhaps we can use the spectral measures to read soil moisture?</p>
+<pre class="r"><code>library(rpart)
+library(rpart.plot)
+library(randomForest)
+# need to rename variable
+newnames &lt;- function(df) {
+  orig &lt;- names(df)
+  new &lt;- ifelse(is.na(parse_number(orig)),  orig, paste0(&quot;v&quot;,  orig))
+  return(new)
+}
+names(Soil) &lt;- newnames(Soil)</code></pre>
+<pre><code>## Warning: 4 parsing failures.
+## row col expected           actual
+##   1  -- a number index           
+##   2  -- a number datetime        
+##   3  -- a number soil_moisture   
+##   4  -- a number soil_temperature</code></pre>
+<pre class="r"><code>mod1 &lt;-  
+  Soil %&gt;%
+  select(-index, -datetime) %&gt;%
+  randomForest(soil_moisture ~ . - soil_temperature, data = .)
+Tmp &lt;- importance(mod1) 
+Res &lt;- tibble(score = Tmp[, 1], wavelength = row.names(Tmp)) %&gt;%
+  arrange(desc(score))
+head(Res)</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   score wavelength
+##   &lt;dbl&gt; &lt;chr&gt;     
+## 1  898. v946      
+## 2  881. v950      
+## 3  542. v942      
+## 4  473. v826      
+## 5  377. v454      
+## 6  343. v922</code></pre>
+<pre class="r"><code>gf_point(soil_moisture ~ v950,  data = Soil)</code></pre>
+<p><img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<pre class="r"><code>gf_point(v950 ~ v454,  color = ~  soil_moisture, data = Soil)</code></pre>
+<p><img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-9-2.png" width="672" /></p>
+</div>

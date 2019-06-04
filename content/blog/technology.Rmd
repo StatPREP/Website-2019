@@ -1,0 +1,114 @@
+---
+title: "Introduction to RStudio.cloud"
+description: "Setting  up your RStudio.cloud account and brief instructions on how to  use it."
+weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+date: "2019-05-29"
+categories: 
+  - computing
+tags:
+  - RStudio
+  - cloud 
+---
+
+## Background 
+
+The GAISE report's Recommendation 5 is
+
+> *Use technology to explore concepts and analyze data.*
+
+Elaborations on this recommendation are contained in Appendix D of the report, and include
+
+* interactive applets, pp. 66-75 I think of these as a mouse-driven form of  computation that requires absolutely no "coding"
+* statistical software.  GAISE speaks of "a package like SPSS, Minitab, JMP, R, StatCrunch, Stata, any of the many Excel add-ins, or on-line tools ..." 
+    - "to teach concepts"
+    - "to create a wider variety of visualizations", pp. 77-80
+    - "software for reproducibility and better, clearer student assignments", pp. 80-83
+
+To support this, we're going to use RStudio Cloud in this workshop. It will let us:
+
+- run applets in a way that should avoid any problems with the server
+- run tutorials to teach concepts (optional)
+- and, if you like,  create documents using the system described in GAISE:  R Markdown
+
+## Setup your account on RStudio Cloud
+
+1. You will need an account on Google. Most people already have such an account, others can easily set one up (it's free!) at [this signup page](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp).
+ 
+ 
+One of the features  of RStudio Cloud is the ability to join a "space" (which might equally well have been called a "course"). Then you can set up your own "projects" or -- what we'll do in the workshop -- work with a  pre-populated  project called an "assignment." 
+- For those experienced  with RStudio, an assignment is an ordinary project that has been created from an  instructor-provided template and to which the instructor has read and write access. 
+     
+2. Copy the assignment for this workshop. The space is `USCOTS-2019-SDS` and the assignment is `USCOTS-2019-common`, but all  you need to do is ...
+    - Open a tab in your browser at [this link](https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6)
+    
+* Your browser will display the following page for you to log in. This  is where you  use your gmail account. (Or, if you  prefer, you  can create  an  account directly on RStudio Cloud,  keeping track of the password,  etc.)
+
+![](/img/rstudio-cloud-1.png)
+    
+* Once you have logged in, you will be  reminded how you got here,  that is, by your request  to  join  a  space. Join it!
+
+![](/img/rstudio-cloud-2.png)
+
+* You'll be welcomed to the space you've just joined. (If you already had an RStudio Cloud account from a previous workshop or such, you may see a start button instead of the picture below. Press that and you  should be done.)
+
+![](/img/rstudio-cloud-3.png)
+
+* Click on  the menu  icon in  the welcome page. (Follow the red arrow, above.) A side menu  will appear on the left.
+
+![](/img/rstudio-cloud-4.png)
+
+* Select the "projects" menu item. (Again, follow the  red  arrow.) Then you will see the list of projects contained in the space. 
+
+![](/img/rstudio-cloud-5.png)
+    
+* Press start. There will be a couple of quick  messages and then several minutes spent "opening" the project. This is a one-time operation, but you'll just have to wait while the  project is opened.
+
+![](/img/rstudio-cloud-6.png)
+
+* Finally, you will see an RStudio session opened up  to  your copy of the  `StatPREP-workshop` project.
+
+![](/img/rstudio-cloud-7.png)
+
+* It's a good idea to bookmark the web page displaying your RStudio session. But, if you forget, you can get back to your project any time by setting  your browser  to  `rstudio.cloud`,  pressing  the menu icon  in the upper left, and selecting the space `StatPREP-workshop`.
+
+## Running Little Apps
+
+For  this workshop, we'll run the Little Apps within the RStudio Cloud session. The command to run one  looks like this:
+
+```{r eval = FALSE}
+LittleApp::LA_run("bootstrap")
+```
+
+```{r include = FALSE}
+library(shiny)
+library(LittleApp)
+listing <- get_app_info()
+app_link <- function(name) {
+    ind <- grep(name,  listing$name)
+    url <- listing$url[ind]
+    
+    glue::glue("[{name}]({url})")
+}
+```
+
+The available Little Apps include:
+
+* `r app_link("center_spread")`
+* `r app_link("point_plot")`
+* `r app_link("jitter")`
+* `r app_link("t_test")`
+* `r app_link("proportions")`
+* `r app_link("rare_and_common")`
+* `r app_link("bootstrap")`
+* `r app_link("linear_regression")`
+* `r app_link("sampling_bias")`
+* `r app_link("sum_of_square_errors")`
+
+An alternative way to run the Little Apps is by following the links above to the web server where they are publicly deployed. But, since we may decide to modify the Little Apps (or add new ones), it's more expedient to run them from within RStudio Cloud using  the `LA_run()` command.
+
+
+
+[Libraries needed in R](/sources/libraries.R) 

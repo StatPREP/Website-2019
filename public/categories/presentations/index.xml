@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>presentations on StatPREP Workshops 2019</title>
+    <link>/categories/presentations/</link>
+    <description>Recent content in presentations on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/presentations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome</title>
+      <link>/blog/presentation-welcome/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-welcome/</guid>
+      <description>What are you looking for?  What challenges do you face?  What are institutional challenges  Background and experience From the pre-workshop survey
+ Institution type  8 / 19 Two-year college 12 / 19 Four year institution  Grad-school discipline  18 / 19 Mathematics (and maybe it’s 19 / 19) 2 / 19 Computer science 2 / 19 Engineering  Statistics experience  3 / 19 studied applied statistics in grad school 2 / 18 studied theoretical statistics in grad school 7 / 18 do applied statistics outside of teaching  Teaching experience: number with &amp;gt; 2 years experience  15 / 16 “other” mathematics (1 has no experience) 14 / 19 calculus (1 has no experience) 10 / 19 college algebra (4 have no experienceª) 7 / 19 intro stat 3 / 16 computer science (12 have no experience) 3 / 18 statistics (7 have no experience)   ✽ Might these be 4-year instructors at institutions without a college algebra course?</description>
+    </item>
+    
+    <item>
+      <title>Guidelines from GAISE/ASA/AMATYC</title>
+      <link>/blog/presentation-gaise-asa/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-gaise-asa/</guid>
+      <description>The Guidelines for Assessment and Instruction in Statistics Education The GAISE report (2016) was produced by a committee of leading statistical educators and endorsed by the ASA and AMATYC. It gives specific recommendations and some examples about best practices in teaching statistics.
+Goals for intro stats  Goal 1. Students should become critical consumers of statistically-based results reported in popular media, recognizing whether reported results reasonably follow from the study and analysis conducted.</description>
+    </item>
+    
+    <item>
+      <title>Tidy data</title>
+      <link>/blog/presentation-tidy-data/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-tidy-data/</guid>
+      <description>GAISE 2016 Teach statistical thinking.  Teach statistics as an investigative process of problem-solving and decision- making. Give students experience with multivariable thinking.  Focus on conceptual understanding.
+ Integrate real data with a context and purpose.
+ Foster active learning.
+ Use technology to explore concepts and analyze data.
+ Use assessments to improve and evaluate student learning.
+   Real data The StatPREP definition:
+ 1000-ish rows, 4+-ish variables captured in the wild: not collected for teaching statistics  For the moment, put aside the important matters of context and purpose.</description>
+    </item>
+    
+    <item>
+      <title>Grammatical graphics</title>
+      <link>/blog/presentation-grammatical-graphics/</link>
+      <pubDate>Sat, 03 Jun 2017 13:07:31 +0200</pubDate>
+      
+      <guid>/blog/presentation-grammatical-graphics/</guid>
+      <description>The Grammar of Graphics The title comes from Leland Wilkinson’s book, The Grammar of Graphics
+The first chapter is quite mathematical – give it a look by following the link above.
+One purpose was to give a way of describing graphics in the face of a combinatorial explosion of designs.
+ How to describe graphics to the computer for drawing.  But it also provides a way for teaching graphics.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s all regression</title>
+      <link>/blog/presentation-its-all-regression/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-its-all-regression/</guid>
+      <description>We almost always work with variables that are either …
+ quantitative categorical with only two levels  In relating two variables, there are four possible situations
+      Quantitative Categorical         Quant. slope of regression line or correlation coefficient difference in two means  …………. …………………………………… ……………………………………….  Categ. ?????? difference in two proportions    Presentation in terms of algebra       Quantitative Categorical         Quant.</description>
+    </item>
+    
+    <item>
+      <title>Data sources</title>
+      <link>/blog/presentation-data-sources/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/presentation-data-sources/</guid>
+      <description>More documents at the data-sources directory
+Real data At the October 2018 StatPREP meeting at the Mathematical Association of America’s DC headquarters the new MAA deputy executive director, Rachel Levy asked a simple question: What’s real data?
+A core recommendation of the American Statistical Association’s GAISE report is to “use real data” when teaching statistics. Prof. Levy wasn’t looking to prompt a philosophical discussion of the nature of reality, but to define a benchmark.</description>
+    </item>
+    
+  </channel>
+</rss>

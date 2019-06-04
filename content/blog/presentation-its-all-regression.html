@@ -1,0 +1,212 @@
+---
+title: "It's all regression"
+description: "t-tests, p-tests, linear regression: they're all the same thing"
+weight: 50
+categories: 
+  - presentations
+tags:
+  - F-test
+  - inference
+date: "2019-05-10"
+banner: "img/CI-from-F.png"
+---
+
+
+
+<p>We almost always work with variables that are either …</p>
+<ul>
+<li>quantitative</li>
+<li>categorical with only two levels</li>
+</ul>
+<p>In relating two variables, there are four possible situations</p>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="41%" />
+<col width="41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th> </th>
+<th align="center">Quantitative</th>
+<th align="center">Categorical</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td> </td>
+<td align="center"><img src="/img/50mm-h.png" /></td>
+<td align="center"><img src="/img/50mm-h.png" /></td>
+</tr>
+<tr class="even">
+<td><strong>Quant.</strong></td>
+<td align="center">slope of regression line or correlation coefficient</td>
+<td align="center">difference in two means</td>
+</tr>
+<tr class="odd">
+<td>………….</td>
+<td align="center">……………………………………</td>
+<td align="center">……………………………………….</td>
+</tr>
+<tr class="even">
+<td><strong>Categ.</strong></td>
+<td align="center">??????</td>
+<td align="center">difference in two proportions</td>
+</tr>
+</tbody>
+</table>
+<div id="presentation-in-terms-of-algebra" class="section level2">
+<h2>Presentation in terms of algebra</h2>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="41%" />
+<col width="41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th> </th>
+<th align="center">Quantitative</th>
+<th align="center">Categorical</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td> </td>
+<td align="center"><img src="/img/50mm-h.png" /></td>
+<td align="center"><img src="/img/50mm-h.png" /></td>
+</tr>
+<tr class="even">
+<td><strong>Quant.</strong></td>
+<td align="center"><span class="math inline">\(b_1 = \frac{n\sum xy - \sum x \cdot \sum y}{n \sum x^2 - (\sum x)^2}\)</span></td>
+<td align="center"><span class="math inline">\(t = \frac{\bar{x}_1 - \bar{x}_2 - (\mu_1 - \mu_2)}{\sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}}\)</span></td>
+</tr>
+<tr class="odd">
+<td>………….</td>
+<td align="center">……………………………………</td>
+<td align="center">……………………………………….</td>
+</tr>
+<tr class="even">
+<td><strong>Categ.</strong></td>
+<td align="center">??????</td>
+<td align="center"><span class="math inline">\(z = \frac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\frac{\bar{p}\bar{q}}{n_1} + \frac{\bar{p}\bar{q}}{n_2}}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>… and associated distributions: t and z</p>
+</div>
+<div id="data-beats-formulas" class="section level2">
+<h2>Data beats formulas</h2>
+<table>
+<thead>
+<tr class="header">
+<th> </th>
+<th align="center">Quantitative</th>
+<th align="center">Categorical</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td> </td>
+<td align="center"><img src="/img/50mm-h.png" /></td>
+<td align="center"><img src="/img/50mm-h.png" /></td>
+</tr>
+<tr class="even">
+<td><strong>Quant.</strong></td>
+<td align="center"><img src="/img/PQQ-thumb.png" /></td>
+<td align="center"><img src="/img/PQC-thumb.png" /></td>
+</tr>
+<tr class="odd">
+<td>………….</td>
+<td align="center">……………………………………</td>
+<td align="center">……………………………………….</td>
+</tr>
+<tr class="even">
+<td><strong>Categ.</strong></td>
+<td align="center"><img src="/img/PCQ-thumb.png" /></td>
+<td align="center"><img src="/img/PCC-thumb.png" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="raw-and-model-values" class="section level2">
+<h2>Raw and model values</h2>
+<p>The error bars show the size of the standard deviation.</p>
+<p><img src="/img/PQQ.png" width="80%" /></p>
+</div>
+<div id="the-formal-inference-procedure" class="section level2">
+<h2>The formal inference procedure</h2>
+<ol style="list-style-type: decimal">
+<li>Measure the effect size. Call it <span class="math inline">\(\beta\)</span>:
+<ul>
+<li>slope for Quant vs Quant or Cat vs Quant</li>
+<li>difference for Quant vs Cat or Cat vs Cat</li>
+</ul></li>
+<li>Take the ratio of the model-value standard deviation to the raw-value standard deviation. Call this ratio <span class="math inline">\(R\)</span>.</li>
+</ol>
+<p><img src="/img/compare-sd.png" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Compute the ratio of “explained” to “unexplained”: <span class="math display">\[F  = (n-1) \frac{R^2}{1 - R^2}\]</span></li>
+</ol>
+<hr />
+<p>Eyeballing from the four models (which had n = 200)…</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"> </th>
+<th align="center">Quantitative</th>
+<th align="center">Categorical</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"> </td>
+<td align="center"><span class="math inline">\(\beta = \frac{1\ cm}{3\ years}\)</span></td>
+<td align="center"><span class="math inline">\(\beta \approx 8\ cm\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Quantitative</strong></td>
+<td align="center"><span class="math inline">\(R \approx 0.5\)</span></td>
+<td align="center"><span class="math inline">\(R \approx 1/3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"> </td>
+<td align="center"><span class="math inline">\(F = 24.8\)</span></td>
+<td align="center"><span class="math inline">\(F \approx 66\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"> </td>
+<td align="center"> </td>
+<td align="center"> </td>
+</tr>
+<tr class="odd">
+<td align="right"> </td>
+<td align="center"><span class="math inline">\(\beta = 0.007\)</span> per year</td>
+<td align="center"><span class="math inline">\(\beta \approx 0.2\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Categorical</strong></td>
+<td align="center"><span class="math inline">\(R \approx 0.12\)</span></td>
+<td align="center"><span class="math inline">\(R \approx 0.25\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"> </td>
+<td align="center"><span class="math inline">\(F \approx 8.3\)</span></td>
+<td align="center"><span class="math inline">\(F \approx 13.3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section" class="section level2">
+<h2> </h2>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Confidence interval on <span class="math inline">\(\beta\)</span> is always <span class="math display">\[CI_\beta = \beta (1 \pm 2 /  \sqrt{F})\]</span></p></li>
+<li><p>p-value … Look up in this graph.</p></li>
+</ol>
+<p><img src="/blog/presentation-its-all-regression_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Freebies:</p>
+<ul>
+<li>correlation coefficient <span class="math inline">\(r = \sqrt{F}\)</span>, where the <span class="math inline">\(\pm\)</span> branch is based on the slope.</li>
+<li>Prefer t? It’s <span class="math inline">\(t = \sqrt{F}\)</span>. But F is more general than t.</li>
+</ul>
+</div>

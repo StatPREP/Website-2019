@@ -1,0 +1,79 @@
+---
+title: "Instructor Guide: Graphing Data"
+author: "Daniel Kaplan"
+weight: -5
+date: "2019-04-22"
+categories:
+    - activity-guide
+    - activities
+tags:
+    - graphics
+---
+
+```{r setup, include=FALSE}
+
+```
+
+## Activities
+
+* [Point plots](/blog/activity-point-plot)
+* [Jittering and violins](/blog/activity-jittering/)
+* [Summary intervals](/blog/activity-summary-interval/)
+* [Response and explanatory variables](/blog/activity-response-and-explanatory/)
+
+
+## Learning objectives 
+
+## Additional resources
+
+- `r SDSdata::word_pdf_links()`
+- [Instructor orientation](#orientation)
+- [Role in statistical practice](#role)
+- [Classroom discussion](#discussion)
+- [Assessment](#assessment)
+- [Tips for an active classroom](#active)
+- [Student pre-requisites](#prereqs)
+- [Pitfalls](#pitfalls)
+
+
+# Orientation for instructors
+
+Showing the basic kinds of plots: data/density/interval
+
+## Role in statistical practice
+
+
+## Conceptual pitfalls
+
+
+
+## Learning objectives 
+
+
+
+
+## Student background
+
+
+## Background data knowledge
+
+## (If we had) the population
+
+
+
+## Student tasks and activities
+
+
+## Creating an active classroom
+
+See the document on [general tips for creating an active classroom](/etc/tips-for-active-classroom.html). 
+
+
+
+## Assessment items
+
+## Pushing the envelope/advancing the field
+
+
+## Author info
+

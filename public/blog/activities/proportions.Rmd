@@ -1,0 +1,32 @@
+---
+title: "Comparing two proportions"
+date: "StatPREP Class Activity"
+weight: 500
+description: "NOT YET AVAILABLE. Is there evidence that the proportion of a given outcome is different among explanatory groups?"
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+---
+
+```{r include = FALSE}
+SDSdata::sds_setup()
+library(LittleApp)
+library(DT)
+```
+
+`r SDSdata::word_pdf_links()`
+
+STILL IN DEVELOPMENT ....
+
+# Orientation
+
+ 
+# Activity
+
+proportions little app
+
+
+
+----------------------
+
+Version 0.1, `r Sys.Date()`, Daniel Kaplan, [Word version](`r paste0("/word-versions/",tools::file_path_sans_ext(knitr::current_input()), ".docx")`) 

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activities on StatPREP Workshops 2019</title>
+    <link>/categories/activities/</link>
+    <description>Recent content in Activities on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/activities/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Providing links to your students</title>
+      <link>/blog/activity-instructor-instructions/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-instructor-instructions/</guid>
+      <description>The documents on this site are formatted for instructors. There are also documents formatted for students. * If you want to hand out a printed version of the activity, there is a link to a Word format near the top of each document. Feel free to customize this to suit your own class! * If you prefer to give your students a URL so they can access the document via the web, we suggest you give them the Student link that can be found in each document.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Data basics</title>
+      <link>/blog/instructions-data/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-data/</guid>
+      <description>Activities  Variable types Variables and units Response and explanatory variables   Learning objectives  Additional resources  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Assessment Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors Explaining what is data and what are the forms of data.
+Role in statistical practice  Conceptual pitfalls  Student pre-requisites  Student tasks and activities  Creating an active classroom See the document on general tips for creating an active classroom.</description>
+    </item>
+    
+    <item>
+      <title>Jittering</title>
+      <link>/blog/activity-jittering/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-jittering/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Graphical displays are effective when they connect well with human visual and cognitive faculties. Humans are extremely good at some visual tasks and surprisingly poor at others. To illustrate, consider the task of identifying how many 3’s there are in the following list:
+The task is difficult because recognizing shapes is a tough cognitive task.
+The task becomes much simpler if we take advantage of color, which our visual systems can process very quickly.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Graphing Data</title>
+      <link>/blog/instructions-graphing/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-graphing/</guid>
+      <description>Activities  Point plots Jittering and violins Summary intervals Response and explanatory variables   Learning objectives  Additional resources  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Assessment Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors Showing the basic kinds of plots: data/density/interval
+Role in statistical practice  Conceptual pitfalls  Learning objectives  Student background  Background data knowledge  (If we had) the population  Student tasks and activities  Creating an active classroom See the document on general tips for creating an active classroom.</description>
+    </item>
+    
+    <item>
+      <title>Types of variables</title>
+      <link>/blog/activity-variable-types/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-variable-types/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation There are two major types of variables:
+ Quantitative, where the value of the variable is a number. Categorical, where the value of the variable is one of a set of labels. That is, the value tells which category or group the row falls into.  Quantitative variables cover an interval of the number line. That interval is described by two numbers: the minimum value and the maximum value of the variable.</description>
+    </item>
+    
+    <item>
+      <title>Variables and the unit of observation</title>
+      <link>/blog/activity-variables-and-units/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-variables-and-units/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation There’s an expression about how to accomplish a complex, confusing, and difficult task: One step at a time. The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents.</description>
+    </item>
+    
+    <item>
+      <title>Response and explanatory variables</title>
+      <link>/blog/activity-response-and-explanatory/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-response-and-explanatory/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation A variable is a quantity or characteristic that varies from one person to another, or more generally, from one unit of observation to another. There are two distinct types of variables: quantitative (numeric) and categorical (labels/words/etc.).
+There’s another distinction to be made about variables, which is not about the type of the variable itself but the role the variable will play in the statistical methods we use to describe a situation of interest and the relationships among the variables involved.</description>
+    </item>
+    
+    <item>
+      <title>Experiment and causality</title>
+      <link>/blog/activity-experiment-and-causality/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-experiment-and-causality/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Consider a situation where you have three variables: X, Y, and C. Your understanding of how the world works is telling you that X causes Y. And, indeed, when you collect data, you see an association between X and Y. But all an association does is to tell you that X and Y are connected somehow, not what that connection is.
+If you’re trying to convince a skeptic that X causes Y, you have some work to do.</description>
+    </item>
+    
+    <item>
+      <title>The standard deviation and the 95% summary interval</title>
+      <link>/blog/activity-sd-and-summary-interval/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-sd-and-summary-interval/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The length of the 95% summary interval is a pretty good way to describe the amount of variation in a variable. Yet statisticians tend to prefer using the standard deviation. This makes sense, since statisticians are interested in confusing the poor student by using obscure names (“Deviation?”. Really?) and formulas that can be hard to understand. … Not really!! Even though the standard deviation has an odd name and seems complicated, the actual reason it’s used so much by statisticians is that it has some nice mathematical properties.</description>
+    </item>
+    
+    <item>
+      <title>Intervention and prediction</title>
+      <link>/blog/activity-intervention-and-prediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-intervention-and-prediction/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The appropriate choice of one variable as the response and other variables as the explanatory depends on the purpose for which you want to describe the relationship.
+Consider these two distinct purposes:
+“I plan to intervene to change the value of variable B, and I want to know how A will change in response.” (Example: “I’m going to turn down the thermostat setting, and I want to know whether water will condense on my windows.</description>
+    </item>
+    
+    <item>
+      <title>Common, uncommon, and rare</title>
+      <link>/blog/activity-common-and-rare/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-common-and-rare/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation English has many words to describe what statistician’s call frequency: common, unusual, rare, infrequent, uncommon, and so on. There’s no precise, numerical meaning to these words; they are used to create an impression.
+In statistics, it’s helpful to have standard ways to refer to frequency. The standard deviation provides a widely accepted measure of commonality or rareness. It’s not just statisticians who use this measure.</description>
+    </item>
+    
+    <item>
+      <title>Introducing linear regression</title>
+      <link>/blog/activity-introducing-linear-regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-introducing-linear-regression/</guid>
+      <description>Get formatted versions: Word : PDF
+Showing various sorts of relationships for discussion Open up the linear regression Little App. (See footnote1). In this activity we’ll explore three different data sets available through the app. For each data set, the variable indicated below plays the role of the response variable. Some explanatory variables are listed as sub-points.
+Data set: NHANES. Response variable: BMI. It’s important for students to know what BMI is.</description>
+    </item>
+    
+    <item>
+      <title>Shapes of distributions</title>
+      <link>/blog/activity-distribution-shapes/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-distribution-shapes/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation As you’ve probably figured out already, the columns of data frames are called variables because the values in the column are not all the same, that is, they vary.
+In the early 1800s, it was discovered that many different variables have a pattern in common: the most common values are near the mean and values become less common the further they are from the mean.</description>
+    </item>
+    
+    <item>
+      <title>Parameters of the normal distribution</title>
+      <link>/blog/activity-normal-parameters/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-normal-parameters/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The bell-shaped distribution is often a good description of the distribution of a variable, so often that it’s called the “normal” distribution.
+Actually, there is not just one normal distribution but a whole family of them, all of which have the characteristic bell shape. To identify an individual member of this bell family, two numbers suffice:
+ the mean: the location of the peak of the bell the standard deviation: the width of the bell  What’s potentially confusing here is that you may know about the mean in terms of a calculation you do on a variable: add up the n values and divide by n.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Causality</title>
+      <link>/blog/instructions-causality/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-causality/</guid>
+      <description>Activities  Intervention and prediction Experiment and causality   Learning objectives  Additional sections  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors There is an epigram that is familiar to all statistics instructors:
+ Correlation is not causation.
+ Put on a more explicit logical footing, this is equivalent to:</description>
+    </item>
+    
+    <item>
+      <title>What is a confidence interval?</title>
+      <link>/blog/activity-what-is-a-confidence-interval/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-what-is-a-confidence-interval/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Statistics includes many forms and procedures for expressing uncertainty. A simple one is the assignment of a probability to a potential outcome. For instance, if we say the chance of rain tomorrow is 50%, we are expressing a large amount of uncertainty. In contrast, if the probability is specified as 10%, we are expressing much more certainty.
+Another setting in which it’s helpful to express uncertainty involves a sample statistic such as the mean, standard deviation, median, correlation, regression slope, etc.</description>
+    </item>
+    
+    <item>
+      <title>Sampling bias and the confidence interval</title>
+      <link>/blog/activity-sampling-bias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-sampling-bias/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The lesson on What is a confidence interval? showed how confidence intervals are supposed to behave. Specifically, a 95% confidence interval should cover the corresponding population parameter for 95% of possible samples. Achieving this performance of course depends on the confidence interval being calculated with an appropriate procedure. But it also depends on the sample being unbiased.
+An unbiased sample is one where each member of the population has exactly the same probability of being included in a sample.</description>
+    </item>
+    
+    <item>
+      <title>Comparing two groups</title>
+      <link>/blog/activity-comparing-two-groups/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-comparing-two-groups/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation A friend and I were discussing ways to measure poverty. Of course, there’s the so-called “poverty level” of income defined by the US government. But we were interested in whether it might be worthwhile to do a detailed interview with, say, 100 families, quantifying how much trouble they have paying for different things: food, housing, healthcare, transportation, emergencies, etc. Then we’d look at easy things to measure so that we could have an index for these different things, food stress, housing stress, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Instructor guide: Center &amp; spread</title>
+      <link>/blog/instructions-center-spread/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-center-spread/</guid>
+      <description>Activities  Variables and their summary intervals The standard deviation and the summary interval Shapes of distributions The normal distribution   Learning objectives Summarize the likely range of a variable using an interval. Choose the summary interval endpoints to include the “vast majority” of the values. Master the convention that “vast majority” is the central 95% of the values. Be able to work with two formats for describing an interval: “A to B” and “C ± D”.</description>
+    </item>
+    
+    <item>
+      <title>Comparing two confidence intervals</title>
+      <link>/blog/activity-comparing-confidence-intervals/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-comparing-confidence-intervals/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation We’re continuing the story of two friends interested in how to measure poverty. You met with them at a coffee shop to show them the NHANES data and how to display it in the t-test Little App. You had arranged the display to have income_poverty as the response variable and home_type as the explanatory variable. The sample size was n = 100, since that’s the number of families your friends were thinking of interviewing.</description>
+    </item>
+    
+    <item>
+      <title>The two-sample t test</title>
+      <link>/blog/activity-two-sample-t-test/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-two-sample-t-test/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Suppose you have an explanatory variable that defines two, distinct groups, like the home_type variable in the NHANES2 data. You notice that the two groups have different mean values for the explanatory variable.
+A possible explanation for the observed difference in the two means is that it is just a pattern that reflects the play of chance rather than any systematic difference in the population of the two groups,</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Confidence intervals</title>
+      <link>/blog/instructions-confidence-intervals/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-confidence-intervals/</guid>
+      <description>Activities  What is a confidence interval? Sampling bias and confidence intervals Comparing two groups Comparing two confidence intervals Two-sample t test   Learning objectives connected to confidence intervals  Master the relevant vocabulary … population, sample, sample statistic, point estimate, margin of error, confidence interval, confidence level. Recognize the estimation process that leads to a confidence interval: a sample is selected randomly from a population a statistic is calculated from that sample the margin of error and, correspondingly, the confidence interval are calculated from that sample.</description>
+    </item>
+    
+    <item>
+      <title>Describing relationship patterns in words and numbers</title>
+      <link>/blog/activity-relationship-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-relationship-patterns/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation It’s natural to display a linear regression as a graph modeling the response variable as a function of the explanatory variables. In the LA_linear_regression Little App, that function is shown as a line laid on top of the data.
+Graphics are important, but it’s also a good practice to summarize the relationship using words and numbers.
+This lesson introduces the conventions for such a summary.</description>
+    </item>
+    
+    <item>
+      <title>How much is explained?</title>
+      <link>/blog/activity-how-much-is-explained/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-how-much-is-explained/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation The statistical work we do is built around models. If the word “model” reminds you of a toy plane, you’re on the right track. A model is something we build in order to represent something in the real world. Usually the model is much simpler than the real-world object.
+Models are useful when they serve a purpose. For instance, a toy plane can serve the purpose of teaching a child what are the main components of a plane and how they are related.</description>
+    </item>
+    
+    <item>
+      <title>Data and Point Plots</title>
+      <link>/blog/activity-point-plot/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-point-plot/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Data can be many things, but one of the most common formats is a data frame, a kind of spreadsheet of rows and columns. We’ll work with the data frame Births_2014, which is based on data published by the US Centers for Disease Control. Births_2014 has 100,000 rows. Each row reports a live birth in the US in 2014. There are dozens of variables, a few of which are shown below.</description>
+    </item>
+    
+    <item>
+      <title>Flexibility</title>
+      <link>/blog/activity-flexibility/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-flexibility/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation  Activity Systolic versus diastolic in NHANES. A stiff line is too strongly influenced by the people with very low diastolic blood pressure. Adding some flexibility allows the relationship for those with normal pressure to be more evident. I’m guessing very low diastolic pressure is OK, but you can’t lower systolic pressure accordingly and stay alive.
+Version 0.2, 2019-06-04, Daniel Kaplan, Word version</description>
+    </item>
+    
+    <item>
+      <title>Changes in risk</title>
+      <link>/blog/activity-changes-in-risk/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-changes-in-risk/</guid>
+      <description> Get formatted versions: Word : PDF
+Orientation  Activity proportions little app
+Version 0.2, 2019-06-04, Daniel Kaplan, Word version
+ </description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Two-sample t-test</title>
+      <link>/blog/instructions-two-sample-t-test/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-two-sample-t-test/</guid>
+      <description>Activities  Comparing two groups Comparing confidence intervals Two sample t-test Instructor customizations:  Ambika Silva: Comparing two samples with confidence intervals activity &amp;amp; assessment    Learning objectives Typical course objectives relating to the t-based test and confidence interval are:
+ Confidence interval:  Compute from data the confidence interval on the difference of means. Interpret the confidence interval in the context of the question intended to be addressed with the data.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Introducing the normal distribution</title>
+      <link>/blog/instructions-normal-distribution/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-normal-distribution/</guid>
+      <description>Activities  Distribution shapes Normal parameters Common and rare   Learning objectives  Understand how a distribution summarizes the properties of a collection of individual values. Be able to translate between major forms of representing distributions graphically, e.g.  the density of points in a (jittered) point plot the presentation of such density as a height or width as in a violin or density plot  Be able to eyeball the standard deviation of a close-to-normal distribution and, similarly, a 95% summary interval (that is, mean ± two standard deviations ) Be able to identify common characteristics of skew or long-tailed distributions, by comparison to a normal distribution.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Linear Regression</title>
+      <link>/blog/instructions-linear-regression/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-linear-regression/</guid>
+      <description>Activities  Introducing linear regression Describing relationship patterns How much is explained by regression?   Learning objectives connected to linear regression  Create scatterplots for bivariate data using graphing technology where appropriate. Lesson: point plots Sensibly choose which variable should be the response and which the explanatory variable, and know when it does and doesn’t matter. (Other nomenclature for explanatory/response: predictor/response or independent/dependent.) Lesson: response and explanatory variables  External evidence of which direction causation goes, e.</description>
+    </item>
+    
+  </channel>
+</rss>

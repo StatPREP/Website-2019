@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>confidence-intervals on StatPREP Workshops 2019</title>
+    <link>/tags/confidence-intervals/</link>
+    <description>Recent content in confidence-intervals on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/confidence-intervals/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparing two groups</title>
+      <link>/blog/2019/05/18/activity-comparing-two-groups/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/05/18/activity-comparing-two-groups/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation A friend and I were discussing ways to measure poverty. Of course, there’s the so-called “poverty level” of income defined by the US government. But we were interested in whether it might be worthwhile to do a detailed interview with, say, 100 families, quantifying how much trouble they have paying for different things: food, housing, healthcare, transportation, emergencies, etc. Then we’d look at easy things to measure so that we could have an index for these different things, food stress, housing stress, and so on.</description>
+    </item>
+    
+  </channel>
+</rss>

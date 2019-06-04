@@ -1,0 +1,133 @@
+---
+title: "Grammatical graphics"
+description: "Describing effective principles for making and reading graphics"
+weight: 30
+categories:
+  - presentations 
+tags:
+  - graphics
+date: "2017-06-03T13:07:31+02:00"
+---
+
+
+
+<div id="the-grammar-of-graphics" class="section level2">
+<h2>The Grammar of Graphics</h2>
+<p>The title comes from Leland Wilkinson’s book, <a href="https://books.google.com/books/about/The_Grammar_of_Graphics.html?id=NRyGnjeNKJIC&amp;printsec=frontcover&amp;source=kp_read_button#v=onepage&amp;q&amp;f=false"><em>The Grammar of Graphics</em></a></p>
+<p><img src="/img/grammar-of-graphics.png" /></p>
+<p>The first chapter is quite mathematical – give it a look by following the link above.</p>
+<p>One purpose was to give a way of describing graphics in the face of a combinatorial explosion of designs.</p>
+<ul>
+<li>How to describe graphics to the computer for drawing.</li>
+</ul>
+<p>But it also provides a way for teaching graphics.</p>
+</div>
+<div id="frame" class="section level2">
+<h2>Frame</h2>
+<p>Sets the meaning of the drawing space.</p>
+<ul>
+<li>For stats, x-y coordinate frame suffices … almost!
+<ul>
+<li>axes can be quantitative or categorical</li>
+<li>for categorical axes,
+<ul>
+<li>there’s space between the positions marking the levels</li>
+<li>we can use this interstitial space to various purposes
+<ul>
+<li>random scatter (jitter)</li>
+<li>dodging (side-by-side), stacking (on top of) incorporates a third variable</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Facetting to incorporate a third/fourth/fifth variable</li>
+</ul>
+<p><strong>StatPREP guideline</strong>:</p>
+<ul>
+<li>All aspects of the frame should be mapped to variables!</li>
+<li>The vertical axis should always be the response variable.</li>
+</ul>
+<p>Assessment items:</p>
+<p><img src="/blog/presentation-grammatical-graphics_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<ol style="list-style-type: lower-roman">
+<li>How many scales are there?</li>
+<li>Which variable is mapped to each scale? Is that variable continuous or discrete</li>
+<li>What variables are displayed by the <strong>position</strong> of the indicated point?</li>
+<li>What does each dot correspond to in the real world?</li>
+<li>What’s the sex of the person at the indicated point?</li>
+<li>For categorical scales, what property sets the order? Is it meaningful?</li>
+<li>Should zero be included on the vertical axis? Why or why not?</li>
+</ol>
+</div>
+<div id="glyphs" class="section level2">
+<h2>Glyphs</h2>
+<p>Glyphs are the individual data marks in the frame. Each layer consists of glyphs of the same type. They have graphical properties (“aesthetics” in the grammar):</p>
+<ul>
+<li>shape</li>
+<li>color</li>
+<li>size</li>
+<li>transparency (alpha)</li>
+<li>position</li>
+<li>and so on</li>
+</ul>
+<p>Assessment item:</p>
+<p><img src="/blog/presentation-grammatical-graphics_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<ol style="list-style-type: lower-roman">
+<li>How many variables are represented by position?</li>
+<li>How many aesthetics are there? (Include x- and y-position in your count.)</li>
+<li>How many variables are represented?</li>
+<li>Which variable is represented in more than one way? Name the variable and say what the different ways are.</li>
+<li>What are the values for the variables at each of the indicated points?</li>
+<li>Keeping the same frame, how can you change the graph to keep all the variables but make it clearer how union membership relates to wage?</li>
+</ol>
+</div>
+<div id="layers" class="section level2">
+<h2>Layers</h2>
+<p>A graph consists of a frame and one or more layers.</p>
+<p><strong>StatPREP guidelines</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>ALWAYS include a data layer</li>
+<li>Statistical objects (if needed) should be represented as additional layers.
+<ul>
+<li>It’s helpful to consider including two distinct types of layers for statistics:
+<ol style="list-style-type: decimal">
+<li>Interval layers</li>
+<li>Density layers</li>
+</ol></li>
+</ul></li>
+</ol>
+<div id="interval-layers" class="section level3">
+<h3>Interval layers</h3>
+<p><img src="/blog/presentation-grammatical-graphics_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/blog/presentation-grammatical-graphics_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Some assessment items:</p>
+<ol style="list-style-type: lower-roman">
+<li>One of the graphs shows a prediction interval, the other a confidence interval. Which is which? Explain what you saw in the graphs that led to your answer.</li>
+<li>Which, if any, of the employment sectors show a statistically significant wage difference between married and unmarried workers?</li>
+<li>How would you re-arrange the graph if you wanted to examine sex-related differences in wages?</li>
+</ol>
+</div>
+<div id="density-layers" class="section level3">
+<h3>Density layers</h3>
+<p><img src="/blog/presentation-grammatical-graphics_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Assessment items:</p>
+<ol style="list-style-type: lower-roman">
+<li>Are wages approximately “normally” distributed?</li>
+<li>The “glass ceiling” describes a phenomenon where women tend not to rise as high in employment as men. What about the graph is consistent with the glass ceiling?</li>
+</ol>
+</div>
+</div>
+<div id="point-out-alternatives" class="section level2">
+<h2>Point out alternatives</h2>
+<p><img src="/img/data-images/categorical-axis.png" /></p>
+<ol style="list-style-type: lower-roman">
+<li>What determines the order of the categories on the horizontal axis?</li>
+<li>Is a jet ski more likely to be stolen than a sailboat? How can you tell this from the graph?</li>
+<li>What does the data frame look like on which this graph is based?</li>
+<li>How many variables are there in the “raw” data? What is the unit of observation? (Ans: A stolen boat.)</li>
+<li>Suppose you are working for a boat insurance company. You want to figure out what are the risk factors for a boat being stolen.
+<ul>
+<li>What variables would you select from the company’s database? (e.g., Is it trailable?)</li>
+<li>What would be the unit of observation? (Ans: A boat)</li>
+</ul></li>
+</ol>
+</div>

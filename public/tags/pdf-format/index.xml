@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pdf-format on StatPREP Workshops 2019</title>
+    <link>/tags/pdf-format/</link>
+    <description>Recent content in pdf-format on StatPREP Workshops 2019</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pdf-format/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Providing links to your students</title>
+      <link>/blog/activity-instructor-instructions/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-instructor-instructions/</guid>
+      <description>The documents on this site are formatted for instructors. There are also documents formatted for students. * If you want to hand out a printed version of the activity, there is a link to a Word format near the top of each document. Feel free to customize this to suit your own class! * If you prefer to give your students a URL so they can access the document via the web, we suggest you give them the Student link that can be found in each document.</description>
+    </item>
+    
+  </channel>
+</rss>

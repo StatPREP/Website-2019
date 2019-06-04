@@ -1,0 +1,97 @@
+---
+title: "Common, uncommon, and rare"
+date: "2019-05-20"
+description: "Using the z-score to express everyday concepts of common and rare."
+weight: 8
+output:
+  word_document:
+    reference_docx: lesson-style.docx
+tags: 
+  - normal
+  - z-score
+  - rare
+categories: 
+  - "Activities"
+---
+
+
+
+<p>Get formatted versions: <a href="/word-versions/activity-common-and-rare.docx">Word</a> : <a href="/pdf-versions/activity-common-and-rare.pdf">PDF</a></p>
+<div id="orientation" class="section level1">
+<h1>Orientation</h1>
+<p>English has many words to describe what statistician’s call <em>frequency</em>: common, unusual, rare, infrequent, uncommon, and so on. There’s no precise, numerical meaning to these words; they are used to create an impression.</p>
+<p>In statistics, it’s helpful to have standard ways to refer to frequency. The standard deviation provides a widely accepted measure of commonality or rareness. It’s not just statisticians who use this measure. They are used in psychology and social science, in physical science (where the standard deviation is often called “sigma”). In medicine, the standard deviation underlies a surprising number of diagnostic criteria. In criminal cases in court, the usual standard for evidence is “beyond a reasonable doubt.” But in civil discrimination cases, for instance employment discrimination or jury selection, the US Supreme Court has described compelling evidence as lying outside “two or three standard deviations.”</p>
+<p>In this lesson, you are going to explore the use of the standard deviation as a kind of ruler for expressing frequency. For simplicity of speech, we’ll adopt the English words “common,” “uncommon,” and “rare” to refer to specific intervals:</p>
+<ul>
+<li>common: within 2 standard deviations of the mean. For a variable with a normal distribution, 95% of cases are common.</li>
+<li>rare: beyond 3 standard deviations of the mean. For a variable with a normal distribution, a quarter of one percent (that is, 0.27%) of cases are beyond 3 standard deviations.</li>
+<li>uncommon: not common but not rare. For a variable with a normal distribution, uncommon covers about 5% of cases.</li>
+</ul>
+<p>Since it’s so long-winded to say “within 2 standard deviations of the mean,” statisticians have adopted a scale called the <em>z-score</em>. In the language of the z-score, “within 2 standard deviations of the mean” is written <span class="math inline">\(|\ z\ | &lt; 2\)</span>. Similarly, “rare on the left size of the mean” is <span class="math inline">\(z &lt; -3\)</span>.</p>
+</div>
+<div id="activity" class="section level1">
+<h1>Activity</h1>
+<p>Open up the <a href="https://dtkaplan.shinyapps.io/LA_rare_and_common/">rare-and-common</a> Little App. (See footnote<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>). Set the response variable to <code>height_adults</code> and leave the explanatory variable at <code>.none.</code></p>
+<ol style="list-style-type: decimal">
+<li><p>The graphic shows a traditional blot of the distribution of the response variable, called a <em>density plot</em>. If you’re familiar with a histogram, you might like to think about a <em>density plot</em> as a kind of smoothed histogram without the jagged, abrupt changes from bar to bar.</p>
+<ul>
+<li>There are sliders in the app to let you define numerically what range of values are common, uncommon, or rare.</li>
+</ul></li>
+<li><p>Using your everyday experience, write down a range of human heights that you think of as “common.” Similarly, write down a tall height that’s rare and a short height that’s rare.</p></li>
+</ol>
+<ul>
+<li>Within the app, set the sliders to correspond to what you wrote down for common and rare. According to the app, what fraction of cases fall into the ranges common, uncommon, and rare. Note that there are two ranges for uncommon: one on the left side of the mean and one on the right side. That’s also true for the ranges for rare.</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Turn on <code>sex</code> as an explanatory variable.</p>
+<p><em>What fraction of women are marked as either uncommon or rare on the tall side? What fraction of men?</em>   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<p><em>Similarly, what fraction of women are marked as uncommon or rare on the short side? Of men?</em>   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  </p>
+<ul>
+<li>Adjust the sliders so that about 2.5% of women are marked as uncommon or rare on the tall side, and another 2.5% on the short side. Consequently, about 95% of women will be marked with a “common” height. Using those slider settings, answer these questions for men:</li>
+</ul>
+<p><em>What fraction lie outside the common range on the short and on the tall side?</em>   .  .  .  </p>
+<p><em>For the women, you set the slider so that the short and tall fractions are roughly equal. Are those fractions roughly the same for men?</em>   .  .  .  </p></li>
+<li><p>Switch to the <code>Births_2014</code> data frame with <code>age_mother</code> as the response variable. Set the explanatory variable to <code>.none.</code> Arrange the sliders so that about 10% of the distribution is to the left of common and 10% is to the right.</p>
+<ul>
+<li><em>At what age is the leftmost boundary of ‘common’?</em>   .  .  .  </li>
+</ul>
+<p> </p>
+<ul>
+<li><em>At what age is the rightmost boundary of ‘common’?</em>   .  .  .  </li>
+</ul>
+<p> </p></li>
+<li><p>As set in (4), common covers about 80% of the distribution. On the top of the graph is a scale marked in terms of standard deviations from the mean.</p>
+<ul>
+<li><em>At what standard deviation measure is the leftmost boundary of ‘common’?</em>   .  .  .  </li>
+</ul>
+<p> </p>
+<ul>
+<li><em>At what standard deviation measure is the rightmost boundary of ‘common’?</em>   .  .  .  </li>
+</ul>
+<p> </p></li>
+<li><p>Look for an explanatory variable that will split up the data into groups such that one group has a much higher fraction of uncommonly young births than another group.</p>
+<p><em>What explanatory variable did you find that satisfies the criterion?</em>   .  .  .  </p></li>
+<li><p>Consider blood pressure. A high systolic blood pressure is generally defined to be at or above 130 mmHg. Switch back to the <code>NHANES</code> data frame and select <code>systolic</code> as the response variable with <code>.none.</code> as the explanatory variable.</p>
+<ul>
+<li>*What fraction of the people in NHANES have a systolic pressure above 130 mmHg?   .  .  .  </li>
+</ul>
+<p> </p>
+<p>Set the explanatory variable to be <code>diabetes</code>. Is there a difference in the fraction of people with diabetes who have high blood pressure compared to the fraction of people without diabetes with high blood pressure?</p>
+<ul>
+<li><em>What is the fraction of people with diabetes who have high blood pressure?</em>   .  .  .  </li>
+</ul>
+<p> </p>
+<ul>
+<li><em>What is the fraction of people who do not have diabetes who have high blood pressure?</em>   .  .  .  </li>
+</ul>
+<p> </p></li>
+</ol>
+<hr />
+<p>Version 0.2, 2019-06-04, Thomas Kinzeler and Danny Kaplan, <a href="/word-versions/activity-common-and-rare.docx">Word version</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://dtkaplan.shinyapps.io/LA_rare_and_common/" class="uri">https://dtkaplan.shinyapps.io/LA_rare_and_common/</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

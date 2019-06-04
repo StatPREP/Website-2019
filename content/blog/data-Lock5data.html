@@ -1,0 +1,66 @@
+---
+title:  "DATA SOURCE:  Locke5 Datasets"
+description:  "Data sets to go along with the Locke5 simulation-based textbook"
+weight: 31
+categories:
+- real_data
+date: "2019-05-30"
+---
+
+
+
+<p>The textbook <em><a href="http://www.lock5stat.com/index.html">Statistics: Unlocking the Power of Data</a></em> (2/e 2017) by Lock, Lock, Lock, Lock, and Lock has publicly available datasets and interactive applets.</p>
+<p><img src="/img/Lock5book.jpg" /></p>
+<p>A list of the more than 100 datasets in the collection is available at <a href="http://www.lock5stat.com/datapage.html">this site</a>. There is also an R package, <code>Lock5Data</code>, that contains documentation for the data.</p>
+<div id="example-restaurant-tips" class="section level2">
+<h2>Example: Restaurant tips</h2>
+<p>The data frame <code>RestaurantTips</code> contains, … well let’s look directly at the documentation.</p>
+<pre class="r"><code>library(Lock5Data)
+help(RestaurantTips)</code></pre>
+<pre><code>## _R_e_s_t_a_u_r_a_n_t _T_i_p_s
+## 
+## _D_e_s_c_r_i_p_t_i_o_n:
+## 
+##      Tip data from the First Crush Bistro
+## 
+## _F_o_r_m_a_t:
+## 
+##      A dataset with 157 observations on the following 7 variables.
+## 
+##          &#39;Bill&#39;  Size of the bill (in dollars)                                                         
+##           &#39;Tip&#39;  Size of the tip (in dollars)                                                          
+##        &#39;Credit&#39;  Paid with a credit card?  &#39;n&#39; or &#39;y&#39;                                                  
+##        &#39;Guests&#39;  Number of people in the group                                                         
+##           &#39;Day&#39;  Day of the week: &#39;m&#39;=Monday, &#39;t&#39;=Tuesday, &#39;w&#39;=Wednesday, &#39;th&#39;=Thursday, or &#39;f&#39;=Friday 
+##        &#39;Server&#39;  Code for specfic waiter/waitress: &#39;A&#39;,  &#39;B&#39;, or &#39;C&#39;                                   
+##        &#39;PctTip&#39;  Tip as a percentage of the bill                                                       
+##       
+## _D_e_t_a_i_l_s:
+## 
+##      The owner of a bistro called First Crush in Potsdam, NY was
+##      interested in studying the tipping patterns of his customers.  He
+##      collected restaurant bills over a two week period that he believes
+##      provide a good sample of his customers. The data recorded from 157
+##      bills include the amount of the bill, size of the tip, percentage
+##      tip, number of customers in the group, whether or not a credit
+##      card was used, day of the week, and a coded identity of the
+##      server.
+## 
+## _S_o_u_r_c_e:
+## 
+##      Thanks to Tom DeRosa at First Crush for providing the tipping
+##      data.</code></pre>
+<p>Some simple questions to ask:</p>
+<ul>
+<li>Does the tip depend on the size of the bill?</li>
+</ul>
+<pre class="r"><code>gf_point(Tip ~ Bill, data = RestaurantTips) %&gt;%
+  gf_lm()</code></pre>
+<p><img src="/blog/data-Lock5data_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<ul>
+<li>Does the tip (as a percent of the bill) depend on whether the bill was paid with a credit card?</li>
+</ul>
+<pre class="r"><code>gf_jitter(Tip ~ Credit, data = RestaurantTips)  %&gt;%
+  gf_violin(fill = &quot;blue&quot;, alpha = 0.3, color  = NA) </code></pre>
+<p><img src="/blog/data-Lock5data_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>

@@ -1,0 +1,42 @@
+---
+title: "Linear regression"
+description: "Examine the distribution of a variable"
+author: "Danny Kaplan"
+date: "2019-04-25"
+weight: 8
+categories: ["Little App"]
+tags: ["mean", "median", "summary interval"]
+banner: "thumbnails/regression.png"
+---
+
+
+
+<a href="https://dtkaplan.shinyapps.io/LA_linear_regression/"><br />
+
+<figure>
+<img src="/thumbnails/regression.png" class="thumbnail" width = "60%">
+<figcaption>
+Regression Little App: Systolic versus diastolic blood pressure from the National Health and Nutrition Evaluation Survey. Click here to launch.
+</figcaption>
+</figure>
+<p><a></p>
+<p>The <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">linear regression Little App</a> displays a jittered point plot of two quantitative variables. Upon this is layered two annotations:</p>
+<ol style="list-style-type: decimal">
+<li>A regression model. By default this is simple linear regression, but you can also incorporate a covariate and add curvature to the model.</li>
+<li>Two sets of short horizontal bars to the right of the graph, together with an interval showing the standard deviation. At first, this display may be unfamiliar. The red bars show the vertical position of each of the values of the response variable. The black bars show the vertical position of the <em>model values</em>, that is, the output of the model for each of the displayed points. The ratio of the standard deviation of the model values to that of the response variable gives <span class="math inline">\(\sqrt{R^2}\)</span> (or, stated more sensibly, <span class="math inline">\(R\)</span>).</li>
+</ol>
+<ul>
+<li>Easily incorporate a categorical covariate into your model.</li>
+<li>Explore robustness by selecting new samples from the population.</li>
+<li>Estimate by eye r and R<sup>2</sup> from model-value display.</li>
+<li>Measuring stick to support reading values and differences off the graph. For instance, measure the “rise” of the model over a given “run” to find the slope of the regression line.</li>
+<li>Statistics tab shows r, R<sup>2</sup>, p-value statistics along with regression and ANOVA tables</li>
+<li>Can add curvature to the model (using natural splines) to explore nonlinear relationships.</li>
+</ul>
+<div id="suggested-statprep-101-activities" class="section level3">
+<h3>Suggested StatPREP 101 activities</h3>
+<ul>
+<li><a href="https://statprep-activities.netlify.com/lessons/relationship-patterns/">Describing relationship patterns</a></li>
+<li><a href="https://statprep-activities.netlify.com/lessons/how-much-is-explained/">How much is explained?</a></li>
+</ul>
+</div>

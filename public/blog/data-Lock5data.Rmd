@@ -1,0 +1,52 @@
+---
+title:  "DATA SOURCE:  Locke5 Datasets"
+description:  "Data sets to go along with the Locke5 simulation-based textbook"
+weight: 31
+categories:
+- real_data
+date: "2019-05-30"
+---
+
+```{r include = FALSE}
+library(mosaic)
+library(dplyr)
+library(Lock5Data)
+
+```
+
+The textbook *[Statistics: Unlocking the Power of Data](http://www.lock5stat.com/index.html)* (2/e 2017) by Lock, Lock, Lock, Lock, and Lock has publicly available datasets and interactive applets. 
+
+![](/img/Lock5book.jpg)
+
+A list of the more than 100 datasets in the collection is available at [this site](http://www.lock5stat.com/datapage.html).  There is also an R package, `Lock5Data`, that contains documentation  for  the  data. 
+
+## Example: Restaurant tips
+
+The data frame `RestaurantTips` contains,  ... well let's look directly at the documentation.
+
+```r
+library(Lock5Data)
+help(RestaurantTips)
+```
+
+```{r echo=FALSE, results='markup'}
+db <- tools::Rd_db("Lock5Data")
+    doc_contents <- db[[paste0("RestaurantTips", ".Rd")]]
+cat(paste(capture.output(tools::Rd2txt(doc_contents)), collapse = "\n"))
+```
+
+Some simple questions to ask:
+
+- Does the tip depend on  the size of the bill?
+
+```{r}
+gf_point(Tip ~ Bill, data = RestaurantTips) %>%
+  gf_lm()
+```
+
+- Does the tip (as a percent of the bill) depend on whether the bill  was paid with a credit card? 
+
+```{r}
+gf_jitter(Tip ~ Credit, data = RestaurantTips)  %>%
+  gf_violin(fill = "blue", alpha = 0.3, color  = NA) 
+```
