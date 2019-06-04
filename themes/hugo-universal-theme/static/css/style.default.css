@@ -2011,7 +2011,7 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-homepage .post .date-comments a:hover {
   color: #38a7bb;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   #blog-listing-big .post .date-comments,
   #blog-homepage .post .date-comments {
     text-align: right;
@@ -2032,10 +2032,10 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   #blog-listing-big .post .image img.img-responsive,
   #blog-homepage .post .image img.img-responsive {
-    min-width: 100%;
+    min-width: 50%;
   }
 }
 #blog-listing-big .post .video,
@@ -2083,7 +2083,7 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-listing-medium .post .date-comments a:hover {
   color: #38a7bb;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   #blog-listing-medium .post .date-comments {
     text-align: right;
   }
@@ -2128,9 +2128,9 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-@media (max-width: 767px) {
+@media (max-width: 200px) {
   #blog-listing-medium .post .image img.img-responsive {
-    min-width: 100%;
+    min-width: 40%;
   }
 }
 #blog-listing-medium .post .video {
@@ -2250,9 +2250,9 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .product .image img.img-responsive {
-    min-width: 100%;
+    min-width: 50%;
   }
 }
 .product .text {
