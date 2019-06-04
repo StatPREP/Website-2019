@@ -1143,7 +1143,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .home-carousel {
   position: relative;
-  background: url('../img/photogrid.jpg') center center repeat;
+  bbbackground: url('../img/photogrid-small.jpg') center center;
   background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1154,13 +1154,13 @@ fieldset[disabled] .btn-template-primary.active {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 65%;
   background: #38a7bb;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
 .home-carousel .owl-carousel {
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .home-carousel .owl-theme .owl-controls .owl-page span {
@@ -1190,26 +1190,26 @@ fieldset[disabled] .btn-template-primary.active {
   color: #fff;
 }
 .home-carousel h1 {
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 46px;
   letter-spacing: 0.08em;
 }
-@media (max-width: 991px) {
+@media (max-width: 661px) {
   .home-carousel h1 {
     font-size: 36px;
   }
 }
 .home-carousel h2 {
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 0.08em;
+  font-size: 30px;
+  letter-spacing: 0.07em;
 }
 .home-carousel ul,
 .home-carousel p {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 0.10em;
