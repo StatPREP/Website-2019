@@ -270,19 +270,37 @@
   </url>
   
   <url>
-    <loc>/blog/display-just-testing/</loc>
-    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/activities/</loc>
-    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-06-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/activity-you-want-to-know/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tidy-data/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/unit-of-observarion/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/variables/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -370,18 +388,6 @@
   
   <url>
     <loc>/tags/r-squared/</loc>
-    <lastmod>2019-05-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/unit-of-observarion/</loc>
-    <lastmod>2019-05-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/variables/</loc>
     <lastmod>2019-05-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -495,12 +501,6 @@
   
   <url>
     <loc>/tags/normal-distribution/</loc>
-    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/tidy-data/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
