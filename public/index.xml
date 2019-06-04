@@ -79,10 +79,11 @@ Role in statistical practice  Conceptual pitfalls  Learning objectives  Student 
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/technology/</guid>
-      <description>Background Setup your account on RStudio Cloud Running Little Apps   Background The GAISE report’s Recommendation 5 is
+      <description>Background Setup your account on RStudio Cloud Running Little Apps   IN DRAFT: Make a link to the RStudio webinar on Wednesday about cloud.
+Background The GAISE report’s Recommendation 5 is
  Use technology to explore concepts and analyze data.
  Elaborations on this recommendation are contained in Appendix D of the report, and include
- interactive applets, pp. 66-75 I think of these as a mouse-driven form of computation that requires absolutely no “coding” statistical software. GAISE speaks of “a package like SPSS, Minitab, JMP, R, StatCrunch, Stata, any of the many Excel add-ins, or on-line tools …”  “to teach concepts” “to create a wider variety of visualizations”, pp.</description>
+ interactive applets, pp. 66-75 I think of these as a mouse-driven form of computation that requires absolutely no “coding” statistical software.</description>
     </item>
     
     <item>
@@ -555,6 +556,15 @@ Version 0.2, 2019-06-04, Daniel Kaplan, Word version
     </item>
     
     <item>
+      <title>The title and more</title>
+      <link>/blog/display-just-testing/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/display-just-testing/</guid>
+      <description>Boo ;boo boo</description>
+    </item>
+    
+    <item>
       <title>Data sources</title>
       <link>/blog/presentation-data-sources/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
@@ -636,12 +646,22 @@ What’s key is to constantly look for opportunities to force students to make a
     </item>
     
     <item>
-      <title>Workshop schedule</title>
+      <title>Workshop schedule: Hartford</title>
+      <link>/schedule-hartford/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/schedule-hartford/</guid>
+      <description>Before the Workshop  Answer these questions (on paper) and bring to the workshop.   Friday May 31, 2019  1:30 pm: Registration 2:00 pm: Welcome &amp;amp; housekeeping Announcements 2:15 pm: Icebreaker: Teaching Statistics 2:30 pm: GAISE and ASA/AMATYC guidelines to teaching statistics 2:50 pm: Tidy data &amp;amp; grammatical graphics 3:20 pm: Break 3:30 pm: Orientation to the StatPREP website and Little Apps: Kate Kozak 4:00 pm: Using StatPREP Little Apps in the Classroom Activity #1: Center and spread with Kate Kozak 4:50 pm: Break 5:00 pm: Introduction to RStudio cloud 6:00 pm: Dinner-time discussion of statewide curriculum 6:45 pm: Share out / Adjourn Day 1   Saturday June 1, 2019  8:00 am: Breakfast 8:30 am: Tutorials with R 9:00 am: Using StatPREP Little Apps in the Classroom Activity #2: Normal distribution with Kate Kozak 9:45 am: Searching for Data: Finding good sources of data 10:20 am: Break 10:30 am: Using StatPREP Little Apps in the Classroom Activity #3: Confidence intervals with Ambika Silva 11:15 am: Bootstrapping with the Little App, with Danny and Nick 11:45 am: Using StatPREP Little Apps in the Classroom Activity #4: Two-sample t-test with Danny and Nick 12:30 pm: Lunchtime Discussion: continuation of yesterday’s discussion on curriculum and state standards 1:15 pm: Choose one of the following to attend:  Workout with a personal trainer: your choice Little Apps/Tutorials/basics of R/…  The OSHA.</description>
+    </item>
+    
+    <item>
+      <title>Workshop schedule: Howard Community College</title>
       <link>/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/schedule/</guid>
-      <description>Before the Workshop  Answer these questions (on paper) and bring to the workshop.   Friday May 31, 2019  1:30 pm: Registration 2:00 pm: Welcome &amp;amp; housekeeping Announcements 2:15 pm: Icebreaker: Teaching Statistics 2:30 pm: GAISE and ASA/AMATYC guidelines to teaching statistics 2:50 pm: Tidy data &amp;amp; grammatical graphics 3:20 pm: Break 3:30 pm: Orientation to the StatPREP website and Little Apps: Kate Kozak 4:00 pm: Using StatPREP Little Apps in the Classroom Activity #1: Center and spread with Kate Kozak 4:50 pm: Break 5:00 pm: Introduction to RStudio cloud 6:00 pm: Dinner-time discussion of statewide curriculum 6:45 pm: Share out / Adjourn Day 1   Saturday June 1, 2019  8:00 am: Breakfast 8:30 am: Tutorials with R 9:00 am: Using StatPREP Little Apps in the Classroom Activity #2: Normal distribution with Kate Kozak 9:45 am: Searching for Data: Finding good sources of data 10:20 am: Break 10:30 am: Using StatPREP Little Apps in the Classroom Activity #3: Confidence intervals with Ambika Silva 11:15 am: Bootstrapping with the Little App, with Danny and Nick 11:45 am: Using StatPREP Little Apps in the Classroom Activity #4: Two-sample t-test with Danny and Nick 12:30 pm: Lunchtime Discussion: continuation of yesterday’s discussion on curriculum and state standards 1:15 pm: Choose one of the following to attend:  Workout with a personal trainer: your choice Little Apps/Tutorials/basics of R/…  The OSHA.</description>
+      <description>Before the Workshop  Answer these questions (on paper) and bring to the workshop.   Friday June 7, 2019  1:30 pm - 2:00 pm: Registration 2:00 pm - 2:15 pm: Welcome &amp;amp; housekeeping Announcements 2:15 pm - 2:30 pm: Icebreaker: Teaching Statistics 2:30 pm - 2:50 pm: GAISE and ASA/AMATYC guidelines to teaching statistics (Andy Zieffler) 2:50 pm - 3:20 pm: Tidy data (Randy Pruim)
+ 3:20 pm - 3:30 pm: Break</description>
     </item>
     
   </channel>

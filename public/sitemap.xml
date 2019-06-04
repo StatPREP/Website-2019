@@ -270,6 +270,11 @@
   </url>
   
   <url>
+    <loc>/blog/display-just-testing/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/activities/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -544,6 +549,10 @@
   
   <url>
     <loc>/blog/tips-for-active-classroom/</loc>
+  </url>
+  
+  <url>
+    <loc>/schedule-hartford/</loc>
   </url>
   
   <url>

@@ -13,6 +13,8 @@ tags:
   - cloud 
 ---
 
+IN DRAFT: Make a link to the RStudio webinar on Wednesday about cloud.
+
 ## Background 
 
 The GAISE report's Recommendation 5 is

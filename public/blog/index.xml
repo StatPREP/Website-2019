@@ -79,10 +79,11 @@ Role in statistical practice  Conceptual pitfalls  Learning objectives  Student 
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/technology/</guid>
-      <description>Background Setup your account on RStudio Cloud Running Little Apps   Background The GAISE report’s Recommendation 5 is
+      <description>Background Setup your account on RStudio Cloud Running Little Apps   IN DRAFT: Make a link to the RStudio webinar on Wednesday about cloud.
+Background The GAISE report’s Recommendation 5 is
  Use technology to explore concepts and analyze data.
  Elaborations on this recommendation are contained in Appendix D of the report, and include
- interactive applets, pp. 66-75 I think of these as a mouse-driven form of computation that requires absolutely no “coding” statistical software. GAISE speaks of “a package like SPSS, Minitab, JMP, R, StatCrunch, Stata, any of the many Excel add-ins, or on-line tools …”  “to teach concepts” “to create a wider variety of visualizations”, pp.</description>
+ interactive applets, pp. 66-75 I think of these as a mouse-driven form of computation that requires absolutely no “coding” statistical software.</description>
     </item>
     
     <item>
@@ -552,6 +553,15 @@ Version 0.2, 2019-06-04, Daniel Kaplan, Word version</description>
 Orientation  Activity proportions little app
 Version 0.2, 2019-06-04, Daniel Kaplan, Word version
  </description>
+    </item>
+    
+    <item>
+      <title>The title and more</title>
+      <link>/blog/display-just-testing/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/display-just-testing/</guid>
+      <description>Boo ;boo boo</description>
     </item>
     
     <item>
