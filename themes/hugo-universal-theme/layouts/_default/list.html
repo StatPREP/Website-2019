@@ -10,8 +10,6 @@
         <header>
 
           {{ partial "nav.html" . }}
-          
-          {{ partial "widgets/categories-simple.html" . }}
 
         </header>
 
@@ -108,9 +106,13 @@
         </div>
         <!-- /#content -->
 
-        {{ partial "footer.html" . }}
+        {{ partial "widgets/categories-simple.html" . }}
 
         {{ partial "widgets/tags.html" . }}
+
+        {{ partial "footer.html" . }}
+
+        
 
     </div>
     <!-- /#all -->
