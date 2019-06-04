@@ -23,7 +23,7 @@ banner: img/banners/banner-question-mark.jpeg
 * describe or sketch a graph you would make to give you an initial impression
 regarding the answer to the question of interest,
 
-* determine the paramater(s) of interest and explain how they are different
+* determine the parameter(s) of interest and explain how they are different
 from the variables, 
 
 <!-- * and state the null and alternative hypotheses if you are going to -->
@@ -46,7 +46,7 @@ design a poor study when a better option is available.
 
 1. You want to know whether rhubarb grows faster or slower if you cover it with a bucket for 3 weeks.
 
-1. You want to know whether people can swim faster if they wear wetsuits.
+1. You want to know whether people can swim faster if they wear wet suits.
 
 You might find it handy to organize you work into a table like this:
 
