@@ -1,5 +1,5 @@
 ---
-title: "You Want to Know: <br>Cases, Variables, and Study Goals"
+title: "You Want to Know: Cases, Variables, and Study Goals"
 author: R Pruim
 date: '2019-06-04'
 slug: activity-you-want-to-know
