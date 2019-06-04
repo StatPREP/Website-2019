@@ -1,0 +1,109 @@
+---
+title: 'You Want to Know: What''s the Point'
+date: '2019-06-04'
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+slug: instructions-you-want-to-know
+banner: img/banners/banner-question-mark.jpeg
+tags:
+- tidy-data
+- unit-of-observarion
+- variables
+categories:
+- activity-guide
+- activities
+---
+
+The [You Want to Know activity](/blog/activity-you-want-to-know/) is just one
+example among many similar activities.  This **instructors' activity** explores
+ways you can construct many similar activities for your students.
+
+### How to make your own activity
+
+The key steps to creating these activities are
+
+1. Determine the learning objectives.  These might include
+
+    a. Making key distinctions like case/variable, categorical/quantitative, explantory/reponse, etc.
+    b. Identifying key elements of study design.
+    c. Selecting appropriate analysis methods.
+    d. Use of software to acheive a task (have students write R command or describe 
+    how to use other software)
+    
+2. Design the questions.
+
+    Depending your goals, you might ask very different things about your scenarios.
+
+3. Create scenarios that elicit answers targeted at your learning objectives.
+
+    Once you have determined the learning objectives and the related questions,
+    it can be fun to design scenarios. Pick a theme (how many ways can you get
+    donuts into the scenarios?); piggy-back on something in the news; etc.
+
+### Uses
+
+These activities can be used in class as group discussions, but they also make good
+assessment items for homework, quizzes, or tests.
+These scenarios are easy to design at all different stages in a course, modifying the 
+types of scenarios and the questions asked to correspond to the learning objectives
+covered to that point in the course. They can be used as review or as an introduction
+to one of the topics involved.
+
+
+### Variations on the Theme
+
+Here's a chance for you to try your hand at creating a "You Want to Know" activity
+of your own.
+
+1. **Additional Questions**
+
+    The questions on the example activity sheet are about identifying the 
+    variables, their types, the parameter(s) of interest, and a plot that 
+    might be used to explore the data.
+    
+    *Come up with some additional questions that might be used with these (or other scenarios).*
+    
+ <!-- Inference, CI, hypotheses, R code, etc. explanatory/response -->
+    
+2. **Digging deeper:** Want to dig deeper on an item? Add a follow-up question.
+   Here is an example:
+   
+    * Choose one of the scenarios that could be designed as a randomized experiment. Explain how randomization would be used.
+    
+    *Come up with some additional follow-up questions of your own.*
+
+<!-- How create bootstrap/randomization distribution; plot if there is a statistically -->
+<!-- signifcant difference; R code to make plot; list a potential confounding variable; -->
+<!-- list a variable you would want to control; scenario that would be unethical to do -->
+<!-- as an experiment;  -->
+    
+3. **Different Scenarios**
+
+    *Create additional scenarios.*
+    
+    You might like to work backwards from an answer you would like.  Examples:
+    
+    a. Create a scenario that has a quantitative response and a categorical predictor.
+    b. Create a scenario that has a categorical response and a quantitative predictor.
+    c. Create a scenario that requires three variables.
+    d. Create a scenario that should be done using a paired design.
+    e. Create a scenario that could be analyzed using ANOVA (or some other method of your choice.)
+    f. Create a scenario where side-by-side boxplots might be a good way to show the 
+    data.
+    g. Create a scenario that could be done in more than one way. Is one of the ways
+    clearly better than the other? Why or why not?
+    
+### Be flexible
+
+For some scenarios, there may be more than one reasonable answer. There may also be 
+better answers and less good answers, in addition to wrong answers. If using these 
+activities it is important to help students see that their can be judgement involved;
+don't get fixated on the answer you had in mind. But these can also be used to discuss
+better an worse methods for the same goal and why some designs are preferred. (Or why
+which is preferable might depend on something not specified by the scenario.) The 
+important thing is to get students thinking about how to learn from data.
+
+    
+    
