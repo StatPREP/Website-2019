@@ -1,15 +1,17 @@
 ---
 title: 'You Want to Know: Cases, Variables, and Study Goals'
+categories: activities
 date: '2019-06-04'
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 slug: activity-you-want-to-know
 tags:
 - tidy-data
-- unit-of-observarion
+- unit-of-observation
 - variables
-categories: activities
+banner: img/banners/banner-question-mark.jpeg
 ---
 
 \pagestyle{empty}
@@ -21,7 +23,7 @@ categories: activities
 * describe or sketch a graph you would make to give you an initial impression
 regarding the answer to the question of interest,
 
-* determine the paramater(s) of interest and explain how they are different
+* determine the parameter(s) of interest and explain how they are different
 from the variables, 
 
 <!-- * and state the null and alternative hypotheses if you are going to -->
@@ -44,7 +46,7 @@ design a poor study when a better option is available.
 
 1. You want to know whether rhubarb grows faster or slower if you cover it with a bucket for 3 weeks.
 
-1. You want to know whether people can swim faster if they wear wetsuits.
+1. You want to know whether people can swim faster if they wear wet suits.
 
 You might find it handy to organize you work into a table like this:
 
