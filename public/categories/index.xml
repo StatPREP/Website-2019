@@ -21,7 +21,43 @@
     </item>
     
     <item>
-      <title>activities</title>
+      <title>computing</title>
+      <link>/categories/computing/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data_science</title>
+      <link>/categories/data_science/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resources</title>
+      <link>/categories/resources/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorials</title>
+      <link>/categories/tutorials/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Activities</title>
       <link>/categories/activities/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -48,29 +84,11 @@
     </item>
     
     <item>
-      <title>computing</title>
-      <link>/categories/computing/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Little App</title>
       <link>/categories/little-app/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/little-app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorials</title>
-      <link>/categories/tutorials/</link>
-      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/tutorials/</guid>
       <description></description>
     </item>
     

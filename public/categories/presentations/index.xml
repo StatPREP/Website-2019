@@ -32,6 +32,17 @@ Goals for intro stats  Goal 1. Students should become critical consumers of stat
     </item>
     
     <item>
+      <title>R Tutorials for instructors</title>
+      <link>/blog/tutorials/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tutorials/</guid>
+      <description>StatPREP tutorials A StatPREP tutorial is an interactive document mainly intended to help instructors develop statistical, graphical, and general computing skills using R statements.
+This page provides links to instructor tutorials. Each link takes you to a web service that displays the document in your web browser. You don’t need to install any other software on your computer to use the lessons and tutorials.
+If you’re looking for materials for use in class or other student-oriented settings, follow these links to StatPREP activites or Little Apps</description>
+    </item>
+    
+    <item>
       <title>Tidying data</title>
       <link>/blog/presentation-tidy-data/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>

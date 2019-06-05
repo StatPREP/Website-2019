@@ -1,0 +1,93 @@
+---
+title: "Workshop schedule: Hartford"
+---
+
+
+## Before the Workshop
+
+- Answer [these questions](https://docs.google.com/document/d/1ntePDIJVWe6Y8JHjKMcFbmYNKJNIN3V-APeY3Dp1qTg/edit?usp=sharing) (on paper) and bring to the workshop.
+
+
+## Friday May 31, 2019 
+
+- 1:30 pm: Registration 
+- 2:00 pm: [Welcome](/blog/presentation-welcome/) & housekeeping Announcements
+- 2:15 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics 
+- 2:30 pm: [GAISE and ASA/AMATYC guidelines to teaching statistics](/blog/presentation-GAISE-ASA/)
+- 2:50 pm: [Tidy data](/blog/presentation-tidy-data/) & [grammatical graphics](/blog/presentation-grammatical-graphics/)
+- 3:20 pm: Break
+- 3:30 pm: Orientation to the StatPREP website and Little Apps: Kate Kozak
+- 4:00 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) with Kate Kozak
+- 4:50 pm: Break
+- 5:00 pm: [Introduction to RStudio cloud](/blog/technology/)
+- 6:00 pm: Dinner-time discussion of statewide curriculum 
+- 6:45 pm: Share out / Adjourn Day 1
+
+## Saturday June 1, 2019
+
+
+- 8:00 am: Breakfast 
+- 8:30 am: [Tutorials with  R](/blog/tutorials/)
+- 9:00 am: Using StatPREP Little Apps in the Classroom Activity #2: [Normal distribution](/blog/instructions-normal-distribution/) with Kate Kozak
+- 9:45 am: Searching for Data:  Finding [good sources of data](/blog/presentation-data-sources/)
+- 10:20 am: Break
+- 10:30 am: Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) with Ambika Silva
+- 11:15 am: Bootstrapping with the Little App, with Danny and Nick
+- 11:45 am: Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) with Danny and Nick
+- 12:30 pm: Lunchtime Discussion: continuation of yesterday's discussion  on curriculum and state standards 
+- 1:15 pm: Choose one of the following to attend:
+    - Workout with a personal trainer: your choice Little Apps/Tutorials/basics of R/...
+        - The [OSHA.Rmd](/realdata/OSHA.Rmd) file we created during the session.
+    - Mosaic R package for teaching stats
+- 2:00 pm: Tips for creating an Active Classroom
+- 2:30 pm: [It's all about Regression!](/blog/presentation-its-all-regression/) 
+- 2:45pm:  Break
+- 3:00 pm: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) with Danny and Nick
+- 3:45 pm: Overview of [*Stats for Data Science*](http://dtkaplan.github.io/SDS-book) book (for instructor self study)
+- 4:00 pm: Small Group Discussions: Takeaways
+- 4:30 pm: Q & A panel discussion
+- 5:00 pm: Staying in touch & Adjourn
+
+
+<!--
+
+- [Participant Bios](https://docs.google.com/document/d/1VTPBkCh-iwVYZC7bb5SYMpr1eIVv6QZLcqn17lYfMWU/edit?usp=sharing): We'll break up into groups of 3 or 4, trying to avoid people we already know. Each person will interview and write a brief bio (including any ice-breaker-like information) in  the document linked to above.
+
+-->
+## Locations
+
+Times differ from location to location. The above schedule will be adjusted accordingly.
+
+1. Hartford, CT
+    - Friday, May 31:   2pm – 6pm (first day), 4 hours
+    - Saturday June 1: 8am – 5pm (2nd day) 9 hours
+    - Staffing: Nick Horton, Danny Kaplan
+    - Hub leader: Hwayeon Ryu
+    - Lodging: Simsbury Inn
+    - 13 new participants, 10 returning
+    
+2.  Howard Community College:  Columbia,  MD
+    - Friday, June 7:  2pm – 6pm (first day), 4 hours
+    - Saturday, June 8:  8am – 5pm (2nd day) 9 hours
+    - Staffing: Danny Kaplan, Randy Pruim, Andy Zieffler, Amelia McNamara (Saturday), Hwayeon Ryu, Joe Roith, Brooke Orosz
+    - Hub leader: Carol Howald
+    - Lodging: Columbia Inn at Peralynna (410-715-4600)
+    - 45 new participants
+
+3. Tarrant County College: Fort Worth,  TX
+    - Wed 6/12 from 1pm – 6:30pm, 5.5 hours
+    - Thurs 6/13 from 8:30am – 5:00pm, 8.5 hours
+    - Staffing: Danny Kaplan, Andy Zieffler, Kate Kozak, Helen Burn
+    - Hub leader: Thomas Kinzeler
+    - Lodging: Hilton Garden Inn in Hurst, TX Use the custom reservation link – [statPREP](https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure3.hilton.com%2Fen_US%2Fgi%2Freservation%2Fbook.htm%3FinputModule%3DHOTEL%26ctyhocn%3DDFWHCGI%26spec_plan%3DSTATP%26arrival%3D20190611%26departure%3D20190614%26cid%3DOM%2CWW%2CHILTONLINK%2CEN%2CDirectLink%26fromId%3DHILTONLINKDIRECT&data=02%7C01%7CKAYLA.BRISTER%40hilton.com%7C81436573b71c471a3bbc08d6ca8e4a59%7C660292d2cfd54a3db7a7e8f7ee458a0a%7C0%7C0%7C636919109809148547&sdata=62BHwWDhe4z4rTp56XjA6U%2Fhj80F1wID0FJNVgU1Q48%3D&reserved=0)
+    - 28 new participants
+
+4.  Highline College: Des Moines, WA (Seattle area) 
+    - Thurs June 20: 9am to 4pm, 7 hours
+    - Friday June 21: 9am to 3pm, 6 hours
+    - Staffing: Nick Horton, Kelly McConville, Danny Kaplan, Kate Kozak, Ambika Silva, Joe Roith, Carol Howald, Thomas Kinzeler
+    - Hub leader: Helen Burn
+    - Lodging: DoubleTree by Hilton Seattle Airport
+    - 15 new participants, 9 returning
+
+

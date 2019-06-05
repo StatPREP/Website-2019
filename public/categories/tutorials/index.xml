@@ -6,7 +6,7 @@
     <description>Recent content in tutorials on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,6 +20,16 @@
       <description>StatPREP tutorials A StatPREP tutorial is an interactive document mainly intended to help instructors develop statistical, graphical, and general computing skills using R statements.
 This page provides links to instructor tutorials. Each link takes you to a web service that displays the document in your web browser. You don’t need to install any other software on your computer to use the lessons and tutorials.
 If you’re looking for materials for use in class or other student-oriented settings, follow these links to StatPREP activites or Little Apps</description>
+    </item>
+    
+    <item>
+      <title>Tutorials from Stats for Data Science</title>
+      <link>/blog/tutorials-from-stats-for-data-science/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tutorials-from-stats-for-data-science/</guid>
+      <description> Stats for Data Science is a forward-looking introductory-level textbook currently in draft form. Each chapter has will have a short tutorial introducing the computing techniques relevant to that chapter. The tutorials from the initial chapters may be helpful to those starting out with R.
+ Starting out with R Basics of the R language Functions and arguments Accessing data Data graphics  </description>
     </item>
     
   </channel>

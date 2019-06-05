@@ -556,6 +556,26 @@ Version 0.2, 2019-06-04, Daniel Kaplan, Word version
     </item>
     
     <item>
+      <title>Stats for Data Science</title>
+      <link>/blog/stats-for-data-science/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/stats-for-data-science/</guid>
+      <description>Stats for Data Science is a forward-looking introductory-level textbook currently in draft form. The book is available on-line here.
+From the preface … Data science is an emerging computational discipline with roots sprouting in contemporary problems. Almost always these problems involve large amounts of data collected by automated systems and collated by bringing together diverse data from different sources. The goals for working with such data are varied: predicting the preferences of individual people for consumer products or news feeds; examining government or business or clinical medical records to answer questions such as the efficacy of a proposed program or intervention in public health; detecting and classifying rare events such as credit-card fraud; finding useful patterns in clouds of text or data that might help identify harmful interactions between medicines or extract meaning from thousands of documents.</description>
+    </item>
+    
+    <item>
+      <title>Tutorials from Stats for Data Science</title>
+      <link>/blog/tutorials-from-stats-for-data-science/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tutorials-from-stats-for-data-science/</guid>
+      <description> Stats for Data Science is a forward-looking introductory-level textbook currently in draft form. Each chapter has will have a short tutorial introducing the computing techniques relevant to that chapter. The tutorials from the initial chapters may be helpful to those starting out with R.
+ Starting out with R Basics of the R language Functions and arguments Accessing data Data graphics  </description>
+    </item>
+    
+    <item>
       <title>You Want to Know: Cases, Variables, and Study Goals</title>
       <link>/blog/activity-you-want-to-know/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
@@ -639,6 +659,15 @@ Should be:
       <guid>/blog/tips-for-active-classroom/</guid>
       <description>Many instructors believe that learning is enhanced in a classroom where students are active participants rather than the passive recipients of a lecture. This document describes some general techniques for fostering an active classroom that can be used in a wide range of lesson topics. (There are also tips for specific topics included in the instructor guide for each topic.)
 What’s key is to constantly look for opportunities to force students to make a choice, offer a suggestion, or state an interpretation or an opinion.</description>
+    </item>
+    
+    <item>
+      <title>Workshop schedule: Hartford</title>
+      <link>/blog/schedule-hartford/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/schedule-hartford/</guid>
+      <description>Before the Workshop  Answer these questions (on paper) and bring to the workshop.   Friday May 31, 2019  1:30 pm: Registration 2:00 pm: Welcome &amp;amp; housekeeping Announcements 2:15 pm: Icebreaker: Teaching Statistics 2:30 pm: GAISE and ASA/AMATYC guidelines to teaching statistics 2:50 pm: Tidy data &amp;amp; grammatical graphics 3:20 pm: Break 3:30 pm: Orientation to the StatPREP website and Little Apps: Kate Kozak 4:00 pm: Using StatPREP Little Apps in the Classroom Activity #1: Center and spread with Kate Kozak 4:50 pm: Break 5:00 pm: Introduction to RStudio cloud 6:00 pm: Dinner-time discussion of statewide curriculum 6:45 pm: Share out / Adjourn Day 1   Saturday June 1, 2019  8:00 am: Breakfast 8:30 am: Tutorials with R 9:00 am: Using StatPREP Little Apps in the Classroom Activity #2: Normal distribution with Kate Kozak 9:45 am: Searching for Data: Finding good sources of data 10:20 am: Break 10:30 am: Using StatPREP Little Apps in the Classroom Activity #3: Confidence intervals with Ambika Silva 11:15 am: Bootstrapping with the Little App, with Danny and Nick 11:45 am: Using StatPREP Little Apps in the Classroom Activity #4: Two-sample t-test with Danny and Nick 12:30 pm: Lunchtime Discussion: continuation of yesterday’s discussion on curriculum and state standards 1:15 pm: Choose one of the following to attend:  Workout with a personal trainer: your choice Little Apps/Tutorials/basics of R/…  The OSHA.</description>
     </item>
     
   </channel>

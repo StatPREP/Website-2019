@@ -270,7 +270,53 @@
   </url>
   
   <url>
+    <loc>/blog/stats-for-data-science/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/tutorials-from-stats-for-data-science/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/computing/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/data_science/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/resources/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stats_for_data_science/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tutorials/</loc>
+    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/activities/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -283,12 +329,6 @@
   <url>
     <loc>/blog/instructions-you-want-to-know/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/activities/</loc>
-    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -364,12 +404,6 @@
   
   <url>
     <loc>/tags/cloud/</loc>
-    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/computing/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -517,12 +551,6 @@
   </url>
   
   <url>
-    <loc>/categories/tutorials/</loc>
-    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/blog/instructions-normal-distribution/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
   </url>
@@ -563,7 +591,7 @@
   </url>
   
   <url>
-    <loc>/schedule-hartford/</loc>
+    <loc>/blog/schedule-hartford/</loc>
   </url>
   
   <url>
