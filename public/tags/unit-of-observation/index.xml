@@ -6,7 +6,7 @@
     <description>Recent content in unit-of-observation on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/unit-of-observation/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,19 @@
       <guid>/blog/activity-variables-and-units/</guid>
       <description>Get formatted versions: Word : PDF
 Orientation There’s an expression about how to accomplish a complex, confusing, and difficult task: One step at a time. The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents.</description>
+    </item>
+    
+    <item>
+      <title>You Want to Know: Cases, Variables, and Study Goals</title>
+      <link>/blog/activity-you-want-to-know/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-you-want-to-know/</guid>
+      <description>Instructions. In each scenario below,
+ determine what variables you would need to collect and whether each is categorical or quantitative,
+ describe or sketch a graph you would make to give you an initial impression regarding the answer to the question of interest,
+ determine the parameter(s) of interest and explain how they are different from the variables,
+   determine whether you are using a paired design.</description>
     </item>
     
   </channel>

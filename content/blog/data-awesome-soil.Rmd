@@ -5,6 +5,7 @@ weight: 38
 categories:
 - real_data
 date: "2019-05-30"
+banner: "img/banners/soil-moisture.jpg"
 ---
 
 ```{r include = FALSE}

@@ -6,6 +6,7 @@ date: "2019-04-22"
 categories:
   - tutorials
   - computing
+banner: "img/banners/sandbox.jpeg"
 ---
 
 ```{r include = FALSE}

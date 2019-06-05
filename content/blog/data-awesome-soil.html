@@ -5,6 +5,7 @@ weight: 38
 categories:
 - real_data
 date: "2019-05-30"
+banner: "img/banners/soil-moisture.jpg"
 ---
 
 
@@ -113,12 +114,12 @@ head(Res)</code></pre>
 <pre><code>## # A tibble: 6 x 2
 ##   score wavelength
 ##   &lt;dbl&gt; &lt;chr&gt;     
-## 1  898. v946      
-## 2  881. v950      
-## 3  542. v942      
-## 4  473. v826      
-## 5  377. v454      
-## 6  343. v922</code></pre>
+## 1 1138. v946      
+## 2  862. v950      
+## 3  508. v942      
+## 4  397. v454      
+## 5  392. v830      
+## 6  342. v922</code></pre>
 <pre class="r"><code>gf_point(soil_moisture ~ v950,  data = Soil)</code></pre>
 <p><img src="/blog/data-awesome-soil_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <pre class="r"><code>gf_point(v950 ~ v454,  color = ~  soil_moisture, data = Soil)</code></pre>

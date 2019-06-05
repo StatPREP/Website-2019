@@ -5,6 +5,7 @@ description: "Medicare hospital-level data on infection."
 categories:
 - real_data
 date: "2019-05-30"
+banner: "img/banners/mrsa-bacteria.jpg"
 ---
 
 ```{r include=FALSE}

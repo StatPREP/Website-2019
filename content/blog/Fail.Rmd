@@ -4,6 +4,7 @@ description: "Examples of textbook failures."
 date: "2019-05-26"
 categories:
   - real_data
+banner: "img/banners/failure1.jpeg"
 ---
 
 These are textbook examples of the presentation of data in ways that encourage bad habits.

@@ -12,16 +12,15 @@
     
     
     <item>
-      <title>You Want to Know: Cases, Variables, and Study Goals</title>
-      <link>/blog/activity-you-want-to-know/</link>
+      <title>You Want to Know: What&#39;s the Point</title>
+      <link>/blog/instructions-you-want-to-know/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/activity-you-want-to-know/</guid>
-      <description>Instructions. In each scenario below,
- determine what variables you would need to collect and whether each is categorical or quantitative,
- describe or sketch a graph you would make to give you an initial impression regarding the answer to the question of interest,
- determine the paramater(s) of interest and explain how they are different from the variables,
-   determine whether you are using a paired design.</description>
+      <guid>/blog/instructions-you-want-to-know/</guid>
+      <description>The You Want to Know activity is just one example among many similar activities. This instructors’ activity explores ways you can construct many similar activities for your students.
+How to make your own activity The key steps to creating these activities are
+Determine the learning objectives. These might include
+Making key distinctions like case/variable, categorical/quantitative, explantory/reponse, etc. Identifying key elements of study design. Selecting appropriate analysis methods. Use of software to acheive a task (have students write R command or describe how to use other software)  Design the questions.</description>
     </item>
     
   </channel>

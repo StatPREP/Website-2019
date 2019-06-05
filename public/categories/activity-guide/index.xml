@@ -6,7 +6,7 @@
     <description>Recent content in activity-guide on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/activity-guide/index.xml" rel="self" type="application/rss+xml" />
     
@@ -58,6 +58,18 @@ Role in statistical practice  Conceptual pitfalls  Learning objectives  Student 
       
       <guid>/blog/instructions-confidence-intervals/</guid>
       <description>Activities  What is a confidence interval? Sampling bias and confidence intervals Comparing two groups Comparing two confidence intervals Two-sample t test   Learning objectives connected to confidence intervals  Master the relevant vocabulary … population, sample, sample statistic, point estimate, margin of error, confidence interval, confidence level. Recognize the estimation process that leads to a confidence interval: a sample is selected randomly from a population a statistic is calculated from that sample the margin of error and, correspondingly, the confidence interval are calculated from that sample.</description>
+    </item>
+    
+    <item>
+      <title>You Want to Know: What&#39;s the Point</title>
+      <link>/blog/instructions-you-want-to-know/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-you-want-to-know/</guid>
+      <description>The You Want to Know activity is just one example among many similar activities. This instructors’ activity explores ways you can construct many similar activities for your students.
+How to make your own activity The key steps to creating these activities are
+Determine the learning objectives. These might include
+Making key distinctions like case/variable, categorical/quantitative, explantory/reponse, etc. Identifying key elements of study design. Selecting appropriate analysis methods. Use of software to acheive a task (have students write R command or describe how to use other software)  Design the questions.</description>
     </item>
     
     <item>
