@@ -121,23 +121,24 @@ rquery.wordcloud(filePath, type ="file", lang = "english", textStemming = FALSE,
 From the pre-workshop survey
 
 - Institution type
-    - 8 / 19 Two-year college
-    - 12 / 19 Four year institution
+    - 8 / 19 Two-year college 17/34
+    - 12 / 19 Four year institution 16/34
 - Grad-school discipline
-   - 18 / 19 Mathematics  (and maybe it's 19 / 19)
+   - 18 / 19 Mathematics  30 / 34
    - 2 / 19 Computer science
    - 2 / 19 Engineering
+   - 0 / 19 Statistics 9 / 34 *** big difference from Hartford
 - Statistics experience
-   - 3 / 19  studied applied statistics in  grad school
-   - 2 / 18  studied theoretical statistics in grad school
-   - 7 / 18  do applied statistics outside of teaching
+   - 3 / 19  studied applied statistics in  grad school 18 / 31
+   - 2 / 18  studied theoretical statistics in grad school 15 / 33
+   - 7 / 18  do applied statistics outside of teaching 10 / 34
 - Teaching experience: number with > 2 years experience
-    - 15 / 16 "other" mathematics (1 has no experience)
-    - 14 / 19 calculus (1 has no experience)
-    - 10 / 19 college algebra (4 have no experienceª)
-    - 7 / 19 intro stat 
-    - 3 / 16 computer science (12 have no experience)
-    - 3 / 18 statistics (7 have  no experience)
+    - 15 / 16 "other" mathematics (1 has no experience) 26 / 31
+    - 14 / 19 calculus (1 has no experience) 19 / 31
+    - 10 / 19 college algebra (4 have no experienceª) 21 / 31
+    - 7 / 19 intro stat 23 / 32 (2 have no experience)
+    - 3 / 16 computer science (12 have no experience) 1 / 24
+    - 3 / 18 statistics (7 have  no experience) 13 / 31
    
 ✽ Might these be 4-year instructors at institutions without a college algebra course?
 
@@ -156,21 +157,23 @@ Example of calculus-like problem ... of a sort that I very rarely see in statist
 ### Your priorities
 
 - Top priority
-    - 8 / 14 learn how to incorporate real data into classes (17  / 19) YES*
-    - 7 / 14 learn about tools/technology (18 / 19) YES*
-    - 7 / 14 learn new statistics teaching methods (18 / 19) YES*
-    - 7 / 14 learn how to engage students (15 / 19) WE PLAN and HOPE*
-    - 6 / 14 learning more about data science concepts (17 / 19) YES*
-    - 6 / 14 learning to  use R (14 / 19) IF YOU WANT*
-    - 5 / 14 get ideas about modifying department curriculum (11 / 19) WE THINK SO*
+    - 12 / 33 learn how to incorporate real data into classes (30 / 33) YES*
+    - 18 / 33 learn new statistics teaching methods (29 / 33) YES*
+    - 13 / 33 learn how to engage students (31 / 33) WE PLAN and HOPE*
+    - 10 / 33 learning more about data science concepts (19 / 33) YES*
+    - 10 / 33 learn about tools/technology (28 / 33) YES*
+    - 8 / 33 learning about materials, data sets, ... (21 / 33)
+    - 5 / 33 learning to  use R (15 / 33) IF YOU WANT*
+    - 4 / 33 get ideas about modifying department curriculum (19 / 33) WE THINK SO*
 
-All together, the 14 respondents have 58 "top" priorities!  
+All together, the 33 respondents have 97 "top" priorities!  
 
 ✽ Will we cover this in the next two days?
 
 ### Confidence
 
-Only 4 / 19 were confident in **developing data models**.
+- 8 / 33 were confident in using computer programs to analyze data or data sets
+- Only 9 / 33 were confident in **developing data models**.
 
 Possible issues: 
 
@@ -180,48 +183,56 @@ Possible issues:
 
 ### Software vs by hand
 
-- 1 / 19 -- by hand
-- 9 / 19 -- by software
-- 9 / 19 -- by hand and also by software
-- Nobody -- by graphing calculator
+- 1 / 33 -- by hand
+- 3 / 33 -- by hand and graphing calculator
+- 10 / 33 -- by software
+- 13 / 33 -- by hand and also by software
+- 6 / 33 -- by graphing calculator
 
 ### Statistical theory
 
-- 3 / 19 -- algebra is the best method to express statistics, yet ...
-    - 10 / 18 -- statistical concepts are intrinsically based in algebraic notation
-- 5 / 19 -- include theoretical probability distributions
-- EVERYONE -- The many methods covered in introductory statistics can be reduced to a small set of common principles.
+agree or strongly agree
+
+- 6 / 29 -- algebraic formulas the best method to express statistics, yet ...
+    - 14 / 31 -- statistical concepts are intrinsically based in algebraic notation
+    - 32 / 33 -- Technology tools should be used to illustrate concepts
+- 25 / 32 -- include theoretical probability distributions
+- 29 / 32 -- The many methods covered in introductory statistics can be reduced to a small set of common principles.
     * What are those principles? [Write them down here](https://docs.google.com/document/d/12rFpIZnr6abpkpfbRD-GFixI3T-vuX8zvYAUd-2WBu4/edit?usp=sharing)
 
 ### Computing
 
-- 16 / 19 Computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
-    - but, earlier, 10 / 18 said "statistical concepts are intrinsically based in algebraic notation"
-- 18 / 19 Proficiency in using computers to handle and manage data should be an important goal of a statistics course.
+- 29 / 32 Computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
+    - but, earlier, 14 / 31 said "statistical concepts are intrinsically based in algebraic notation"
+- 30 / 33 Proficiency in using computers to handle and manage data should be an important goal of a statistics course.
 - Why aren't you using preferred software?
-    - 9 / 15 I haven’t had time to explore software / technology beyond what I’m currently using.
-    - 4 / 15 Takes too much time for students to learn software / technology
-    - Expense or Department or Access: at most 1 or 2 out of 15
+    - 19 / 31 I haven’t had time to explore software / technology beyond what I’m currently using.
+    - 13 / 31 Takes too much time for students to learn software / technology
+    - 21 / 31 Expense or Department or Access
+    - 12 / 31 Not enough time to teach software and cover course material
 - What do you use for software?
-    - 9 / 14 Spreadsheets
-    - 5 / 14 Graphing calculator
-    - 4 / 14 Other
-    - 3 / 14 Web apps
-    - 2 / 14 R/RStudio
-    - 1 / 14 Minitab/SPSS
-    - 0 / 14 SAS/JMP
+    - 10 / 29 Spreadsheets
+    - 19 / 29 Graphing calculator
+    - 7 / 29 StatKey / Stat Crunch
+    - 14 / 29 Web apps
+    - 3 / 29 R/RStudio
+    - 3 / 29 Minitab/SPSS
+    - 1 / 29 SAS/JMP
 - What would you like to use for software?
-    - 7 / 11 R/RStudio
-    - 6 / 11 Spreadsheets
-    - 4 / 11 SAS/JMP
+    - 21 / 30 R/RStudio
+    - 18 / 30 Spreadsheets
+    - 11 / 30 Graphing calculators
+    - 11 / 30 Web apps
+    - 6 / 30 Minitab / SPSS
+    - 4 / 30 SAS/JMP
+    - 1 / 30 "I would prefer to use as little technology as possible"
     
 ### Graphics
 
-This was the strongest consensus ...
-
 Indicate the method of computing that you believe helps students learn introductory statistics best.
 
-- 17 / 18 -- Graphics routinely drawn using statistical software
+- 23 / 33 -- Graphics routinely drawn using statistical software
+- 7 / 33 -- Graphics routinely drawn by hand
 
 **Question**: Do you teach them the algorithms and programming steps for producing graphics or just have them go at it with the appropriate software function?
 
@@ -229,20 +240,22 @@ Indicate the method of computing that you believe helps students learn introduct
 
 ### Success
 
-Out of 90 possible answers:
+Out of 270 possible answers:
 
-- 4 / 90 are very successful
-- 36 / 90 are successful
-- 51 / 90 are moderately successful
-- 10 / 90 not successful
+- 5 / 270 are very successful
+- 60 / 270 are successful
+- 92 / 270 are moderately successful
+- 23 / 270 not successful
 
 Grade: B- overall
 
 ### Limits to change
 
-- 10 / 15 Limited personal time
-- 11 / 15 Student characteristics (e.g., ability, interest, etc.)
-- Others (institutional constraints, transferability, no access to computing) got at most 3/15 each
+- 20 / 31 Limited personal time
+- 19 / 31 Student characteristics (e.g., ability, interest, etc.)
+- 19 / 31 Institutional constraints
+- 15 / 31 Technology constraints
+
 
 ## Three components of the workshop
 

@@ -1,20 +1,20 @@
 ---
-title: "You Want to Know: Cases, Variables, and Study Goals"
-author: R Pruim
+title: 'You Want to Know: Cases, Variables, and Study Goals'
 date: '2019-06-04'
+output:
+  html_document:
+    df_print: paged
 slug: activity-you-want-to-know
-categories:
-  - activities
 tags:
-  - tidy-data
-  - unit-of-observarion
-  - variables
+- tidy-data
+- unit-of-observarion
+- variables
+categories: activities
 ---
 
+\pagestyle{empty}
 
-### Instructions
-
-In each scenario below, 
+**Instructions.**  In each scenario below, 
 
 * determine what variables you would need to collect and whether each is categorical or quantitative, 
 
@@ -32,8 +32,6 @@ from the variables,
 Sometimes there may be more than one way to design the study, but don't 
 design a poor study when a better option is available.
 
-### Scenarios
-
 1. You want to know what proportion of students at your institution got a flu shot this year.
 
 1. You want to know whether male students or female students were more likely to get a flu shot this year.
@@ -48,14 +46,14 @@ design a poor study when a better option is available.
 
 1. You want to know whether people can swim faster if they wear wetsuits.
 
-
+You might find it handy to organize you work into a table like this:
 
 Scenario | Variables (type) | Parameter(s)  | Plot           | Paired?
 -------- | ---------------- | ------------- | -------------- | -------------
 1        | vaccinated (yes/no) -- categorical | proportion of all students who were vaccinated | bar chart showing number of vaccinated/unvaccinated students | no
-2 | | |  <BR><BR><BR><BR>
-3 | | |  <BR><BR><BR><BR>
-4 | | |  <BR><BR><BR><BR>
-5 | | |  <BR><BR><BR><BR>
-6 | | |  <BR><BR><BR><BR>
-7 | | |  <BR><BR><BR><BR>
+2 | | |  <BR><BR><BR><BR> \vspace*{0.25in}
+3 | | |  <BR><BR><BR><BR> \vspace*{0.25in}
+4 | | |  <BR><BR><BR><BR> \vspace*{0.25in}
+5 | | |  <BR><BR><BR><BR> \vspace*{0.25in}
+6 | | |  <BR><BR><BR><BR> \vspace*{0.25in}
+7 | | |  <BR><BR><BR><BR> \vspace*{0.25in}
