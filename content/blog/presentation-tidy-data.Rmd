@@ -66,9 +66,9 @@ about organizing data.
 * Encourage/expose students to "data-base thinking"
     - ironically, this is a very mathematical form of thinking, 
     but few mathematicians know about it. 
-    **SQL is the algebra that gets you a job!** Or, for people who don't like 
-    a "vocational" emphasis: 
-    **Data base thinking empowers you to explore and present both simple and complex data!**
+    * **SQL** is the algebra that **gets you a job!** 
+<!-- Or, for people who don't like a "vocational" emphasis:  -->
+    * Data base thinking empowers you to **explore and present both simple and complex data!**
  
 ### Unruly data
  
@@ -80,7 +80,7 @@ about organizing data.
 
 ### Rules tame unruliness 
 
-1. Always in a "spreadsheet" (ie, rows and columns) `r fail("no-spreadsheet")` ✔︎✔︎✔︎
+1. Always in a "**spreadsheet**" (ie, rows and columns) `r fail("no-spreadsheet")` ✔︎✔︎✔︎
 2. **Rows**: One row per unit of observation/analysis
     - No summaries in data︎
     - No other info, e.g. codebook, in spreadsheet `r fail("no-annotations")`
@@ -106,7 +106,8 @@ about organizing data.
 
 ## Operations on Tidy Data
 
-One advantage of tidy data is that it is ammenable to standard data operations.
+One advantage of tidy data is that it is ammenable to 
+**standard, reusable data operations**.
 
 ### Fundamental
 
@@ -154,37 +155,38 @@ In stats book:
 Key distinction / minor distinctions
 
 - **numerical**: interval, ratio, count, measure,  ...
-- **cagegorical**: unordered, ordered
+- **categorical**: unordered, ordered
     
 
 ### Variable types in actual use:
 
 1. numerical: 
-    a. natural numbers vs codes
-        i. counts: natural numbers
-        i. ~~codes~~: a representation of discrete levels: better to use actual labels
-    b. quantities (with *dimension* and *units*) --
-    it's worthwhile to be able to distinquish these special types
-        i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent 
-        of the units, e.g.  counts, growth rates
-                - in graphics, make sure zero is on the axis!
-        i. times and dates
-2. categorical: fixed vs "random"
-    a. Fixed: an easily enumerable set of distinct possibilities
-    b. Random: anything else where there are no limits applied, 
-    e.g. free text, names of people
+    a. **quantities** (with **dimension** and **units**) --
+    a. **times** and **dates**
+    a. **counts** (natural numbers)
+    a. ~~codes~~: ~~codes represent discrete levels, not really numerical~~
+    
+<!-- it's worthwhile to be able to distinquish these special types -->
+<!--     i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent  -->
+<!--     of the units, e.g.  counts, growth rates -->
+<!--             - in graphics, make sure zero is on the axis! -->
 
-### Reduction variables
+2. categorical: 
+    a. fixed vs "random" 
+        * Fixed: data contains all levels of interest
+        * Random: data represents a subset of/sample from levels of interest
 
-What operations make sense:
+<!-- ### Operations on variables -->
 
-- sum (not for numerical codes, dates)
-    - is sum meaningful? e.g. miles per gallon versus gallons per mile
-- mean (not for numerical codes)
+<!-- Some operations only make sense for certain types of variables -->
 
-### Transformation variables
+<!-- - sum / mean -->
+<!--     - helps distinguish numerical codes from true numerical variables -->
+<!--     - is sum meaningful? e.g. miles per gallon versus gallons per mile -->
 
-- ratio (only with natural origin): but how often are we doing ratio transformations in stats class?
-- difference ()
-- sqrt, log, ... (only with natural origin)
+<!-- ### Transformation variables -->
+
+<!-- - ratio (only with natural origin): but how often are we doing ratio transformations in stats class? -->
+<!-- - difference () -->
+<!-- - sqrt, log, ... (only with natural origin) -->
 
