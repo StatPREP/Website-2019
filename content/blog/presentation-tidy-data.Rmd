@@ -1,5 +1,5 @@
 ---
-title: "Tidying data"
+title: "Tidy Data"
 description: "Organize your data to help students learn basic data principles."
 weight: 20
 date: "2019-05-06"
