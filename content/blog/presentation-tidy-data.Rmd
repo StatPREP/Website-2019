@@ -164,7 +164,7 @@ Key distinction / minor distinctions
     a. **quantities** (with **dimension** and **units**) --
     a. **times** and **dates**
     a. **counts** (natural numbers)
-    a. ~~codes~~: ~~codes represent discrete levels, not really numerical~~
+    a. ~~codes: codes represent discrete levels, not really numerical~~
     
 <!-- it's worthwhile to be able to distinquish these special types -->
 <!--     i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent  -->
