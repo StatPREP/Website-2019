@@ -16,23 +16,27 @@ banner: "img/banners/dictionary-banner.jpg"
 <ol style="list-style-type: decimal">
 <li>Teach statistical thinking.
 <ul>
-<li>Teach statistics as an <strong>investigative process</strong> of problem-solving and <strong>decision-
-making</strong>.</li>
+<li>Teach statistics as an <strong>investigative process</strong> of problem-solving and
+<strong>decision-making</strong>.</li>
 <li>Give students experience with <strong>multivariable thinking</strong>.</li>
 </ul></li>
 <li><p>Focus on conceptual understanding.</p></li>
 <li><p>Integrate <strong>real data</strong> with a <strong>context</strong> and <strong>purpose</strong>.</p></li>
 <li><p>Foster <strong>active learning</strong>.</p></li>
-<li><p>Use <em>technology</em> to explore concepts and analyze data.</p></li>
-<li><p>Use assessments to improve and evaluate student learning.</p></li>
+<li><p>Use <strong>technology</strong> to explore concepts and analyze data.</p></li>
+<li><p>Use <strong>assessments</strong> to improve and evaluate student learning.</p></li>
 </ol>
 </div>
 <div id="real-data" class="section level2">
 <h2>Real data</h2>
 <p>The <a href="http://statprep.org/wp-content/uploads/2019/02/Spring-Newsletter-02.11.19.pdf">StatPREP definition</a>:</p>
 <ul>
-<li>1000-ish rows, 4+-ish variables</li>
-<li>captured in the wild: not collected for teaching statistics</li>
+<li><strong>captured in the wild</strong>: not collected for teaching statistics</li>
+<li><strong>appropriate for investigation</strong> of a particular question or set of questions
+<ul>
+<li>large enough: (think 1000 or more observational units)</li>
+<li>rich enough: (think 4 or more variables)</li>
+</ul></li>
 </ul>
 <p>For the moment, put aside the important matters of <strong>context</strong> and <strong>purpose</strong>.</p>
 <p>Instead, focus on the <strong>organization</strong> of data in a way that will contribute to</p>
@@ -46,48 +50,64 @@ making</strong>.</li>
 <div id="data-organization" class="section level2">
 <h2>Data organization</h2>
 <ul>
-<li>Almost all StatPREP participants say they teach little or nothing about organizing data.
+<li>Almost all StatPREP participants say they teach little or nothing
+about organizing data.
 <ul>
-<li>In textbooks, teaching about data focusses on variable types, not organization.</li>
+<li>In textbooks, teaching about data focusses on variable types,
+not organization.</li>
 </ul></li>
 <li>Organizing data properly is critically important to …
 <ul>
+<li><strong>thinking</strong> correctly with data</li>
 <li>using real data with <strong>technology</strong></li>
-<li>providing modern views of data</li>
-<li>structuring data collection effectively</li>
-</ul></li>
-<li>Encourage/expose students to “data-base thinking”
-<ul>
-<li>ironically, this is a very mathematical form of thinking, but few mathematicians know about it. <strong>SQL is the algebra that gets you a job!</strong> Or, for people who don’t like a “vocational” emphasis: <strong>Data base thinking empowers you to explore and present both simple and complex data!</strong></li>
 </ul></li>
 </ul>
-</div>
-<div id="unruly-data" class="section level2">
-<h2>Unruly data</h2>
-<p><em>unruly</em>: (adj.) disorderly and disruptive and not amenable to discipline or control</p>
+<!-- - providing modern views of data -->
+<!-- - structuring data collection effectively -->
+<ul>
+<li>Encourage/expose students to “data-base thinking”
+<ul>
+<li>ironically, this is a very mathematical form of thinking,
+but few mathematicians know about it.
+<strong>SQL is the algebra that gets you a job!</strong> Or, for people who don’t like
+a “vocational” emphasis:
+<strong>Data base thinking empowers you to explore and present both simple and complex data!</strong></li>
+</ul></li>
+</ul>
+<div id="unruly-data" class="section level3">
+<h3>Unruly data</h3>
+<p><strong>unruly</strong>: (adj.) disorderly and disruptive and not amenable to discipline or control</p>
 <p><img src="/img/data-images/no-columns.png" /></p>
 <p><img src="/img/data-images/missing-data.png" /></p>
 </div>
-<div id="rules-tame-unruliness" class="section level2">
-<h2>Rules tame unruliness</h2>
+<div id="rules-tame-unruliness" class="section level3">
+<h3>Rules tame unruliness</h3>
 <ol style="list-style-type: decimal">
-<li>Always in a spreadsheet <a href="/etc/Fail/index.html#no-spreadsheet"><em>fail</em></a> ✔︎✔︎✔︎</li>
-<li>Always column-wise <a href="/etc/Fail/index.html#no-columns"><em>fail</em></a></li>
-<li>Always column names <a href="/etc/Fail/index.html#no-column-names"><em>fail</em></a></li>
-<li>Always codebook <a href="/etc/Fail/index.html#no-codebook"><em>fail</em></a></li>
-<li>Any subset of rows is a valid data set.
+<li>Always in a “spreadsheet” (ie, rows and columns) <a href="/etc/Fail/index.html#no-spreadsheet"><em>fail</em></a> ✔︎✔︎✔︎</li>
+<li><strong>Rows</strong>: One row per unit of observation/analysis
 <ul>
-<li>no summaries in data︎</li>
-<li>no other info, e.g. codebook, in spreadsheet <a href="/etc/Fail/index.html#no-annotations"><em>fail</em></a></li>
+<li>No summaries in data︎</li>
+<li>No other info, e.g. codebook, in spreadsheet <a href="/etc/Fail/index.html#no-annotations"><em>fail</em></a></li>
+<li>Any subset of rows is a valid data set.</li>
+</ul></li>
+<li><strong>Columns</strong>: One column per variable <a href="/etc/Fail/index.html#no-columns"><em>fail</em></a>
+<ul>
+<li>Always use column names <a href="/etc/Fail/index.html#no-column-names"><em>fail</em></a></li>
+</ul></li>
+<li>Always codebook <a href="/etc/Fail/index.html#no-codebook"><em>fail</em></a>
+<ul>
+<li>Rows: how cases were selected</li>
+<li>Columns: units, specific questions/protocols/methods</li>
 </ul></li>
 <li>Segregate data collection and data analysis
 <ul>
-<li>never change your data as part of the analysis</li>
+<li>Never change the original data as part of the analysis</li>
 </ul></li>
 </ol>
+<p><em>Note: This sort of tidy/rectangular data is not the only kind of data, but it is an extremely important kind of data and sufficient for introductory courses.</em></p>
 </div>
-<div id="implications-you-need-to-have-a-way-to-distribute-such-data." class="section level2">
-<h2>Implications: You need to have a way to distribute such data.</h2>
+<div id="implications-you-need-to-have-a-way-to-distribute-such-data." class="section level3">
+<h3>Implications: You need to have a way to distribute such data.</h3>
 <ul>
 <li>Google spreadsheets, google forms
 <ul>
@@ -97,55 +117,59 @@ making</strong>.</li>
 <li><p>More efficient forms</p></li>
 </ul>
 </div>
-<div id="basic-operations" class="section level2">
-<h2>Basic operations</h2>
-<p><strong>Fundamental</strong></p>
+</div>
+<div id="operations-on-tidy-data" class="section level2">
+<h2>Operations on Tidy Data</h2>
+<p>One advantage of tidy data is that it is ammenable to standard data operations.</p>
+<div id="fundamental" class="section level3">
+<h3>Fundamental</h3>
 <ul>
-<li>summarize / reduce
+<li><strong>summarize</strong> / <strong>reduce</strong>: convert entire data set to 1-row of summary values
 <ul>
-<li>in spreadsheet, add a new row: forbidden in tidy data</li>
-<li>in <code>mosaic</code>, use specific function, e.g. <code>df_stats()</code></li>
+<li>in spreadsheet: often not tidy, summary formulas can be placed in untidy places</li>
+<li>in R: <code>df_stats()</code></li>
 </ul></li>
-<li>mutate / transform,
+<li><strong>mutate</strong> / <strong>transform</strong>: add new variable
 <ul>
-<li>in spreadsheet, add a new column</li>
-<li>not in <code>mosaic</code></li>
+<li>in spreadsheet: add a new column</li>
+<li>in R: <code>mutate()</code></li>
 </ul></li>
-<li>group – handle summarize and mutate in a groupwise way
+<li><strong>group</strong>: handle summarize and mutate in a groupwise way
 <ul>
-<li>in spreadsheet <a href="https://support.google.com/docs/answer/1272900">pivot table</a></li>
-<li>in <code>mosaic</code>, use variables to right of tilde, e.g. blood_pressure ~ age + sex</li>
+<li>in spreadsheet: <a href="https://support.google.com/docs/answer/1272900">pivot table</a></li>
+<li>in R: grouping variables to right of tilde, e.g. <code>blood_pressure ~ age + sex</code></li>
 </ul></li>
-<li>filter
+<li><strong>filter</strong> / <strong>select</strong>: remove/ignore rows or columns
 <ul>
-<li>in spreadsheet, <a href="https://support.google.com/docs/answer/3540681">“hide” data</a></li>
-<li>not in <code>mosaic</code></li>
-</ul></li>
-</ul>
-<p><strong>Superficial</strong></p>
-<ul>
-<li>arrange
-<ul>
-<li>in spreadsheet, “sort”. But how do you do this without altering the data</li>
-<li>not in <code>mosaic</code></li>
-</ul></li>
-<li>select
-<ul>
-<li>in spreadsheet, how do you do this without altering the data?</li>
-<li>not in <code>mosaic</code></li>
+<li>in spreadsheet: <a href="https://support.google.com/docs/answer/3540681">“hide” data</a></li>
+<li>in R: <code>filter()</code> for rows, <code>select()</code> for columns</li>
 </ul></li>
 </ul>
-<p><strong>Profound</strong></p>
+</div>
+<div id="superficial" class="section level3">
+<h3>Superficial</h3>
 <ul>
-<li>join
+<li><strong>arrange</strong>
+<ul>
+<li>in spreadsheet, “sort”. But how do you do this without altering the data?</li>
+<li>in R: <code>arrange()</code></li>
+</ul></li>
+</ul>
+</div>
+<div id="profound" class="section level3">
+<h3>Profound</h3>
+<ul>
+<li><strong>join</strong>: bring together data from multiple sources
 <ul>
 <li>in spreadsheet <a href="https://support.google.com/fusiontables/answer/171254?hl=en">“fusion tables”</a> but will be <a href="https://support.google.com/fusiontables/answer/9185417">phased out in Dec. 2019 in terms of SQL operations</a></li>
 </ul></li>
-<li>spread/gather
+<li><strong>spread</strong> / <strong>gather</strong>: change unit of analysis
 <ul>
 <li>in spreadsheet <a href="https://eagereyes.org/basics/spreadsheet-thinking-vs-database-thinking">pivot/unpivot</a></li>
+<li>in R: <code>spread()</code>, <code>gather()</code> [soon to be <code>pivot_wide()</code>, <code>pivot_long()</code>]</li>
 </ul></li>
 </ul>
+</div>
 </div>
 <div id="quiz" class="section level2">
 <h2>Quiz</h2>
@@ -156,14 +180,14 @@ making</strong>.</li>
 <h2>Variable types</h2>
 <p>These are often introduced as definitions before the student has any use for them.</p>
 <p>In stats book:</p>
-<ul>
-<li>numerical: interval, ratio, count, measure, …</li>
-<li>cagegorical: unordered, ordered</li>
-</ul>
 <p><img src="/img/data-images/variable-types.jpg" /></p>
-</div>
-<div id="variable-types-in-actual-use" class="section level2">
-<h2>Variable types in actual use:</h2>
+<p>Key distinction / minor distinctions</p>
+<ul>
+<li><strong>numerical</strong>: interval, ratio, count, measure, …</li>
+<li><strong>cagegorical</strong>: unordered, ordered</li>
+</ul>
+<div id="variable-types-in-actual-use" class="section level3">
+<h3>Variable types in actual use:</h3>
 <ol style="list-style-type: decimal">
 <li>numerical:
 <ol style="list-style-type: lower-alpha">
@@ -172,22 +196,25 @@ making</strong>.</li>
 <li>counts: natural numbers</li>
 <li><del>codes</del>: a representation of discrete levels: better to use actual labels</li>
 </ol></li>
-<li>quantities (with <em>dimension</em> and <em>units</em>) –it’s worthwhile to be able to distinquish these special types
+<li>quantities (with <em>dimension</em> and <em>units</em>) –
+it’s worthwhile to be able to distinquish these special types
 <ol style="list-style-type: lower-roman">
-<li>arbitrary origin (e.g. °F or °C) vs meaningful origin independent of the units, e.g. counts, growth rates
+<li>arbitrary origin (e.g. °F or °C) vs meaningful origin independent
+of the units, e.g. counts, growth rates
 - in graphics, make sure zero is on the axis!</li>
 <li>times and dates</li>
 </ol></li>
 </ol></li>
 <li>categorical: fixed vs “random”
 <ol style="list-style-type: lower-alpha">
-<li>Fixed: an easily enumerable set of distinct possibilities
-b Random: anything else where there are no limits applied, e.g. free text, names of people</li>
+<li>Fixed: an easily enumerable set of distinct possibilities</li>
+<li>Random: anything else where there are no limits applied,
+e.g. free text, names of people</li>
 </ol></li>
 </ol>
 </div>
-<div id="reduction-variables" class="section level2">
-<h2>Reduction variables</h2>
+<div id="reduction-variables" class="section level3">
+<h3>Reduction variables</h3>
 <p>What operations make sense:</p>
 <ul>
 <li>sum (not for numerical codes, dates)
@@ -197,11 +224,12 @@ b Random: anything else where there are no limits applied, e.g. free text, name
 <li>mean (not for numerical codes)</li>
 </ul>
 </div>
-<div id="transformation-variables" class="section level2">
-<h2>Transformation variables</h2>
+<div id="transformation-variables" class="section level3">
+<h3>Transformation variables</h3>
 <ul>
 <li>ratio (only with natural origin): but how often are we doing ratio transformations in stats class?</li>
 <li>difference ()</li>
 <li>sqrt, log, … (only with natural origin)</li>
 </ul>
+</div>
 </div>
