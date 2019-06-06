@@ -18,7 +18,7 @@ title: "Workshop schedule: Howard Community College"
 
 - 3:20 pm - 3:30 pm: Break
 
-- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and MAA Connect (Hwayeon Ryu)
+- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Hwayeon Ryu)
 - 4:00 pm - 4:50 pm: [Introduction to RStudio cloud](/blog/technology/) (Danny)
 
 - 4:50 pm - 5:00 pm: Break
@@ -56,7 +56,10 @@ title: "Workshop schedule: Howard Community College"
 
 - 2:00 pm - 2:45 pm: Tips for creating an Active Classroom and assessment ideas (Randy Pruim)
 - 2:45 pm - 3:45 pm: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
-- 3:45 pm - 4:00 pm: Overview of [*Stats for Data Science*](/blog/stats-for-data-science/) book (for instructor self study)
+- 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
+    * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
+    * <https://teachdatascience.com/ingestingdata/>
+    * [*Stats for Data Science*](/blog/stats-for-data-science/) book (for instructor self study)
 - 4:00 pm - 4:30 pm: Small Group Discussions: Takeaways
 - 4:30 pm - 5:00 pm: Q & A panel discussion
 - 5:00 pm: Staying in touch & Adjourn
