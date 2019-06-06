@@ -38,8 +38,8 @@ The [StatPREP definition](http://statprep.org/wp-content/uploads/2019/02/Spring-
 
 * **captured in the wild**: not collected for teaching statistics
 * **appropriate for investigation** of a particular question or set of questions
-    * large enough: (think 1000 or more observational units)
-    * rich enough: (think 4 or more variables)
+    * large enough (think: $n \ge 1000$)
+    * rich enough (think: 5 or more variables)
 
 For the moment, put aside the important matters of **context** and **purpose**.
 
