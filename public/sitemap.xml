@@ -306,6 +306,11 @@
   </url>
   
   <url>
+    <loc>/categories/active-classroom/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/activities/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -584,6 +589,11 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/teaching-tips/</loc>
     <priority>0</priority>
   </url>
   

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Active Classroom</title>
+      <link>/categories/active-classroom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/active-classroom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Activities</title>
       <link>/categories/activities/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
@@ -80,6 +89,15 @@
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching Tips</title>
+      <link>/categories/teaching-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/teaching-tips/</guid>
       <description></description>
     </item>
     
