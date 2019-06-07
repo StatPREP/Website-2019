@@ -23,6 +23,7 @@ title: "Workshop schedule: Howard Community College"
 
 - 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Hwayeon Ryu)
 - 4:00 pm - 4:50 pm: [Introduction to RStudio cloud](/blog/technology/) (Danny)
+        * [link to RStudio project](https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6)
 
 - 4:50 pm - 5:00 pm: Break
 

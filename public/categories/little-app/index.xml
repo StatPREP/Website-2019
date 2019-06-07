@@ -6,21 +6,10 @@
     <description>Recent content in Little App on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/little-app/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Little Apps: Orientation</title>
-      <link>/blog/la-orientation/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/la-orientation/</guid>
-      <description>Little Apps provide interactive computing with no coding to calculate statistics, fit models, and display statistical concepts.
-Every Little App is built around a common framework:
- At the core is a data graphic. The vertical axis is the response variable and the horizontal axis is the explanatory variable. Controls enable you to select a data set and variables. Set the sample size and easily display a new sample. Statistics are shown as annotations, always with respect to the data.</description>
-    </item>
     
     <item>
       <title>Bootstrapping</title>
@@ -45,12 +34,23 @@ The point-plot Little App provides a quick path to making data graphics. Select 
     </item>
     
     <item>
+      <title>Little Apps: Orientation</title>
+      <link>/blog/la-orientation/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-orientation/</guid>
+      <description>Little Apps provide interactive computing with no coding to calculate statistics, fit models, and display statistical concepts.
+Every Little App is built around a common framework:
+ At the core is a data graphic. The vertical axis is the response variable and the horizontal axis is the explanatory variable. Controls enable you to select a data set and variables. Set the sample size and easily display a new sample. Statistics are shown as annotations, always with respect to the data.</description>
+    </item>
+    
+    <item>
       <title>Jittering</title>
       <link>/blog/la-jittering/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/la-jittering/</guid>
-      <description>   Jittering Little App: Self-described level of health versus frequency of feeling depressed in the National Health and Nutrition Evaluation Survey. Click here to launch.   
+      <description>  Jittering Little App: Self-described level of health versus frequency of feeling depressed in the National Health and Nutrition Evaluation Survey. Click here to launch.   
 The Jittering Little App shows how the general point-plot can be effective even when variables are categorical.
  Students can adjust the amount of jittering and transparency. Can stratify sampling by the explanatory variable.  Suggested StatPREP 101 activities  Jittering activity   </description>
     </item>
