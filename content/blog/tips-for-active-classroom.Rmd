@@ -5,6 +5,9 @@ output:
   html_document:
     theme: readable
 banner: "img/banners/missing.png"
+categories:
+    - active-classroom
+    - teaching-tips
 ---
 
 Many instructors believe that learning is enhanced in a classroom where students  are active participants rather than the passive recipients of a lecture. This document describes some general techniques for fostering an active classroom  that can be used in a wide range of lesson topics. (There are also tips for specific topics included in the instructor guide for each topic.)
