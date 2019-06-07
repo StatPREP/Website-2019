@@ -11,7 +11,7 @@ categories:
 tags:
   - graphics
   - variables
-
+banner: "img/banners/missing.png"
 ---
 
 ```{r include = FALSE}

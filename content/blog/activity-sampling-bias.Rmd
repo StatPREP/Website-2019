@@ -12,6 +12,7 @@ tages:
   - confidence-interval
   - sampling
   - bias
+banner: "img/banners/missing.png"
 ---
 
 ```{r include = FALSE}

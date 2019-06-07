@@ -6,7 +6,7 @@
     <description>Recent content on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -125,7 +125,7 @@ Orientation There are two major types of variables:
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/la-jittering/</guid>
-      <description>  Jittering Little App: Self-described level of health versus frequency of feeling depressed in the National Health and Nutrition Evaluation Survey. Click here to launch.   
+      <description>   Jittering Little App: Self-described level of health versus frequency of feeling depressed in the National Health and Nutrition Evaluation Survey. Click here to launch.   
 The Jittering Little App shows how the general point-plot can be effective even when variables are categorical.
  Students can adjust the amount of jittering and transparency. Can stratify sampling by the explanatory variable.  Suggested StatPREP 101 activities  Jittering activity   </description>
     </item>
@@ -148,7 +148,7 @@ The Proportions Little App allows you to explore how the probability of a catego
       
       <guid>/blog/activity-variables-and-units/</guid>
       <description>Get formatted versions: Word : PDF
-Orientation There’s an expression about how to accomplish a complex, confusing, and difficult task: One step at a time. The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents. Some steps require application of a particular technical procedure.</description>
+Orientation There’s an expression about how to accomplish a complex, confusing, and difficult task: One step at a time. The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents.</description>
     </item>
     
     <item>
@@ -410,8 +410,7 @@ One purpose was to give a way of describing graphics in the face of a combinator
       <guid>/blog/data-lock5data/</guid>
       <description>The textbook Statistics: Unlocking the Power of Data (2/e 2017) by Lock, Lock, Lock, Lock, and Lock has publicly available datasets and interactive applets.
 A list of the more than 100 datasets in the collection is available at this site. There is also an R package, Lock5Data, that contains documentation for the data.
-Example: Restaurant tips The data frame RestaurantTips contains, … well let’s look directly at the documentation.
-library(Lock5Data) help(RestaurantTips) ## _R_e_s_t_a_u_r_a_n_t _T_i_p_s ## ## _D_e_s_c_r_i_p_t_i_o_n: ## ## Tip data from the First Crush Bistro ## ## _F_o_r_m_a_t: ## ## A dataset with 157 observations on the following 7 variables.</description>
+Example: Restaurant tips The data frame RestaurantTips contains, … well let’s look directly at the documentation.</description>
     </item>
     
     <item>
@@ -544,6 +543,17 @@ Orientation Data can be many things, but one of the most common formats is a dat
     </item>
     
     <item>
+      <title>Bootstrapping</title>
+      <link>/blog/activity-bootstrapping/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-bootstrapping/</guid>
+      <description> Get formatted versions: Word : PDF
+Orientation  Activity Version 0.2, 2019-06-07, Daniel Kaplan, Word version
+ </description>
+    </item>
+    
+    <item>
       <title>Flexibility</title>
       <link>/blog/activity-flexibility/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
@@ -551,7 +561,7 @@ Orientation Data can be many things, but one of the most common formats is a dat
       <guid>/blog/activity-flexibility/</guid>
       <description>Get formatted versions: Word : PDF
 Orientation  Activity Systolic versus diastolic in NHANES. A stiff line is too strongly influenced by the people with very low diastolic blood pressure. Adding some flexibility allows the relationship for those with normal pressure to be more evident. I’m guessing very low diastolic pressure is OK, but you can’t lower systolic pressure accordingly and stay alive.
-Version 0.2, 2019-06-04, Daniel Kaplan, Word version</description>
+Version 0.2, 2019-06-07, Daniel Kaplan, Word version</description>
     </item>
     
     <item>
@@ -560,7 +570,7 @@ Version 0.2, 2019-06-04, Daniel Kaplan, Word version</description>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/activity-changes-in-risk/</guid>
-      <description>Get formatted versions: Word : PDF
+      <description> Get formatted versions: Word : PDF
 Orientation  Activity proportions little app
 Version 0.2, 2019-06-04, Daniel Kaplan, Word version
  </description>
@@ -572,8 +582,7 @@ Version 0.2, 2019-06-04, Daniel Kaplan, Word version
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/community-maa-connect/</guid>
-      <description>We are excited to invite you to join the StatPREP Hub Communities online group using MAA Connect!
-Below, you will find instructions on logging into MAA Connect if you are a MAA member, or registering for a guest account if you are not. You will also find general set-up instructions, as well as information on accessing the different communities you want to join. We encourage you to read/listen along to these instructions as you are getting logged in for the first time.</description>
+      <description>Signing up StatPREP Hub Community on MAA Connect</description>
     </item>
     
     <item>
@@ -592,7 +601,7 @@ From the preface … Data science is an emerging computational discipline with r
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/tutorials-from-stats-for-data-science/</guid>
-      <description>Stats for Data Science is a forward-looking introductory-level textbook currently in draft form. Each chapter has will have a short tutorial introducing the computing techniques relevant to that chapter. The tutorials from the initial chapters may be helpful to those starting out with R.
+      <description> Stats for Data Science is a forward-looking introductory-level textbook currently in draft form. Each chapter has will have a short tutorial introducing the computing techniques relevant to that chapter. The tutorials from the initial chapters may be helpful to those starting out with R.
  Starting out with R Basics of the R language Functions and arguments Accessing data Data graphics  </description>
     </item>
     
@@ -606,7 +615,7 @@ From the preface … Data science is an emerging computational discipline with r
  determine what variables you would need to collect and whether each is categorical or quantitative,
  describe or sketch a graph you would make to give you an initial impression regarding the answer to the question of interest,
  determine the parameter(s) of interest and explain how they are different from the variables,
-   determine whether you are using a paired design.  Sometimes there may be more than one way to design the study, but don’t design a poor study when a better option is available.</description>
+   determine whether you are using a paired design.</description>
     </item>
     
     <item>

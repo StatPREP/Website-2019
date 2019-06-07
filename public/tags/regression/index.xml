@@ -46,6 +46,17 @@ Models are useful when they serve a purpose. For instance, a toy plane can serve
     </item>
     
     <item>
+      <title>Bootstrapping</title>
+      <link>/blog/activity-bootstrapping/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-bootstrapping/</guid>
+      <description> Get formatted versions: Word : PDF
+Orientation  Activity Version 0.2, 2019-06-07, Daniel Kaplan, Word version
+ </description>
+    </item>
+    
+    <item>
       <title>Flexibility</title>
       <link>/blog/activity-flexibility/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
@@ -53,7 +64,7 @@ Models are useful when they serve a purpose. For instance, a toy plane can serve
       <guid>/blog/activity-flexibility/</guid>
       <description>Get formatted versions: Word : PDF
 Orientation  Activity Systolic versus diastolic in NHANES. A stiff line is too strongly influenced by the people with very low diastolic blood pressure. Adding some flexibility allows the relationship for those with normal pressure to be more evident. I’m guessing very low diastolic pressure is OK, but you can’t lower systolic pressure accordingly and stay alive.
-Version 0.2, 2019-06-04, Daniel Kaplan, Word version</description>
+Version 0.2, 2019-06-07, Daniel Kaplan, Word version</description>
     </item>
     
     <item>

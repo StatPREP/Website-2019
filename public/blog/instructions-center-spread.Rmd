@@ -9,6 +9,7 @@ categories:
 tags:
     - summary-interval
     - normal-distribution
+banner: "img/banners/missing.png"
 ---
 
 ```{r setup, include=FALSE}

@@ -7,6 +7,7 @@ categories:
     - activities
 tags:
     - normal-distribution
+banner: "img/banners/missing.png"
 ---
 
 

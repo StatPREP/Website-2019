@@ -10,7 +10,7 @@ disqusShortname = "https-statprep-workshops-2019-netlify-com"
 googleAnalytics = ""
 
 # Define the number of posts per page
-paginate = 30
+paginate = 40
 
 [menu]
 

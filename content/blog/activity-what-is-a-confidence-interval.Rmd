@@ -10,6 +10,7 @@ categories:
   - activities
 tags:
   - confidence-interval
+banner: "img/banners/missing.png"
 ---
 
 ```{r include = FALSE}

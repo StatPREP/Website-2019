@@ -9,6 +9,7 @@ output:
   html_document:
     rmdformats::material
   pdf_document: tint::tintPdf 
+banner: "img/banners/missing.png"
 ---
 
 

@@ -10,6 +10,7 @@ tags:
   - regression
 categories: 
   - "Activities"
+banner: "img/banners/missing.png"
 ---
 
 ```{r include = FALSE}

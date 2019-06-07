@@ -10,6 +10,7 @@ tags:
     - confidence-interval
     - t-test
     - bias
+banner: "img/banners/missing.png"
 ---
 
 ```{r setup, include=FALSE}

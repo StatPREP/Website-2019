@@ -8,7 +8,7 @@ categories:
     - activity-guide
     - activities
 tags:
-    - graphics
+    - graphics 
 ---
 
 ```{r setup, include=FALSE}
