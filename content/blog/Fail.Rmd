@@ -45,13 +45,14 @@ Also, it's hard to read in these data.
 
 ## No column names {#no-column-names}
 
-These data are actual organized by columns, but notice how the column names are shown inline, e.g. with $\sigma = 5$.
+These data are actually organized by columns, but notice how the column names are shown inline, e.g. with $\sigma = 5$.
 
 ![](/img/data-images/no-column-names.png)
 
-We all know what the authors are trying to do here, but they have formatted the presentation the same way as data. That's the basic mistake. But taking that mistake as an intention to display data, a proper presentation should be
+We all know what the authors are trying to do here, but they have formatted the
+presentation the same way as data. That's the basic mistake. But taking that
+mistake as an intention to display data, a proper presentation should be
 
-Should be:
 
 background | n | xbar | s
 |-----------|---|------|------|
@@ -69,7 +70,9 @@ Where the data came from, perhaps even where the original data are stored.
 
 ## No codebook {#no-codebook}
 
-Omitting the codebook is practically universal in  intro textbooks. Sometimes, there is a narration  explaining the data, but this is not identified as a separate file as it should be to form good habits.
+Omitting the codebook is practically universal in intro textbooks. Sometimes
+there is a narration explaining the data, but this is not identified as a
+separate file as it should be to form good habits.
 
 There should be a reference to the meta-data for a table. Some possibilities:
 
