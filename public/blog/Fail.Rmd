@@ -9,7 +9,7 @@ banner: "img/banners/failure1.jpeg"
 
 <style>
 th,hd {
-  padding: 5px;
+  padding: 7px;
 }
 </style>
 
@@ -58,15 +58,17 @@ We all know what the authors are trying to do here, but they have formatted the
 presentation the same way as data. That's the basic mistake. But taking that
 mistake as an intention to display data, a proper presentation should be
 
+#### "Data"
 
-background | n | xbar | s
-|-----------|---|------|------|
-red  | 35 | 3.39 | 0.97
-blue | 36 | 3.97 | 0.63
+background | n    | xbar | s
+|----------|------|------|------|
+red        | 35   | 3.39 | 0.97
+blue       | 36   | 3.97 | 0.63
 
-CODEBOOK:
 
-- n: sample size
+#### Codebook
+
+- n: number of observations
 - xbar: sample mean
 - s: sample standard deviation
 - background: the color of ....
