@@ -7,8 +7,13 @@ categories:
 banner: "img/banners/failure1.jpeg"
 ---
 
-These are textbook examples of the presentation of data in ways that encourage bad habits.
+<style>
+th,hd {
+  padding: 5px;
+}
+</style>
 
+These are textbook examples of the presentation of data in ways that encourage bad habits.
 
 ## No columns {#no-columns}
 
@@ -19,7 +24,7 @@ This might look like a data frame, but the individual columns have no meaning an
 
 Should be:
 
-person id | times | sex
+person    | time  | sex
 ----------|-------|-----
 id792     | 4.3   | F
 id796     | 4.3   | F
