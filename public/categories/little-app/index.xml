@@ -12,18 +12,6 @@
     
     
     <item>
-<<<<<<< HEAD
-      <title>Little Apps: Orientation</title>
-      <link>/blog/la-orientation/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/la-orientation/</guid>
-      <description>Little Apps provide interactive computing with no coding to calculate statistics, fit models, and display statistical concepts.
-Every Little App is built around a common framework:
- At the core is a data graphic. The vertical axis is the response variable and the horizontal axis is the explanatory variable. Controls enable you to select a data set and variables. Set the sample size and easily display a new sample. Statistics are shown as annotations, always with respect to the data.</description>
-    </item>
-    
-    <item>
       <title>Bootstrapping</title>
       <link>/blog/la-bootstrap/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
@@ -35,8 +23,6 @@ The concept, of course, is the confidence interval. Rather than using a formula 
     </item>
     
     <item>
-=======
->>>>>>> 47a4a15c39d5910e08ec415669a57f18c7bc9f09
       <title>Introduction to data graphics</title>
       <link>/blog/la-point-plot/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>

@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Bootstrap</title>
+      <link>/tags/bootstrap/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Causality</title>
       <link>/tags/causality/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
@@ -255,6 +264,15 @@
     </item>
     
     <item>
+      <title>Simulation</title>
+      <link>/tags/simulation/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Skew</title>
       <link>/tags/skew/</link>
       <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
@@ -309,33 +327,9 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>bootstrap</title>
-      <link>/tags/bootstrap/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/bootstrap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>simulation</title>
-      <link>/tags/simulation/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/simulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R-square</title>
-      <link>/tags/r-square/</link>
-      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
-=======
       <title>Unit of Observarion</title>
       <link>/tags/unit-of-observarion/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
->>>>>>> 47a4a15c39d5910e08ec415669a57f18c7bc9f09
       
       <guid>/tags/unit-of-observarion/</guid>
       <description></description>
