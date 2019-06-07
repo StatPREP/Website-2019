@@ -20,7 +20,7 @@ tags:
 ## Activities
 
 * [Variables and their summary intervals](/blog/activity-summary-interval/)
-* [The standard deviation and the summary interval](/blog/activity-sd_and_summary_interval/)
+* [The standard deviation and the summary interval](/blog/activity-sd_and-summary-interval/)
 * [Shapes of distributions](/blog/activity-distribution-shapes/)
 * [The normal distribution](/blog/activity-normal-parameters/)
 
