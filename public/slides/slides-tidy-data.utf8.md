@@ -11,35 +11,24 @@ td,th {
 }
 
 .hilight {
-  border: 2px solid #40beed;
+  border: 2px solid #999999;
   border-radius: 4px;
 }
 
 </style>
 
-```{r setup, include = FALSE}
-library(dplyr)
-library(tidyr)
-library(printr)
-library(kableExtra)
 
-fail <- function(x) {
-    glue::glue("[*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#{x})")
-}
-```
 
 ## GAISE 2016
 
 1. Teach statistical thinking.
     * Teach statistics as an **investigative process** of problem-solving and 
     **decision-making**.
-    * Give students experience with 
-    <span class = "hilight">**multivariable thinking**</span>.
+    * Give students experience with **multivariable thinking**.
     
 2. Focus on conceptual understanding.
 
-3. Integrate <span class = "hilight">**real data**</span> 
-   with a **context** and **purpose**.
+3. Integrate **real data** with a **context** and **purpose**.
 
 4. Foster **active learning**.
 
@@ -113,14 +102,14 @@ about organizing data.
 ## Rules tame unruliness 
 
 1. Always in a "**spreadsheet**" (ie, rows and columns, electronic) 
-    `r fail("no-spreadsheet")` ✔︎✔︎✔︎
+    [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-spreadsheet) ✔︎✔︎✔︎
 2. **Rows**: One row per unit of observation/analysis
     - No other info (e.g. summaries, codebook info) in 
-    spreadsheet `r fail("no-annotations")`
+    spreadsheet [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-annotations)
     - *Any subset of rows is a valid data set.*
-3. **Columns**: One column per variable `r fail("no-columns")` 
-    - Always use column names `r fail("no-column-names")` 
-4. Always have a **codebook** `r fail("no-codebook")`
+3. **Columns**: One column per variable [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-columns) 
+    - Always use column names [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-column-names) 
+4. Always have a **codebook** [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-codebook)
     - Rows: how cases were selected
     - Columns: units, specific questions/protocols/methods
 5. **Segregate data** collection and data analysis 
@@ -128,10 +117,10 @@ about organizing data.
     
 ## Rules tame unruliness 
 
-1. Always in a "**spreadsheet**" (ie, rows and columns) `r fail("no-spreadsheet")` ✔︎✔︎✔︎
+1. Always in a "**spreadsheet**" (ie, rows and columns) [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-spreadsheet) ✔︎✔︎✔︎
 2. **Rows**: One row per unit of observation/analysis
-3. **Columns**: One column per variable `r fail("no-columns")` 
-4. Always have a **codebook** `r fail("no-codebook")`
+3. **Columns**: One column per variable [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-columns) 
+4. Always have a **codebook** [*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#no-codebook)
 5. **Segregate data** collection and data analysis 
     
 *Note: This sort of tidy/rectangular data is not the only kind of data, but it is an extremely important kind of data and sufficient for introductory courses.*
@@ -199,25 +188,131 @@ One advantage of tidy data is that it is ammenable to
 ## Long vs Wide Data
 
 
-```{r wide, echo = FALSE, message = FALSE}
-gapminder::gapminder %>% 
-    select(country, continent, year, lifeExp) %>%
-    head(4) %>%
-    kable() %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
-```
+<table class="table table-striped table-hover table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> country </th>
+   <th style="text-align:left;"> continent </th>
+   <th style="text-align:right;"> year </th>
+   <th style="text-align:right;"> lifeExp </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Afghanistan </td>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:right;"> 1952 </td>
+   <td style="text-align:right;"> 28.801 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Afghanistan </td>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:right;"> 1957 </td>
+   <td style="text-align:right;"> 30.332 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Afghanistan </td>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:right;"> 1962 </td>
+   <td style="text-align:right;"> 31.997 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Afghanistan </td>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:right;"> 1967 </td>
+   <td style="text-align:right;"> 34.020 </td>
+  </tr>
+</tbody>
+</table>
 
 <br>
 
-```{r long, echo = FALSE}
-gapminder::gapminder %>% 
-    select(country, continent, year, lifeExp) %>%
-    mutate(year = paste0("pop", year)) %>% 
-    spread(year, lifeExp) %>%
-    head(4) %>% 
-    kable() %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
-```
+<table class="table table-striped table-hover table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> country </th>
+   <th style="text-align:left;"> continent </th>
+   <th style="text-align:right;"> pop1952 </th>
+   <th style="text-align:right;"> pop1957 </th>
+   <th style="text-align:right;"> pop1962 </th>
+   <th style="text-align:right;"> pop1967 </th>
+   <th style="text-align:right;"> pop1972 </th>
+   <th style="text-align:right;"> pop1977 </th>
+   <th style="text-align:right;"> pop1982 </th>
+   <th style="text-align:right;"> pop1987 </th>
+   <th style="text-align:right;"> pop1992 </th>
+   <th style="text-align:right;"> pop1997 </th>
+   <th style="text-align:right;"> pop2002 </th>
+   <th style="text-align:right;"> pop2007 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Afghanistan </td>
+   <td style="text-align:left;"> Asia </td>
+   <td style="text-align:right;"> 28.801 </td>
+   <td style="text-align:right;"> 30.332 </td>
+   <td style="text-align:right;"> 31.997 </td>
+   <td style="text-align:right;"> 34.020 </td>
+   <td style="text-align:right;"> 36.088 </td>
+   <td style="text-align:right;"> 38.438 </td>
+   <td style="text-align:right;"> 39.854 </td>
+   <td style="text-align:right;"> 40.822 </td>
+   <td style="text-align:right;"> 41.674 </td>
+   <td style="text-align:right;"> 41.763 </td>
+   <td style="text-align:right;"> 42.129 </td>
+   <td style="text-align:right;"> 43.828 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Albania </td>
+   <td style="text-align:left;"> Europe </td>
+   <td style="text-align:right;"> 55.230 </td>
+   <td style="text-align:right;"> 59.280 </td>
+   <td style="text-align:right;"> 64.820 </td>
+   <td style="text-align:right;"> 66.220 </td>
+   <td style="text-align:right;"> 67.690 </td>
+   <td style="text-align:right;"> 68.930 </td>
+   <td style="text-align:right;"> 70.420 </td>
+   <td style="text-align:right;"> 72.000 </td>
+   <td style="text-align:right;"> 71.581 </td>
+   <td style="text-align:right;"> 72.950 </td>
+   <td style="text-align:right;"> 75.651 </td>
+   <td style="text-align:right;"> 76.423 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Algeria </td>
+   <td style="text-align:left;"> Africa </td>
+   <td style="text-align:right;"> 43.077 </td>
+   <td style="text-align:right;"> 45.685 </td>
+   <td style="text-align:right;"> 48.303 </td>
+   <td style="text-align:right;"> 51.407 </td>
+   <td style="text-align:right;"> 54.518 </td>
+   <td style="text-align:right;"> 58.014 </td>
+   <td style="text-align:right;"> 61.368 </td>
+   <td style="text-align:right;"> 65.799 </td>
+   <td style="text-align:right;"> 67.744 </td>
+   <td style="text-align:right;"> 69.152 </td>
+   <td style="text-align:right;"> 70.994 </td>
+   <td style="text-align:right;"> 72.301 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Angola </td>
+   <td style="text-align:left;"> Africa </td>
+   <td style="text-align:right;"> 30.015 </td>
+   <td style="text-align:right;"> 31.999 </td>
+   <td style="text-align:right;"> 34.000 </td>
+   <td style="text-align:right;"> 35.985 </td>
+   <td style="text-align:right;"> 37.928 </td>
+   <td style="text-align:right;"> 39.483 </td>
+   <td style="text-align:right;"> 39.942 </td>
+   <td style="text-align:right;"> 39.906 </td>
+   <td style="text-align:right;"> 40.647 </td>
+   <td style="text-align:right;"> 40.963 </td>
+   <td style="text-align:right;"> 41.003 </td>
+   <td style="text-align:right;"> 42.731 </td>
+  </tr>
+</tbody>
+</table>
 
 
 ## Quiz
