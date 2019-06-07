@@ -190,7 +190,13 @@
                         <p class="text-muted text-uppercase mb-small text-right">May 6, 2019</p>
 
                         <div id="post-content">
-                          <div id="gaise-2016" class="section level2">
+                          <style>
+td,th {
+  padding: 5px;
+}
+
+</style>
+<div id="gaise-2016" class="section level2">
 <h2>GAISE 2016</h2>
 <ol style="list-style-type: decimal">
 <li>Teach statistical thinking.
@@ -235,7 +241,7 @@ about organizing data.
 <li>In textbooks, teaching about data focusses on variable types,
 not organization.</li>
 </ul></li>
-<li>Organizing data properly is critically important to …
+<li>Organizing data properly is critically important for …
 <ul>
 <li><strong>thinking</strong> correctly with data</li>
 <li>using real data with <strong>technology</strong></li>
@@ -256,8 +262,11 @@ but few mathematicians know about it.</li>
 <div id="unruly-data" class="section level3">
 <h3>Unruly data</h3>
 <p><strong>unruly</strong>: (adj.) disorderly and disruptive and not amenable to discipline or control</p>
+<div id="some-examples" class="section level4">
+<h4>Some Examples</h4>
 <p><img src="/img/data-images/no-columns.png" /></p>
 <p><img src="/img/data-images/missing-data.png" /></p>
+</div>
 </div>
 <div id="rules-tame-unruliness" class="section level3">
 <h3>Rules tame unruliness</h3>
@@ -319,16 +328,21 @@ but few mathematicians know about it.</li>
 <li>in spreadsheet: <a href="https://support.google.com/docs/answer/1272900">pivot table</a></li>
 <li>in R: grouping variables to right of tilde, e.g. <code>blood_pressure ~ age + sex</code></li>
 </ul></li>
-<li><strong>filter</strong> / <strong>select</strong>: remove/ignore rows or columns
+<li><strong>filter</strong>: remove/ignore rows or columns
 <ul>
 <li>in spreadsheet: <a href="https://support.google.com/docs/answer/3540681">“hide” data</a></li>
-<li>in R: <code>filter()</code> for rows, <code>select()</code> for columns</li>
+<li>in R: <code>filter()</code></li>
 </ul></li>
 </ul>
 </div>
 <div id="superficial" class="section level3">
 <h3>Superficial</h3>
 <ul>
+<li><strong>select</strong>: remove/ignore columns
+<ul>
+<li>in spreadsheet: <a href="https://support.google.com/docs/answer/3540681">“hide” data</a></li>
+<li>in R: <code>select()</code></li>
+</ul></li>
 <li><strong>arrange</strong>
 <ul>
 <li>in spreadsheet, “sort”. But how do you do this without altering the data?</li>
@@ -349,6 +363,371 @@ but few mathematicians know about it.</li>
 <li>in R: <code>spread()</code>, <code>gather()</code> [soon to be <code>pivot_wide()</code>, <code>pivot_long()</code>]</li>
 </ul></li>
 </ul>
+<div id="long-vs-wide-data" class="section level4">
+<h4>Long vs Wide Data</h4>
+<p><strong>Long</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+country
+</th>
+<th style="text-align:left;">
+continent
+</th>
+<th style="text-align:right;">
+year
+</th>
+<th style="text-align:right;">
+lifeExp
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:left;">
+Asia
+</td>
+<td style="text-align:right;">
+1952
+</td>
+<td style="text-align:right;">
+28.801
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:left;">
+Asia
+</td>
+<td style="text-align:right;">
+1957
+</td>
+<td style="text-align:right;">
+30.332
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:left;">
+Asia
+</td>
+<td style="text-align:right;">
+1962
+</td>
+<td style="text-align:right;">
+31.997
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:left;">
+Asia
+</td>
+<td style="text-align:right;">
+1967
+</td>
+<td style="text-align:right;">
+34.020
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:left;">
+Asia
+</td>
+<td style="text-align:right;">
+1972
+</td>
+<td style="text-align:right;">
+36.088
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wide</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+country
+</th>
+<th style="text-align:left;">
+continent
+</th>
+<th style="text-align:right;">
+pop1952
+</th>
+<th style="text-align:right;">
+pop1957
+</th>
+<th style="text-align:right;">
+pop1962
+</th>
+<th style="text-align:right;">
+pop1967
+</th>
+<th style="text-align:right;">
+pop1972
+</th>
+<th style="text-align:right;">
+pop1977
+</th>
+<th style="text-align:right;">
+pop1982
+</th>
+<th style="text-align:right;">
+pop1987
+</th>
+<th style="text-align:right;">
+pop1992
+</th>
+<th style="text-align:right;">
+pop1997
+</th>
+<th style="text-align:right;">
+pop2002
+</th>
+<th style="text-align:right;">
+pop2007
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Afghanistan
+</td>
+<td style="text-align:left;">
+Asia
+</td>
+<td style="text-align:right;">
+28.801
+</td>
+<td style="text-align:right;">
+30.332
+</td>
+<td style="text-align:right;">
+31.997
+</td>
+<td style="text-align:right;">
+34.020
+</td>
+<td style="text-align:right;">
+36.088
+</td>
+<td style="text-align:right;">
+38.438
+</td>
+<td style="text-align:right;">
+39.854
+</td>
+<td style="text-align:right;">
+40.822
+</td>
+<td style="text-align:right;">
+41.674
+</td>
+<td style="text-align:right;">
+41.763
+</td>
+<td style="text-align:right;">
+42.129
+</td>
+<td style="text-align:right;">
+43.828
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Albania
+</td>
+<td style="text-align:left;">
+Europe
+</td>
+<td style="text-align:right;">
+55.230
+</td>
+<td style="text-align:right;">
+59.280
+</td>
+<td style="text-align:right;">
+64.820
+</td>
+<td style="text-align:right;">
+66.220
+</td>
+<td style="text-align:right;">
+67.690
+</td>
+<td style="text-align:right;">
+68.930
+</td>
+<td style="text-align:right;">
+70.420
+</td>
+<td style="text-align:right;">
+72.000
+</td>
+<td style="text-align:right;">
+71.581
+</td>
+<td style="text-align:right;">
+72.950
+</td>
+<td style="text-align:right;">
+75.651
+</td>
+<td style="text-align:right;">
+76.423
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Algeria
+</td>
+<td style="text-align:left;">
+Africa
+</td>
+<td style="text-align:right;">
+43.077
+</td>
+<td style="text-align:right;">
+45.685
+</td>
+<td style="text-align:right;">
+48.303
+</td>
+<td style="text-align:right;">
+51.407
+</td>
+<td style="text-align:right;">
+54.518
+</td>
+<td style="text-align:right;">
+58.014
+</td>
+<td style="text-align:right;">
+61.368
+</td>
+<td style="text-align:right;">
+65.799
+</td>
+<td style="text-align:right;">
+67.744
+</td>
+<td style="text-align:right;">
+69.152
+</td>
+<td style="text-align:right;">
+70.994
+</td>
+<td style="text-align:right;">
+72.301
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Angola
+</td>
+<td style="text-align:left;">
+Africa
+</td>
+<td style="text-align:right;">
+30.015
+</td>
+<td style="text-align:right;">
+31.999
+</td>
+<td style="text-align:right;">
+34.000
+</td>
+<td style="text-align:right;">
+35.985
+</td>
+<td style="text-align:right;">
+37.928
+</td>
+<td style="text-align:right;">
+39.483
+</td>
+<td style="text-align:right;">
+39.942
+</td>
+<td style="text-align:right;">
+39.906
+</td>
+<td style="text-align:right;">
+40.647
+</td>
+<td style="text-align:right;">
+40.963
+</td>
+<td style="text-align:right;">
+41.003
+</td>
+<td style="text-align:right;">
+42.731
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Argentina
+</td>
+<td style="text-align:left;">
+Americas
+</td>
+<td style="text-align:right;">
+62.485
+</td>
+<td style="text-align:right;">
+64.399
+</td>
+<td style="text-align:right;">
+65.142
+</td>
+<td style="text-align:right;">
+65.634
+</td>
+<td style="text-align:right;">
+67.065
+</td>
+<td style="text-align:right;">
+68.481
+</td>
+<td style="text-align:right;">
+69.942
+</td>
+<td style="text-align:right;">
+70.774
+</td>
+<td style="text-align:right;">
+71.868
+</td>
+<td style="text-align:right;">
+73.275
+</td>
+<td style="text-align:right;">
+74.340
+</td>
+<td style="text-align:right;">
+75.320
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div id="quiz" class="section level2">

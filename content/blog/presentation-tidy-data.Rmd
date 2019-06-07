@@ -9,7 +9,19 @@ categories:
 banner: "img/banners/dictionary-banner.jpg"
 ---
 
-```{r include = FALSE}
+<style>
+td,th {
+  padding: 5px;
+}
+
+</style>
+
+```{r setup, include = FALSE}
+library(dplyr)
+library(tidyr)
+library(printr)
+library(kableExtra)
+
 fail <- function(x) {
     glue::glue("[*fail*](/blog/fail/#{x})")
 }
@@ -57,7 +69,7 @@ Discipline in presenting data encourages good work habits.
 about organizing data.
     - In textbooks, teaching about data focusses on variable types, 
     not organization. 
-* Organizing data properly is critically important to ...
+* Organizing data properly is critically important for ...
     - **thinking** correctly with data
     - using real data with **technology**
     
@@ -73,6 +85,8 @@ about organizing data.
 ### Unruly data
  
 **unruly**: (adj.) disorderly and disruptive and not amenable to discipline or control
+
+#### Some Examples 
 
 ![](/img/data-images/no-columns.png)
 
@@ -120,12 +134,15 @@ One advantage of tidy data is that it is ammenable to
 - **group**: handle summarize and mutate in a groupwise way
     - in spreadsheet: [pivot table](https://support.google.com/docs/answer/1272900)
     - in R: grouping variables to right of tilde, e.g. `blood_pressure ~ age + sex` 
-- **filter** / **select**: remove/ignore rows or columns
+- **filter**: remove/ignore rows or columns
     - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
-    - in R: `filter()` for rows, `select()` for columns
+    - in R: `filter()`
 
 ### Superficial
 
+- **select**: remove/ignore columns
+    - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
+    - in R: `select()` 
 - **arrange**
     - in spreadsheet, "sort". But how do you do this without altering the data?
     - in R: `arrange()`
@@ -137,7 +154,31 @@ One advantage of tidy data is that it is ammenable to
 - **spread** / **gather**: change unit of analysis
     - in spreadsheet [pivot/unpivot](https://eagereyes.org/basics/spreadsheet-thinking-vs-database-thinking) 
     - in R: `spread()`, `gather()` [soon to be `pivot_wide()`, `pivot_long()`]
-    
+
+#### Long vs Wide Data
+
+
+**Long**
+
+```{r wide, echo = FALSE, message = FALSE}
+gapminder::gapminder %>% 
+    select(country, continent, year, lifeExp) %>%
+    head(5) %>%
+    kable()
+```
+
+**Wide**
+
+```{r long, echo = FALSE}
+gapminder::gapminder %>% 
+    select(country, continent, year, lifeExp) %>%
+    mutate(year = paste0("pop", year)) %>% 
+    spread(year, lifeExp) %>%
+    head(5) %>% 
+    kable()
+```
+
+
 ## Quiz
 
 ![](/img/data-images/many-problems.png)

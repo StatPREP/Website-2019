@@ -333,13 +333,12 @@ An unbiased sample is one where each member of the population has exactly the sa
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/presentation-tidy-data/</guid>
-      <description>GAISE 2016 Teach statistical thinking.  Teach statistics as an investigative process of problem-solving and decision-making. Give students experience with multivariable thinking.  Focus on conceptual understanding.
+      <description>td,th { padding: 5px; }  GAISE 2016 Teach statistical thinking.  Teach statistics as an investigative process of problem-solving and decision-making. Give students experience with multivariable thinking.  Focus on conceptual understanding.
  Integrate real data with a context and purpose.
  Foster active learning.
  Use technology to explore concepts and analyze data.
  Use assessments to improve and evaluate student learning.
-   Real data The StatPREP definition:
- captured in the wild: not collected for teaching statistics appropriate for investigation of a particular question or set of questions  large enough (think: \(n \ge 1000\)) rich enough (think: 5 or more variables)   For the moment, put aside the important matters of context and purpose.</description>
+   Real data The StatPREP definition:</description>
     </item>
     
     <item>
