@@ -114,34 +114,54 @@ filePath <- "institution.txt"
 rquery.wordcloud(filePath, type ="file", lang = "english", textStemming = FALSE, min.freq = 5)
 ```
 
-
-
 ## Background and experience
 
 From the pre-workshop survey
 
 - Institution type
-    - 8 / 19 Two-year college 17/34
-    - 12 / 19 Four year institution 16/34
+    - Two-year college 17/34
+    - Four year institution 16/34
 - Grad-school discipline
-   - 18 / 19 Mathematics  30 / 34
-   - 2 / 19 Computer science
-   - 2 / 19 Engineering
-   - 0 / 19 Statistics 9 / 34 *** big difference from Hartford
+   - Mathematics  30 / 34
+   - Statistics 9 / 34 
+   - OR / Economics / Healthcare Admin 3 / 34
 - Statistics experience
-   - 3 / 19  studied applied statistics in  grad school 18 / 31
-   - 2 / 18  studied theoretical statistics in grad school 15 / 33
-   - 7 / 18  do applied statistics outside of teaching 10 / 34
+   - studied applied statistics in  grad school 18 / 31
+   - studied theoretical statistics in grad school 15 / 33
+   - do applied statistics outside of teaching 10 / 34
 - Teaching experience: number with > 2 years experience
-    - 15 / 16 "other" mathematics (1 has no experience) 26 / 31
-    - 14 / 19 calculus (1 has no experience) 19 / 31
-    - 10 / 19 college algebra (4 have no experienceª) 21 / 31
-    - 7 / 19 intro stat 23 / 32 (2 have no experience)
-    - 3 / 16 computer science (12 have no experience) 1 / 24
-    - 3 / 18 statistics (7 have  no experience) 13 / 31
-   
-✽ Might these be 4-year instructors at institutions without a college algebra course?
+    - "other" mathematics  26 / 31
+        - intro stat 23 / 32 (2 have no experience)
+        - college algebra  21 / 31
+    - calculus (1 has no experience) 19 / 31
+    - non-intro statistics (7 have  no experience) 13 / 31
+ 
+### Changing faster and faster ... 
 
+How has the content and application of our field changed?
+
+* Statistics:
+     
+    - Bayes and MCMC (since 1990)
+    - Databases (since 1965)
+    - Confounders and causation (since 1960)
+    - Modern modes of graphics (since approx. 1990)
+    - Machine learning (since 2010)
+
+* College algebra:
+
+    - ?
+    
+* Calculus
+
+    - ?
+    
+* Trigonometry
+
+    - ?
+    
+For examples of change, see [Nick Horton's](http://www.math.smith.edu/~nhorton/doctor.pdf) article on changes in the *New England Journal of Medicine* over the 15 years to 2005.
+    
 ### How teaching calculus might distort a view of statistics
 
 Example of calculus-like problem ... of a sort that I very rarely see in statistical work.
@@ -152,6 +172,53 @@ Example of calculus-like problem ... of a sort that I very rarely see in statist
 - What is the proportion of students scoring between 400 and 550? 
 - How high must a student score to place in the top 10% of all students taking the SAT? State answer as a whole number. 
 - Using the empirical rule, what is the probability that a randomly [selected] SAT test will have a verbal score between 629 and 853?
+    
+   
+### Goals countdown: 3, 2, 1, ...
+
+- **GAISE Recommendation 3**: Integrate real data with a context and a purpose.
+    - You: 30 / 33 said learning how to incorporate real data into classes is their important or their top priority. 12 / 33 said "top priority" (So we'll have to talk about what is "real data.")
+
+- **GAISE Recommendation 2**: Focus on conceptual understanding.
+    * "*Pare down content of an introductory course to focus on core concepts in more depth.*"
+    - You: 29 / 32 -- The many methods covered in introductory statistics can be reduced to a small set of common principles.
+        * What are those principles? [Write them down here](https://docs.google.com/document/d/12rFpIZnr6abpkpfbRD-GFixI3T-vuX8zvYAUd-2WBu4/edit?usp=sharing)
+    
+    * "*Perform most computations using technology to allow greater emphasis on understanding concepts and interpreting results.*"
+
+    - You: 29 / 32 Computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
+    - You: Only 8 / 33 were confident in using computer programs to analyze data or data sets
+    - You: 30 / 33 Proficiency in using computers to handle and manage data should be an important goal of a statistics course.
+
+- **GAISE Recommendation 1**: Teach statistical thinking.
+
+    - Teach statistics as an investigative process of problem-solving and decision-making
+        * *"[I]nstructors [should] illustrate the complete investigative cycle with every example/exercise presented."*
+
+    - Give students experience with multivariable thinking.
+        - Characterizing relationships involving multiple (more than 3) variables:
+            Never: 12/30, Rarely 9/30, Sometimes 9/30
+        - You: Only 9 / 33 were confident in **developing data models**.
+
+
+
+
+
+
+## Three components of the workshop
+
+1. Things you can directly use in teaching:
+    - Exploring data-driven activities via Little Apps
+    - We've got about 20 activities on a variety of topics in statistics. 
+2. Faculty development: Statistics topics the textbook doesn't cover
+    - Bootstrapping
+    - Unifying inference with regression
+3. Faculty development: Data science
+    - Sources of data, graphing data
+    - R ecosystem
+    
+Levels will range from the easy to the aspirational.
+
 
 
 ### Your priorities
@@ -180,6 +247,10 @@ Possible issues:
 - what does "developing" mean?
 - what does "models" mean?
 - and, maybe, what does "data" mean?
+
+
+    
+
 
 ### Software vs by hand
 
@@ -257,19 +328,6 @@ Grade: B- overall
 - 15 / 31 Technology constraints
 
 
-## Three components of the workshop
-
-1. Things you can directly use in teaching:
-    - Exploring data-driven activities via Little Apps
-    - We've got about 20 activities on a variety of topics in statistics. 
-2. Faculty development: Statistics topics the textbook doesn't cover
-    - Bootstrapping
-    - Unifying inference with regression
-3. Faculty development: Data science
-    - Sources of data, graphing data
-    - R ecosystem
-    
-Levels will range from the easy to the aspirational.
 
 
 

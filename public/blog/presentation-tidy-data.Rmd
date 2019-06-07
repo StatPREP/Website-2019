@@ -164,7 +164,8 @@ One advantage of tidy data is that it is ammenable to
 gapminder::gapminder %>% 
     select(country, continent, year, lifeExp) %>%
     head(5) %>%
-    kable()
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
 ```
 
 **Wide**
@@ -175,7 +176,8 @@ gapminder::gapminder %>%
     mutate(year = paste0("pop", year)) %>% 
     spread(year, lifeExp) %>%
     head(5) %>% 
-    kable()
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
 ```
 
 
