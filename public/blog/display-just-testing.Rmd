@@ -1,9 +1,0 @@
----
-title: "The title and more"
-date: "2019-06-04"
-categories:
-  - presentations
-description: "What I'm ;doing"
----
-
-Boo ;boo boo

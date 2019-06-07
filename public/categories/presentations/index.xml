@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>presentations on StatPREP Workshops 2019</title>
+    <title>Presentations on StatPREP Workshops 2019</title>
     <link>/categories/presentations/</link>
-    <description>Recent content in presentations on StatPREP Workshops 2019</description>
+    <description>Recent content in Presentations on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
@@ -43,7 +43,7 @@ If you’re looking for materials for use in class or other student-oriented set
     </item>
     
     <item>
-      <title>Tidying data</title>
+      <title>Tidy Data</title>
       <link>/blog/presentation-tidy-data/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
@@ -54,7 +54,7 @@ If you’re looking for materials for use in class or other student-oriented set
  Use technology to explore concepts and analyze data.
  Use assessments to improve and evaluate student learning.
    Real data The StatPREP definition:
- captured in the wild: not collected for teaching statistics appropriate for investigation of a particular question or set of questions  large enough: (think 1000 or more observational units) rich enough: (think 4 or more variables)   For the moment, put aside the important matters of context and purpose.</description>
+ captured in the wild: not collected for teaching statistics appropriate for investigation of a particular question or set of questions  large enough (think: \(n \ge 1000\)) rich enough (think: 5 or more variables)   For the moment, put aside the important matters of context and purpose.</description>
     </item>
     
     <item>
