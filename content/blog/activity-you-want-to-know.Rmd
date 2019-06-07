@@ -1,16 +1,17 @@
 ---
 title: 'You Want to Know: Cases, Variables, and Study Goals'
-categories: activities
 date: '2019-06-04'
 output:
   pdf_document: default
   html_document:
     df_print: paged
 slug: activity-you-want-to-know
+categories: 
+    - activities
 tags:
-- tidy-data
-- unit-of-observation
-- variables
+    - tidy-data
+    - unit-of-observation
+    - variables
 banner: img/banners/banner-question-mark.jpeg
 ---
 
