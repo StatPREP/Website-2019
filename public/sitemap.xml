@@ -337,6 +337,7 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/blog/activity-you-want-to-know/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
   </url>
@@ -349,6 +350,16 @@
   <url>
     <loc>/categories/activities/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+=======
+    <loc>/tags/bootstrap/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
     <priority>0</priority>
   </url>
   
@@ -359,8 +370,13 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/tidy-data/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+=======
+    <loc>/tags/cloud/</loc>
+    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
     <priority>0</priority>
   </url>
   
@@ -537,8 +553,19 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/median/</loc>
     <lastmod>2019-04-25T00:00:00+00:00</lastmod>
+=======
+    <loc>/tags/simulation/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/skew/</loc>
+    <lastmod>2017-05-31T00:00:00+00:00</lastmod>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
     <priority>0</priority>
   </url>
   
@@ -577,6 +604,7 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/bootstrap/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -591,6 +619,11 @@
   <url>
     <loc>/blog/instructions-linear-regression/</loc>
     <lastmod>2019-04-15T00:00:00+00:00</lastmod>
+=======
+    <loc>/tags/tidy-data/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
   </url>
   
   <url>

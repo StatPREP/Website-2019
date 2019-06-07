@@ -14,7 +14,10 @@ title: "Workshop schedule: Howard Community College"
 - 2:00 pm - 2:15 pm: [Welcome](/blog/presentation-welcome/) & housekeeping Announcements
 - 2:15 pm - 2:30 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics 
 - 2:30 pm - 2:50 pm: [GAISE and ASA/AMATYC guidelines to teaching statistics](/blog/presentation-GAISE-ASA/) (Andy Zieffler)
-- 2:50 pm - 3:20 pm: [Tidy data](/blog/presentation-tidy-data/) (Randy Pruim)
+- 2:50 pm - 3:20 pm: Tidy data 
+                     [[slides](/slides/slides-tidy-data.html)] 
+                     [[notes](/blog/presentation-tidy-data/)]
+                     (Randy Pruim)
 
 - 3:20 pm - 3:30 pm: Break
 

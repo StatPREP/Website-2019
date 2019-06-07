@@ -12,6 +12,7 @@
     
     
     <item>
+<<<<<<< HEAD
       <title>Little Apps: Orientation</title>
       <link>/blog/la-orientation/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
@@ -23,6 +24,8 @@ Every Little App is built around a common framework:
     </item>
     
     <item>
+=======
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
       <title>Bootstrapping</title>
       <link>/blog/la-bootstrap/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>

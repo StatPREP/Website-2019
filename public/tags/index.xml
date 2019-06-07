@@ -21,9 +21,24 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>stats_for_data_science</title>
       <link>/tags/stats_for_data_science/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+=======
+      <title>Bootstrap</title>
+      <link>/tags/bootstrap/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Causality</title>
+      <link>/tags/causality/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
       
       <guid>/tags/stats_for_data_science/</guid>
       <description></description>
@@ -255,9 +270,24 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>mean</title>
       <link>/tags/mean/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+=======
+      <title>Simulation</title>
+      <link>/tags/simulation/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skew</title>
+      <link>/tags/skew/</link>
+      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
       
       <guid>/tags/mean/</guid>
       <description></description>
@@ -309,6 +339,7 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>bootstrap</title>
       <link>/tags/bootstrap/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
@@ -330,6 +361,11 @@
       <title>R-square</title>
       <link>/tags/r-square/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+=======
+      <title>Unit of Observarion</title>
+      <link>/tags/unit-of-observarion/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
       
       <guid>/tags/r-square/</guid>
       <description></description>

@@ -57,9 +57,15 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>activities</title>
       <link>/categories/activities/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+=======
+      <title>Presentations</title>
+      <link>/categories/presentations/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+>>>>>>> d8adcb921e225e81433280c9b13b11100fcf369a
       
       <guid>/categories/activities/</guid>
       <description></description>
