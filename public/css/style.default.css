@@ -482,8 +482,7 @@ ul.list-style-none {
   transition: all 0.5s ease-out;
 }
 .navbar-affixed-top.affix {
-  position: relative; /* was fixed to keep the menu in sight */
-  width: 100%;
+  position: relative; /* was "fixed" to keep the menu in sight */  width: 100%;
   top: 0;
   z-index: 1000;
   -webkit-box-shadow: 0 0 5px #cccccc;
