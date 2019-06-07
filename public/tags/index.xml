@@ -6,238 +6,13 @@
     <description>Recent content in Tags on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>MAA connect</title>
-      <link>/tags/maa-connect/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/maa-connect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>stats_for_data_science</title>
-      <link>/tags/stats_for_data_science/</link>
-      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/stats_for_data_science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tidy-data</title>
-      <link>/tags/tidy-data/</link>
-      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tidy-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unit-of-observarion</title>
-      <link>/tags/unit-of-observarion/</link>
-      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/unit-of-observarion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unit-of-observation</title>
-      <link>/tags/unit-of-observation/</link>
-      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/unit-of-observation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>variables</title>
-      <link>/tags/variables/</link>
-      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/variables/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flexibility</title>
-      <link>/tags/flexibility/</link>
-      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/flexibility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pdf-format</title>
-      <link>/tags/pdf-format/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/pdf-format/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>word-format</title>
-      <link>/tags/word-format/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/word-format/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RStudio</title>
-      <link>/tags/rstudio/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cloud</title>
-      <link>/tags/cloud/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data_sources</title>
-      <link>/tags/data_sources/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/data_sources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>risk</title>
-      <link>/tags/risk/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/risk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DAG</title>
-      <link>/tags/dag/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/dag/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>causality</title>
-      <link>/tags/causality/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/causality/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R-squared</title>
-      <link>/tags/r-squared/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r-squared/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>normal</title>
-      <link>/tags/normal/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/normal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rare</title>
-      <link>/tags/rare/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/rare/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>z-score</title>
-      <link>/tags/z-score/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/z-score/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>distribution-shapes</title>
-      <link>/tags/distribution-shapes/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/distribution-shapes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>confidence-interval</title>
-      <link>/tags/confidence-interval/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/confidence-interval/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>t-test</title>
-      <link>/tags/t-test/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/t-test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>F-test</title>
-      <link>/tags/f-test/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/f-test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>inference</title>
-      <link>/tags/inference/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/inference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bias</title>
+      <title>Bias</title>
       <link>/tags/bias/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
@@ -246,52 +21,61 @@
     </item>
     
     <item>
-      <title>graphics</title>
-      <link>/tags/graphics/</link>
-      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      <title>Causality</title>
+      <link>/tags/causality/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/graphics/</guid>
+      <guid>/tags/causality/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>mean</title>
-      <link>/tags/mean/</link>
-      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mean/</guid>
+      <guid>/tags/cloud/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>median</title>
-      <link>/tags/median/</link>
-      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Confidence Interval</title>
+      <link>/tags/confidence-interval/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/median/</guid>
+      <guid>/tags/confidence-interval/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>standard deviation</title>
-      <link>/tags/standard-deviation/</link>
-      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Dag</title>
+      <link>/tags/dag/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/standard-deviation/</guid>
+      <guid>/tags/dag/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>summary interval</title>
-      <link>/tags/summary-interval/</link>
-      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Data_sources</title>
+      <link>/tags/data_sources/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/summary-interval/</guid>
+      <guid>/tags/data_sources/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>experiment</title>
+      <title>Distribution Shapes</title>
+      <link>/tags/distribution-shapes/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/distribution-shapes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experiment</title>
       <link>/tags/experiment/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -300,7 +84,88 @@
     </item>
     
     <item>
-      <title>normal-distribution</title>
+      <title>F Test</title>
+      <link>/tags/f-test/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/f-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flexibility</title>
+      <link>/tags/flexibility/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/flexibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>/tags/graphics/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inference</title>
+      <link>/tags/inference/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jittering</title>
+      <link>/tags/jittering/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/jittering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maa Connect</title>
+      <link>/tags/maa-connect/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/maa-connect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mean</title>
+      <link>/tags/mean/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mean/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Median</title>
+      <link>/tags/median/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/median/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Normal</title>
+      <link>/tags/normal/</link>
+      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/normal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Normal Distribution</title>
       <link>/tags/normal-distribution/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -309,6 +174,142 @@
     </item>
     
     <item>
+      <title>Pdf Format</title>
+      <link>/tags/pdf-format/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pdf-format/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proportions</title>
+      <link>/tags/proportions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/proportions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Square</title>
+      <link>/tags/r-square/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r-square/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Squared</title>
+      <link>/tags/r-squared/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r-squared/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rare</title>
+      <link>/tags/rare/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Response vs Explanatory</title>
+      <link>/tags/response-vs-explanatory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/response-vs-explanatory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risk</title>
+      <link>/tags/risk/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/risk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstudio</title>
+      <link>/tags/rstudio/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skew</title>
+      <link>/tags/skew/</link>
+      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/skew/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standard Deviation</title>
+      <link>/tags/standard-deviation/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/standard-deviation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stats_for_data_science</title>
+      <link>/tags/stats_for_data_science/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stats_for_data_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summary Interval</title>
+      <link>/tags/summary-interval/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/summary-interval/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T Test</title>
+      <link>/tags/t-test/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/t-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tidy Data</title>
+      <link>/tags/tidy-data/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidy-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
       <title>bootstrap</title>
       <link>/tags/bootstrap/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
@@ -330,44 +331,49 @@
       <title>R-square</title>
       <link>/tags/r-square/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+=======
+      <title>Unit of Observarion</title>
+      <link>/tags/unit-of-observarion/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+>>>>>>> 47a4a15c39d5910e08ec415669a57f18c7bc9f09
       
-      <guid>/tags/r-square/</guid>
+      <guid>/tags/unit-of-observarion/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>jittering</title>
-      <link>/tags/jittering/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Unit of Observation</title>
+      <link>/tags/unit-of-observation/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/jittering/</guid>
+      <guid>/tags/unit-of-observation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>skew</title>
-      <link>/tags/skew/</link>
-      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+      <title>Variables</title>
+      <link>/tags/variables/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/skew/</guid>
+      <guid>/tags/variables/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>proportions</title>
-      <link>/tags/proportions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Word Format</title>
+      <link>/tags/word-format/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/proportions/</guid>
+      <guid>/tags/word-format/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>response-vs-explanatory</title>
-      <link>/tags/response-vs-explanatory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Z Score</title>
+      <link>/tags/z-score/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/response-vs-explanatory/</guid>
+      <guid>/tags/z-score/</guid>
       <description></description>
     </item>
     

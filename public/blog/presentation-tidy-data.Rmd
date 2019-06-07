@@ -9,7 +9,20 @@ categories:
 banner: "img/banners/dictionary-banner.jpg"
 ---
 
-```{r include = FALSE}
+
+<style>
+td,th {
+  padding: 5px;
+}
+
+</style>
+
+```{r setup, include = FALSE}
+library(dplyr)
+library(tidyr)
+library(printr)
+library(kableExtra)
+
 fail <- function(x) {
     glue::glue("[*fail*](/blog/fail/#{x})")
 }
@@ -57,7 +70,7 @@ Discipline in presenting data encourages good work habits.
 about organizing data.
     - In textbooks, teaching about data focusses on variable types, 
     not organization. 
-* Organizing data properly is critically important to ...
+* Organizing data properly is critically important for ...
     - **thinking** correctly with data
     - using real data with **technology**
     
@@ -73,6 +86,8 @@ about organizing data.
 ### Unruly data
  
 **unruly**: (adj.) disorderly and disruptive and not amenable to discipline or control
+
+#### Some Examples 
 
 ![](/img/data-images/no-columns.png)
 
@@ -117,27 +132,56 @@ One advantage of tidy data is that it is ammenable to
 - **mutate** / **transform**: add new variable
     - in spreadsheet: add a new column
     - in R: `mutate()`
-- **group**: handle summarize and mutate in a groupwise way
-    - in spreadsheet: [pivot table](https://support.google.com/docs/answer/1272900)
-    - in R: grouping variables to right of tilde, e.g. `blood_pressure ~ age + sex` 
-- **filter** / **select**: remove/ignore rows or columns
+- **filter**: remove/ignore rows or columns
     - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
-    - in R: `filter()` for rows, `select()` for columns
+    - in R: `filter()`
 
 ### Superficial
 
+- **select**: remove/ignore columns
+    - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
+    - in R: `select()` 
 - **arrange**
     - in spreadsheet, "sort". But how do you do this without altering the data?
     - in R: `arrange()`
 
 ### Profound
 
+- **group**: handle summarize and mutate in a groupwise way
+    - in spreadsheet: [pivot table](https://support.google.com/docs/answer/1272900)
+    - in R: `group_by()`; formulas (eg, `blood_pressure ~ age + sex`)
 - **join**: bring together data from multiple sources
     - in spreadsheet ["fusion tables"](https://support.google.com/fusiontables/answer/171254?hl=en) but will be [phased out in Dec. 2019 in terms of SQL operations](https://support.google.com/fusiontables/answer/9185417)
 - **spread** / **gather**: change unit of analysis
     - in spreadsheet [pivot/unpivot](https://eagereyes.org/basics/spreadsheet-thinking-vs-database-thinking) 
     - in R: `spread()`, `gather()` [soon to be `pivot_wide()`, `pivot_long()`]
-    
+
+#### Long vs Wide Data
+
+
+**Long**
+
+```{r wide, echo = FALSE, message = FALSE}
+gapminder::gapminder %>% 
+    select(country, continent, year, lifeExp) %>%
+    head(5) %>%
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
+```
+
+**Wide**
+
+```{r long, echo = FALSE}
+gapminder::gapminder %>% 
+    select(country, continent, year, lifeExp) %>%
+    mutate(year = paste0("pop", year)) %>% 
+    spread(year, lifeExp) %>%
+    head(5) %>% 
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
+```
+
+
 ## Quiz
 
 ![](/img/data-images/many-problems.png)
@@ -154,24 +198,28 @@ In stats book:
 
 Key distinction / minor distinctions
 
-- **numerical**: interval, ratio, count, measure,  ...
+- **numerical/quantitative**: interval, ratio, count, measure,  ...
 - **categorical**: unordered, ordered
     
 
-### Variable types in actual use:
+### Variable types in the wild
 
-1. numerical: 
+1. Numerical 
     a. **quantities** (with **dimension** and **units**) --
     a. **times** and **dates**
     a. **counts** (natural numbers)
-    a. ~~codes: codes represent discrete levels, not really numerical~~
+    a. ~~codes represent discrete levels, not really numerical~~
     
 <!-- it's worthwhile to be able to distinquish these special types -->
 <!--     i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent  -->
 <!--     of the units, e.g.  counts, growth rates -->
 <!--             - in graphics, make sure zero is on the axis! -->
 
-2. categorical: 
+2. Categorical 
+    a. "Two-sample" isn't (usually) two samples
+        * one sample, two **variables**
+        * categorical variable identifies the group
+    a. Summarizing with proportions doesn't make categrical data numerical
     a. fixed vs "random" 
         * Fixed: data contains all levels of interest
         * Random: data represents a subset of/sample from levels of interest

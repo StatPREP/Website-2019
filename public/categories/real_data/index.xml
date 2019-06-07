@@ -17,13 +17,12 @@
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/presentation-tidy-data/</guid>
-      <description>GAISE 2016 Teach statistical thinking.  Teach statistics as an investigative process of problem-solving and decision-making. Give students experience with multivariable thinking.  Focus on conceptual understanding.
+      <description>td,th { padding: 5px; }  GAISE 2016 Teach statistical thinking.  Teach statistics as an investigative process of problem-solving and decision-making. Give students experience with multivariable thinking.  Focus on conceptual understanding.
  Integrate real data with a context and purpose.
  Foster active learning.
  Use technology to explore concepts and analyze data.
  Use assessments to improve and evaluate student learning.
-   Real data The StatPREP definition:
- captured in the wild: not collected for teaching statistics appropriate for investigation of a particular question or set of questions  large enough (think: \(n \ge 1000\)) rich enough (think: 5 or more variables)   For the moment, put aside the important matters of context and purpose.</description>
+   Real data The StatPREP definition:</description>
     </item>
     
     <item>
@@ -118,10 +117,10 @@ A core recommendation of the American Statistical Association’s GAISE report i
       <pubDate>Sun, 26 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/fail/</guid>
-      <description>These are textbook examples of the presentation of data in ways that encourage bad habits.
+      <description>th,hd { padding: 5px; }  These are textbook examples of the presentation of data in ways that encourage bad habits.
 No columns This might look like a data frame, but the individual columns have no meaning and the rows are not a unit of observation.
 Should be:
-  person id times sex    id792 4.3 F  id796 4.3 F  id797 4.5 M    … and so on. Make it a habit to show a unique identifier which facilities tracking back mistakes and joining with other data.</description>
+  person time sex    id792 4.3 F  id796 4.3 F  id797 4.5 M    … and so on.</description>
     </item>
     
   </channel>
