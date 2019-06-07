@@ -1,5 +1,5 @@
 ---
-title: "Tidying data"
+title: "Tidy Data"
 description: "Organize your data to help students learn basic data principles."
 weight: 20
 date: "2019-05-06"
@@ -34,8 +34,8 @@ banner: "img/banners/dictionary-banner.jpg"
 <li><strong>captured in the wild</strong>: not collected for teaching statistics</li>
 <li><strong>appropriate for investigation</strong> of a particular question or set of questions
 <ul>
-<li>large enough: (think 1000 or more observational units)</li>
-<li>rich enough: (think 4 or more variables)</li>
+<li>large enough (think: <span class="math inline">\(n \ge 1000\)</span>)</li>
+<li>rich enough (think: 5 or more variables)</li>
 </ul></li>
 </ul>
 <p>For the moment, put aside the important matters of <strong>context</strong> and <strong>purpose</strong>.</p>
@@ -68,10 +68,10 @@ not organization.</li>
 <li>Encourage/expose students to “data-base thinking”
 <ul>
 <li>ironically, this is a very mathematical form of thinking,
-but few mathematicians know about it.
-<strong>SQL is the algebra that gets you a job!</strong> Or, for people who don’t like
-a “vocational” emphasis:
-<strong>Data base thinking empowers you to explore and present both simple and complex data!</strong></li>
+but few mathematicians know about it.</li>
+<li><strong>SQL</strong> is the algebra that <strong>gets you a job!</strong>
+<!-- Or, for people who don't like a "vocational" emphasis:  --></li>
+<li>Data base thinking empowers you to <strong>explore and present both simple and complex data!</strong></li>
 </ul></li>
 </ul>
 <div id="unruly-data" class="section level3">
@@ -83,18 +83,18 @@ a “vocational” emphasis:
 <div id="rules-tame-unruliness" class="section level3">
 <h3>Rules tame unruliness</h3>
 <ol style="list-style-type: decimal">
-<li>Always in a “spreadsheet” (ie, rows and columns) <a href="/etc/Fail/index.html#no-spreadsheet"><em>fail</em></a> ✔︎✔︎✔︎</li>
+<li>Always in a “<strong>spreadsheet</strong>” (ie, rows and columns) <a href="/blog/fail/#no-spreadsheet"><em>fail</em></a> ✔︎✔︎✔︎</li>
 <li><strong>Rows</strong>: One row per unit of observation/analysis
 <ul>
 <li>No summaries in data︎</li>
-<li>No other info, e.g. codebook, in spreadsheet <a href="/etc/Fail/index.html#no-annotations"><em>fail</em></a></li>
+<li>No other info, e.g. codebook, in spreadsheet <a href="/blog/fail/#no-annotations"><em>fail</em></a></li>
 <li>Any subset of rows is a valid data set.</li>
 </ul></li>
-<li><strong>Columns</strong>: One column per variable <a href="/etc/Fail/index.html#no-columns"><em>fail</em></a>
+<li><strong>Columns</strong>: One column per variable <a href="/blog/fail/#no-columns"><em>fail</em></a>
 <ul>
-<li>Always use column names <a href="/etc/Fail/index.html#no-column-names"><em>fail</em></a></li>
+<li>Always use column names <a href="/blog/fail/#no-column-names"><em>fail</em></a></li>
 </ul></li>
-<li>Always codebook <a href="/etc/Fail/index.html#no-codebook"><em>fail</em></a>
+<li>Always codebook <a href="/blog/fail/#no-codebook"><em>fail</em></a>
 <ul>
 <li>Rows: how cases were selected</li>
 <li>Columns: units, specific questions/protocols/methods</li>
@@ -120,7 +120,8 @@ a “vocational” emphasis:
 </div>
 <div id="operations-on-tidy-data" class="section level2">
 <h2>Operations on Tidy Data</h2>
-<p>One advantage of tidy data is that it is ammenable to standard data operations.</p>
+<p>One advantage of tidy data is that it is ammenable to
+<strong>standard, reusable data operations</strong>.</p>
 <div id="fundamental" class="section level3">
 <h3>Fundamental</h3>
 <ul>
@@ -184,52 +185,41 @@ a “vocational” emphasis:
 <p>Key distinction / minor distinctions</p>
 <ul>
 <li><strong>numerical</strong>: interval, ratio, count, measure, …</li>
-<li><strong>cagegorical</strong>: unordered, ordered</li>
+<li><strong>categorical</strong>: unordered, ordered</li>
 </ul>
 <div id="variable-types-in-actual-use" class="section level3">
 <h3>Variable types in actual use:</h3>
 <ol style="list-style-type: decimal">
 <li>numerical:
 <ol style="list-style-type: lower-alpha">
-<li>natural numbers vs codes
-<ol style="list-style-type: lower-roman">
-<li>counts: natural numbers</li>
-<li><del>codes</del>: a representation of discrete levels: better to use actual labels</li>
-</ol></li>
-<li>quantities (with <em>dimension</em> and <em>units</em>) –
-it’s worthwhile to be able to distinquish these special types
-<ol style="list-style-type: lower-roman">
-<li>arbitrary origin (e.g. °F or °C) vs meaningful origin independent
-of the units, e.g. counts, growth rates
-- in graphics, make sure zero is on the axis!</li>
-<li>times and dates</li>
-</ol></li>
-</ol></li>
-<li>categorical: fixed vs “random”
-<ol style="list-style-type: lower-alpha">
-<li>Fixed: an easily enumerable set of distinct possibilities</li>
-<li>Random: anything else where there are no limits applied,
-e.g. free text, names of people</li>
+<li><strong>quantities</strong> (with <strong>dimension</strong> and <strong>units</strong>) –</li>
+<li><strong>times</strong> and <strong>dates</strong></li>
+<li><strong>counts</strong> (natural numbers)</li>
+<li><del>codes: codes represent discrete levels, not really numerical</del></li>
 </ol></li>
 </ol>
-</div>
-<div id="reduction-variables" class="section level3">
-<h3>Reduction variables</h3>
-<p>What operations make sense:</p>
+<!-- it's worthwhile to be able to distinquish these special types -->
+<!--     i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent  -->
+<!--     of the units, e.g.  counts, growth rates -->
+<!--             - in graphics, make sure zero is on the axis! -->
+<ol start="2" style="list-style-type: decimal">
+<li>categorical:
+<ol style="list-style-type: lower-alpha">
+<li>fixed vs “random”
 <ul>
-<li>sum (not for numerical codes, dates)
-<ul>
-<li>is sum meaningful? e.g. miles per gallon versus gallons per mile</li>
+<li>Fixed: data contains all levels of interest</li>
+<li>Random: data represents a subset of/sample from levels of interest</li>
 </ul></li>
-<li>mean (not for numerical codes)</li>
-</ul>
-</div>
-<div id="transformation-variables" class="section level3">
-<h3>Transformation variables</h3>
-<ul>
-<li>ratio (only with natural origin): but how often are we doing ratio transformations in stats class?</li>
-<li>difference ()</li>
-<li>sqrt, log, … (only with natural origin)</li>
-</ul>
+</ol></li>
+</ol>
+<!-- ### Operations on variables -->
+<!-- Some operations only make sense for certain types of variables -->
+<!-- - sum / mean -->
+<!--     - helps distinguish numerical codes from true numerical variables -->
+<!--     - is sum meaningful? e.g. miles per gallon versus gallons per mile -->
+<!-- ### Transformation variables -->
+<!-- - ratio (only with natural origin): but how often are we doing ratio transformations in stats class? -->
+<!-- - difference () -->
+<!-- - sqrt, log, ... (only with natural origin) -->
 </div>
 </div>
