@@ -11,7 +11,7 @@ banner: "img/banners/dictionary-banner.jpg"
 
 ```{r include = FALSE}
 fail <- function(x) {
-    glue::glue("[*fail*](/etc/Fail/index.html#{x})")
+    glue::glue("[*fail*](/blog/Fail.html#{x})")
 }
 ```
 
