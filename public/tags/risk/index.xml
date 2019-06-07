@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Risk on StatPREP Workshops 2019</title>
+    <title>risk on StatPREP Workshops 2019</title>
     <link>/tags/risk/</link>
-    <description>Recent content in Risk on StatPREP Workshops 2019</description>
+    <description>Recent content in risk on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/activity-changes-in-risk/</guid>
-      <description>Get formatted versions: Word : PDF
+      <description> Get formatted versions: Word : PDF
 Orientation  Activity proportions little app
 Version 0.2, 2019-06-04, Daniel Kaplan, Word version
  </description>

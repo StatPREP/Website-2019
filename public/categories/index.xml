@@ -6,58 +6,13 @@
     <description>Recent content in Categories on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Activities</title>
-      <link>/categories/activities/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/activities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Activity Guide</title>
-      <link>/categories/activity-guide/</link>
-      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/activity-guide/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computing</title>
-      <link>/categories/computing/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data_science</title>
-      <link>/categories/data_science/</link>
-      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/data_science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Little App</title>
-      <link>/categories/little-app/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/little-app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Presentations</title>
+      <title>presentations</title>
       <link>/categories/presentations/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -66,16 +21,25 @@
     </item>
     
     <item>
-      <title>Real_data</title>
-      <link>/categories/real_data/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <title>computing</title>
+      <link>/categories/computing/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/real_data/</guid>
+      <guid>/categories/computing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Resources</title>
+      <title>data_science</title>
+      <link>/categories/data_science/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resources</title>
       <link>/categories/resources/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -84,11 +48,47 @@
     </item>
     
     <item>
-      <title>Tutorials</title>
+      <title>tutorials</title>
       <link>/categories/tutorials/</link>
-      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Activities</title>
+      <link>/categories/activities/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/activities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>activity-guide</title>
+      <link>/categories/activity-guide/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/activity-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>real_data</title>
+      <link>/categories/real_data/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/real_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Little App</title>
+      <link>/categories/little-app/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/little-app/</guid>
       <description></description>
     </item>
     
