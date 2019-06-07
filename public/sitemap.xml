@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>/blog/la-bootstrap/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/la-point-plot/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
   </url>
@@ -327,12 +332,6 @@
   </url>
   
   <url>
-    <loc>/categories/activities/</loc>
-    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/blog/activity-you-want-to-know/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
   </url>
@@ -340,6 +339,12 @@
   <url>
     <loc>/blog/instructions-you-want-to-know/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/activities/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -564,6 +569,18 @@
   <url>
     <loc>/blog/instructions-normal-distribution/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bootstrap/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/simulation/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

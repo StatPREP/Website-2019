@@ -9,6 +9,7 @@ categories:
 tags:
   - causality
   - experiment
+banner: "img/banners/dag1.png"
 ---
 
 ```{r setup, include=FALSE}

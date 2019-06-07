@@ -19,6 +19,7 @@ banner: "img/banners/library-stacks.jpg"
     * [Profiles from OK Cupid](https://github.com/rudeboybert/JSE_OkCupid). This  is the GitHub repo which contains the PDF of the article, as well  as the codebook and dataset. 32 variables (some of which are text) and about 60,000 cases.
 * [Data and story library](https://dasl.datadescription.com/)  There is a very large number of data sets, many of which are derived from public sources and cleaned for some purpose.
     * [Framingham Heart Study](https://dasl.datadescription.com/datafile/framingham/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num&sf_paged=3) cholesterol, smoking, mortality, ...
+    * [Our World in Data](https://ourworldindata.org/) which has numerous data sets about health, education, work, violence, media, culture, .... 
     * [Data used by William Gossett](https://dasl.datadescription.com/datafile/fingers-and-heights/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num&sf_paged=2) in his study of what came to be called the t distribution
     * [New York Bridge inspection data](https://dasl.datadescription.com/datafile/new-york-bridges-2016)
     * [Heart attack charges](https://dasl.datadescription.com/datafile/heart-attack-charges/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num)

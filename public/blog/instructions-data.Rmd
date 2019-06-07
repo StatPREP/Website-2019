@@ -9,6 +9,7 @@ categories:
 tags:
     - tidy-data
     - variables
+banner: "img/banners/data-table.png"
 description: "NOT YET AVAILABLE"
 ---
 

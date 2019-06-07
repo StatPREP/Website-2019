@@ -1,0 +1,39 @@
+---
+title: "Bootstrapping"
+description: "Sampling from your sample gives a confidence interval."
+author: "Danny Kaplan"
+weight: 1
+categories: ["Little App"]
+tags: 
+  - "bootstrap"
+  - "simulation"
+banner: "thumbnails/bootstrap.png"
+date: "2019-04-16"
+---
+
+```{r include = FALSE}
+library(LittleApp)
+this_app <- get_app_info("bootstrap")
+```
+
+
+<a href="`r this_app$url`"> 
+<figure>
+<img src="/thumbnails/bootstrap.png" class="thumbnail" width = "60%">
+<figcaption>Bootstrapping Little App: Baby weight versus gestation in <code>Births_2014</code>. Click here to launch.</figcaption>
+</figure>
+<a>
+
+The [bootstrapping](`r this_app$url`) little app is a little different than most of the others: it's graphic illustrates a concept rather than providing a means to explore data.
+
+The concept, of course, is the confidence interval. Rather than using a formula to compute the standard error, in bootstrapping you draw a new sample from the sample itself in order to indicate the amount of sampling variability.
+
+There are two main displays. One shows individual bootstrapping trials. The original sample itself is indicated by the circle-shaped points. The bootstrap sample is made up of a subset of these points, colored blue, although some points in that subset are duplicated (as shown by the number in each blue circle). In each trial, the selected sample statistic is shown along with the same statistic calculated on the bootstrap sample. They are typically different.
+
+The other display shows the results of multiple bootstrapping trials. The distribution is easy to see. 
+
+
+### Suggested StatPREP 101 activities
+
+- [Data  and point plot activity](/blog/activity-bootstrap/)
+

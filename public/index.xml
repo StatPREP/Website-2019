@@ -87,6 +87,17 @@ Background The GAISE report’s Recommendation 5 is
     </item>
     
     <item>
+      <title>Bootstrapping</title>
+      <link>/blog/la-bootstrap/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-bootstrap/</guid>
+      <description>Bootstrapping Little App: Baby weight versus gestation in Births_2014. Click here to launch.   
+The bootstrapping little app is a little different than most of the others: it’s graphic illustrates a concept rather than providing a means to explore data.
+The concept, of course, is the confidence interval. Rather than using a formula to compute the standard error, in bootstrapping you draw a new sample from the sample itself in order to indicate the amount of sampling variability.</description>
+    </item>
+    
+    <item>
       <title>Introduction to data graphics</title>
       <link>/blog/la-point-plot/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>

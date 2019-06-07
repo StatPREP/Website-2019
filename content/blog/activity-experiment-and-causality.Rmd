@@ -11,6 +11,7 @@ tags:
   - DAG
 categories: 
   - "Activities"
+banner: "img/banners/Griffith_experiment.png"
 ---
 
 

@@ -58,6 +58,8 @@ title: "Workshop schedule: Howard Community College"
 - 2:45 pm - 3:45 pm: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
 - 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
     * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
+    * [*R for Data Science*](https://r4ds.had.co.nz/)
+    * [*Modern Data Science with R*](https://ekonometrics.blogspot.com/2019/05/modern-data-science-with-r-review.html)
     * <https://teachdatascience.com/ingestingdata/>
     * [*Stats for Data Science*](/blog/stats-for-data-science/) book (for instructor self study)
 - 4:00 pm - 4:30 pm: Small Group Discussions: Takeaways
