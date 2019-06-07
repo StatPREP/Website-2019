@@ -145,11 +145,6 @@ but few mathematicians know about it.</li>
 <li>in spreadsheet: add a new column</li>
 <li>in R: <code>mutate()</code></li>
 </ul></li>
-<li><strong>group</strong>: handle summarize and mutate in a groupwise way
-<ul>
-<li>in spreadsheet: <a href="https://support.google.com/docs/answer/1272900">pivot table</a></li>
-<li>in R: grouping variables to right of tilde, e.g. <code>blood_pressure ~ age + sex</code></li>
-</ul></li>
 <li><strong>filter</strong>: remove/ignore rows or columns
 <ul>
 <li>in spreadsheet: <a href="https://support.google.com/docs/answer/3540681">“hide” data</a></li>
@@ -175,6 +170,11 @@ but few mathematicians know about it.</li>
 <div id="profound" class="section level3">
 <h3>Profound</h3>
 <ul>
+<li><strong>group</strong>: handle summarize and mutate in a groupwise way
+<ul>
+<li>in spreadsheet: <a href="https://support.google.com/docs/answer/1272900">pivot table</a></li>
+<li>in R: <code>group_by()</code>; formulas (eg, <code>blood_pressure ~ age + sex</code>)</li>
+</ul></li>
 <li><strong>join</strong>: bring together data from multiple sources
 <ul>
 <li>in spreadsheet <a href="https://support.google.com/fusiontables/answer/171254?hl=en">“fusion tables”</a> but will be <a href="https://support.google.com/fusiontables/answer/9185417">phased out in Dec. 2019 in terms of SQL operations</a></li>
@@ -564,18 +564,18 @@ Americas
 <p><img src="/img/data-images/variable-types.jpg" /></p>
 <p>Key distinction / minor distinctions</p>
 <ul>
-<li><strong>numerical</strong>: interval, ratio, count, measure, …</li>
+<li><strong>numerical/quantitative</strong>: interval, ratio, count, measure, …</li>
 <li><strong>categorical</strong>: unordered, ordered</li>
 </ul>
-<div id="variable-types-in-actual-use" class="section level3">
-<h3>Variable types in actual use:</h3>
+<div id="variable-types-in-the-wild" class="section level3">
+<h3>Variable types in the wild</h3>
 <ol style="list-style-type: decimal">
-<li>numerical:
+<li>Numerical
 <ol style="list-style-type: lower-alpha">
 <li><strong>quantities</strong> (with <strong>dimension</strong> and <strong>units</strong>) –</li>
 <li><strong>times</strong> and <strong>dates</strong></li>
 <li><strong>counts</strong> (natural numbers)</li>
-<li><del>codes: codes represent discrete levels, not really numerical</del></li>
+<li><del>codes represent discrete levels, not really numerical</del></li>
 </ol></li>
 </ol>
 <!-- it's worthwhile to be able to distinquish these special types -->
@@ -583,8 +583,14 @@ Americas
 <!--     of the units, e.g.  counts, growth rates -->
 <!--             - in graphics, make sure zero is on the axis! -->
 <ol start="2" style="list-style-type: decimal">
-<li>categorical:
+<li>Categorical
 <ol style="list-style-type: lower-alpha">
+<li>“Two-sample” isn’t (usually) two samples
+<ul>
+<li>one sample, two <strong>variables</strong></li>
+<li>categorical variable identifies the group</li>
+</ul></li>
+<li>Summarizing with proportions doesn’t make categrical data numerical</li>
 <li>fixed vs “random”
 <ul>
 <li>Fixed: data contains all levels of interest</li>

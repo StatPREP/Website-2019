@@ -1,14 +1,9 @@
 ---
 title: "Tidy Data"
-description: "Organize your data to help students learn basic data principles."
-weight: 20
-date: "2019-05-06"
-categories:
-    - presentations
-    - real_data
-banner: "img/banners/dictionary-banner.jpg"
+output: 
+  ioslides_presentation:
+    widescreen: true
 ---
-
 
 <style>
 td,th {
@@ -24,7 +19,7 @@ library(printr)
 library(kableExtra)
 
 fail <- function(x) {
-    glue::glue("[*fail*](/blog/fail/#{x})")
+    glue::glue("[*fail*](https://ecstatic-mclean-a0b3e0.netlify.com/blog/fail/#{x})")
 }
 ```
 
@@ -64,53 +59,78 @@ Instead, focus on  the **organization** of data in a way that will contribute to
 
 Discipline in presenting data encourages good work habits.
 
+# Data organization
+
 ## Data organization
 
 * Almost all StatPREP participants say they teach little or nothing 
 about organizing data.
-    - In textbooks, teaching about data focusses on variable types, 
+* In textbooks, teaching about data focusses on variable types, 
     not organization. 
 * Organizing data properly is critically important for ...
     - **thinking** correctly with data
     - using real data with **technology**
-    
+   
+## "Database Thinking" 
+
 <!-- - providing modern views of data -->
 <!-- - structuring data collection effectively -->
-* Encourage/expose students to "data-base thinking"
-    - ironically, this is a very mathematical form of thinking, 
+* Ironically, this is a very mathematical form of thinking, 
     but few mathematicians know about it. 
-    * **SQL** is the algebra that **gets you a job!** 
+* **SQL** is the algebra that **gets you a job** 
 <!-- Or, for people who don't like a "vocational" emphasis:  -->
-    * Data base thinking empowers you to **explore and present both simple and complex data!**
+* Data base thinking $\to$ **explore and present both simple and complex data**
+* Fundamental to data science
  
-### Unruly data
+## Unruly data
  
 **unruly**: (adj.) disorderly and disruptive and not amenable to discipline or control
 
-#### Some Examples 
+## Unruly data
+ 
+**unruly**: (adj.) disorderly and disruptive and not amenable to discipline or control
 
-![](/img/data-images/no-columns.png)
+### Example 1 
 
-![](/img/data-images/missing-data.png)
+![](../img/data-images/no-columns.png)
 
-### Rules tame unruliness 
+## Unruly data
+ 
+**unruly**: (adj.) disorderly and disruptive and not amenable to discipline or control
+
+### Example 2
+
+![](../img/data-images/missing-data.png)
+
+## Rules tame unruliness 
+
+1. Always in a "**spreadsheet**" (ie, rows and columns, electronic) 
+    `r fail("no-spreadsheet")` ✔︎✔︎✔︎
+2. **Rows**: One row per unit of observation/analysis
+    - No other info (e.g. summaries, codebook info) in 
+    spreadsheet `r fail("no-annotations")`
+    - *Any subset of rows is a valid data set.*
+3. **Columns**: One column per variable `r fail("no-columns")` 
+    - Always use column names `r fail("no-column-names")` 
+4. Always have a **codebook** `r fail("no-codebook")`
+    - Rows: how cases were selected
+    - Columns: units, specific questions/protocols/methods
+5. **Segregate data** collection and data analysis 
+    - Never change the original data as part of the analysis
+    
+## Rules tame unruliness 
 
 1. Always in a "**spreadsheet**" (ie, rows and columns) `r fail("no-spreadsheet")` ✔︎✔︎✔︎
 2. **Rows**: One row per unit of observation/analysis
-    - No summaries in data︎
-    - No other info, e.g. codebook, in spreadsheet `r fail("no-annotations")`
-    - Any subset of rows is a valid data set.
 3. **Columns**: One column per variable `r fail("no-columns")` 
-    - Always use column names `r fail("no-column-names")` 
-4. Always codebook `r fail("no-codebook")`
-    - Rows: how cases were selected
-    - Columns: units, specific questions/protocols/methods
-5. Segregate data collection and data analysis 
-    - Never change the original data as part of the analysis
+4. Always have a **codebook** `r fail("no-codebook")`
+5. **Segregate data** collection and data analysis 
     
 *Note: This sort of tidy/rectangular data is not the only kind of data, but it is an extremely important kind of data and sufficient for introductory courses.*
 
-### Implications: You need to have a way to distribute such data.
+## Implications 
+
+### You need to have a way to distribute such data.
 
 - Google spreadsheets, google forms
     - [Best practices](https://www.benlcollins.com/spreadsheets/data-best-practices/)
@@ -119,64 +139,74 @@ about organizing data.
 
 - More efficient forms
 
-## Operations on Tidy Data
+# Operations on Tidy Data
+
+## Tidy Data Admits Standard Data Operations
 
 One advantage of tidy data is that it is ammenable to 
 **standard, reusable data operations**.
 
-### Fundamental
+## Data Operations: Fundamental
 
 - **summarize** / **reduce**: convert entire data set to 1-row of summary values
     - in spreadsheet: often not tidy, summary formulas can be placed in untidy places
     - in R: `df_stats()`
+    
+
 - **mutate** / **transform**: add new variable
     - in spreadsheet: add a new column
     - in R: `mutate()`
+    
+
 - **filter**: remove/ignore rows or columns
     - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
     - in R: `filter()`
 
-### Superficial
+## Data Operations: Superficial
 
 - **select**: remove/ignore columns
     - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
     - in R: `select()` 
+    
+
 - **arrange**
     - in spreadsheet, "sort". But how do you do this without altering the data?
     - in R: `arrange()`
 
-### Profound
+## Data Operations: Profound 
 
 - **group**: handle summarize and mutate in a groupwise way
     - in spreadsheet: [pivot table](https://support.google.com/docs/answer/1272900)
-    - in R: `group_by()`; formulas (eg, `blood_pressure ~ age + sex`)
+    - in R: `group_by()`; formulas  (eg, `blood_pressure ~ age + sex`)
+
+
 - **join**: bring together data from multiple sources
     - in spreadsheet ["fusion tables"](https://support.google.com/fusiontables/answer/171254?hl=en) but will be [phased out in Dec. 2019 in terms of SQL operations](https://support.google.com/fusiontables/answer/9185417)
+    
+
 - **spread** / **gather**: change unit of analysis
     - in spreadsheet [pivot/unpivot](https://eagereyes.org/basics/spreadsheet-thinking-vs-database-thinking) 
     - in R: `spread()`, `gather()` [soon to be `pivot_wide()`, `pivot_long()`]
 
-#### Long vs Wide Data
+## Long vs Wide Data
 
-
-**Long**
 
 ```{r wide, echo = FALSE, message = FALSE}
 gapminder::gapminder %>% 
     select(country, continent, year, lifeExp) %>%
-    head(5) %>%
+    head(4) %>%
     kable() %>%
     kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
 ```
 
-**Wide**
+<br>
 
 ```{r long, echo = FALSE}
 gapminder::gapminder %>% 
     select(country, continent, year, lifeExp) %>%
     mutate(year = paste0("pop", year)) %>% 
     spread(year, lifeExp) %>%
-    head(5) %>% 
+    head(4) %>% 
     kable() %>%
     kable_styling(bootstrap_options = c("striped", "hover", "responsive")) 
 ```
@@ -184,7 +214,7 @@ gapminder::gapminder %>%
 
 ## Quiz
 
-![](/img/data-images/many-problems.png)
+![](../img/data-images/many-problems.png)
 
 List the many ways in which this "table" violates the conventions for effective data organization.
 
@@ -194,35 +224,41 @@ These are often introduced as definitions before the student has any use for the
 
 In stats book: 
 
-![](/img/data-images/variable-types.jpg)
+![](../img/data-images/variable-types.jpg)
 
-Key distinction / minor distinctions
+## Variables Types
 
-- **numerical/quantitative**: interval, ratio, count, measure,  ...
+### Key distinction / minor distinctions
+
+- **numerical**: interval, ratio, count, measure,  ...
 - **categorical**: unordered, ordered
     
 
-### Variable types in the wild
+## Variable types in the wild
 
-1. Numerical 
-    a. **quantities** (with **dimension** and **units**) --
-    a. **times** and **dates**
-    a. **counts** (natural numbers)
-    a. ~~codes represent discrete levels, not really numerical~~
+### Numerical 
+
+* **quantities** (with **dimension** and **units**) --
+* **times** and **dates**
+* **counts** (natural numbers)
+* ~~codes: codes represent discrete levels, not really numerical~~
     
 <!-- it's worthwhile to be able to distinquish these special types -->
 <!--     i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent  -->
 <!--     of the units, e.g.  counts, growth rates -->
 <!--             - in graphics, make sure zero is on the axis! -->
 
-2. Categorical 
-    a. "Two-sample" isn't (usually) two samples
-        * one sample, two **variables**
-        * categorical variable identifies the group
-    a. Summarizing with proportions doesn't make categrical data numerical
-    a. fixed vs "random" 
-        * Fixed: data contains all levels of interest
-        * Random: data represents a subset of/sample from levels of interest
+## Variable types in the wild
+
+### Categorical 
+
+* "Two-sample" isn't (usually) two samples
+    * one sample, two **variables**
+    * categorical variable identifies the group
+* Summarizing with proportions doesn't make categrical data numerical
+* Fixed vs "Random" 
+    * Fixed: data contains all levels of interest
+    * Random: data represents a subset of/sample from levels of interest
 
 <!-- ### Operations on variables -->
 

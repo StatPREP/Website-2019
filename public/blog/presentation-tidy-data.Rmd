@@ -9,6 +9,7 @@ categories:
 banner: "img/banners/dictionary-banner.jpg"
 ---
 
+
 <style>
 td,th {
   padding: 5px;
@@ -131,9 +132,6 @@ One advantage of tidy data is that it is ammenable to
 - **mutate** / **transform**: add new variable
     - in spreadsheet: add a new column
     - in R: `mutate()`
-- **group**: handle summarize and mutate in a groupwise way
-    - in spreadsheet: [pivot table](https://support.google.com/docs/answer/1272900)
-    - in R: grouping variables to right of tilde, e.g. `blood_pressure ~ age + sex` 
 - **filter**: remove/ignore rows or columns
     - in spreadsheet: ["hide" data](https://support.google.com/docs/answer/3540681)
     - in R: `filter()`
@@ -149,6 +147,9 @@ One advantage of tidy data is that it is ammenable to
 
 ### Profound
 
+- **group**: handle summarize and mutate in a groupwise way
+    - in spreadsheet: [pivot table](https://support.google.com/docs/answer/1272900)
+    - in R: `group_by()`; formulas (eg, `blood_pressure ~ age + sex`)
 - **join**: bring together data from multiple sources
     - in spreadsheet ["fusion tables"](https://support.google.com/fusiontables/answer/171254?hl=en) but will be [phased out in Dec. 2019 in terms of SQL operations](https://support.google.com/fusiontables/answer/9185417)
 - **spread** / **gather**: change unit of analysis
@@ -197,24 +198,28 @@ In stats book:
 
 Key distinction / minor distinctions
 
-- **numerical**: interval, ratio, count, measure,  ...
+- **numerical/quantitative**: interval, ratio, count, measure,  ...
 - **categorical**: unordered, ordered
     
 
-### Variable types in actual use:
+### Variable types in the wild
 
-1. numerical: 
+1. Numerical 
     a. **quantities** (with **dimension** and **units**) --
     a. **times** and **dates**
     a. **counts** (natural numbers)
-    a. ~~codes: codes represent discrete levels, not really numerical~~
+    a. ~~codes represent discrete levels, not really numerical~~
     
 <!-- it's worthwhile to be able to distinquish these special types -->
 <!--     i. arbitrary origin (e.g. °F or °C) vs meaningful origin independent  -->
 <!--     of the units, e.g.  counts, growth rates -->
 <!--             - in graphics, make sure zero is on the axis! -->
 
-2. categorical: 
+2. Categorical 
+    a. "Two-sample" isn't (usually) two samples
+        * one sample, two **variables**
+        * categorical variable identifies the group
+    a. Summarizing with proportions doesn't make categrical data numerical
     a. fixed vs "random" 
         * Fixed: data contains all levels of interest
         * Random: data represents a subset of/sample from levels of interest
