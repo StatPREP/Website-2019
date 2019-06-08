@@ -70,8 +70,8 @@ title: "Workshop schedule: Howard Community College"
 
 - 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
     * Using StatPREP Little Apps in the Classroom Activity #5: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Joe Roith)
-    * Designing an Activity (Andy Zieffler)
-    * Domesticating wild data R (?)
+    * Designing an Activity (Andy Zieffler) [Andy's Statistical Thinking book](https://zief0002.github.io/statistical-thinking/)
+    * Domesticating wild data R (Randy Pruim and Amelia McNemara)
 
 - 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
     * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
