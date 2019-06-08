@@ -12,17 +12,6 @@
     
     
     <item>
-      <title>Instructor Guide: Causality</title>
-      <link>/blog/instructions-causality/</link>
-      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/instructions-causality/</guid>
-      <description>Activities  Intervention and prediction Experiment and causality   Learning objectives  Additional sections  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors There is an epigram that is familiar to all statistics instructors:
- Correlation is not causation.
- Put on a more explicit logical footing, this is equivalent to:</description>
-    </item>
-    
-    <item>
       <title>Instructor Guide: Data basics</title>
       <link>/blog/instructions-data/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
@@ -43,6 +32,29 @@ Role in statistical practice  Conceptual pitfalls  Learning objectives  Student 
     </item>
     
     <item>
+      <title>Creating an Active Classroom</title>
+      <link>/blog/instructions-active-classroom-tips/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-active-classroom-tips/</guid>
+      <description>Tips for Creating an Active Classroom Make your lectures active, too.
+It is tempting to equate “active learning” with “group work”, Think about ways to make lectures more active for students. Interject questions (and wait for answers). Mix in short “your turn” exercises or “think-pair-share” questions. Use “call and response”. Ask students to guess computer commands before introducing new commands.
+Ask lots of questions.
+ But don’t answer them yourself.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Guide: Causality</title>
+      <link>/blog/instructions-causality/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-causality/</guid>
+      <description>Activities  Intervention and prediction Experiment and causality   Learning objectives  Additional sections  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors There is an epigram that is familiar to all statistics instructors:
+ Correlation is not causation.
+ Put on a more explicit logical footing, this is equivalent to:</description>
+    </item>
+    
+    <item>
       <title>Instructor guide: Center &amp; spread</title>
       <link>/blog/instructions-center-spread/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
@@ -58,18 +70,6 @@ Role in statistical practice  Conceptual pitfalls  Learning objectives  Student 
       
       <guid>/blog/instructions-confidence-intervals/</guid>
       <description>Activities  What is a confidence interval? Sampling bias and confidence intervals Comparing two groups Comparing two confidence intervals Two-sample t test   Learning objectives connected to confidence intervals  Master the relevant vocabulary … population, sample, sample statistic, point estimate, margin of error, confidence interval, confidence level. Recognize the estimation process that leads to a confidence interval: a sample is selected randomly from a population a statistic is calculated from that sample the margin of error and, correspondingly, the confidence interval are calculated from that sample.</description>
-    </item>
-    
-    <item>
-      <title>Creating an Active Classroom</title>
-      <link>/blog/instructions-active-classroom-tips/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/instructions-active-classroom-tips/</guid>
-      <description>Tips for Creating an Active Classroom Make your lectures active, too.
-It is tempting to equate “active learning” with “group work”, Think about ways to make lectures more active for students. Interject questions (and wait for answers). Mix in short “your turn” exercises or “think-pair-share” questions. Use “call and response”. Ask students to guess computer commands before introducing new commands.
-Ask lots of questions.
- But don’t answer them yourself.</description>
     </item>
     
     <item>
