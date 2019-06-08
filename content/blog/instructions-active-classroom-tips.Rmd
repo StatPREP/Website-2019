@@ -1,7 +1,8 @@
 ---
-title: "Tips for Creating an Active Classroom"
+title: "Creating an Active Classroom"
+description: "Some ideas for engaging students in discussion about statistics." 
 author: "R Pruim"
-date: "6/7/2019"
+date: "2019-06-07"
 output:
   pdf_document: default
   html_document:
@@ -10,6 +11,7 @@ slug: instructions-active-classroom-tips
 categories: 
     - activity-guide
 tags:
+    - active-classroom
     - teaching-tips
 banner: img/banners/active-classroom.jpg
 ---
@@ -28,6 +30,13 @@ knitr::opts_chunk$set(echo = TRUE)
     exercises or "think-pair-share" questions. Use "call and response".
     Ask students to guess computer commands before introducing new commands.
 
+    a. Ask **lots of questions**.
+
+    b. But **don't answer them** yourself.
+
+        If you have something to say, don't phrase it as a question to the students.
+        If you ask a question, give students time to answer. 
+        
 1. Establish **clear expectations**.
 
     It may take some time at the beginning of the term to get students
@@ -36,18 +45,21 @@ knitr::opts_chunk$set(echo = TRUE)
     their hand? How do they get your attention when they are working in
     a group? May they work alone or must they work in a group? May groups
     interact with each other? Will you provide "correct" answers?
-    How do they tell you if their group is disfunctional? How often will
-    groups change?)
+    How do they tell you if their group is disfunctional? 
+    How often will groups change?)
     
 1. **Start with** something **easy but interesting**.
 
     Too hard is discouraging. Easy but boring doesn't promote engagement.
+    Work up to more challenging things.
 
 1. Make the **mode of response** clear.
 
-    How do you want students to respond? Should they talk quiety with a partner?
-    Write something on the board? Turn something in on paper? Add to a google
-    doc or presentation?
+    How do you want students to respond? 
+    Should they wait to resond until everyone has had a chance to reflect?
+    Should they talk quiety with a partner?
+    Write something on the board? Turn something in on paper? 
+    Add to a google doc or presentation?
 
 1. Assign **student roles**.
 
@@ -117,3 +129,12 @@ knitr::opts_chunk$set(echo = TRUE)
     Collaborate with colleagues.
     
     Find ways to make your best activities public.
+    
+    Join groups like isostat, the ASA Section on Statistics and Data Science Education, 
+    and the MAA SIGMAA Stat Ed.
+    
+    Attend USCOTS, eCOTS, iCOTS, and meetings of the ASA and MAA.
+    
+    Watch for webinars related to statistics education.
+
+    

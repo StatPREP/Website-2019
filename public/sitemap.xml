@@ -256,6 +256,11 @@
   </url>
   
   <url>
+    <loc>/blog/instructions-active-classroom-tips/</loc>
+    <lastmod>2019-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/community-maa-connect/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
   </url>
@@ -306,7 +311,13 @@
   </url>
   
   <url>
+    <loc>/blog/tips-for-active-classroom/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/active-classroom/</loc>
+    <lastmod>2019-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -588,12 +599,13 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/teaching-tips/</loc>
+    <lastmod>2019-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -601,10 +613,6 @@
     <loc>/tags/tidy-data/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/tips-for-active-classroom/</loc>
   </url>
   
   <url>

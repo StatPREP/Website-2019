@@ -1,12 +1,14 @@
 ---
 title: "Tips for an active classroom"
 description: "Some ideas for engaging students in discussion about statistics." 
+date: "2017-06-01"
+author: Danny Kaplan
 output: 
   html_document:
     theme: readable
 banner: "img/banners/missing.png"
 categories:
-    - activities
+    - activity-guide
 tags:
     - active-classroom
     - teaching-tips
