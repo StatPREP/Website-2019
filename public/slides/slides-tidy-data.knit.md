@@ -11,7 +11,7 @@ td,th {
 }
 
 .hilight {
-  border: 2px solid #999999;
+  border: 2px solid #40beed;
   border-radius: 4px;
 }
 
@@ -24,11 +24,13 @@ td,th {
 1. Teach statistical thinking.
     * Teach statistics as an **investigative process** of problem-solving and 
     **decision-making**.
-    * Give students experience with **multivariable thinking**.
+    * Give students experience with 
+    <span class = "hilight">**multivariable thinking**</span>.
     
 2. Focus on conceptual understanding.
 
-3. Integrate **real data** with a **context** and **purpose**.
+3. Integrate <span class = "hilight">**real data**</span> 
+   with a **context** and **purpose**.
 
 4. Foster **active learning**.
 
