@@ -10,6 +10,11 @@ output:
     rmdformats::material
   pdf_document: tint::tintPdf 
 banner: "img/banners/missing.png"
+categories: 
+  - activities
+tabs:
+  - summary_interval
+  - spread
 ---
 
 
