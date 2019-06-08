@@ -1,0 +1,35 @@
+---
+title: "Rare and Common"
+description: "How normal is normal? This app gets students to contrast their everyday notion of 'normal' to the distribution of the same name."
+author: "Danny Kaplan"
+weight: 5
+date: "2017-05-31"
+categories: ["Little App"]
+tags: ["rare", "normal", "skew"]
+banner: "img/banners/rare-and-common.png"
+---
+
+```{r include = FALSE}
+library(LittleApp)
+this_app <- get_app_info("rare")
+```
+
+<a href="`r this_app$url`">  
+<figure>
+<img src="/thumbnails/rare-and-common.png" class="thumbnail" width = "60%">
+<figcaption>Center-and-spread Little App: The distribution of mother's age at birth is different for those on private insurance and those on government insurance.</figcaption>
+</figure>
+<a>
+
+The [Rare and common Little App](`r this_app$url`) displays a jittered point plot of the response variable, which can be annotated with a variety of statistics often used to quantify "center" and "spread."
+
+- Standard deviation "ruler" helps clarify that the sd is a distance rather than a value of the variable.
+- Compare the confidence interval on the mean to the summary interval of the response variable. This helps to dispell the misconception that the confidence interval contains most of the data.
+- Measuring stick to support reading values and differences off the graph.
+- Explore robustness by selecting new samples from the population.
+
+### Suggested StatPREP 101 activities
+
+- [Common, uncommon, and rare](/blog/activity-common-and-rare/)
+
+
