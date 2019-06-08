@@ -57,7 +57,7 @@ title: "Workshop schedule: Howard Community College"
 - 12:45 pm - 1:15 pm: Confidence intervals by the ~~book~~ boot. (Danny Kaplan)
 
 - 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Amelia McNamara)
+    * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Brooke Orosz)
     * [Data Wrangling](http://rsconnect.calvin.edu/wrangling-jmm2019/) (Randy Pruim and Andy Zieffler)
 
 
