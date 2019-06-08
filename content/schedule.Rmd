@@ -34,42 +34,50 @@ title: "Workshop schedule: Howard Community College"
 
 ## Saturday June 8, 2019
 
-
 - 8:00 am - 8:30 am: Breakfast 
-- 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/)
-- 9:00 am - 9:45 am: Using StatPREP Little Apps in the Classroom Activity #2: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Amelia McNamara)
-- 9:45 am - 10:20 am: Searching for Data:  Finding [good sources of data](/blog/presentation-data-sources/) (Danny Kaplan)
 
-- 10:20 am - 10:30 am: Break
+- 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny Kaplan)
 
-- 10:30 am - 11:30 am: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) 
-    * New to R? Learn the basics.
-- 11:30 am - 12:00 pm: Bootstrapping Little App (Danny Kaplan)
+- 9:00 am - 10:00 am: Regression Gala
+    * Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
+    * [It's all about Regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
 
-- 12:00 pm - 12:45 pm: Lunchtime Discussion: continuation of yesterday's discussion  on curriculum and state standards 
+- 10:00 am - 10:15 am: Break
 
+- 10:15 am - 11:15 am: **Parallel sessions** -- your choice!
+    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Hwayeon Ryu)
+    * Less Volume, More Creativity: An R Starter Toolkit (Randy Pruim)
 
-- 12:45 pm - 1:30 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/)
-    * Mosaic R package for teaching statistics
-    * Bringing data from the wild into R
-- 1:30 pm - 1:45 pm: [It's all about Regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
+- 11:15 am - 12:00 am: Finding [good sources of data](/blog/presentation-data-sources/) (Danny Kaplan)
 
-- 1:45 pm - 2:00 pm:  Break  
+- 12:00 pm - 12:45 pm: Lunchtime Discussion: continuation of yesterday's discussion on curriculum and state standards 
 
-- 2:00 pm - 2:45 pm: Tips for creating an Active Classroom and assessment ideas (Randy Pruim)
-- 2:45 pm - 3:45 pm: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
+- 12:45 pm - 1:15 pm: Bootstrapping Little App (Danny Kaplan)
+
+- 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
+    * Using StatPREP Little Apps in the Classroom Activity #2: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Amelia McNamara)
+    * Data Wrangling (Randy Pruim and Andy Zieffler)
+
+- 2:15 pm - 2:30 pm: Break  
+
+- 2:30 pm - 3:00 pm: Tips for creating an active classroom and assessment ideas (Randy Pruim)
+
+- 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
+    * Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Joe Roith)
+    * Designing an Activity (Andy Zieffler)
+    * Bringing data from the wild into R (?)
+
 - 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
     * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
     * [*R for Data Science*](https://r4ds.had.co.nz/)
     * [*Modern Data Science with R*](https://ekonometrics.blogspot.com/2019/05/modern-data-science-with-r-review.html)
     * <https://teachdatascience.com/ingestingdata/>
     * [*Stats for Data Science*](/blog/stats-for-data-science/) book (for instructor self study)
-- 4:00 pm - 4:30 pm: Small Group Discussions: Takeaways
-- 4:30 pm - 5:00 pm: Q & A panel discussion
-- 5:00 pm: Staying in touch & Adjourn
-
+    
+- 4:00 pm - 4:20 pm: Small Group Discussions: Takeaways
+- 4:20 pm - 4:40 pm: Q & A panel discussion
+- 4:40 pm - 5:00 pm: Staying in touch
+- 5:00 pm: Adjourn
 
 <!--
 
