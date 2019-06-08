@@ -47,8 +47,9 @@ title: "Workshop schedule: Howard Community College"
 
 - 10:15 am - 11:15 am: **Parallel sessions** -- your choice!
     * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Hwayeon Ryu)
-    * [Less Volume, More Creativity](http://rsconnect.calvin.edu/less-volume/jmm2019/)
-    : An R Starter Toolkit (Randy Pruim)
+    * Less Volume, More Creativity: An R Starter Toolkit (Randy Pruim)
+    [[slides](https://rpruim.github.io/JMM2019/less-volume/less-volume-slides.html)]
+    [[tutorial](https://rpruim.shinyapps.io/Less-Volume-JMM2019/)]
 
 - 11:15 am - 12:00 am: Finding [good sources of data](/blog/presentation-data-sources/) (Danny Kaplan)
 

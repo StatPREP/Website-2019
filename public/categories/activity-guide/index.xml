@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>activity-guide on StatPREP Workshops 2019</title>
+    <title>Activity Guide on StatPREP Workshops 2019</title>
     <link>/categories/activity-guide/</link>
-    <description>Recent content in activity-guide on StatPREP Workshops 2019</description>
+    <description>Recent content in Activity Guide on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/activity-guide/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,18 @@ Role in statistical practice  Conceptual pitfalls  Student pre-requisites  Stude
       <guid>/blog/instructions-graphing/</guid>
       <description>Activities  Point plots Jittering and violins Summary intervals Response and explanatory variables   Learning objectives  Additional resources  Get formatted versions: Word : PDF Instructor orientation Role in statistical practice Classroom discussion Assessment Tips for an active classroom Student pre-requisites Pitfalls   Orientation for instructors Showing the basic kinds of plots: data/density/interval
 Role in statistical practice  Conceptual pitfalls  Learning objectives  Student background  Background data knowledge  (If we had) the population  Student tasks and activities  Creating an active classroom See the document on general tips for creating an active classroom.</description>
+    </item>
+    
+    <item>
+      <title>Creating an Active Classroom</title>
+      <link>/blog/instructions-active-classroom-tips/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/instructions-active-classroom-tips/</guid>
+      <description>Tips for Creating an Active Classroom Make your lectures active, too.
+It is tempting to equate “active learning” with “group work”, Think about ways to make lectures more active for students. Interject questions (and wait for answers). Mix in short “your turn” exercises or “think-pair-share” questions. Use “call and response”. Ask students to guess computer commands before introducing new commands.
+Ask lots of questions.
+ But don’t answer them yourself.</description>
     </item>
     
     <item>
@@ -58,18 +70,6 @@ Role in statistical practice  Conceptual pitfalls  Learning objectives  Student 
       
       <guid>/blog/instructions-confidence-intervals/</guid>
       <description>Activities  What is a confidence interval? Sampling bias and confidence intervals Comparing two groups Comparing two confidence intervals Two-sample t test   Learning objectives connected to confidence intervals  Master the relevant vocabulary … population, sample, sample statistic, point estimate, margin of error, confidence interval, confidence level. Recognize the estimation process that leads to a confidence interval: a sample is selected randomly from a population a statistic is calculated from that sample the margin of error and, correspondingly, the confidence interval are calculated from that sample.</description>
-    </item>
-    
-    <item>
-      <title>Creating an Active Classroom</title>
-      <link>/blog/instructions-active-classroom-tips/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/instructions-active-classroom-tips/</guid>
-      <description>Tips for Creating an Active Classroom Make your lectures active, too.
-It is tempting to equate “active learning” with “group work”, Think about ways to make lectures more active for students. Interject questions (and wait for answers). Mix in short “your turn” exercises or “think-pair-share” questions. Use “call and response”. Ask students to guess computer commands before introducing new commands.
-Ask lots of questions.
- But don’t answer them yourself.</description>
     </item>
     
     <item>
