@@ -39,8 +39,9 @@ title: "Workshop schedule: Howard Community College"
 - 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny Kaplan)
 
 - 9:00 am - 10:00 am: Regression Gala
-    * Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
+    * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
     * [It's all about Regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
+
 
 - 10:00 am - 10:15 am: Break
 
@@ -53,20 +54,21 @@ title: "Workshop schedule: Howard Community College"
 
 - 12:00 pm - 12:45 pm: Lunchtime Discussion: continuation of yesterday's discussion on curriculum and state standards 
 
-- 12:45 pm - 1:15 pm: Bootstrapping Little App (Danny Kaplan)
+- 12:45 pm - 1:15 pm: Confidence intervals by the ~~book~~ boot. (Danny Kaplan)
 
 - 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #2: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Amelia McNamara)
+    * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Brooke Orosz)
     * [Data Wrangling](http://rsconnect.calvin.edu/wrangling-jmm2019/) (Randy Pruim and Andy Zieffler)
+
 
 - 2:15 pm - 2:30 pm: Break  
 
 - 2:30 pm - 3:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Randy Pruim)
 
 - 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Joe Roith)
+    * Using StatPREP Little Apps in the Classroom Activity #5: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Joe Roith)
     * Designing an Activity (Andy Zieffler)
-    * Bringing data from the wild into R (?)
+    * Domesticating wild data R (?)
 
 - 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
     * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
@@ -81,11 +83,7 @@ title: "Workshop schedule: Howard Community College"
 - 4:40 pm - 5:00 pm: Staying in touch
 - 5:00 pm: Adjourn
 
-<!--
 
-- [Participant Bios](https://docs.google.com/document/d/1VTPBkCh-iwVYZC7bb5SYMpr1eIVv6QZLcqn17lYfMWU/edit?usp=sharing): We'll break up into groups of 3 or 4, trying to avoid people we already know. Each person will interview and write a brief bio (including any ice-breaker-like information) in  the document linked to above.
-
--->
 ## Locations
 
 Times differ from location to location. The above schedule will be adjusted accordingly.

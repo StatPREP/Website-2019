@@ -85,6 +85,17 @@ There’s another distinction to be made about variables, which is not about the
     </item>
     
     <item>
+      <title>Variation and the 95% summary interval</title>
+      <link>/blog/activity-summary-interval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-summary-interval/</guid>
+      <description>Get formatted versions: Word : PDF
+Orientation Why is the word variable used to describe a column of a data frame? In mathematics, a variable is an unknown quantity. In math class, when they say “solve for x,” they mean figure out what the value of unknown x is.
+In statistics, a variable is different. It’s a known quantity – known because you measured it, known because there it is, right in the data frame.</description>
+    </item>
+    
+    <item>
       <title>Experiment and causality</title>
       <link>/blog/activity-experiment-and-causality/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
