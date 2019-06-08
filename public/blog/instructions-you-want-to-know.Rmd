@@ -2,9 +2,9 @@
 title: 'You Want to Know: What''s the Point?'
 date: '2019-06-04'
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 slug: instructions-you-want-to-know
 banner: img/banners/banner-question-mark.jpeg
 tags:
@@ -70,9 +70,9 @@ of your own.
 2. **Digging deeper:** Want to dig deeper on an item? Add a follow-up question.
    Here is an example:
    
-    * Choose one of the scenarios that could be designed as a randomized experiment. Explain how randomization would be used.
+    * Example: Choose one of the scenarios that could be designed as a randomized experiment. Explain how randomization would be used.
     
-    *Come up with some additional follow-up questions of your own.*
+    *Come up with some additional follow-up questions of your own. How can you bring multivariable thinking into this activity?*
 
 <!-- How create bootstrap/randomization distribution; plot if there is a statistically -->
 <!-- signifcant difference; R code to make plot; list a potential confounding variable; -->
