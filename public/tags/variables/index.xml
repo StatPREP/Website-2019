@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Variables on StatPREP Workshops 2019</title>
+    <title>variables on StatPREP Workshops 2019</title>
     <link>/tags/variables/</link>
-    <description>Recent content in Variables on StatPREP Workshops 2019</description>
+    <description>Recent content in variables on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/variables/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,7 +28,7 @@ Role in statistical practice  Conceptual pitfalls  Student pre-requisites  Stude
       
       <guid>/blog/activity-variables-and-units/</guid>
       <description>Get formatted versions: Word : PDF
-Orientation There’s an expression about how to accomplish a complex, confusing, and difficult task: One step at a time. The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents. Some steps require application of a particular technical procedure.</description>
+Orientation There’s an expression about how to accomplish a complex, confusing, and difficult task: One step at a time. The purpose of this lesson is to provide you with a step-by-step procedure for working with data. Each step can be straightforward. Some steps involve informing yourself about the data at hand. Some steps require creativity and insight about the real-world system the data represents.</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ Orientation Data can be many things, but one of the most common formats is a dat
  determine what variables you would need to collect and whether each is categorical or quantitative,
  describe or sketch a graph you would make to give you an initial impression regarding the answer to the question of interest,
  determine the parameter(s) of interest and explain how they are different from the variables,
-   determine whether you are using a paired design.  Sometimes there may be more than one way to design the study, but don’t design a poor study when a better option is available.</description>
+   determine whether you are using a paired design.</description>
     </item>
     
     <item>

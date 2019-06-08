@@ -72,7 +72,7 @@ of your own.
    
     * Choose one of the scenarios that could be designed as a randomized experiment. Explain how randomization would be used.
     
-    *Come up with some additional follow-up questions of your own. Can you think of some that require multi-variable thinking?*
+    *Come up with some additional follow-up questions of your own.*
 
 <!-- How create bootstrap/randomization distribution; plot if there is a statistically -->
 <!-- signifcant difference; R code to make plot; list a potential confounding variable; -->
