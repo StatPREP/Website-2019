@@ -1,0 +1,119 @@
+---
+title: "Tips for Creating an Active Classroom"
+author: "R Pruim"
+date: "6/7/2019"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+slug: instructions-active-classroom-tips
+categories: 
+    - activity-guide
+tags:
+    - teaching-tips
+banner: img/banners/active-classroom.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Tips for Creating an Active Classroom
+
+1. **Make your lectures active**, too.
+
+    It is tempting to equate "active learning" with "group work", 
+    Think about ways to make lectures more active for students. 
+    Interject questions (and wait for answers). Mix in short "your turn"
+    exercises or "think-pair-share" questions. Use "call and response".
+    Ask students to guess computer commands before introducing new commands.
+
+1. Establish **clear expectations**.
+
+    It may take some time at the beginning of the term to get students
+    used to you and each other. Use this time to establish expectations.
+    (How should students address you? May they interrupt or should they raise
+    their hand? How do they get your attention when they are working in
+    a group? May they work alone or must they work in a group? May groups
+    interact with each other? Will you provide "correct" answers?
+    How do they tell you if their group is disfunctional? How often will
+    groups change?)
+    
+1. **Start with** something **easy but interesting**.
+
+    Too hard is discouraging. Easy but boring doesn't promote engagement.
+
+1. Make the **mode of response** clear.
+
+    How do you want students to respond? Should they talk quiety with a partner?
+    Write something on the board? Turn something in on paper? Add to a google
+    doc or presentation?
+
+1. Assign **student roles**.
+
+    [POGIL](https://pogil.org) (process oriented guided inquiry learning) emphasizes
+    clear and differentiated roles for students working in groups
+    (Manager, Presenter, Reflector, Recorder).
+
+1. **Focus** all-class **discussion**.
+
+    Don't redo everything students do in groups; focus attention on points of emphasis,
+    places where students struggled, etc.
+
+1. Get students **talking before class** starts.
+
+    Use the time as students are arriving to "warm them up".
+    
+## Tips for Creating Activities
+
+1. Have a **goal**.
+
+    It is easier to design an activity if you have a clear idea what
+    you want the activity to acheive.
+    
+    One way to come up with goals is to think about things that have 
+    given your students trouble in the past. These are the places 
+    where you can have the biggest impact.
+
+2. Have an **assessment plan**.
+
+    How will you tell if your students have acheived your goal? Having an 
+    assessment plan can focus your ideas for the activity. It will also 
+    give you information to tell whether your goals have been acheived.
+
+3. Enumerate student **pre-requisites**.
+
+    Learning is about getting from point 
+    A (what the students already know/can do)
+    to point B (what you want them to know/be able to do).
+    Knowing the particular things you plan to build on will
+    help you design your activity.
+    
+    If you are uncertain that the pre-requisites are in place, 
+    you can build in a portion of the activity to diagnose this.
+    
+    Is there anything students must do in advance to prepare?
+
+4. **Design** the activity.
+
+    Sometimes the key idea presents itself without much effort.
+    
+    Textbook examples can provide inspiration for activities.
+    
+    Brainstorm with colleagues.
+
+5. **Iterate.**
+
+    Take some time to consider how well the activity worked.
+    What worked well? How might it be improved?
+    What questions did the students ask while they were working?
+    Were the instructions clear?
+    Did anything surprise you?
+    Are there elements (ideas, data sets, tasks, instructions, etc.)
+    of this activity that can be recycled?
+   
+6. **Borrow** and **share**.
+
+    Collaborate with colleagues.
+    
+    Find ways to make your best activities public.

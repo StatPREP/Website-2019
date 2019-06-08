@@ -57,11 +57,11 @@ title: "Workshop schedule: Howard Community College"
 
 - 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
     * Using StatPREP Little Apps in the Classroom Activity #2: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Amelia McNamara)
-    * [Data Wrangling](http://rsconnect.calvin.edu/wrangling/jmm2019/) (Randy Pruim and Andy Zieffler)
+    * [Data Wrangling](http://rsconnect.calvin.edu/wrangling-jmm2019/) (Randy Pruim and Andy Zieffler)
 
 - 2:15 pm - 2:30 pm: Break  
 
-- 2:30 pm - 3:00 pm: Tips for creating an active classroom and assessment ideas (Randy Pruim)
+- 2:30 pm - 3:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Randy Pruim)
 
 - 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
     * Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Joe Roith)
