@@ -13,6 +13,7 @@ categories:
 ---
 
 The documents on this site are formatted for instructors. There are also documents formatted for students.
-    * If you want to hand out a printed version of the activity, there is a link to a *Word format* near the top of each document. Feel free to customize this to suit your own class!
-    * If you prefer to give your students a URL so they can access the document via the web, we suggest you give them the *Student link* that can be found in each document. This way, your students won't see the instructor-facing links on this page.
+
+* If you want to hand out a printed version of the activity, there is a link to a *Word format* near the top of each document. Feel free to customize this to suit your own class!
+* If you prefer to give your students a URL so they can access the document via the web, we suggest you give them the *Student link* that can be found in each document. This way, your students won't see the instructor-facing links on this page.
     
