@@ -1,5 +1,5 @@
 ---
-title: "Bootstrapping"
+title: "Bootstrapping Activity"
 date: "2019-06-03"
 weight: 500
 description: "NOT YET AVAILABLE. Finding a confidence interval by repeatedly sampling from the sample."
@@ -14,7 +14,7 @@ tags:
   - regression
 categories: 
   - Activities
-banner: "/img/banners/boot.jpeg"
+banner: "img/banners/boot.jpeg"
 ---
 
 

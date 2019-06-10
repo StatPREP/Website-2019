@@ -68,7 +68,7 @@ p2 <- ggplot(data = bikeshare, aes(x = cnt, y = atemp, fill = season)) +
 ## Make Sticker
 
 
-```{r make-sticker}
+```{r make-sticker, eval= FALSE}
 # create and save sticker
 sticker(p2, 
         # Package name, color, font family, size
@@ -81,6 +81,6 @@ sticker(p2,
           #"../../static/images/statprep_sticker.png")
 ```
 
-![](/images/statprep_sticker.png)
+![](/img/statprep_sticker.png)
 
 

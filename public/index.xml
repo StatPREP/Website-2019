@@ -566,13 +566,13 @@ Orientation Data can be many things, but one of the most common formats is a dat
     </item>
     
     <item>
-      <title>Bootstrapping</title>
+      <title>Bootstrapping Activity</title>
       <link>/blog/activity-bootstrapping/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/activity-bootstrapping/</guid>
       <description> Get formatted versions: Word : PDF
-Orientation  Activity Version 0.2, 2019-06-07, Daniel Kaplan, Word version
+Orientation  Activity Version 0.2, 2019-06-09, Daniel Kaplan, Word version
  </description>
     </item>
     
@@ -651,6 +651,16 @@ From the preface … Data science is an emerging computational discipline with r
 How to make your own activity The key steps to creating these activities are
 Determine the learning objectives. These might include
 Making key distinctions like case/variable, categorical/quantitative, explantory/reponse, etc. Identifying key elements of study design. Selecting appropriate analysis methods. Use of software to acheive a task (have students write R command or describe how to use other software)  Design the questions.</description>
+    </item>
+    
+    <item>
+      <title>Pre-workshop questions</title>
+      <link>/blog/pre-conference/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/pre-conference/</guid>
+      <description>###. What do you teach students about handling data? (That is, not about the analysis of data but about how data is stored, accessed, transformed?)
+ Not taught I have demonstrated using Statcrunch and Excel, but not as much data handling as I should. This is not a topic I formally cover. I don’t. I have had the students import data from Excel spreadsheets into R, as well as importing from text files associated with our textbook (Investigating Statistical Concepts, Applications, and Methods by Rossman and Chance).</description>
     </item>
     
     <item>
