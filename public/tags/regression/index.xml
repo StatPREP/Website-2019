@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>regression on StatPREP Workshops 2019</title>
+    <title>Regression on StatPREP Workshops 2019</title>
     <link>/tags/regression/</link>
-    <description>Recent content in regression on StatPREP Workshops 2019</description>
+    <description>Recent content in Regression on StatPREP Workshops 2019</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Introducing linear regression</title>
-      <link>/blog/activity-introducing-linear-regression/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/activity-introducing-linear-regression/</guid>
-      <description>Get formatted versions: Word : PDF
-Showing various sorts of relationships for discussion Open up the linear regression Little App. (See footnote1). In this activity we’ll explore three different data sets available through the app. For each data set, the variable indicated below plays the role of the response variable. Some explanatory variables are listed as sub-points.
-Data set: NHANES. Response variable: BMI. It’s important for students to know what BMI is.</description>
-    </item>
     
     <item>
       <title>Describing relationship patterns in words and numbers</title>
@@ -32,6 +21,17 @@ Data set: NHANES. Response variable: BMI. It’s important for students to know 
 Orientation It’s natural to display a linear regression as a graph modeling the response variable as a function of the explanatory variables. In the LA_linear_regression Little App, that function is shown as a line laid on top of the data.
 Graphics are important, but it’s also a good practice to summarize the relationship using words and numbers.
 This lesson introduces the conventions for such a summary.</description>
+    </item>
+    
+    <item>
+      <title>Introducing linear regression</title>
+      <link>/blog/activity-introducing-linear-regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/activity-introducing-linear-regression/</guid>
+      <description>Get formatted versions: Word : PDF
+Showing various sorts of relationships for discussion Open up the linear regression Little App. (See footnote1). In this activity we’ll explore three different data sets available through the app. For each data set, the variable indicated below plays the role of the response variable. Some explanatory variables are listed as sub-points.
+Data set: NHANES. Response variable: BMI. It’s important for students to know what BMI is.</description>
     </item>
     
     <item>
@@ -51,8 +51,13 @@ Models are useful when they serve a purpose. For instance, a toy plane can serve
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/activity-bootstrapping/</guid>
+<<<<<<< HEAD
       <description> Get formatted versions: Word : PDF
 Orientation  Activity Version 0.2, 2019-06-09, Daniel Kaplan, Word version
+=======
+      <description>Get formatted versions: Word : PDF
+Orientation  Activity Version 0.2, 2019-06-07, Daniel Kaplan, Word version
+>>>>>>> 2ca45f763b31d7e538e3ae58ad962535cc5d6584
  </description>
     </item>
     
