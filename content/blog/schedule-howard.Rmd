@@ -1,10 +1,6 @@
 ---
-title: "Workshop schedule: Tarrant County Community College"
+title: "Workshop schedule: Howard Community College"
 ---
-
-Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/) & [Columbia, MD](/blog/schedule-howard/)
-
-[Location of Tarrant County College](https://www.google.com/maps/place/NTAB+-+Technology+and+Arts,+North+Richland+Hills,+TX/@32.8476211,-97.1925493,17.49z/data=!4m5!3m4!1s0x864e78c7a7de1b2b:0xc0568af34b277fa3!8m2!3d32.8479737!4d-97.1920759). For those driving, there is a parking lot directly outside the NTAB building. Free parking is available in any of the white spaces. The main meeting room is NTAB 2216.
 
 
 ## Before the Workshop
@@ -12,11 +8,11 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 - Answer [these questions](https://docs.google.com/document/d/1ntePDIJVWe6Y8JHjKMcFbmYNKJNIN3V-APeY3Dp1qTg/edit?usp=sharing) (on paper) and bring to the workshop.
 
 
-## Wednesday June 12, 2019 
+## Friday June 7, 2019 
 
 - 1:30 pm - 2:00 pm: Registration 
-- 2:00 pm - 2:15 pm: [Welcome](/blog/presentation-welcome/) & housekeeping Announcements (Danny Kaplan)
-- 2:15 pm - 2:30 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics (Kate Kozak)
+- 2:00 pm - 2:15 pm: [Welcome](/blog/presentation-welcome/) & housekeeping Announcements
+- 2:15 pm - 2:30 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics 
 - 2:30 pm - 2:50 pm: [GAISE and ASA/AMATYC guidelines to teaching statistics](/blog/presentation-GAISE-ASA/) (Andy Zieffler)
 - 2:50 pm - 3:20 pm: Tidy data 
                      [[slides](/slides/slides-tidy-data.html)] 
@@ -25,22 +21,22 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 
 - 3:20 pm - 3:30 pm: Break
 
-- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Kate)
+- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Hwayeon Ryu)
 - 4:00 pm - 4:50 pm: [Introduction to RStudio cloud](/blog/technology/) (Danny)
         * [link to RStudio project](https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6)
 
 - 4:50 pm - 5:00 pm: Break
 
-- 5:00 pm - 5:50 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) ()
+- 5:00 pm - 5:50 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) (Joe Roith)
 - 5:50 pm - 6:00 pm: Questions & answers
 - 6:00 pm - 6:45 pm: Dinner-time discussion of statewide curriculum 
 - 6:45 pm - 7:00 pm: Share out / Adjourn Day 1
 
-## Thursday June 13, 2019
+## Saturday June 8, 2019
 
 - 8:00 am - 8:30 am: Breakfast 
 
-- 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny)
+- 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny Kaplan)
 
 - 9:00 am - 10:00 am: Regression Gala
     * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)

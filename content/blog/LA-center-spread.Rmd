@@ -11,10 +11,10 @@ banner: "thumbnails/center-spread.png"
 
 ```{r include = FALSE}
 library(LittleApp)
-this_app <- get_app_info("center")
+this_app <- get_app_info("center_spread$")
 ```
 
-<a href="`r this_app$url`">  
+<a href="`r this_app$url`"> 
 <figure>
 <img src="/thumbnails/center-spread.png" class="thumbnail" width = "60%">
 <figcaption>Center-and-spread Little App: Household income (as a multiplier of the poverty level)  versus whether the household owns or rents their home. Note the skew distribution for renters. Click here to launch.</figcaption>

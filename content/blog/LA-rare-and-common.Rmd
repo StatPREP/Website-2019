@@ -16,8 +16,8 @@ this_app <- get_app_info("rare")
 
 <a href="`r this_app$url`">  
 <figure>
-<img src="/thumbnails/rare-and-common.png" class="thumbnail" width = "60%">
-<figcaption>Center-and-spread Little App: The distribution of mother's age at birth is different for those on private insurance and those on government insurance.</figcaption>
+<img src="/img/banners/rare-and-common.png" class="thumbnail" width = "60%">
+<figcaption>Rare-and-common Little App: The distribution of mother's age at birth is different for those on private insurance and those on government insurance.</figcaption>
 </figure>
 <a>
 
