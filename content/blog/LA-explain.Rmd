@@ -1,0 +1,35 @@
+---
+title: "Explaining variation"
+description: "Accounting for the variation in the response variable by one or more explanatory variables"
+author: "Danny Kaplan"
+weight: 1
+categories: ["Little App"]
+tags: ["graphics"]
+banner: "img/banners/LA_explain.png"
+date: "2019-04-16"
+---
+
+```{r include = FALSE} 
+library(LittleApp)
+this_app <- get_app_info("explain")
+```
+
+
+<a href="`r this_app$url`"> 
+<figure>
+<img src="/img/banners/LA_explain.png" class="thumbnail" width = "60%">
+<figcaption>Little App for explaining variation: Payment source versus baby weight, adjusting for mother's age, in <code>Births_2014</code>. Click here to launch.</figcaption>
+</figure>
+<a>
+
+The [explain-variation Little App](`r this_app$url`) is one-stop shopping for relating a response variable to an explanatory variable, allowing a covariate to be included.
+
+- Basic plot is response vs explanatory (with color for the covariate, if any).
+- Multi-level categorical response variables are truncated to the most common level & "other". This lets a model be made using regression techniques.
+- Shows confidence intervals on the model values, letting you compare F to whether the CIs overlap.
+- Has a measurement ruler so you can measure standard deviations, effect sizes, etc..
+
+### Suggested StatPREP 101 activities
+
+- Not yet available
+
