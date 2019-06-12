@@ -30,6 +30,6 @@ The [Center-and-spread Little App](`r this_app$url`) displays a jittered point p
 
 ### Suggested StatPREP 101 activities
 
-- Pending: [Comparing two proportions activity](https://statprep-activities.netlify.com/lessons/sd-and-summary-interval/)
-- [Variation and the 95% summary interval](https://statprep-activities.netlify.com/lessons/summary-interval/)
+- [Standard deviation and the 95% summary interval](https://statprep-activities.netlify.com/lessons/sd-and-summary-interval/)
+
 
