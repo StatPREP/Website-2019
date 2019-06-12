@@ -8,6 +8,35 @@ weight: 1
 banner: "img/welcome.jpeg"
 ---
 
+### StatPREP Project
+
+**Purpose**: Provide faculty development opportunities for teaching intro stats.
+
+* Why? 
+
+- Statistics is seen by many as the gateway to data.
+- Data drives many aspects of modern life and employment.
+- Most UG statistics instructors have little or no background in stats.
+- Statistics has changed and is changing as stronger associations are made with new fields:
+    * data science
+    * machine learning
+    * remote sensing
+    * medical records
+    * genomics
+
+* It's **data** that's behind the increased importance of statistics.
+
+* Question: What's the relationship between statistics and data?
+
+### Answer ...
+
+### Answer ...
+
+### Answer
+
+Traditionally, statistics methods and concepts are about the **lack of data**. 
+
+
 
 ### Changing faster and faster ... 
 

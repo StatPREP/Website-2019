@@ -16,16 +16,16 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 
 - 1:30 pm - 2:00 pm: Registration 
 - 2:00 pm - 2:15 pm: [Welcome](/blog/presentation-welcome/) & housekeeping Announcements (Danny Kaplan)
-- 2:15 pm - 2:30 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics (Kate Kozak)
+- 2:15 pm - 2:30 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics (Thomas Kinzeler)
 - 2:30 pm - 2:50 pm: [GAISE and ASA/AMATYC guidelines to teaching statistics](/blog/presentation-GAISE-ASA/) (Andy Zieffler)
 - 2:50 pm - 3:20 pm: Tidy data 
                      [[slides](/slides/slides-tidy-data.html)] 
                      [[notes](/blog/presentation-tidy-data/)]
-                     (Randy Pruim)
+                     (Danny Kaplan)
 
 - 3:20 pm - 3:30 pm: Break
 
-- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Kate)
+- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Kate Kozak)
 - 4:00 pm - 4:50 pm: [Introduction to RStudio cloud](/blog/technology/) (Danny)
         * [link to RStudio project](https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6)
 
@@ -42,15 +42,15 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 
 - 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny)
 
-- 9:00 am - 10:00 am: Regression Gala
-    * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) (Amelia McNamara and Randy Pruim)
-    * [It's all about Regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
+- 9:00 am - 10:00 am: Regression Gala (Andy & Danny)
+    * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) 
+    * [It's all about Regression!](/blog/presentation-its-all-regression/) 
 
 
 - 10:00 am - 10:15 am: Break
 
 - 10:15 am - 11:15 am: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Hwayeon Ryu)
+    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (?????)
     * Less Volume, More Creativity: An R Starter Toolkit (Randy Pruim)
     [[slides](https://rpruim.github.io/JMM2019/less-volume/less-volume-slides.html)]
     [[tutorial](https://rpruim.shinyapps.io/Less-Volume-JMM2019/)]
@@ -73,9 +73,8 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 - 2:30 pm - 3:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Randy Pruim)
 
 - 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #5: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Joe Roith)
+    * Using StatPREP Little Apps in the Classroom Activity #5: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Danny)
     * Designing an Activity (Andy Zieffler) [Andy's Statistical Thinking book](https://zief0002.github.io/statistical-thinking/)
-    * Domesticating wild data R (Randy Pruim and Amelia McNamara
 
 - 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
     * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
