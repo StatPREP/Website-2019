@@ -11,8 +11,8 @@ banner: "img/welcome.jpeg"
 ### StatPREP Project
 
 **Purpose**: Provide faculty development opportunities for teaching intro stats.
-
-* Why? 
+ 
+Why? 
 
 - Statistics is seen by many as the gateway to data.
 - Data drives many aspects of modern life and employment.

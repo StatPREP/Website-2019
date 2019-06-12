@@ -31,7 +31,7 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 
 - 4:50 pm - 5:00 pm: Break
 
-- 5:00 pm - 5:50 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) ()
+- 5:00 pm - 5:50 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) (Kate Kozak)
 - 5:50 pm - 6:00 pm: Questions & answers
 - 6:00 pm - 6:45 pm: Dinner-time discussion of statewide curriculum 
 - 6:45 pm - 7:00 pm: Share out / Adjourn Day 1
@@ -42,18 +42,19 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 
 - 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny)
 
-- 9:00 am - 10:00 am: Regression Gala (Andy & Danny)
-    * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) 
-    * [It's all about Regression!](/blog/presentation-its-all-regression/) 
+- 9:00 am - 10:00 am: Regression Gala 
+    * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) (Helen Burn)
+    * [It's all about Regression!](/blog/presentation-its-all-regression/) (Danny  Kaplan)
 
 
 - 10:00 am - 10:15 am: Break
 
 - 10:15 am - 11:15 am: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (?????)
-    * Less Volume, More Creativity: An R Starter Toolkit (Randy Pruim)
+    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Kate Kozak)
+    * Less Volume, More Creativity: An R Starter Toolkit (Andy Zieffler)
     [[slides](https://rpruim.github.io/JMM2019/less-volume/less-volume-slides.html)]
     [[tutorial](https://rpruim.shinyapps.io/Less-Volume-JMM2019/)]
+    * Regression: Where it's at versus where it could be! (Helen Burn)
 
 - 11:15 am - 12:00 am: Finding [good sources of data](/blog/presentation-data-sources/) (Danny Kaplan)
 
@@ -62,15 +63,16 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 - 12:45 pm - 1:15 pm: Confidence intervals by the ~~book~~ boot. (Danny Kaplan)
 
 - 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Brooke Orosz)
-    * [Data Wrangling](http://rsconnect.calvin.edu/wrangling-jmm2019/) (Randy Pruim and Andy Zieffler) 
-    [[wrangling tutorial](https://dtkaplan.shinyapps.io/wrangling-jmm2019/)]
-    [[TB Case Study](https://dtkaplan.shinyapps.io/tidydata-TB-tutorial/)]
+    * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Mike Brilleslyper)
+    * [Data Wrangling](http://rsconnect.calvin.edu/wrangling-jmm2019/) if interest merits (Andy Zieffler) 
+        - [[wrangling tutorial](https://dtkaplan.shinyapps.io/wrangling-jmm2019/)]
+        - [[TB Case Study](https://dtkaplan.shinyapps.io/tidydata-TB-tutorial/)]
+    * Selecting and ordering topics in intro stats (discussion, facilitated by Danny)
 
 
 - 2:15 pm - 2:30 pm: Break  
 
-- 2:30 pm - 3:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Randy Pruim)
+- 2:30 pm - 3:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Andy Zieffler)
 
 - 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
     * Using StatPREP Little Apps in the Classroom Activity #5: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Danny)
