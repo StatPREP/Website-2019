@@ -31,7 +31,7 @@ paginate = 40
 [[menu.main]]
     identifier = "connect"
     name = "Connect!"
-    url = "https://connect.maa.org/communities/community-home/digestviewer?tab=digestviewer&CommunityKey=6be8da59-c237-4569-bc85-b4ab59cbaf91"
+    url = "https://connect.maa.org/home"
     weight = 25
     
 [[menu.main]]

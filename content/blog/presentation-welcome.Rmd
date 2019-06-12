@@ -23,15 +23,15 @@ How has the content and application of our field changed?
 
 * College algebra:
   
-  - ?
+    - ?
   
 * Calculus
 
-- ?
+    - ?
   
 * Trigonometry
 
-- ?
+    - ?
   
 For examples of change, see [Nick Horton's](http://www.math.smith.edu/~nhorton/doctor.pdf) article on changes in the *New England Journal of Medicine* over the 15 years to 2005.
     
@@ -58,10 +58,10 @@ Example of calculus-like problem ... of a sort that I very rarely see in statist
 Q24: What keeps you from making changes in your introductory statistics course?
 
 
-1. Limited personal time 20 / 25
-2. Student characteristics (e.g., ability, interest, etc.) 16 / 25
-3. Technology constraints (e.g., lack of computer lab, cost of software) 13 / 25
-4. Departmental or institutional constraints (e.g., choice of textbook, class size, mandated curriculum, etc.) 9 / 25 
+1. 20 / 25 Limited personal time 
+2. 16 / 25 Student characteristics (e.g., ability, interest, etc.) 
+3. 13 / 25 Technology constraints (e.g., lack of computer lab, cost of software) 
+4. 9 / 25 Departmental or institutional constraints (e.g., choice of textbook, class size, mandated curriculum, etc.)  
 
    
 ### Goals countdown: 3, 2, 1, ...
@@ -108,11 +108,6 @@ Ultimately, embracing real data in the ways needed in the workplace and as envis
     - decision-making
     - causality
 
-
-
-
-
-
 ## Three components of the workshop
 
 1. Things you can directly use in teaching:
@@ -126,6 +121,3 @@ Ultimately, embracing real data in the ways needed in the workplace and as envis
 - R ecosystem
 
 Levels will range from the easy to the aspirational.
-
-
-
