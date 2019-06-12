@@ -29,7 +29,7 @@ library(kableExtra)
 center_app <- get_app_info("spread")
 ```
 
-`r SDSdata::word_pdf_links()`
+`r SDSdata::word_pdf_links()` 
 
 # Orientation
 
