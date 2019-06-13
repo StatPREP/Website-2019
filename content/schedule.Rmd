@@ -78,6 +78,7 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
     * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
     * <https://teachdatascience.com> -- summer blog about teaching data science
     * Books
+        * [Kate Kozak's open-source textbook](https://www.coconino.edu/open-source-textbooks#statistics-using-technology-by-kathryn-kozak)
         * [*R for Data Science*](https://r4ds.had.co.nz/)
         * [*Modern Data Science with R*](https://ekonometrics.blogspot.com/2019/05/modern-data-science-with-r-review.html)
         * [*Stats for Data Science*](/blog/stats-for-data-science/) book (for instructor self study)
