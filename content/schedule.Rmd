@@ -58,7 +58,7 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 
 - 12:00 pm - 12:45 pm: Lunchtime Discussion: continuation of yesterday's discussion on curriculum and state standards 
 
-- 12:45 pm - 1:15 pm: Confidence intervals by the ~~book~~ boot. (Danny Kaplan)
+- 12:45 pm - 1:15 pm: [Confidence intervals by the ~~book~~ boot.](/blog/LA-bootstrap/) (Danny Kaplan)
 
 - 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
     * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Mike Brilleslyper)
