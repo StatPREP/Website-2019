@@ -190,5 +190,5 @@ gf_line(p ~ F, data = Fframe, color  = ~n) +
 
 Freebies: 
 
-- correlation coefficient $r = \sqrt{F}$, where the $\pm$ branch is based on the slope.
+- correlation coefficient $r = \sqrt{R^2}$, where the $\pm$ branch is based on the slope.
 - Prefer t?  It's $t = \sqrt{F}$. But F is more general than t.
