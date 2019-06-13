@@ -86,6 +86,7 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 - 4:20 pm - 4:40 pm: Q & A panel discussion
     * [Amelia's syllabus](http://amelia.mn/sds220)
     * [Open Textbook Initiative](https://aimath.org/textbooks/)
+    * [ASA p-value statement](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913) and [corresponding special issue of *The American Statistician*](https://www.tandfonline.com/toc/utas20/73/sup1)
 - 4:40 pm - 5:00 pm: Staying in touch
 - 5:00 pm: Adjourn
 
