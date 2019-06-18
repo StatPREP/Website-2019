@@ -1,95 +1,65 @@
 ---
-title: "Workshop schedule: Tarrant County Community College"
+title: "Workshop schedule: Highline College"
 ---
 
-Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/) & [Columbia, MD](/blog/schedule-howard/)
-
-[Location of Tarrant County College](https://www.google.com/maps/place/NTAB+-+Technology+and+Arts,+North+Richland+Hills,+TX/@32.8476211,-97.1925493,17.49z/data=!4m5!3m4!1s0x864e78c7a7de1b2b:0xc0568af34b277fa3!8m2!3d32.8479737!4d-97.1920759). For those driving, there is a parking lot directly outside the NTAB building. Free parking is available in any of the white spaces. The main meeting room is NTAB 2216.
-
+Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/), [Columbia, MD](/blog/schedule-howard/), [Fort Worth, TX](/blog/schedule-tarrant/).
 
 ## Before the Workshop
 
 - Answer [these questions](https://docs.google.com/document/d/1ntePDIJVWe6Y8JHjKMcFbmYNKJNIN3V-APeY3Dp1qTg/edit?usp=sharing) (on paper) and bring to the workshop.
 
 
-## Wednesday June 12, 2019 
+## Thursday June 20, 2019 
 
-- 1:30 pm - 2:00 pm: Registration 
-- 2:00 pm - 2:15 pm: [Welcome](/blog/presentation-welcome/) & housekeeping Announcements (Danny Kaplan)
-- 2:15 pm - 2:30 pm: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics (Thomas Kinzeler)
-- 2:30 pm - 2:50 pm: [GAISE and ASA/AMATYC guidelines to teaching statistics](/blog/presentation-GAISE-ASA/) (Andy Zieffler)
-- 2:50 pm - 3:20 pm: Tidy data 
+-  8:15 am -  9:00 am: Registration/Breakfast 
+-  9:00 am -  9:15 am: [Welcome (and welcome back to returnees)](/blog/presentation-welcome/) & housekeeping announcements (Danny Kaplan)
+-  9:15 am -  9:30 am: [Icebreaker](/img/Icebreaker.pdf): Teaching Statistics (Ambika Silva)
+-  9:30 am -  9:50 am: [GAISE and ASA/AMATYC guidelines to teaching statistics](/blog/presentation-GAISE-ASA/) (Nick Horton)
+-  9:50 am - 10:20 am: Tidy data 
                      [[slides](/slides/slides-tidy-data.html)] 
                      [[notes](/blog/presentation-tidy-data/)]
                      (Danny Kaplan)
 
-- 3:20 pm - 3:30 pm: Break
+- 10:20 am - 10:30 am: Break
 
-- 3:30 pm - 4:00 pm: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Kate Kozak)
-- 4:00 pm - 4:50 pm: [Introduction to RStudio cloud](/blog/technology/) (Danny)
+- 10:30 am - 11:00 am: Orientation to the StatPREP website, Little Apps, and [MAA Connect](/blog/community-MAA-connect/) (Kate Kozak)
+- 11:00 am - 11:15 am: Share out from last year's participants (Helen Burn)
+- 11:15 am - 12:00 pm: [Introduction to RStudio cloud](/blog/technology/) (Nick Horton and Kelly McConville)
         * [link to RStudio project](https://rstudio.cloud/spaces/18369/join?access_code=ZHkYZ0lHtkancAhUVB5l7YqhErMAX%2BykqI9%2Bj7y6)
 
-- 4:50 pm - 5:00 pm: Break
+- 12:00 pm -  1:00 pm: Lunch/Discussion of curricular issues
 
-- 5:00 pm - 5:50 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) (Kate Kozak)
-- 5:50 pm - 6:00 pm: Questions & answers
-- 6:00 pm - 6:45 pm: Dinner-time discussion of statewide curriculum 
-- 6:45 pm - 7:00 pm: Share out / Adjourn Day 1
+-  1:00 pm -  2:00 pm: Using StatPREP Little Apps in the Classroom Activity #1: [Center and spread](/blog/instructions-center-spread/) (Joe Roith)
+-  2:00 pm -  2:50 pm: Using StatPREP Little Apps in the Classroom Activity #2: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Thomas Kinzeler)
+-  2:50 pm -  3:00 pm: Break
+-  3:00 pm -  3:30 pm: Bringing data into RStudio (Nick Horton and Kelly McConville)
+-  3:30 pm -  4:00 pm: Share Out / Adjourn for the day (Nick Horton and Kate Kozak)
 
-## Thursday June 13, 2019
+## Friday June 21, 2019
 
-- 8:00 am - 8:30 am: Breakfast 
+-  8:15 am -  9:00 am: Breakfast 
 
-- 8:30 am - 9:00 am: [Getting to know Tutorials](/blog/tutorials/) (Danny)
+-  9:00 am -  9:15 am: [Getting to know Tutorials](/blog/tutorials/) (Danny Kaplan)
+-  9:15 am -  9:45 am: [Searching for Data? How to find good sources](/blog/data-curated-data-sources/). (Danny Kaplan)
+-  9:45 am - 10:05 am: Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Kate Kozak and Ambika Silva)
+- 10:05 am - 10:25 am: Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Kate Kozak and Ambika Silva)
 
-- 9:00 am - 10:00 am: Regression Gala 
-    * Using StatPREP Little Apps in the Classroom Activity #2: [Linear Regression](/blog/instructions-linear-regression/) (Helen Burn)
-    * [It's all about Regression!](/blog/presentation-its-all-regression/) (Danny  Kaplan)
+- 10:25 am - 10:35 am: Break
 
-
-- 10:00 am - 10:15 am: Break
-
-- 10:15 am - 11:15 am: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Kate Kozak)
-    * Less Volume, More Creativity: An R Starter Toolkit (Andy Zieffler) [[slides](https://rpruim.github.io/JMM2019/less-volume/less-volume-slides.html)] & tutorial [server one](https://rpruim.shinyapps.io/Less-Volume-JMM2019/)] & [server two](https://dtkaplan.shinyapps.io/Less-Volume-JMM2019/)
-    * Regression: Where it's at versus where it could be! (Helen Burn)
-
-- 11:15 am - 12:00 am: Finding [good sources of data](/blog/data-curated-data-sources/) (Danny Kaplan)
-
-- 12:00 pm - 12:45 pm: Lunchtime Discussion: continuation of yesterday's discussion on curriculum and state standards 
-
-- 12:45 pm - 1:15 pm: [Confidence intervals by the ~~book~~ boot.](/blog/LA-bootstrap/) (Danny Kaplan)
-
-- 1:15 pm - 2:15 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #4: [Introduction to the Normal Distribution](/blog/instructions-normal-distribution/) (Mike Brilleslyper)
-    * Starting with regression (Danny)
- 
-
-- 2:15 pm - 2:30 pm: Break  
-
-- 2:30 pm - 3:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Andy Zieffler)
-
-- 3:00 pm - 3:45 pm: **Parallel sessions** -- your choice!
-    * Using StatPREP Little Apps in the Classroom Activity #5: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Kate)
-    * Designing an Activity (Andy Zieffler) [Andy's Statistical Thinking book](https://zief0002.github.io/statistical-thinking/)
-    * Writing an interactive tutorial (Danny)
-
-- 3:45 pm - 4:00 pm: Resources for [moving toward data science](/blog/resources/moving-toward-data-science/) (Danny)
-    * [National Academies report](https://teachdatascience.com/nasem/) on data science for undergraduates
-    * <https://teachdatascience.com> -- summer blog about teaching data science
-    * Books
-        * [Kate Kozak's open-source textbook](https://www.coconino.edu/open-source-textbooks#statistics-using-technology-by-kathryn-kozak)
-        * [*R for Data Science*](https://r4ds.had.co.nz/)
-        * [*Modern Data Science with R*](https://ekonometrics.blogspot.com/2019/05/modern-data-science-with-r-review.html)
-        * [*Stats for Data Science*](/blog/stats-for-data-science/) book (for instructor self study)
+- 10:35 am - 11:15 am: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Helen Burn)
+- 11:15 am - 11:45 am: [Bootstrapping Little App](/blog/LA-bootstrap/) (Kelly McConville)
+- 11:45 am - 12:00 pm: Panel discussion: advice on textbooks
+- 12:00 pm - 12:45 pm: Lunch / Discussion: coordination among institutions
+- 12:45 pm -  1:30 pm: **Choose one breakout to attend:**
+    a. New to R? Learn the basics. (Kelly McConville and Kate Kozak)
+    b. Intermediate R. (Danny Kaplan and Nick Horton)
     
-- 4:00 pm - 4:20 pm: Small Group Discussions: Takeaways
-- 4:20 pm - 4:40 pm: Q & A panel discussion
-    * [Amelia's syllabus](http://amelia.mn/sds220)
-    * [Open Textbook Initiative](https://aimath.org/textbooks/)
-    * [ASA p-value statement](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913) and [corresponding special issue of *The American Statistician*](https://www.tandfonline.com/toc/utas20/73/sup1)
-- 4:40 pm - 5:00 pm: Staying in touch
-- 5:00 pm: Adjourn
+-  1:30 pm -  1:45 pm: Break
+
+-  1:45 pm -  2:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Kate Kozak and Thomas Kinzeler)
+-  2:00 pm -  2:30 pm: [It's all regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
+-  2:30 pm -  3:00 pm: Small-group discussion followed by Q & A panel discussion
+-  3:00 pm: Adjourn
 
 
 ## Locations
@@ -107,7 +77,7 @@ Times differ from location to location. The above schedule will be adjusted acco
 2.  Howard Community College:  Columbia,  MD
     - Friday, June 7:  2pm – 6pm (first day), 4 hours
     - Saturday, June 8:  8am – 5pm (2nd day) 9 hours
-    - Staffing: Danny Kaplan, Randy Pruim, Andy Zieffler, Amelia McNamara (Saturday), Hwayeon Ryu, Joe Roith, Brooke Orosz
+    - Staffing: Danny Kaplan, Randy Pruim, Andy Zieffler, Amelia McNamara (Saturday), Brooke Orosz, Hwayeon Ryu, Joe Roith
     - Hub leader: Carol Howald
     - Lodging: Columbia Inn at Peralynna (410-715-4600)
     - 45 new participants
@@ -115,7 +85,7 @@ Times differ from location to location. The above schedule will be adjusted acco
 3. Tarrant County College: Fort Worth,  TX
     - Wed 6/12 from 1pm – 6:30pm, 5.5 hours
     - Thurs 6/13 from 8:30am – 5:00pm, 8.5 hours
-    - Staffing: Danny Kaplan, Andy Zieffler, Kate Kozak, Helen Burn
+    - Staffing: Danny Kaplan, Andy Zieffler, Kate Kozak, Helen Burn, Mike Brilleslyper
     - Hub leader: Thomas Kinzeler
     - Lodging: Hilton Garden Inn in Hurst, TX Use the custom reservation link – [statPREP](https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure3.hilton.com%2Fen_US%2Fgi%2Freservation%2Fbook.htm%3FinputModule%3DHOTEL%26ctyhocn%3DDFWHCGI%26spec_plan%3DSTATP%26arrival%3D20190611%26departure%3D20190614%26cid%3DOM%2CWW%2CHILTONLINK%2CEN%2CDirectLink%26fromId%3DHILTONLINKDIRECT&data=02%7C01%7CKAYLA.BRISTER%40hilton.com%7C81436573b71c471a3bbc08d6ca8e4a59%7C660292d2cfd54a3db7a7e8f7ee458a0a%7C0%7C0%7C636919109809148547&sdata=62BHwWDhe4z4rTp56XjA6U%2Fhj80F1wID0FJNVgU1Q48%3D&reserved=0)
     - 28 new participants
