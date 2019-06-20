@@ -3,7 +3,7 @@ title: "Welcome"
 description: "Outline of workshop and its goals"
 categories:
   - presentations
-date: "2019-06-12"
+date: "2019-06-20"
 weight: 1
 banner: "img/welcome.jpeg"
 ---
@@ -78,41 +78,42 @@ Example of calculus-like problem ... of a sort that I very rarely see in statist
     
 ### Computing and statistics
 
-- 21 / 26 said proficiency in using computers to handle and manage data should be an important goal of a statistics course.
-- 20 / 26 said computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
-- 25 / 26 said that technology tools should be used to illustrate most abstract statistical concepts.
+- 14 / 16 said proficiency in using computers to handle and manage data should be an important goal of a statistics course.
+- 14 / 16 said they *disagree* that statistical concepts are rooted in algebraic notation.
+- 12 / 16 said computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
+- 14 / 16 said that technology tools should be used to illustrate most abstract statistical concepts.
     
 ### Change is hard
 
 Q24: What keeps you from making changes in your introductory statistics course?
 
 
-1. 20 / 25 Limited personal time 
-2. 16 / 25 Student characteristics (e.g., ability, interest, etc.) 
-3. 13 / 25 Technology constraints (e.g., lack of computer lab, cost of software) 
-4. 9 / 25 Departmental or institutional constraints (e.g., choice of textbook, class size, mandated curriculum, etc.)  
+1. 12 / 15 Limited personal time 
+2. 8 / 15 Student characteristics (e.g., ability, interest, etc.) 
+3. 7 / 15 Technology constraints (e.g., lack of computer lab, cost of software) 
+4. 5 / 15 Departmental or institutional constraints (e.g., choice of textbook, class size, mandated curriculum, etc.)  
 
    
 ### Goals countdown: 3, 2, 1, ...
 
-24 / 26 said learning new methods for teaching statistics is a top or important priority for them at this workshop.
+17 / 18 said learning new methods for teaching statistics is a top or important priority for them at this workshop.
 
-Not so interested in GAISE: 8 / 26 said learning how to implement GAISE is an important priority for them of this workshop.
+Not so interested in GAISE: 10 / 18 said learning how to implement GAISE is an important priority for them of this workshop.
 
 - **GAISE Recommendation 3**: Integrate real data with a context and a purpose.
-    - You: 23 / 26 said learning how to incorporate real data into classes is important or their top priority. 10 / 26 said "top priority" (So we'll have to talk about what is "real data.")
+    - You: 18 / 18 said learning how to incorporate real data into classes is important or their top priority. 6 / 18 said "top priority" (So we'll have to talk about what is "real data.")
 
 - **GAISE Recommendation 2**: Focus on conceptual understanding.
 * "*Pare down content of an introductory course to focus on core concepts in more depth.*"
-- You: 29 / 32 -- The many methods covered in introductory statistics can be reduced to a small set of common principles.
+- You: 15 / 16 -- The many methods covered in introductory statistics can be reduced to a small set of common principles.
 * What are those principles? [Write them down here](https://docs.google.com/document/d/12rFpIZnr6abpkpfbRD-GFixI3T-vuX8zvYAUd-2WBu4/edit?usp=sharing)
 
 * "*Perform most computations using technology to allow greater emphasis on understanding concepts and interpreting results.*"
 
-- You: 18 / 25 use graphing calculators in teaching stats. 
-- You: 29 / 32 Computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
-- You: Only 8 / 33 were confident in using computer programs to analyze data or data sets
-- You: 30 / 33 Proficiency in using computers to handle and manage data should be an important goal of a statistics course.
+- You: 11 / 17 use graphing calculators in teaching stats. 
+- You: 12 / 16 Computing offers a framework for understanding statistical theory that is as legitimate as the theory based on probability rules and algebra.
+- You: Only 6 / 16 were confident in using computer programs to analyze data or data sets
+
 
 - **GAISE Recommendation 1**: Teach statistical thinking.
 
@@ -121,8 +122,8 @@ Not so interested in GAISE: 8 / 26 said learning how to implement GAISE is an im
   
   - Give students experience with multivariable thinking.
 - Characterizing relationships involving multiple (more than 3) variables:
-  Never: 8/24, Rarely 11/24
-- You: Only 8 / 26 were confident in **developing data models**.
+  Never: 5 / 16, Rarely 8 / 16
+- You: Only 4 / 16 were confident in **developing data models**.
 
 ## Our goals for you ...
 
