@@ -55,16 +55,13 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
     a. New to R? Learn the basics. (Kelly McConville and Kate Kozak)
     b. Intermediate R. (Danny Kaplan and Nick Horton)
     c. Using Little Apps in your class ~~today~~ tomorrow! (Helen Burn)
+    
+
 -  1:30 pm -  1:45 pm: Break
 
-<<<<<<< HEAD
--  1:45 pm -  2:15 pm: [It's all regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
--  2:15 pm -  3:00 pm: Small-group discussion followed by Q & A panel discussion
-=======
--  1:45 pm -  2:00 pm: [Assessment brainstorm](https://docs.google.com/document/d/1xO2DDpLulKdcIlTbZK-T8D92RSFWDG49AbT6y3ZbM5I/edit?usp=sharing)
+-  1:45 pm -  2:00 pm: [MAA Connect](https://connect.maa.org/home)
 -  2:00 pm -  2:30 pm: [It's all regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
 -  2:30 pm -  3:00 pm: Small-group discussion followed by Q & A panel discussion
->>>>>>> b1f4c9fb543013f40a08eafc5e957756fd43f4bb
 -  3:00 pm: Adjourn
 
 
