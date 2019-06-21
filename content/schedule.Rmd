@@ -42,23 +42,23 @@ Other 2019 StatPREP workshop schedules: [Hartford, CT](/blog/schedule-hartford/)
 -  9:00 am -  9:15 am: [Getting to know Tutorials](/blog/tutorials/) (Danny Kaplan)
 -  9:15 am -  9:45 am: [Searching for Data? How to find good sources](/blog/data-curated-data-sources/). (Danny Kaplan)
 -  9:45 am - 10:05 am: Using StatPREP Little Apps in the Classroom Activity #3: [Confidence intervals](/blog/instructions-confidence-intervals/) (Kate Kozak and Ambika Silva)
-- 10:05 am - 10:25 am: Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Kate Kozak and Ambika Silva)
+- 10:05 am - 10:25 am: Using StatPREP Little Apps in the Classroom Activity #4: [Two-sample t-test](/blog/instructions-two-sample-t-test/) (Kate Kozak and Ambika Silva) & participant check-in
+
 
 - 10:25 am - 10:35 am: Break
 
-- 10:35 am - 11:15 am: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Helen Burn)
-- 11:15 am - 11:45 am: [Bootstrapping Little App](/blog/LA-bootstrap/) (Kelly McConville)
-- 11:45 am - 12:00 pm: Panel discussion: advice on textbooks
+- 10:35 am - 11:00 am: Using StatPREP Little Apps in the Classroom Activity #5: [Linear Regression](/blog/instructions-linear-regression/) (Helen Burn)
+- 11:00 am - 11:30 am: [Bootstrapping Little App](/blog/LA-bootstrap/) (Kelly McConville)
+- 11:30 am - 12:00 pm:  [Assessment brainstorm](https://docs.google.com/document/d/1xO2DDpLulKdcIlTbZK-T8D92RSFWDG49AbT6y3ZbM5I/edit?usp=sharing)
 - 12:00 pm - 12:45 pm: Lunch / Discussion: coordination among institutions
 - 12:45 pm -  1:30 pm: **Choose one breakout to attend:**
     a. New to R? Learn the basics. (Kelly McConville and Kate Kozak)
     b. Intermediate R. (Danny Kaplan and Nick Horton)
-    
+    c. Using Little Apps in your class ~~today~~ tomorrow! (Helen Burn)
 -  1:30 pm -  1:45 pm: Break
 
--  1:45 pm -  2:00 pm: [Tips for creating an active classroom](/blog/instructions-active-classroom-tips) and assessment ideas (Kate Kozak and Thomas Kinzeler)
--  2:00 pm -  2:30 pm: [It's all regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
--  2:30 pm -  3:00 pm: Small-group discussion followed by Q & A panel discussion
+-  1:45 pm -  2:15 pm: [It's all regression!](/blog/presentation-its-all-regression/) (Danny Kaplan)
+-  2:15 pm -  3:00 pm: Small-group discussion followed by Q & A panel discussion
 -  3:00 pm: Adjourn
 
 
