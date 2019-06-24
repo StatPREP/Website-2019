@@ -25,6 +25,7 @@ banner: "img/banners/library-stacks.jpg"
     * [Heart attack charges](https://dasl.datadescription.com/datafile/heart-attack-charges/?_sfm_cases=1104+59943&sort_order=_sfm_cases+desc+num)
 * [Data sets from the Department of Biostatistics](http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets) at Vanderbilt University. (Many of the other links on  this page  come from this site.)
 * [Data Sources on the Web](http://mran.revolutionanalytics.com/documents/data) 
+* Jo Hardin's [Dynamic Data in the Statistics Classroom](https://arxiv.org/pdf/1603.04912.pdf)
 * [Australasian Data and Story Library](http://www.statsci.org/data/), containing a large number of interesting datasets, many pertaining to Australia
 * [CRASH datasets](https://ctu-app.lshtm.ac.uk/freebird) 
 * [DryadLab](http://datadryad.org) 
