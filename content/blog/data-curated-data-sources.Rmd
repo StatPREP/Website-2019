@@ -31,6 +31,7 @@ banner: "img/banners/library-stacks.jpg"
 * [DryadLab](http://datadryad.org) 
 * [StatLib Repository](http://lib.stat.cmu.edu/datasets) at Carnegie Mellon University. 
 * [GapMinder](http://www.gapminder.org/data)
+* Web-scraping programs from students in the [NYC Data Science Academy](https://nycdatascience.com/blog/category/web-scraping/).
 
 ### Medical research 
 
